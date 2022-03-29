@@ -1,0 +1,23 @@
+.navigation_bar{
+   padding: 10px 50px;
+   display: flex;
+   align-items: center;
+   color: #579dd5;
+   justify-content: space-evenly;
+   font-size: 1.2em;
+
+   img{
+       width: 150px;
+       cursor: pointer;
+   }
+
+   li{
+       list-style-type: none;
+       cursor: pointer;
+   }
+}
+
+.menu{
+    text-align: center;
+}
+
