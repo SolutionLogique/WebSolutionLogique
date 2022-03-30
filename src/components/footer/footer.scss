@@ -1,5 +1,23 @@
-.footer_solution_logique{
-    position:absolute;
-    bottom:0;
-    padding: 50px 50px;
+.footer{
+
+
+    .footer_global{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: #04A2DF;
+        color: white;
+    
+        .footer_copyright_solution_logique{
+            bottom:0;
+            padding: 50px 50px;
+            justify-content: space-evenly;
+            span{
+                font-weight: 800;
+            }
+        }
+    }
 }
+
+
