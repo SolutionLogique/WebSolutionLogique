@@ -1,23 +1,139 @@
-import "./home.scss"
+import "./home.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faComputer,
+  faServer,
+  faPrint,
+  faFloppyDisk,
+  faPhone,
+  faShield,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div className="card_home_page">
-      <img className="banner" alt="logo_solution_logique_informatique" href="" src="assets/cloud.jpg"></img>
+      <img
+        className="banner"
+        alt="logo_solution_logique_informatique"
+        href=""
+        src="assets/cloud.jpg"
+      ></img>
       <div className="container">
-      <img className="device_sli" alt="logo_solution_logique_informatique" href="" src="assets/sli.png"></img>
+        <div className="home_container_both">
+          <div className="home_container_left_side">
+            <div className="left_top_side">
+              <img
+                className="device_sli"
+                alt="logo_solution_logique_informatique"
+                href=""
+                src="assets/sli.png"
+              ></img>
+            </div>
+            <div className="left_bot_side">
+              <h1>Bienvenue à Solution Logique</h1>
+              <h2>Qui sommes-nous ?</h2>
+              <p>
+                L’équipe de <span>Solution Logique</span> est à{" "}
+                <span>votre écoute</span> pour réaliser vos projets
+                informatiques.
+              </p>
+              <p>
+                Depuis <span>plus de 25 ans</span>, nous avons toujours voulu
+                marquer <span>notre volonté</span>, d’une forte implantation
+                locale en Rhône-Alpes.
+              </p>
+            </div>
+          </div>
+          <div className="home_container_right_side">
+            <h1>Apporteur de solution informatique</h1>
+            <p>
+              Intégrateur de solutions complètes et prestataire de services en
+              conseils informatiques, nous innovons quotidiennement pour les
+              PME, PMI, TPE, indépendants et collectivités.
+            </p>
+            <img
+              className="img_right_side"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/solution.png"
+            ></img>
+          </div>
+        </div>
       </div>
+      <div className="home_banner_bot">
+        <div className="container">
+          <div className="our_expertise">
+            <h1>Notre expertise</h1>
+            <h2>Découvrez nos solutions</h2>
+            <h3>
+              Une équipe expérimentée, des collaborateurs diplômés et certifiés,
+              une exigence reconnue pour vous assurer une qualité de service
+              professionnel. Nos techniciens ont la mission de renforcer la
+              performance de votre système informatique et protège votre
+              environnement de travail.
+            </h3>
+          </div>
+          <div className="home_services">
+            <div className="home_services_card">
+              <FontAwesomeIcon
+                className="home_services_icon"
+                icon={faComputer}
+              />
+              <h1>Matériels Informatique</h1>
+              <p>Optez pour une solution sur mesure</p>
+            </div>
+            <div className="home_services_card">
+              <FontAwesomeIcon className="home_services_icon" icon={faServer} />
+              <h1>Virtualisation & Serveur</h1>
+              <p>Lorem Ipsum is simply dummy text</p>
+            </div>
+            <div className="home_services_card">
+              <FontAwesomeIcon className="home_services_icon" icon={faPrint} />
+              <h1>Système d'impression</h1>
+              <p>Mettez-vous à la page</p>
+            </div>
+            <div className="home_services_card">
+              <FontAwesomeIcon
+                className="home_services_icon"
+                icon={faFloppyDisk}
+              />
+              <h1>Sauvegarde de données</h1>
+              <p>Lorem Ipsum is simply dummy text</p>
+            </div>
+            <div className="home_services_card">
+              <FontAwesomeIcon className="home_services_icon" icon={faPhone} />
+              <h1>Opérateur Télécom</h1>
+              <p>Protégez vos données</p>
+            </div>
+            <div className="home_services_card">
+              <FontAwesomeIcon className="home_services_icon" icon={faShield} />
+              <h1>Sécurité Informatique</h1>
+              <p>Lorem Ipsum is simply dummy text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container">
-      <div className="banner_white"></div>
-      <div className="bv_solution_logique_intro">
-      <h1>Bienvenue à Solution Logique</h1>
-        <p>Depuis <span>plus de 25 ans</span>, nous avons toujours voulu marquer <span>notre volonté</span>, d’une forte implantation locale en Rhône-Alpes.</p>
-        <p>Nous assurons le maintien d’un large segment de <span>clientèles de professionnels</span>, PME, PMI, TPE, Avocats, Notaires, Décolleteurs, Associations, Administrations, Artisans, Éducation, Professions libérales et médicales …</p>
-        <p>L’équipe de <span>Solution Logique</span> est à <span>votre écoute</span> pour réaliser vos projets informatiques.</p>
-      </div>
+        <div className="home_conseils_sli">
+          <div className="home_conseils_sli_left">
+          <img
+              className="img_right_side"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/help.jpg"
+            ></img>
+          </div>
+          <div className="home_conseils_sli_right">
+            <h1>Nous contacter</h1>
+            <h2>Besoin d'une aide en télémaintenance ?</h2>
+            <p>Accédez à la télémaintenance pour que Solution Logique intervienne directement sur votre ordinateur.</p>
+            <a href="/" class="btn_help btn_help_right">Besoin d'aide</a>          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
