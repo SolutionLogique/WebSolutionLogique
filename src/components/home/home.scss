@@ -159,7 +159,12 @@
       }
     }
     .home_container_right_side {
-      background: linear-gradient(90deg, rgba(4,162,223,1) 0%, rgba(0,206,255,1) 100%);      width: 50%;
+      background: linear-gradient(
+        90deg,
+        rgba(4, 162, 223, 1) 0%,
+        rgba(0, 206, 255, 1) 100%
+      );
+      width: 50%;
       margin: 10px;
       border-radius: 50px;
       padding: 25px;
@@ -181,14 +186,19 @@
         color: white;
         font-size: 1.2em;
       }
-      .img_right_side{
+      .img_right_side {
         padding-top: 50px;
         width: 100%;
       }
     }
   }
   .home_banner_bot {
-    background: linear-gradient(90deg, rgba(4,162,223,1) 0%, rgba(0,206,255,1) 100%);    height: 650px;
+    background: linear-gradient(
+      90deg,
+      rgba(4, 162, 223, 1) 0%,
+      rgba(0, 206, 255, 1) 100%
+    );
+    height: 650px;
     text-align: center;
     padding-bottom: 50px;
     h1 {
@@ -217,6 +227,7 @@
       .home_services_card {
         justify-content: space-evenly;
         margin: 50px 30px;
+        color: white;
 
         h1 {
           font-size: 1.2em;
@@ -232,22 +243,22 @@
     align-items: center;
     justify-content: center;
 
-    .home_conseils_sli_left{
+    .home_conseils_sli_left {
       width: 40%;
 
-      img{
+      img {
         width: 100%;
       }
     }
-    .home_conseils_sli_right{
+    .home_conseils_sli_right {
       text-align: center;
       width: 60%;
 
-      h2{
+      h2 {
         padding-bottom: 15px;
       }
 
-      p{
+      p {
         padding-bottom: 50px;
       }
 
@@ -266,17 +277,20 @@
         border: 0.3rem solid transparent;
         border-radius: 3rem;
       }
-      
+
       .btn_help_right {
         border-color: transparent;
         background-color: #04a2df;
         color: white;
         transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
       }
-        
+
       .btn_help_right:hover {
         transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
       }
     }
+  }
+  .home_carousel_partner{
+    padding: 50px;
   }
 }

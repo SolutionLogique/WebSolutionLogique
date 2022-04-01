@@ -8,7 +8,15 @@ import {
   faPhone,
   faShield,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+];
 
 function Home() {
   return (
@@ -118,7 +126,7 @@ function Home() {
       <div className="container">
         <div className="home_conseils_sli">
           <div className="home_conseils_sli_left">
-          <img
+            <img
               className="img_right_side"
               alt="logo_solution_logique_informatique"
               href=""
@@ -128,12 +136,31 @@ function Home() {
           <div className="home_conseils_sli_right">
             <h1>Nous contacter</h1>
             <h2>Besoin d'une aide en télémaintenance ?</h2>
-            <p>Accédez à la télémaintenance pour que Solution Logique intervienne directement sur votre ordinateur.</p>
-            <a href="/" class="btn_help btn_help_right">Besoin d'aide</a>          </div>
+            <p>
+              Accédez à la télémaintenance pour que Solution Logique intervienne
+              directement sur votre ordinateur.
+            </p>
+            <a href="/" class="btn_help btn_help_right">
+              Besoin d'aide ?
+            </a>{" "}
+          </div>
         </div>
+        <h1>PARTENAIRE ASSOCIATIF :</h1>
+      </div>
+      <div className="home_carousel_partner">
+      <Carousel breakPoints={breakPoints}>
+        <Item>One</Item>
+        <Item>Two</Item>
+        <Item>Three</Item>
+        <Item>Four</Item>
+        <Item>Five</Item>
+        <Item>Six</Item>
+        <Item>Seven</Item>
+        <Item>Eight</Item>
+      </Carousel>
       </div>
     </div>
   );
 }
-
+const rootElement = document.getElementById("root");
 export default Home;
