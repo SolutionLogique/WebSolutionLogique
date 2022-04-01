@@ -21,12 +21,6 @@ const breakPoints = [
 function Home() {
   return (
     <div className="card_home_page">
-      <img
-        className="banner"
-        alt="logo_solution_logique_informatique"
-        href=""
-        src="assets/cloud.jpg"
-      ></img>
       <div className="container">
         <div className="home_container_both">
           <div className="home_container_left_side">
@@ -148,16 +142,89 @@ function Home() {
         <h1>PARTENAIRE ASSOCIATIF :</h1>
       </div>
       <div className="home_carousel_partner">
-      <Carousel breakPoints={breakPoints}>
-        <Item>One</Item>
-        <Item>Two</Item>
-        <Item>Three</Item>
-        <Item>Four</Item>
-        <Item>Five</Item>
-        <Item>Six</Item>
-        <Item>Seven</Item>
-        <Item>Eight</Item>
-      </Carousel>
+        <Carousel breakPoints={breakPoints}>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/stormshield.jpg"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/3cx.png"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/vmware.png"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/stanley.png"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/veditec.png"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/lenovo.png"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/oxatis.png"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/kyocera.png"
+            ></img>
+          </Item>
+          <Item>
+            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/ebp.png"
+            ></img>
+          </Item>
+        </Carousel>
       </div>
     </div>
   );
