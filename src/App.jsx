@@ -14,6 +14,12 @@ function App() {
   return (
     <Router>
         <Navbar/>
+        <img
+        className="banner"
+        alt="logo_solution_logique_informatique"
+        href=""
+        src="assets/cloud.jpg"
+      ></img>
         <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route path="/logicielsDev" element={<LogicielsDev />} />
