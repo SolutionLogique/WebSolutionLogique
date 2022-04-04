@@ -1,0 +1,58 @@
+
+    
+    
+    #panneau{
+    margin : 30px;
+    }
+    #panneau #onglets{
+    
+    }
+    #panneau #onglets {
+    
+    }
+    #panneau #onglets  li{
+    float:left;
+    width : 125px;
+    height : 30px;
+    line-height : 30px;
+    background : rgba(255,255,255,0.4);
+    text-align : center;
+    margin-right : 5px;
+    color : rgba(0,0,0,0.6)
+    }
+    #panneau #onglets  li.actif{
+    background : #04a2df;
+    color : black;
+    
+    }
+    #panneau #contenus {
+    
+    }
+    #panneau #contenus  li{
+    background : #04a2df;
+    padding : 20px;
+    display : none;
+    }
+    #panneau #contenus  li.actif{
+    
+    /* j'affiche uniquement le li de class actif */
+    display : block;
+    }
+    
+    /***** HACKS CSS *******/
+    
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; 
+        display: table; 
+    }
+    
+    .clearfix:after {
+        clear: both;
+    }
+    
+    .clearfix {
+        *zoom: 1;
+    }
+    
+    

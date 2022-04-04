@@ -11,10 +11,7 @@ function Navbar() {
         <Link to="/">Accueil</Link>
       </li>
       <li>
-        <Link to="/Society">Notre Société</Link>
-      </li>
-      <li>
-        <Link to="/logicielsDev">Logiciel & Développement</Link>
+        <Link to="/nosServices">Nos Services</Link>
       </li>
       <li>
         <Link to="/materielReseau">Matériel & Réseau</Link>

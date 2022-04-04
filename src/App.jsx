@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
-import LogicielsDev from "./components/logicielsDev/LogicielsDev";
+import NosServices from "./components/nosServices/NosServices";
 import MaterielReseau from "./components/materielReseau/MaterielReseau";
 import MaterielsInformatiques from "./components/materielsInformatiques/MaterielsInformatiques";
 import Print from "./components/print/Print";
@@ -27,7 +27,7 @@ function App() {
             ></img>
         <Routes>
           <Route exact path='/' element={<Home/>} />
-          <Route path="/logicielsDev" element={<LogicielsDev />} />
+          <Route path="/nosServices" element={<NosServices />} />
           <Route path="/materielReseau" element={<MaterielReseau />} />
           <Route path="/print" element={<Print />} />
           <Route path="/data" element={<Data />} ></Route>

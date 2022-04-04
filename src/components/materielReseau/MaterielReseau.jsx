@@ -33,7 +33,7 @@ function MaterielReseau() {
           </Link>
         </div>
         <div class="card">
-          <Link to="/">
+          <Link to="/materielReseau/materielsInformatiques">
             <div class="face face1">
               <div class="content">
                 <div class="icon">

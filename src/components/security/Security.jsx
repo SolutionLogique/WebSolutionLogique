@@ -1,4 +1,4 @@
-import "./rgpd.scss";
+import "./security.scss";
 
 function Security() {
   return (
