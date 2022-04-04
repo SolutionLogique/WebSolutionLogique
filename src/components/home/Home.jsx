@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
+import { Link } from "react-router-dom";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -78,12 +79,14 @@ function Home() {
           </div>
           <div className="home_services">
             <div className="home_services_card">
-              <FontAwesomeIcon
-                className="home_services_icon"
-                icon={faComputer}
-              />
-              <h1>Matériels Informatique</h1>
-              <p>Optez pour une solution sur mesure</p>
+              <Link to="/materielsInformatiques">
+                <FontAwesomeIcon
+                  className="home_services_icon"
+                  icon={faComputer}
+                />
+                <h1>Matériels Informatique</h1>
+                <p>Optez pour une solution sur mesure</p>
+              </Link>
             </div>
             <div className="home_services_card">
               <FontAwesomeIcon className="home_services_icon" icon={faServer} />
@@ -91,27 +94,44 @@ function Home() {
               <p>Lorem Ipsum is simply dummy text</p>
             </div>
             <div className="home_services_card">
-              <FontAwesomeIcon className="home_services_icon" icon={faPrint} />
-              <h1>Système d'impression</h1>
-              <p>Mettez-vous à la page</p>
+              <Link to="/print">
+                <FontAwesomeIcon
+                  className="home_services_icon"
+                  icon={faPrint}
+                />
+                <h1>Système d'impression</h1>
+                <p>Mettez-vous à la page</p>
+              </Link>
             </div>
             <div className="home_services_card">
-              <FontAwesomeIcon
-                className="home_services_icon"
-                icon={faFloppyDisk}
-              />
-              <h1>Sauvegarde de données</h1>
-              <p>Lorem Ipsum is simply dummy text</p>
+              <Link to="/data">
+                <FontAwesomeIcon
+                  className="home_services_icon"
+                  icon={faFloppyDisk}
+                />
+                <h1>Sauvegarde de données</h1>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </Link>
             </div>
             <div className="home_services_card">
-              <FontAwesomeIcon className="home_services_icon" icon={faPhone} />
-              <h1>Opérateur Télécom</h1>
-              <p>Protégez vos données</p>
+              <Link to="/telecom">
+                <FontAwesomeIcon
+                  className="home_services_icon"
+                  icon={faPhone}
+                />
+                <h1>Opérateur Télécom</h1>
+                <p>Protégez vos données</p>
+              </Link>
             </div>
             <div className="home_services_card">
-              <FontAwesomeIcon className="home_services_icon" icon={faShield} />
-              <h1>Sécurité Informatique</h1>
-              <p>Lorem Ipsum is simply dummy text</p>
+              <Link to="/security">
+                <FontAwesomeIcon
+                  className="home_services_icon"
+                  icon={faShield}
+                />
+                <h1>Sécurité Informatique</h1>
+                <p>Lorem Ipsum is simply dummy text</p>
+              </Link>
             </div>
           </div>
         </div>

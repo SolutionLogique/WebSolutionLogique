@@ -2,7 +2,9 @@ import "./competence.scss"
 
 function Competence() {
   return (
-    <div>Competence</div>
+    <div>
+      <h1></h1>
+    </div>
   )
 }
 

@@ -1,4 +1,8 @@
 .card_home_page {
+  a{
+    text-decoration: none;
+    color: white;
+  }
   .device_sli {
     max-width: 100%;
     text-align: center;
@@ -161,7 +165,7 @@
 
     .rec.rec-arrow {
       visibility: hidden;
-  }
+    }
 
     .sc-ftvSup {
       background-color: white;
@@ -180,11 +184,12 @@
       width: 10px;
       box-shadow: 0 0 1px 3px #04a2df;
       outline: none;
+      background-color: white;
 
-    &:active{
-      color: #04a2df;
+      &:active {
+        color: #04a2df;
+      }
     }
-  }
 
     .rec.rec-arrow {
       border-radius: 0;

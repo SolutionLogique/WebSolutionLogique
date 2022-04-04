@@ -1,16 +1,24 @@
 import "./materielreseau.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComputer,faServer, faPrint, faDatabase,faNetworkWired, faShield } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+
 
 function MaterielReseau() {
   return (
     <div className="container">
-      <h1>Services informatique</h1>
+      <h1>Solutions informatiques</h1>
       <div class="container_card">
         <div class="card">
-          <Link to="/">
+          <Link to="MaterielsInformatiques">
             <div class="face face1">
               <div class="content">
-                <div class="icon">Add Images</div>
+                <div class="icon">
+                  <FontAwesomeIcon
+                    className="materiel_reseau_icons"
+                    icon={faComputer}
+                  />
+                </div>
               </div>
             </div>
             <div class="face face2">
@@ -28,12 +36,17 @@ function MaterielReseau() {
           <Link to="/">
             <div class="face face1">
               <div class="content">
-                <div class="icon">Add Images</div>
+                <div class="icon">
+                <FontAwesomeIcon
+                    className="materiel_reseau_icons"
+                    icon={faServer}
+                  />
+                </div>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <h3>Virtualisation / Serveur</h3>
+                <h3>Virtualisation & Serveur</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -46,12 +59,17 @@ function MaterielReseau() {
           <Link to="/">
             <div class="face face1">
               <div class="content">
-                <div class="icon">Add Images</div>
+                <div class="icon">
+                <FontAwesomeIcon
+                    className="materiel_reseau_icons"
+                    icon={faPrint}
+                  />
+                </div>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <h3>Imprimante / Copieur / Fax / Scanner</h3>
+                <h3>Système d'impression</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -67,11 +85,10 @@ function MaterielReseau() {
             <div class="face face1">
               <div class="content">
                 <div class="icon">
-                  <img
-                    alt="logo_solution_logique_informatique"
-                    href=""
-                    src="assets/print.png"
-                  ></img>
+                <FontAwesomeIcon
+                    className="materiel_reseau_icons"
+                    icon={faDatabase}
+                  />
                 </div>
               </div>
             </div>
@@ -90,12 +107,17 @@ function MaterielReseau() {
           <Link to="/Telecom">
             <div class="face face1">
               <div class="content">
-                <div class="icon">Add Images</div>
+                <div class="icon">
+                <FontAwesomeIcon
+                    className="materiel_reseau_icons"
+                    icon={faNetworkWired}
+                  />
+                </div>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <h3>Opérateur Télécom</h3>
+                <h3>Réseaux / Opérateur Télécom</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -108,12 +130,17 @@ function MaterielReseau() {
           <Link to="/">
             <div class="face face1">
               <div class="content">
-                <div class="icon">Add Images</div>
+                <div class="icon">
+                <FontAwesomeIcon
+                    className="materiel_reseau_icons"
+                    icon={faShield}
+                  />
+                </div>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <h3>Sécurité Internet</h3>
+                <h3>Sécurité Informatique</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's

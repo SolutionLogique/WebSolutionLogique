@@ -1,14 +1,15 @@
-import "./telecom.scss";
+import "./rgpd.scss";
 
-function Telecom() {
+function Security() {
   return (
     <div>
       <div className="container">
-        <h1>Opérateur Télécom</h1>
+        <h1>Sécurité Internet</h1>
         <h2>
-          Vous voulez accélérez le débit de vos connexions internet. Vous avez
-          besoin d’accéder rapidement à vos ressources d’entreprise au
-          quotidien. Enfin, vous souhaitez optimiser votre productivité.
+          Sécurité Internet Par Solution Logique : nous mettons en place d’une
+          manière cohérente tous les outils de connexion à distance avec
+          certification, pour réduire vos coûts d’exploitation avec plus de
+          performance et de réactivité.
         </h2>
         <div className="materiel_container">
           <div className="materiel_left_side">
@@ -25,7 +26,7 @@ function Telecom() {
               className="materiel_security"
               alt="logo_solution_logique_informatique"
               href=""
-              src="assets/telecom.jpg"
+              src="assets/security.png"
             ></img>
           </div>
         </div>
@@ -34,4 +35,4 @@ function Telecom() {
   );
 }
 
-export default Telecom;
+export default Security;
