@@ -5,25 +5,26 @@ function Print() {
     <div>
       <div className="container">
         <h1>Matériels Informatiques</h1>
-        <h2>
-          Avec recto-verso automatique, chargeur automatique de documents,
-          multi-bac papier, vitesse d’impression, nous vous conseillons sur le
-          modèle d’imprimante multifonction correspondant le mieux à votre
-          besoin. De plus, nous proposons également des imprimantes réseau
-          Ethernet ou sans fil Wi-Fi, partagées entre plusieurs ordinateurs de
-          votre réseau d’entreprise.
-        </h2>
-        <h1>Système d'impression :</h1>
+        <h2 className="services_sub_title">Gérez les flux de vos documents et faîtes forte impression</h2>
+        <h3>Imprimante / Copieur / Fax / Scanner :</h3>
         <div className="materiel_container">
           <div className="materiel_left_side">
-            <li>Meilleure organisation et gain de temps.</li>
-            <li>Communication & Image professionnelles.</li>
-            <li>Impressions de qualité.</li>
-            <li>Lancements et volumes d’impression selon vos besoins.</li>
             <li>
-              Stock maîtrisé en flux tendu pour le respect de l’environnement
+              Meilleure <span>organisation</span> et <span>gain de temps</span>.
             </li>
-            <li>Une mise à jour constante de vos supports</li>
+            <li>
+              <span>Communication</span> & Image professionnelles.
+            </li>
+            <li>
+              <span>Impressions</span> de <span>qualité</span>.
+            </li>
+            <li>
+              Lancements et <span>volumes d’impression</span> selon vos besoins.
+            </li>
+            <li>
+              Stock maîtrisé en flux tendu pour le <span>respect de l’environnement</span>.
+            </li>
+            <li>Une <span>mise à jour constante</span> de vos supports.</li>
           </div>
           <div className="materiel_right_side">
             <img

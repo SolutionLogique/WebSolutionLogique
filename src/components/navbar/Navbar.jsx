@@ -19,34 +19,34 @@ function Navbar() {
       </li>
       <ul>
         <li class="deroulant">
-          <a href="#">Matériel & Réseau &ensp;</a>
+          <a>Matériel & Réseau &ensp;</a>
           <ul class="sous">
             <li>
               <Link to="/materielsInformatiques">
-                <a href="#">Matériels Informatiques</a>
+                <a>Matériels Informatiques</a>
               </Link>
             </li>
             <li>
-              <a href="#">Virtualisation / Serveurs</a>
+              <a>Virtualisation / Serveurs</a>
             </li>
             <li>
               <Link to="/print">
-                <a href="#">Imprimante</a>
+                <a>Imprimante</a>
               </Link>
             </li>
             <li>
               <Link to="/data">
-                <a href="#">Sauvegarde de données</a>
+                <a>Sauvegarde de données</a>
               </Link>
             </li>
             <li>
               <Link to="/telecom">
-                <a href="#">Opérateur Télécom</a>
+                <a>Opérateur Télécom</a>
               </Link>
             </li>
             <li>
               <Link to="/security">
-                <a href="#">Sécurité Internet</a>
+                <a>Sécurité Internet</a>
               </Link>
             </li>
           </ul>

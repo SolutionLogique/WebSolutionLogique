@@ -1,8 +1,25 @@
+.services_sub_title{
+    padding-bottom: 50px;
+    font-size: 1.2em;
+}
+
 .materiel_container{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+
+
+    @keyframes myAnim {
+        0% {
+          transform: scale(1);
+        }
+      
+        100% {
+          transform: scale(1.1);
+        }
+      }
     
     .materiel_left_side{
         width: 60%;

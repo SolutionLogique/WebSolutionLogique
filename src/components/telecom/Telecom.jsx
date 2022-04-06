@@ -5,20 +5,38 @@ function Telecom() {
     <div>
       <div className="container">
         <h1>Opérateur Télécom</h1>
-        <h2>
+        <h2 className="services_sub_title">
           Vous voulez accélérez le débit de vos connexions internet. Vous avez
           besoin d’accéder rapidement à vos ressources d’entreprise au
-          quotidien. Enfin, vous souhaitez optimiser votre productivité.
+          quotidien.
         </h2>
+        <h3>
+          Solution Logique, Opérateur Telecom, vous propose des solutions
+          concrètes pour améliorer vos communications :
+        </h3>
         <div className="materiel_container">
           <div className="materiel_left_side">
-            <li>Sites distants.</li>
-            <li>Téléphonie sur IP.</li>
-            <li>Connexion Wifi.</li>
-            <li>Redondance de ligne.</li>
-            <li>Ligne ADSL</li>
-            <li>Ligne SDSL haute débit</li>
-            <li>Fibre Optique</li>
+            <li>
+              <span>Sites distants</span>.
+            </li>
+            <li>
+              <span>Téléphonie sur IP</span>.
+            </li>
+            <li>
+              <span>Connexion Wifi</span>.
+            </li>
+            <li>
+              <span>Redondance de ligne</span>.
+            </li>
+            <li>
+              <span>Ligne ADSL</span>.
+            </li>
+            <li>
+              <span>Ligne SDSL haute débit</span>.
+            </li>
+            <li>
+              <span>Fibre Optique</span>.
+            </li>
           </div>
           <div className="materiel_right_side">
             <img
