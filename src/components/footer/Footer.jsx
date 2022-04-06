@@ -10,7 +10,7 @@ function Footer() {
         <div className="row">
           <div className="footer-col">
             <h4>Navigation</h4>
-            <ul>
+            <ul className="footer_point">
               <li>
                 <Link to="/">
                 Accueil
@@ -35,7 +35,7 @@ function Footer() {
           </div>
           <div className="footer-col">
             <h4>Address</h4>
-            <ul>
+            <ul className="footer_point">
               <li>Solution Logique Informatique</li>
               <li>475 Route des Vernes</li>
               <li>74370 Annecy</li>

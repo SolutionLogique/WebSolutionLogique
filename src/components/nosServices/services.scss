@@ -1,33 +1,112 @@
 .services_tabs{
-    padding: 100px 0;
+    padding-top: 100px;
 }
 
 .tabs {
   display: flex;
   cursor: pointer;
+  font-size: 1.1em;
 }
 .tab {
   width: 33%;
   text-align: center;
   padding: 1em;
   margin: 0 0.2em;
+  border-radius: 15px;
+
+  .icon_tab_content{
+    padding-right: 15px;
+    font-size: 20px;
+  }
 }
 .tab.actif {
   background: #04a2df;
   color: white;
-}
+  animation: myAnim 1s ease 0s 1 normal forwards;
 
-.title_content {
-  font-size: 2em;
-  color: white;
+  @keyframes myAnim {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      transform: scale(1);
+    }
+  
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      transform: scale(1.1);
+    }
+  }
+  
 }
 
 .content {
   margin: 0 0.2em;
   padding: 1em;
   display: none;
+
+  .title_content{
+    font-size: 3.5em;
+  }
+
+  .tab_content{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      animation: imganim 1s ease 0s 1 normal forwards;
+
+      @keyframes imganim {
+        0% {
+          transform: scale(0.5);
+        }
+        
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .tab_content_left_side{
+          width: 50%;
+
+          li{
+            padding-bottom: 15px;
+            list-style-type: square;
+          }
+
+          span{
+            font-weight: 600;
+            color: #04a2df;
+          }
+
+          .title_tab{
+            font-size: 1.1em;
+            font-weight: 600;
+            padding-bottom: 10px;
+            color: #04a2df;
+          }
+      }
+
+      .tab_content_right_side{
+          width: 50%;
+          text-align: center;
+
+          img{
+              width: 80%;
+              border-radius: 50px;
+              cursor: pointer;
+              animation: imganim 1s ease 0s 1 normal forwards;
+
+              @keyframes imganim {
+                0% {
+                  transform: scale(0.5);
+                }
+                
+                100% {
+                  transform: scale(1);
+                }
+              }
+          }
+      }
+  }
 }
 .content.actif {
-    background: #04a2df;
   display: block;
 }

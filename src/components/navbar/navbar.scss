@@ -62,6 +62,43 @@
     width: 150px;
     cursor: pointer;
   }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+  }
+
+  .sous {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    li {
+      flex: 1 1 auto;
+      text-align: left;
+    }
+
+    a {
+      padding: 10px;
+      border-bottom: none;
+    }
+  }
+
+  > ul li:hover .sous {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .deroulant > a::after {
+    content: " ▼";
+    font-size: 12px;
+  }
 }
 
 nav li,

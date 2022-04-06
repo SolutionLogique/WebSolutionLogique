@@ -144,7 +144,7 @@ function Home() {
               className="img_right_side"
               alt="logo_solution_logique_informatique"
               href=""
-              src="assets/help.jpg"
+              src="assets/assistance.png"
             ></img>
           </div>
           <div className="home_conseils_sli_right">
@@ -249,5 +249,5 @@ function Home() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
+
 export default Home;

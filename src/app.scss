@@ -150,3 +150,58 @@ h1 {
     100% 0%
   );
 }
+
+.home_conseils_sli {
+  width: 100%;
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+
+  .home_conseils_sli_left {
+    width: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .home_conseils_sli_right {
+    text-align: center;
+    width: 60%;
+
+    h2 {
+      padding-bottom: 15px;
+    }
+
+    p {
+      padding-bottom: 50px;
+    }
+
+    .btn_help {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 2rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      backface-visibility: hidden;
+      border: 0.3rem solid transparent;
+      border-radius: 3rem;
+    }
+
+    .btn_help_right {
+      border-color: transparent;
+      background-color: #04a2df;
+      color: white;
+      transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    }
+
+    .btn_help_right:hover {
+      transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    }
+  }
+}
