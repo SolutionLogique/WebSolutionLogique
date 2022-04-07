@@ -1,6 +1,6 @@
-import "./security.scss";
+import "./securite.scss";
 
-function Security() {
+function Securite() {
   return (
     <div>
       <div className="container">
@@ -36,4 +36,4 @@ function Security() {
   );
 }
 
-export default Security;
+export default Securite;

@@ -15,38 +15,30 @@ function Navbar() {
         <Link to="/">Accueil</Link>
       </li>
       <li>
-        <Link to="/nosServices">Nos Services</Link>
+        <Link to="/nosServices">Nos logiciels EBP/ Formations</Link>
       </li>
       <ul>
         <li class="deroulant">
-          <a>Matériel & Réseau &ensp;</a>
+          <a>Nos Services &ensp;</a>
           <ul class="sous">
             <li>
-              <Link to="/materielsInformatiques">
-                <a>Matériels Informatiques</a>
+              <Link to="/informatique">
+                <a>Informatique</a>
               </Link>
             </li>
             <li>
-              <a>Virtualisation / Serveurs</a>
-            </li>
-            <li>
-              <Link to="/print">
-                <a>Imprimante</a>
+              <Link to ="/telecom">
+              <a>Télécom</a>
               </Link>
             </li>
             <li>
-              <Link to="/data">
-                <a>Sauvegarde de données</a>
+              <Link to="/securite">
+                <a>Sécurité</a>
               </Link>
             </li>
             <li>
-              <Link to="/telecom">
-                <a>Opérateur Télécom</a>
-              </Link>
-            </li>
-            <li>
-              <Link to="/security">
-                <a>Sécurité Internet</a>
+              <Link to="/web">
+                <a>Web</a>
               </Link>
             </li>
           </ul>

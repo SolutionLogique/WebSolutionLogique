@@ -1,12 +1,10 @@
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import NosServices from "./components/nosServices/NosServices";
-import MaterielReseau from "./components/materielReseau/MaterielReseau";
-import MaterielsInformatiques from "./components/materielsInformatiques/MaterielsInformatiques";
-import Print from "./components/print/Print";
-import Data from "./components/data/Data";
+import Informatique from "./components/informatique/Informatique";
+import Web from "./components/web/Web"
 import Telecom from "./components/telecom/Telecom";
-import Security from "./components/security/Security";
+import Securite from "./components/securite/Securite";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -28,12 +26,10 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route path="/nosServices" element={<NosServices />} />
-          <Route path="/materielReseau" element={<MaterielReseau />} />
-          <Route path="/print" element={<Print />} />
-          <Route path="/data" element={<Data />} ></Route>
+          <Route path="/web" element={<Web />} />
+          <Route path="/informatique" element={<Informatique />} />
           <Route path="/telecom" element={<Telecom />} ></Route>
-          <Route path="/security" element={<Security />} ></Route>
-          <Route path="/materielsInformatiques" element={<MaterielsInformatiques />} />
+          <Route path="/securite" element={<Securite />} ></Route>
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer/>

@@ -1,10 +1,10 @@
-import "./materielreseau.scss";
+import "./informatique.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputer,faServer, faPrint, faDatabase,faNetworkWired, faShield } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 
-function MaterielReseau() {
+function Informatique() {
   return (
     <div className="container">
       <h1>Solutions informatiques</h1>
@@ -175,4 +175,4 @@ function MaterielReseau() {
   );
 }
 
-export default MaterielReseau;
+export default Informatique;
