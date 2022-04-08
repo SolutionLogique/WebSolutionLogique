@@ -38,7 +38,7 @@ function Contact() {
               Accédez à la télémaintenance pour que Solution Logique intervienne
               directement sur votre ordinateur.
             </p>
-            <a href="/" class="btn_help btn_help_right">
+            <a href="https://www.islonline.com/fr/fr/join/" class="btn_help btn_help_right" target="blank">
               Besoin d'aide ?
             </a>{" "}
           </div>

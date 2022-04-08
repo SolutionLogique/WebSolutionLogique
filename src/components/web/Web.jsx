@@ -2,7 +2,9 @@ import "./web.scss";
 
 function Web() {
   return (
-    <div>Web</div>
+    <div>
+        
+    </div>
   )
 }
 

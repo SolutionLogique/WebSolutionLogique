@@ -15,35 +15,40 @@ function Navbar() {
         <Link to="/">Accueil</Link>
       </li>
       <li>
-        <Link to="/nosServices">Nos logiciels EBP/ Formations</Link>
+        <Link to="/logicielsEbp">Nos logiciels EBP/ Formations</Link>
       </li>
       <ul>
         <li class="deroulant">
-          <a>Nos Services &ensp;</a>
+          <Link to="/nosServices">
+         Nos Services &ensp;
+          </Link>
           <ul class="sous">
             <li>
               <Link to="/informatique">
-                <a>Informatique</a>
+                Informatique
               </Link>
             </li>
             <li>
               <Link to ="/telecom">
-              <a>Télécom</a>
+              Télécom
               </Link>
             </li>
             <li>
               <Link to="/securite">
-                <a>Sécurité</a>
+                Sécurité
               </Link>
             </li>
             <li>
               <Link to="/web">
-                <a>Web</a>
+                Web
               </Link>
             </li>
           </ul>
         </li>
       </ul>
+      <li>
+        <a href="https://www.islonline.com/fr/fr/join/" target="blank">Télémaintenance</a>
+      </li>
       <li>
         <Link to="/contact">Contactez nous</Link>
       </li>

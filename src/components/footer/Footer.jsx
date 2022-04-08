@@ -12,24 +12,16 @@ function Footer() {
             <h4>Navigation</h4>
             <ul className="footer_point">
               <li>
-                <Link to="/">
-                Accueil
-                </Link>
+                <Link to="/">Accueil</Link>
               </li>
               <li>
-                <Link to="/nosServices">
-                Logiciels & Développement
-                </Link>
+                <Link to="/logicielsEBP">Nos Logiciels EBP / Formations</Link>
               </li>
               <li>
-                <Link to="/materielReseau">
-                Matériel & Réseau
-                </Link>
+                <Link to="/nosServices">Nos Services</Link>
               </li>
               <li>
-                <Link to="/contact">
-                  Contactez nous
-                </Link>
+                <Link to="/contact">Contactez nous</Link>
               </li>
             </ul>
           </div>
