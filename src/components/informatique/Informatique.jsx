@@ -1,176 +1,159 @@
 import "./informatique.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComputer,faServer, faPrint, faDatabase,faNetworkWired, faShield } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-
+import {
+  faComputer,
+  faServer,
+  faSitemap,
+  faNetworkWired,
+  faCamera,
+  faHouseLaptop,
+  faShieldVirus,
+  faTimeline,
+  faPeopleGroup,
+  faFloppyDisk,
+  faCloud,
+  faEnvelopesBulk,
+  faWindowClose,
+  faCloudArrowUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Informatique() {
   return (
     <div className="container">
       <h1>Solutions informatiques</h1>
-      <div class="container_card">
-        <div class="card">
-          <Link to="MaterielsInformatiques">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <FontAwesomeIcon
-                    className="materiel_reseau_icons"
-                    icon={faComputer}
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>Matériels Informatique</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div class="card">
-          <Link to="/materielReseau/materielsInformatiques">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                <FontAwesomeIcon
-                    className="materiel_reseau_icons"
-                    icon={faServer}
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>Virtualisation & Serveur</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div class="card">
-          <Link to="/">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                <FontAwesomeIcon
-                    className="materiel_reseau_icons"
-                    icon={faPrint}
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>Système d'impression</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
-      <div class="container_card">
-        <div class="card">
-          <Link to="/">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                <FontAwesomeIcon
-                    className="materiel_reseau_icons"
-                    icon={faDatabase}
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>Sauvegarde de Données</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div class="card">
-          <Link to="/Telecom">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                <FontAwesomeIcon
-                    className="materiel_reseau_icons"
-                    icon={faNetworkWired}
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>Réseaux / Opérateur Télécom</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div class="card">
-          <Link to="/">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                <FontAwesomeIcon
-                    className="materiel_reseau_icons"
-                    icon={faShield}
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>Sécurité Informatique</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
-      <div className="home_conseils_sli">
-          <div className="home_conseils_sli_left">
+      <div className="container">
+        <h2 className="informatique_section_title">Infrastructure</h2>
+        <div className="card_informatique">
+          <div className="card_informatique_left_side">
             <img
-              className="img_right_side"
               alt="logo_solution_logique_informatique"
               href=""
-              src="assets/assistance.png"
+              src="assets/infrastructure.jpg"
             ></img>
           </div>
-          <div className="home_conseils_sli_right">
-            <h1>Nous contacter</h1>
-            <h2>Besoin d'une aide en télémaintenance ?</h2>
-            <p>
-              Accédez à la télémaintenance pour que Solution Logique intervienne
-              directement sur votre ordinateur.
-            </p>
-            <a href="/" class="btn_help btn_help_right">
-              Besoin d'aide ?
-            </a>{" "}
+          <div className="card_informatique_right_side">
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faComputer}
+              />
+              <h3>Matériel Informatique</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon className="icons_informatique" icon={faServer} />
+              <h3>Serveur et stockage</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faSitemap}
+              />
+              <h3>Interconnexion de sites</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faNetworkWired}
+              />
+              <h3>Virtualisation de l'infrastructure</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon className="icons_informatique" icon={faCamera} />
+              <h3>Vidéo surveillance</h3>
+            </div>
           </div>
+        </div>
+        <h2 className="informatique_section_title">
+          Environnement utilisateur
+        </h2>
+        <div className="card_informatique">
+          <div className="card_informatique_left_side">
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faHouseLaptop}
+              />
+              <h3>Poste de travail</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faShieldVirus}
+              />
+              <h3>Sécurité Antivirus</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faTimeline}
+              />
+              <h3>Interconnexion de sites</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faPeopleGroup}
+              />
+              <h3>Outils Collaboratif</h3>
+            </div>
           </div>
+          <div className="card_informatique_right_side">
+            <img
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/environnement.jpg"
+            ></img>
+          </div>
+        </div>
+        <h2 className="informatique_section_title">Hébergement & Cloud</h2>
+        <div className="card_informatique">
+          <div className="card_informatique_left_side">
+            <img
+              alt="logo_solution_logique_informatique"
+              href=""
+              src="assets/hebergement.jpg"
+            ></img>
+          </div>
+          <div className="card_informatique_right_side">
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faCloudArrowUp}
+              />
+              <h3>Sauvegarde externalisé</h3>
+            </div>
+
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faFloppyDisk}
+              />
+              <h3>Sauvegarde sur place</h3>
+            </div>
+
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faWindowClose}
+              />
+              <h3>Hébergement de site web</h3>
+            </div>
+
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faEnvelopesBulk}
+              />
+              <h3>Hébergement et gestion des boites mails</h3>
+            </div>
+
+            <div className="informations_informatique">
+              <FontAwesomeIcon className="icons_informatique" icon={faCloud} />
+              <h3>Stockage de données sur le cloud</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

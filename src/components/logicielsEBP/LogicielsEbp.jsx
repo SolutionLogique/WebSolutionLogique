@@ -3,46 +3,46 @@ import "./logicielsebp.scss";
 function LogicielsEbp() {
   return (
     <div>
-      <div class="profile-card">
-        <div class="container">
-          <h2 class="heading">Animated Profile Cards</h2>
-          <div class="card-grid">
-            <div class="card card0">
-              <div class="overlay">
-                <div class="content">
+      <div className="profile-card">
+        <div className="container">
+          <h1 className="heading_logiciels">Nos Logiciels EBP </h1>
+          <div className="card-grid">
+            <div className="card card0">
+              <div className="overlay">
+                <div className="content">
                   <h2>Comptabilité</h2>
                   <p>
                     "Optimisez la gestion de votre trésorerie et analysez la
                     santé financière de votre entreprise avec nos logiciels de
                     comptabilité."
                   </p>
-                  <a class="learn-more-btn" href="#">
+                  <a className="learn-more-btn" href="#">
                     En savoir plus
                   </a>
                 </div>
               </div>
             </div>
             <div
-              class="card card1"
+              className="card card1"
               style={{ backgroundImage: "url(/assets/compta.jpg)" }}
             >
-              <div class="overlay">
-                <div class="content">
+              <div className="overlay">
+                <div className="content">
                   <h2>Gestion Commerciale</h2>
                   <p>
                     "Gérez tous les aspects commerciaux de votre entreprise et
                     gagnez en efficacité avec nos logiciels de Gestion
                     Commerciale"
                   </p>
-                  <a class="learn-more-btn" href="#">
+                  <a className="learn-more-btn" href="#">
                     En savoir plus
                   </a>
                 </div>
               </div>
             </div>
-            <div class="card card2">
-              <div class="overlay">
-                <div class="content">
+            <div className="card card2">
+              <div className="overlay">
+                <div className="content">
                   <h2>Batiment</h2>
                   <p>
                     "Optimisez la rentabilité de vos chantiers, chiffrez et
@@ -50,7 +50,64 @@ function LogicielsEbp() {
                     quotidien pour vous consacrer pleinement à votre cœur de
                     métier : le chantier !"
                   </p>
-                  <a class="learn-more-btn" href="#">
+                  <a className="learn-more-btn" href="#">
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="profile-card">
+        <div className="container">
+          <h1>Nos Formations</h1>
+          <div className="card-grid">
+            <div className="card card0">
+              <div className="overlay">
+                <div className="content">
+                  <h2>Comptabilité</h2>
+                  <p>
+                    "Optimisez la gestion de votre trésorerie et analysez la
+                    santé financière de votre entreprise avec nos logiciels de
+                    comptabilité."
+                  </p>
+                  <a className="learn-more-btn" href="#">
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              className="card card1"
+              style={{ backgroundImage: "url(/assets/compta.jpg)" }}
+            >
+              <div className="overlay">
+                <div className="content">
+                  <h2>Gestion Commerciale</h2>
+                  <p>
+                    "Gérez tous les aspects commerciaux de votre entreprise et
+                    gagnez en efficacité avec nos logiciels de Gestion
+                    Commerciale"
+                  </p>
+                  <a className="learn-more-btn" href="#">
+                    En savoir plus
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card card2">
+              <div className="overlay">
+                <div className="content">
+                  <h2>Batiment</h2>
+                  <p>
+                    "Optimisez la rentabilité de vos chantiers, chiffrez et
+                    facturez efficacement et gagnez un temps précieux au
+                    quotidien pour vous consacrer pleinement à votre cœur de
+                    métier : le chantier !"
+                  </p>
+                  <a className="learn-more-btn" href="#">
                     En savoir plus
                   </a>
                 </div>

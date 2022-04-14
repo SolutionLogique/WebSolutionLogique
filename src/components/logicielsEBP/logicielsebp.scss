@@ -1,13 +1,11 @@
-h2.heading {
-    padding: 50px 0;
-    text-align: center;
-    color: #fff;
+.heading_logiciels{
+    padding-bottom: 50px;
 }
 .profile-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding: 50px;
 }
 .card-grid {
 display: flex;
@@ -17,11 +15,14 @@ display: flex;
     height: 400px;
     display: block;
     border-radius: 10px;
-    background: #fff;
     overflow: hidden;
     position: relative;
     filter: blur(1px);
     transition: background 0.8s linear;
+
+    img{
+        width: 50%;
+    }
 }
 .card0 {
     background-size: 400px;
@@ -40,12 +41,16 @@ display: flex;
 .overlay {
     opacity: 1;
     height: 100%;
-    padding: 20px;
+    padding: 20px 10px 0px 10px;
     transition: opacity 0.8s linear;
+
+    &:hover{
+        background-color: white;
+        opacity: 0.90;
+        transition: background 0.8s linear;
+    }
 }
-h2, p {
-    color: #fff;
-}
+
 .content > h2 {
     margin-bottom: 10px;
 }
@@ -53,8 +58,12 @@ h2, p {
 .content {
     height: 90%;
     position: relative;
-    right: -300px;
-    transition:right 0.8s linear;
+    right: -375px;
+    transition: right 0.8s linear;
+
+    p{
+        color: black;
+    }
 }
 .card:hover .content {
     right: 0;
@@ -66,7 +75,7 @@ h2, p {
     position: absolute;
     right: 0;
     bottom: 0;
-    color: #fff;
+    color: black;
     text-decoration: unset;
     padding: 5px 10px;
     border: 1px solid;

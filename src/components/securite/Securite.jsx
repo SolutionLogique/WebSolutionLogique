@@ -1,34 +1,47 @@
 import "./securite.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSitemap,
+  faNetworkWired,
+  faCamera,
+  faShieldVirus,
+  faFileShield,
+  faShieldHeart,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Securite() {
   return (
-    <div>
+<div className="container">
+      <h1>Solutions Sécurité</h1>
       <div className="container">
-      <h1>Sécurité Internet</h1>
-        <h2 className="services_sub_title">
-        Sécurité Internet Par Solution Logique : nous mettons en place d’une
-          manière cohérente tous les outils de connexion à distance avec
-          certification, pour réduire vos coûts d’exploitation avec plus de
-          performance et de réactivité.
-        </h2>
-        <h3>Solution Logique : Vous conseille dans votre projet pour le déploiement, l’installation et le paramétrage des différentes solutions de sécurité :</h3>
-        <div className="materiel_container">
-          <div className="materiel_left_side">
-            <li>Sites distants.</li>
-            <li>Téléphonie sur IP.</li>
-            <li>Connexion Wifi.</li>
-            <li>Redondance de ligne.</li>
-            <li>Ligne ADSL</li>
-            <li>Ligne SDSL haute débit</li>
-            <li>Fibre Optique</li>
-          </div>
-          <div className="materiel_right_side">
+        <h2 className="informatique_section_title">Sécurité du SI</h2>
+        <div className="card_informatique">
+          <div className="card_informatique_left_side">
             <img
-              className="materiel_security"
               alt="logo_solution_logique_informatique"
               href=""
-              src="assets/security.png"
+              src="assets/securite.jpg"
             ></img>
+          </div>
+          <div className="card_informatique_right_side">
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faShieldVirus}
+              />
+              <h3>Sécurité de l'infrastructure</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faShieldHeart}
+              />
+              <h3>Sécurité du réseau</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon className="icons_informatique" icon={faFileShield} />
+              <h3>Sécurité des données</h3>
+            </div>
           </div>
         </div>
       </div>
