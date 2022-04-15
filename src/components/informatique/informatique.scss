@@ -5,7 +5,7 @@
 
   & {
     animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-fill-mode: both;
   }
   @-webkit-keyframes fadeIn {
@@ -43,7 +43,7 @@
 
     & {
       animation-name: slideInLeft;
-      animation-duration: 1s;
+      animation-duration: 3s;
       animation-fill-mode: both;
     }
     @-webkit-keyframes slideInLeft {
@@ -104,17 +104,8 @@
 
     & {
       animation-name: slideInRight;
-      animation-duration: 1s;
+      animation-duration: 3s;
       animation-fill-mode: both;
-    }
-    @-webkit-keyframes slideInRight {
-      0% {
-        transform: translateX(100%);
-        visibility: visible;
-      }
-      100% {
-        transform: translateX(0);
-      }
     }
     @keyframes slideInRight {
       0% {

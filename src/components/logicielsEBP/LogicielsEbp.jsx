@@ -1,4 +1,5 @@
 import "./logicielsebp.scss";
+import { Link } from "react-router-dom";
 
 function LogicielsEbp() {
   return (
@@ -16,9 +17,9 @@ function LogicielsEbp() {
                     santé financière de votre entreprise avec nos logiciels de
                     comptabilité."
                   </p>
-                  <a className="learn-more-btn" href="#">
-                    En savoir plus
-                  </a>
+                  <Link className="learn-more-btn" to="/ebpcomptabilite">
+                  En savoir plus
+                  </Link>
                 </div>
               </div>
             </div>
@@ -34,9 +35,9 @@ function LogicielsEbp() {
                     gagnez en efficacité avec nos logiciels de Gestion
                     Commerciale"
                   </p>
-                  <a className="learn-more-btn" href="#">
-                    En savoir plus
-                  </a>
+                  <Link className="learn-more-btn" to="/ebpgestionco">
+                  En savoir plus
+                  </Link>
                 </div>
               </div>
             </div>
@@ -50,9 +51,9 @@ function LogicielsEbp() {
                     quotidien pour vous consacrer pleinement à votre cœur de
                     métier : le chantier !"
                   </p>
-                  <a className="learn-more-btn" href="#">
-                    En savoir plus
-                  </a>
+                  <Link className="learn-more-btn" to="/ebpbatiment">
+                  En savoir plus
+                  </Link>
                 </div>
               </div>
             </div>
@@ -73,9 +74,9 @@ function LogicielsEbp() {
                     santé financière de votre entreprise avec nos logiciels de
                     comptabilité."
                   </p>
-                  <a className="learn-more-btn" href="#">
-                    En savoir plus
-                  </a>
+                  <Link className="learn-more-btn" to="/">
+                  En savoir plus
+                  </Link>
                 </div>
               </div>
             </div>
@@ -91,9 +92,9 @@ function LogicielsEbp() {
                     gagnez en efficacité avec nos logiciels de Gestion
                     Commerciale"
                   </p>
-                  <a className="learn-more-btn" href="#">
-                    En savoir plus
-                  </a>
+                  <Link className="learn-more-btn" to="/">
+                  En savoir plus
+                  </Link>
                 </div>
               </div>
             </div>
@@ -107,9 +108,9 @@ function LogicielsEbp() {
                     quotidien pour vous consacrer pleinement à votre cœur de
                     métier : le chantier !"
                   </p>
-                  <a className="learn-more-btn" href="#">
-                    En savoir plus
-                  </a>
+                  <Link className="learn-more-btn" to="/">
+                  En savoir plus
+                  </Link>
                 </div>
               </div>
             </div>

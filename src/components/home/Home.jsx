@@ -10,7 +10,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
-import { Link } from "react-router-dom";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },

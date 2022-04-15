@@ -1,0 +1,93 @@
+.ebp_gestion_co {
+    text-align: center;
+  
+    h2 {
+      font-size: 2em;
+      padding: 25px 0;
+    }
+  
+    p {
+      font-size: 1.2em;
+      padding: 5px 0;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+      padding: 25px;
+    }
+  
+    img {
+      width: 50%;
+      padding-bottom: 10px;
+    }
+  
+    .colum_software_gestion_co {
+      width: 100%;
+      display: flex;
+  
+      .comptabilite_icons {
+        padding-right: 10px;
+      }
+  
+      .colum_software_1 {
+        width: 33.33%;
+        .description_software {
+          padding-left: 100px;
+          p {
+            text-align: left;
+          }
+        }
+      }
+      .colum_software_2 {
+        width: 33.33%;
+        .description_software {
+          padding-left: 100px;
+          p {
+            text-align: left;
+          }
+        }
+      }
+      .colum_software_3 {
+        width: 33.33%;
+  
+        .description_software {
+          padding-left: 100px;
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+  
+    .button_bottom_page {
+      padding: 50px;
+  
+      .btn_help {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        backface-visibility: hidden;
+        border: 0.3rem solid transparent;
+        border-radius: 3rem;
+      }
+  
+      .btn_help_right {
+        border-color: transparent;
+        background-color: #04a2df;
+        color: white;
+        transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+      }
+  
+      .btn_help_right:hover {
+        transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+      }
+    }
+  }
+  
