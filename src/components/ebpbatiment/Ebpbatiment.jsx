@@ -1,6 +1,7 @@
 import "./ebpbatiment.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Ebpbatiment() {
   return (
@@ -187,14 +188,24 @@ function Ebpbatiment() {
             </div>
           </div>
         </div>
-        <div className="button_bottom_page">
-          <a
-            href="http://testsite.test/wp-content/uploads/2020/12/compta-elite-1.pdf"
-            class="btn_help btn_help_right"
-            target="blank"
-          >
-            En savoir plus ?
-          </a>
+        <div className="container">
+          <div className="buttons_more_ebp_pdf">
+            <div className="buttons_1_ebp">
+              <Link class="btn_help btn_help_right" to="/">
+                En savoir plus ?
+              </Link>
+            </div>
+            <div className="buttons_2_ebp">
+              <Link class="btn_help btn_help_right" to="/">
+                En savoir plus ?
+              </Link>
+            </div>
+            <div className="buttons_3_ebp">
+              <Link class="btn_help btn_help_right" to="/">
+                En savoir plus ?
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

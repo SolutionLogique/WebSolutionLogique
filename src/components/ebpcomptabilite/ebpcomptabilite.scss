@@ -87,3 +87,19 @@
       transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
     }
 }
+
+.buttons_more_ebp_pdf{
+  display: flex;
+  width: 100%;
+  padding: 50px 0;
+
+  .buttons_1_ebp{
+    width: 33.33%;
+  }
+  .buttons_2_ebp{
+    width: 33.33%;
+  }
+  .buttons_3_ebp{
+    width: 33.33%;
+  }
+}

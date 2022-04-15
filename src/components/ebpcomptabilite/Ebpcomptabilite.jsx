@@ -157,9 +157,25 @@ function Ebpcomptabilite() {
                 Personnaliastion du logiciel (fiches, vues, etc.)
               </p>
             </div>
-            <Link class="btn_help btn_help_right" to="/">
-              En savoir plus ?
-            </Link>
+          </div>
+        </div>
+        <div className="container">
+          <div className="buttons_more_ebp_pdf">
+            <div className="buttons_1_ebp">
+              <Link class="btn_help btn_help_right" to="/">
+                En savoir plus ?
+              </Link>
+            </div>
+            <div className="buttons_2_ebp">
+              <Link class="btn_help btn_help_right" to="/">
+                En savoir plus ?
+              </Link>
+            </div>
+            <div className="buttons_3_ebp">
+              <Link class="btn_help btn_help_right" to="/">
+                En savoir plus ?
+              </Link>
+            </div>
           </div>
         </div>
       </div>
