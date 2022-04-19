@@ -191,19 +191,13 @@ function Ebpgestionco() {
         <div className="container">
           <div className="buttons_more_ebp_pdf">
             <div className="buttons_1_ebp">
-              <Link class="btn_help btn_help_right" to="/">
-                En savoir plus ?
-              </Link>
+            <a className="btn_help btn_help_right" href="assets/ebp-logiciel-gestion-commerciale-activ-2022.pdf" target="blank">En savoir plus ?</a>
             </div>
             <div className="buttons_2_ebp">
-              <Link class="btn_help btn_help_right" to="/">
-                En savoir plus ?
-              </Link>
+            <a className="btn_help btn_help_right" href="assets/ebp-logiciel-gestion-commerciale-pro-2022.pdf" target="blank">En savoir plus ?</a>
             </div>
             <div className="buttons_3_ebp">
-              <Link class="btn_help btn_help_right" to="/">
-                En savoir plus ?
-              </Link>
+            <a className="btn_help btn_help_right" href="assets/ebp-logiciel-comptabilite-activ-2022.pdf" target="blank">En savoir plus ?</a>
             </div>
           </div>
         </div>

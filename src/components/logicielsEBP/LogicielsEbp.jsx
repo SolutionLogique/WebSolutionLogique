@@ -8,7 +8,12 @@ function LogicielsEbp() {
         <div className="container">
           <h1 className="heading_logiciels">Nos Logiciels EBP </h1>
           <div className="card-grid">
-            <div className="card card0">
+            <div
+              className="card card0"
+              style={{
+                backgroundImage: "url(/assets/compta.jpg)",
+              }}
+            >
               <div className="overlay">
                 <div className="content">
                   <h2>Comptabilité</h2>
@@ -18,14 +23,14 @@ function LogicielsEbp() {
                     comptabilité."
                   </p>
                   <Link className="learn-more-btn" to="/ebpcomptabilite">
-                  En savoir plus
+                    En savoir plus
                   </Link>
                 </div>
               </div>
             </div>
             <div
               className="card card1"
-              style={{ backgroundImage: "url(/assets/compta.jpg)" }}
+              style={{ backgroundImage: "url(/assets/gestion-co.jpg)" }}
             >
               <div className="overlay">
                 <div className="content">
@@ -36,12 +41,15 @@ function LogicielsEbp() {
                     Commerciale"
                   </p>
                   <Link className="learn-more-btn" to="/ebpgestionco">
-                  En savoir plus
+                    En savoir plus
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="card card2">
+            <div
+              className="card card2"
+              style={{ backgroundImage: "url(/assets/batiments.jpg)" }}
+            >
               <div className="overlay">
                 <div className="content">
                   <h2>Batiment</h2>
@@ -52,7 +60,7 @@ function LogicielsEbp() {
                     métier : le chantier !"
                   </p>
                   <Link className="learn-more-btn" to="/ebpbatiment">
-                  En savoir plus
+                    En savoir plus
                   </Link>
                 </div>
               </div>
@@ -65,7 +73,12 @@ function LogicielsEbp() {
         <div className="container">
           <h1>Nos Formations</h1>
           <div className="card-grid">
-            <div className="card card0">
+            <div
+              className="card card0"
+              style={{
+                backgroundImage: "url(/assets/compta.jpg)",
+              }}
+            >
               <div className="overlay">
                 <div className="content">
                   <h2>Comptabilité</h2>
@@ -75,14 +88,14 @@ function LogicielsEbp() {
                     comptabilité."
                   </p>
                   <Link className="learn-more-btn" to="/">
-                  En savoir plus
+                    En savoir plus
                   </Link>
                 </div>
               </div>
             </div>
             <div
               className="card card1"
-              style={{ backgroundImage: "url(/assets/compta.jpg)" }}
+              style={{ backgroundImage: "url(/assets/gestion-co.jpg)" }}
             >
               <div className="overlay">
                 <div className="content">
@@ -93,12 +106,15 @@ function LogicielsEbp() {
                     Commerciale"
                   </p>
                   <Link className="learn-more-btn" to="/">
-                  En savoir plus
+                    En savoir plus
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="card card2">
+            <div
+              className="card card2"
+              style={{ backgroundImage: "url(/assets/batiments.jpg)" }}
+            >
               <div className="overlay">
                 <div className="content">
                   <h2>Batiment</h2>
@@ -109,7 +125,7 @@ function LogicielsEbp() {
                     métier : le chantier !"
                   </p>
                   <Link className="learn-more-btn" to="/">
-                  En savoir plus
+                    En savoir plus
                   </Link>
                 </div>
               </div>

@@ -21,20 +21,21 @@ display: flex;
     transition: background 0.8s linear;
 
     img{
-        width: 50%;
+        width: 100%;
     }
+
 }
 .card0 {
-    background-size: 400px;
+    background-image: cover;
 }
 .card1 {
-    background-size: 400px;
+    background-image: cover;
 }
 .card2 {
-    background-size: 400px;
+    background-image: cover;
 }
 .card:hover {
-  background-size: 600px;
+  background-image: cover;
   background-position: left center;
   filter: unset; 
 }
@@ -43,6 +44,7 @@ display: flex;
     height: 100%;
     padding: 20px 10px 0px 10px;
     transition: opacity 0.8s linear;
+    border-radius: 25px;
 
     &:hover{
         background-color: white;

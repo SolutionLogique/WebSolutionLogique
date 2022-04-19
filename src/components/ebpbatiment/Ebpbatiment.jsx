@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Ebpbatiment() {
   return (
     <div>
-        <h1>EBP Batiments</h1>
+      <h1>EBP Batiments</h1>
       <div className="container ebp_batiment">
         <h2>3 gammes de produits</h2>
         <p>
@@ -191,25 +191,37 @@ function Ebpbatiment() {
         <div className="container">
           <div className="buttons_more_ebp_pdf">
             <div className="buttons_1_ebp">
-              <Link class="btn_help btn_help_right" to="/">
+              <a
+                className="btn_help btn_help_right"
+                href="assets/ebp-logiciel-batiment-2022.pdf"
+                target="blank"
+              >
                 En savoir plus ?
-              </Link>
+              </a>
             </div>
             <div className="buttons_2_ebp">
-              <Link class="btn_help btn_help_right" to="/">
+              <a
+                className="btn_help btn_help_right"
+                href="assets/ebp-logiciel-gestion-batiment-2022.pdf"
+                target="blank"
+              >
                 En savoir plus ?
-              </Link>
+              </a>
             </div>
             <div className="buttons_3_ebp">
-              <Link class="btn_help btn_help_right" to="/">
+              <a
+                className="btn_help btn_help_right"
+                href="assets/ebp-logiciel-expert-batiment-2022.pdf"
+                target="blank"
+              >
                 En savoir plus ?
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Ebpbatiment
+export default Ebpbatiment;
