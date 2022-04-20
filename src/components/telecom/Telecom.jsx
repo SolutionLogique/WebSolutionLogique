@@ -16,7 +16,9 @@ function Telecom() {
     <div className="container">
       <h1>Solutions Télécom</h1>
       <div className="container">
-        <h2 className="informatique_section_title">Téléphonie fixe et mobile</h2>
+        <h2 className="informatique_section_title">
+          Téléphonie fixe et mobile
+        </h2>
         <div className="card_informatique">
           <div className="card_informatique_left_side">
             <img
@@ -27,10 +29,7 @@ function Telecom() {
           </div>
           <div className="card_informatique_right_side">
             <div className="informations_informatique">
-              <FontAwesomeIcon
-                className="icons_informatique"
-                icon={faSignal}
-              />
+              <FontAwesomeIcon className="icons_informatique" icon={faSignal} />
               <h3>Téléphonie IP</h3>
             </div>
             <div className="informations_informatique">
@@ -60,9 +59,7 @@ function Telecom() {
             </div>
           </div>
         </div>
-        <h2 className="informatique_section_title">
-         Connectivité
-        </h2>
+        <h2 className="informatique_section_title">Connectivité</h2>
         <div className="card_informatique">
           <div className="card_informatique_left_side">
             <div className="informations_informatique">
@@ -80,10 +77,7 @@ function Telecom() {
               <h3>Accès à Internet</h3>
             </div>
             <div className="informations_informatique">
-              <FontAwesomeIcon
-                className="icons_informatique"
-                icon={faWifi}
-              />
+              <FontAwesomeIcon className="icons_informatique" icon={faWifi} />
               <h3>Accès sans fil - Wifi</h3>
             </div>
           </div>

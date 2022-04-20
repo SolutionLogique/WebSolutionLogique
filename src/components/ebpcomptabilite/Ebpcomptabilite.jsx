@@ -1,35 +1,23 @@
 import "./ebpcomptabilite.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 function Ebpcomptabilite() {
   return (
     <div>
       <h1>EBP Comptabilité</h1>
       <div className="container ebp_comptabilite">
-        <h2>3 gammes de produits</h2>
         <p>
-          La nouvelle génération de logiciels de Comptabilité laisse désormais
-          place à une nouvelle identité. Le découpage fonctionnel des logiciels
-          que vous connaissez actuellement (Classic, Pro, Ligne PME) fait
-          également peau neuve et sera dorénavant représenté par les gammes
-          suivantes :
+          Bien que la comptabilité soit une discipline universelle, chaque
+          activité détient ses propres spécificités : bilan et compte de
+          résultat (CSE, associations, etc.), gestion des dons fiscaux, dossiers
+          de gestion, etc. Pour répondre au mieux aux exigences de votre
+          métier/secteur, choisissez le logiciel de comptabilité qui facilite la
+          tenue de votre trésorerie.
         </p>
-        <h3>
-          <span>EBP Comptabilité</span> est une solution qui vous permet de
-          tenir votre comptabilité générale et analytique. L’échange des données
-          entre le logiciel EBP et la solution d’un cabinet d’Expert-Comptable
-          est intégré grâce à l’outil de Communication Entreprise-Expert.
-        </h3>
         <div className="colum_software_compta">
           <div className="colum_software_1">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/active.png"
-            ></img>
+            <h3 className="title_software">Logiciel Comptabilité ACTIV</h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
@@ -52,15 +40,19 @@ function Ebpcomptabilite() {
                 />
                 Tableau de bord
               </p>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-comptabilite-activ-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
           <div className="colum_software_2">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/pro.png"
-            ></img>
+            <h3 className="title_software">Logiciel Comptabilité PRO</h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
@@ -97,15 +89,19 @@ function Ebpcomptabilite() {
                 />
                 Gestion des impayés
               </p>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-comptabilite-pro-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
           <div className="colum_software_3">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/elite.png"
-            ></img>
+            <h3 className="title_software">Logiciel Comptabilité ELITE</h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
@@ -156,37 +152,15 @@ function Ebpcomptabilite() {
                 />
                 Personnaliastion du logiciel (fiches, vues, etc.)
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="buttons_more_ebp_pdf">
-            <div className="buttons_1_ebp">
-              <a
-                className="btn_help btn_help_right"
-                href="assets/ebp-logiciel-comptabilite-activ-2022.pdf"
-                target="blank"
-              >
-                En savoir plus ?
-              </a>
-            </div>
-            <div className="buttons_2_ebp">
-              <a
-                className="btn_help btn_help_right"
-                href="assets/ebp-logiciel-comptabilite-pro-2022.pdf"
-                target="blank"
-              >
-                En savoir plus ?
-              </a>
-            </div>
-            <div className="buttons_3_ebp">
-              <a
-                className="btn_help btn_help_right"
-                href="assets/ebp-logiciel-comptabilite-elite-2022.pdf"
-                target="blank"
-              >
-                En savoir plus ?
-              </a>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-comptabilite-elite-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
         </div>

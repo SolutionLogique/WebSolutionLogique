@@ -1,14 +1,11 @@
-import "./ebpbatiment.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 function Ebpbatiment() {
   return (
     <div>
-      <h1>EBP Batiments</h1>
-      <div className="container ebp_batiment">
-        <h2>3 gammes de produits</h2>
+      <h1>EBP Bâtiment</h1>
+      <div className="container ebp_comptabilite">
         <p>
           La nouvelle génération de logiciels de Comptabilité laisse désormais
           place à une nouvelle identité. Le découpage fonctionnel des logiciels
@@ -16,94 +13,64 @@ function Ebpbatiment() {
           également peau neuve et sera dorénavant représenté par les gammes
           suivantes :
         </p>
-        <h3>
-          EBP Gestion commerciale est une solution de gestion permettant de
-          maitriser tous les aspects commerciaux de votre entreprise. C’est un
-          logiciel à destination de l’ensemble des collaborateurs, du service
-          commercial au service administratif en passant par la technique et la
-          direction
+        <h3 className="sub_title_ebp">
+          <span>EBP Comptabilité</span> est une solution qui vous permet de
+          tenir votre comptabilité générale et analytique. L’échange des données
+          entre le logiciel EBP et la solution d’un cabinet d’Expert-Comptable
+          est intégré grâce à l’outil de Communication Entreprise-Expert.
         </h3>
-        <div className="colum_software_batiment">
+        <div className="colum_software_compta">
           <div className="colum_software_1">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/active.png"
-            ></img>
+            <h3 className="title_software">Logiciel Bâtiment</h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Gestion des ventes (devis et factures)
+                Gestion des ventes
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Relances clients
+                Suivi de chantier
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Synchronisation des factures fournisseurs
+                Tableau de bord
               </p>
-              <p>
-                <FontAwesomeIcon
-                  className="comptabilite_icons"
-                  icon={faCheck}
-                />
-                Accès à la compta automatisée
-              </p>
-              <p>
-                <FontAwesomeIcon
-                  className="comptabilite_icons"
-                  icon={faCheck}
-                />
-                Facturation périodique
-              </p>
-              <p>
-                <FontAwesomeIcon
-                  className="comptabilite_icons"
-                  icon={faCheck}
-                />
-                Assistance téléphonique
-              </p>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-batiment-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
           <div className="colum_software_2">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/pro.png"
-            ></img>
+            <h3 className="title_software">Logiciel Gestion Bâtiment</h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Gestion des ventes (devis, commandes et factures)
+                Gestion des ventes
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Relance clients
-              </p>
-              <p>
-                <FontAwesomeIcon
-                  className="comptabilite_icons"
-                  icon={faCheck}
-                />
-                Achats et stocks (commandes fournisseurs et réaprovisionnement)
+                Suivi de chantier
               </p>
               <p>
                 <FontAwesomeIcon
@@ -117,24 +84,28 @@ function Ebpbatiment() {
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Statistiques détaillées
+                Devis et Factures
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Application mobile EBP - Suivi devis factures
+                Suivi des règlements
               </p>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-gestion-batiment-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
           <div className="colum_software_3">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/elite.png"
-            ></img>
+            <h3 className="title_software">Logiciel Expert Bâtiment</h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
@@ -185,37 +156,15 @@ function Ebpbatiment() {
                 />
                 Personnaliastion du logiciel (fiches, vues, etc.)
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="buttons_more_ebp_pdf">
-            <div className="buttons_1_ebp">
-              <a
-                className="btn_help btn_help_right"
-                href="assets/ebp-logiciel-batiment-2022.pdf"
-                target="blank"
-              >
-                En savoir plus ?
-              </a>
-            </div>
-            <div className="buttons_2_ebp">
-              <a
-                className="btn_help btn_help_right"
-                href="assets/ebp-logiciel-gestion-batiment-2022.pdf"
-                target="blank"
-              >
-                En savoir plus ?
-              </a>
-            </div>
-            <div className="buttons_3_ebp">
-              <a
-                className="btn_help btn_help_right"
-                href="assets/ebp-logiciel-expert-batiment-2022.pdf"
-                target="blank"
-              >
-                En savoir plus ?
-              </a>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-expert-batiment-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
         </div>

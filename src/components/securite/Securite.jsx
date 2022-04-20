@@ -11,7 +11,7 @@ import {
 
 function Securite() {
   return (
-<div className="container">
+    <div className="container">
       <h1>Solutions Sécurité</h1>
       <div className="container">
         <h2 className="informatique_section_title">Sécurité du SI</h2>
@@ -39,7 +39,10 @@ function Securite() {
               <h3>Sécurité du réseau</h3>
             </div>
             <div className="informations_informatique">
-              <FontAwesomeIcon className="icons_informatique" icon={faFileShield} />
+              <FontAwesomeIcon
+                className="icons_informatique"
+                icon={faFileShield}
+              />
               <h3>Sécurité des données</h3>
             </div>
           </div>

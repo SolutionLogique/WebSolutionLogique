@@ -48,8 +48,6 @@
           &:after {
             z-index: -10;
             animation: fill 1s forwards;
-            -webkit-animation: fill 1s forwards;
-            -moz-animation: fill 1s forwards;
             opacity: 1;
           }
         }
@@ -109,8 +107,8 @@ nav.navigation_bar li,
 nav.fill li {
   position: relative;
 }
-nav.navigation_bar li:after,
-nav.fill li:after {
+.navigation_bar li:after,
+li:after {
   position: absolute;
   bottom: 0;
   left: 0;

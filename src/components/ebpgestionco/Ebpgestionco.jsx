@@ -1,43 +1,30 @@
-import "./ebpgestionco.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 function Ebpgestionco() {
   return (
     <div>
-      <h1>EBP Gestion Commerciale</h1>
-      <div className="container ebp_gestion_co">
-        <h2>3 gammes de produits</h2>
+      <h1>EBP Gestion commercial</h1>
+      <div className="container ebp_comptabilite">
         <p>
-          La nouvelle génération de logiciels de Comptabilité laisse désormais
-          place à une nouvelle identité. Le découpage fonctionnel des logiciels
-          que vous connaissez actuellement (Classic, Pro, Ligne PME) fait
-          également peau neuve et sera dorénavant représenté par les gammes
-          suivantes :
+          Commerçants, professionnels du bâtiment ou de l’automobile, découvrez
+          quel logiciel de devis et facture EBP correspond à votre secteur
+          d’activité. Prenant en compte les besoins spécifiques liés à votre
+          métier, nos solutions vous assurent de gérer votre entreprise en toute
+          sérénité
         </p>
-        <h3>
-          EBP Gestion commerciale est une solution de gestion permettant de
-          maitriser tous les aspects commerciaux de votre entreprise. C’est un
-          logiciel à destination de l’ensemble des collaborateurs, du service
-          commercial au service administratif en passant par la technique et la
-          direction
-        </h3>
-        <div className="colum_software_gestion_co">
+        <div className="colum_software_compta">
           <div className="colum_software_1">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/active.png"
-            ></img>
+            <h3 className="title_software">
+              Logiciel Gestion Commerciale ACTIV
+            </h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Gestion des ventes (devis et factures)
+                Gestion des ventes
               </p>
               <p>
                 <FontAwesomeIcon
@@ -51,7 +38,14 @@ function Ebpgestionco() {
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Synchronisation des factures fournisseurs
+                Synchronisation bancaire
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  className="comptabilite_icons"
+                  icon={faCheck}
+                />
+                Récupération des factures fournisseurs
               </p>
               <p>
                 <FontAwesomeIcon
@@ -74,36 +68,40 @@ function Ebpgestionco() {
                 />
                 Assistance téléphonique
               </p>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-gestion-commerciale-activ-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
           <div className="colum_software_2">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/pro.png"
-            ></img>
+            <h3 className="title_software">Logiciel Gestion Commerciale PRO</h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Gestion des ventes (devis, commandes et factures)
+                Gestion des ventes
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Relance clients
+                Relances clients
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Achats et stocks (commandes fournisseurs et réaprovisionnement)
+                Achats et stocks
               </p>
               <p>
                 <FontAwesomeIcon
@@ -126,29 +124,42 @@ function Ebpgestionco() {
                 />
                 Application mobile EBP - Suivi devis factures
               </p>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-gestion-commerciale-pro-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
           <div className="colum_software_3">
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
-              href=""
-              src="assets/elite.png"
-            ></img>
+            <h3 className="title_software">
+              Logiciel Gestion Commerciale ELITE
+            </h3>
             <div className="description_software">
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Comptabilité générale
+                Gestion des ventes
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Saisie automatisée
+                Relances clients
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  className="comptabilite_icons"
+                  icon={faCheck}
+                />
+                Achats et stocks
               </p>
               <p>
                 <FontAwesomeIcon
@@ -162,42 +173,38 @@ function Ebpgestionco() {
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Déclaration de TVA
+                Statistiques détaillées
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Gestion des impayés
+                Facturation périodique
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Ratios financiers
+                Planification des ressources
               </p>
               <p>
                 <FontAwesomeIcon
                   className="comptabilite_icons"
                   icon={faCheck}
                 />
-                Personnaliastion du logiciel (fiches, vues, etc.)
+                Application mobile EBP - Suivi devis factures
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="buttons_more_ebp_pdf">
-            <div className="buttons_1_ebp">
-            <a className="btn_help btn_help_right" href="assets/ebp-logiciel-gestion-commerciale-activ-2022.pdf" target="blank">En savoir plus ?</a>
-            </div>
-            <div className="buttons_2_ebp">
-            <a className="btn_help btn_help_right" href="assets/ebp-logiciel-gestion-commerciale-pro-2022.pdf" target="blank">En savoir plus ?</a>
-            </div>
-            <div className="buttons_3_ebp">
-            <a className="btn_help btn_help_right" href="assets/ebp-logiciel-comptabilite-activ-2022.pdf" target="blank">En savoir plus ?</a>
+              <div className="buttons_ebp">
+                <a
+                  className="btn_help btn_help_right"
+                  href="assets/ebp-logiciel-gestion-commerciale-elite-2022.pdf"
+                  target="blank"
+                >
+                  En savoir plus ?
+                </a>
+              </div>
             </div>
           </div>
         </div>

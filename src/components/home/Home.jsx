@@ -78,12 +78,12 @@ function Home() {
           </div>
           <div className="home_services">
             <div className="home_services_card">
-                <FontAwesomeIcon
-                  className="home_services_icon"
-                  icon={faComputer}
-                />
-                <h1>Matériels Informatique</h1>
-                <p>Optez pour une solution sur mesure</p>
+              <FontAwesomeIcon
+                className="home_services_icon"
+                icon={faComputer}
+              />
+              <h1>Matériels Informatique</h1>
+              <p>Optez pour une solution sur mesure</p>
             </div>
             <div className="home_services_card">
               <FontAwesomeIcon className="home_services_icon" icon={faServer} />
@@ -91,36 +91,27 @@ function Home() {
               <p>Lorem Ipsum is simply dummy text</p>
             </div>
             <div className="home_services_card">
-                <FontAwesomeIcon
-                  className="home_services_icon"
-                  icon={faPrint}
-                />
-                <h1>Système d'impression</h1>
-                <p>Mettez-vous à la page</p>
+              <FontAwesomeIcon className="home_services_icon" icon={faPrint} />
+              <h1>Système d'impression</h1>
+              <p>Mettez-vous à la page</p>
             </div>
             <div className="home_services_card">
-                <FontAwesomeIcon
-                  className="home_services_icon"
-                  icon={faFloppyDisk}
-                />
-                <h1>Sauvegarde de données</h1>
-                <p>Lorem Ipsum is simply dummy text</p>
+              <FontAwesomeIcon
+                className="home_services_icon"
+                icon={faFloppyDisk}
+              />
+              <h1>Sauvegarde de données</h1>
+              <p>Lorem Ipsum is simply dummy text</p>
             </div>
             <div className="home_services_card">
-                <FontAwesomeIcon
-                  className="home_services_icon"
-                  icon={faPhone}
-                />
-                <h1>Opérateur Télécom</h1>
-                <p>Protégez vos données</p>
+              <FontAwesomeIcon className="home_services_icon" icon={faPhone} />
+              <h1>Opérateur Télécom</h1>
+              <p>Protégez vos données</p>
             </div>
             <div className="home_services_card">
-                <FontAwesomeIcon
-                  className="home_services_icon"
-                  icon={faShield}
-                />
-                <h1>Sécurité Informatique</h1>
-                <p>Lorem Ipsum is simply dummy text</p>
+              <FontAwesomeIcon className="home_services_icon" icon={faShield} />
+              <h1>Sécurité Informatique</h1>
+              <p>Lorem Ipsum is simply dummy text</p>
             </div>
           </div>
         </div>
@@ -143,7 +134,11 @@ function Home() {
               Accédez à la télémaintenance pour que Solution Logique intervienne
               directement sur votre ordinateur.
             </p>
-            <a href="https://www.islonline.com/fr/fr/join/" class="btn_help btn_help_right" target="blank">
+            <a
+              href="https://www.islonline.com/fr/fr/join/"
+              class="btn_help btn_help_right"
+              target="blank"
+            >
               Besoin d'aide ?
             </a>{" "}
           </div>
@@ -152,7 +147,7 @@ function Home() {
       </div>
       <div className="home_carousel_partner">
         <Carousel breakPoints={breakPoints}>
-        <Item>
+          <Item>
             {" "}
             <img
               className="device_sli"
