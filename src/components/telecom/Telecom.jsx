@@ -14,7 +14,7 @@ import {
 function Telecom() {
   return (
     <div className="container">
-      <h1>Solutions Télécom</h1>
+      <h1>SOLUTIONS TÉLÉCOM</h1>
       <div className="container">
         <h2 className="informatique_section_title">
           Téléphonie fixe et mobile

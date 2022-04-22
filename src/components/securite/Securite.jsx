@@ -9,7 +9,7 @@ import {
 function Securite() {
   return (
     <div className="container">
-      <h1>Solutions Sécurité</h1>
+      <h1>SOLUTIONS SÉCURITÉ</h1>
       <div className="container">
         <h2 className="informatique_section_title">Sécurité du SI</h2>
         <div className="card_informatique">

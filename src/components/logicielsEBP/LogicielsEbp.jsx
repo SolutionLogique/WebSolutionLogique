@@ -15,7 +15,7 @@ function LogicielsEbp() {
     <div>
       <div className="profile-card">
         <div className="container">
-          <h1 className="heading_logiciels">Nos Logiciels EBP </h1>
+          <h1 className="heading_logiciels">NOS LOGICIELS EBP </h1>
           <div className="card-grid">
             <div
               className="card card0"
@@ -80,7 +80,7 @@ function LogicielsEbp() {
 
       <div className="profile-card">
         <div className="container">
-          <h1>Nos Formations</h1>
+          <h1>NOS FORMATIONS</h1>
           <div className="counter_formations_SLI">
             <div className="cards_statistic">
               <div className="card_statistic">
@@ -152,7 +152,6 @@ function LogicielsEbp() {
                   <span><a href="https://www.islonline.com/fr/fr/join/"> ISL
                   Online</a></span>
                 </p>
-                <p>Mixe</p>
               </div>
               <div className="formations_block">
                 <h2>
@@ -192,9 +191,9 @@ function LogicielsEbp() {
                 </p>
               </div>
               <div className="formations_block">
-                <h3>
+                <h2>
                   Les FAF (Fonds d’Assurance Formation) pour les indépendants
-                </h3>
+                </h2>
                 <p>- Le FIF PL est le FAF des professions libérales. </p>
                 <p>
                   - L’AGEFICE est le FAF du Commerce, de l’Industrie et des
@@ -205,7 +204,7 @@ function LogicielsEbp() {
               </div>
               <div className="formations_block">
                 {" "}
-                <h3>Les autres financeurs</h3>
+                <h2>Les autres financeurs</h2>
                 <p>
                   Les régions, l'Europe, Pole Emploi, l'Agefiph... financent
                   directement ou indirectement, via des partenariats ou des
@@ -226,9 +225,9 @@ function LogicielsEbp() {
                 </p>
               </div>
               <div className="formations_block">
-                <h3>
+                <h2>
                   Aménagement et accessibilité des locaux Solution Logique :
-                </h3>
+                </h2>
                 <p>
                   - Porte d’entrée et ascenseur prévu pour l’accessibilité aux
                   candidats
@@ -242,7 +241,7 @@ function LogicielsEbp() {
               </div>
               <div className="formations_block">
                 {" "}
-                <h3>Adresse :</h3>
+                <h2>Adresse :</h2>
                 <p>26 Av. de Chevéne, 74000 Annecy</p>
                 <p>Téléphone : 04 50 33 22 50</p>
                 <p>
@@ -250,7 +249,7 @@ function LogicielsEbp() {
                 </p>
               </div>
               <div className="formations_block">
-                <h3>Coordonnées Agefiph </h3>
+                <h2>Coordonnées Agefiph </h2>
                 <p>
                   <span>Téléphone</span> : 0 800 11 10 09
                 </p>
@@ -264,9 +263,9 @@ function LogicielsEbp() {
               </div>
               <div className="formations_block">
                 {" "}
-                <h3>
+                <h2>
                   Coordonnées Chambre Métier et de l’Artisanat Haute-Savoie
-                </h3>
+                </h2>
                 <p>28 avenue de France 74000 Annecy</p>
                 <p>
                   <span>Téléphone</span> : 04 50 23 92 22
@@ -280,7 +279,7 @@ function LogicielsEbp() {
               </div>
               <div className="formations_block">
                 {" "}
-                <h3>Coordonnées Cap Emploi Savoie Haute-Savoie</h3>
+                <h2>Coordonnées Cap Emploi Savoie Haute-Savoie</h2>
                 <p>5 Rue du Chaudairon, 74960 Annecy</p>
                 <p>
                   <span>Téléphone</span> : 09 70 19 26 09
@@ -314,7 +313,7 @@ function LogicielsEbp() {
               </p>
             </div>
             <h2>Prix à la ½ journée</h2>
-            <h3>485€</h3>
+            <h1>485€</h1>
           </div>
           <div className="card-grid">
             <div

@@ -16,7 +16,7 @@ function NosServices() {
 
   return (
     <div className="container">
-      <h1 className="heading_logiciels">Nos Services</h1>
+      <h1 className="heading_logiciels">NOS SERVICES</h1>
       <div class="fullscreen">
         <div
           class="card card_1"
