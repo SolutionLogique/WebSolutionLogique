@@ -1,9 +1,6 @@
 import "./securite.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSitemap,
-  faNetworkWired,
-  faCamera,
   faShieldVirus,
   faFileShield,
   faShieldHeart,

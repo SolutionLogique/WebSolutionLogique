@@ -2,7 +2,6 @@
   width: 100%;
   height: 60vh;
   display: flex;
-  padding-top: 100px;
   .card {
     overflow: hidden;
     width: 30%;
@@ -46,7 +45,7 @@
         transform: translateY(-100%);
         opacity: 0;
       }
-      .content {
+      .content_services {
         transform: translateY(100%);
         opacity: 0;
       }
@@ -60,15 +59,15 @@
       font-size: 1.2em;
       transition: 0.8s;
     }
-    .content {
+    .content_services {
       transition: 0.8s;
       display: flex;
       flex-wrap: wrap;
-      align-self: flex-end;
       padding: 25px 25px 50px 25px;
+      background: rgb(255 255 255 / 70%);
       .title {
         width: 100%;
-        color: #fff;
+        color: black;
         font-size: 44px;
         font-weight: 700;
         line-height: 50px;
@@ -76,25 +75,27 @@
       }
       .text {
         width: 100%;
-        color: #fff;
+        color: black;
         font-size: 16px;
         font-weight: 300;
       }
     }
     .sinopse {
-      width: 100%;
-      height: 100%;
+      width: 75%;
+      height: 75%;
       position: absolute;
       top: 0;
       left: 0;
       padding: 25px 25px 50px 25px;
-      color: #fff;
+      color: black;
+      background: rgb(255 255 255 / 100%);
       font-weight: 300;
       opacity: 0;
       transition: 0.8s;
       display: flex;
       flex-wrap: wrap;
       margin: 25px;
+      justify-content: center;
       .content-sinopse {
         .title {
           font-size: 22px;
@@ -144,7 +145,7 @@
         &:nth-child(-n + 2) {
           margin-top: 10%;
         }
-        .content {
+        .content_services {
           .title {
             width: 100%;
             color: #fff;
@@ -233,7 +234,7 @@
         position: relative;
         display: flex;
         margin-bottom: 10%;
-        .content {
+        .content_services {
           .title {
             width: 100%;
             color: #fff;
@@ -302,24 +303,6 @@
               font-size: 14px;
             }
           }
-        }
-        &_1 {
-          background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-616574.jpg")
-            no-repeat center/cover;
-        }
-        &_2 {
-          background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-539333.png")
-            no-repeat 45% / cover;
-        }
-        &_3 {
-          background: linear-gradient(
-              to bottom,
-              rgba(0, 0, 0, 0.75),
-              rgba(0, 0, 0, 0),
-              rgba(0, 0, 0, 0.88)
-            ),
-            url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-5379.png")
-              no-repeat center/cover;
         }
       }
     }

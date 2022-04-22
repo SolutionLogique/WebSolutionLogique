@@ -1,55 +1,39 @@
 import "./footer.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMap } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="row">
-          <div className="footer-col">
-            <h4>Navigation</h4>
-            <ul className="footer_point">
-              <li>
-                <Link to="/">Accueil</Link>
-              </li>
-              <li>
-                <Link to="/logicielsEBP">Nos Logiciels EBP / Formations</Link>
-              </li>
-              <li>
-                <Link to="/nosServices">Nos Services</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contactez nous</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>Address</h4>
-            <ul className="footer_point">
-              <li>Solution Logique Informatique</li>
-              <li>475 Route des Vernes</li>
-              <li>74370 Annecy</li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>follow us</h4>
-            <div className="social-links">
-              <p>
-                <FontAwesomeIcon className="home_services_icon" icon={faMap} />
-              </p>
-              <p>
-                <FontAwesomeIcon className="home_services_icon" icon={faMap} />
-              </p>
-              <p>
-                <FontAwesomeIcon className="home_services_icon" icon={faMap} />
-              </p>
-              <p>
-                <FontAwesomeIcon className="home_services_icon" icon={faMap} />
-              </p>
-            </div>
-          </div>
+        <div className="footer_description">
+          <li>
+          <Link to="/">
+            Accueil
+          </Link>
+          </li>
+         
+          <Link to="/logicielsEbp">
+            <li>Nos logiciels / Formations</li>
+          </Link>
+          <Link to="/nosServices">
+            <li>Nos Services</li>
+          </Link>
+          <Link to="/">
+            <li>Télémaintenance</li>
+          </Link>
+          <Link to="/contact">
+            <li>Contactez nous</li>
+          </Link>
+        </div>
+        <div className="copyright_sli">
+          <p>475 Route des Vernes,</p>
+          <p>74370 Annecy</p>
+          <p>04.50.64.02.33</p>
+        </div>
+        <div className="copyright_sli">
+          <p className="copyright_sli_bot">
+            Solution Logique Informatique © 2022
+          </p>
         </div>
       </div>
     </footer>

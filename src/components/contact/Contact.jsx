@@ -4,6 +4,7 @@ function Contact() {
 
   return (
     <div className="container">
+      <div className="contact_form_sli">
       <h1>Contact</h1>
       <div class="letter-image">
         <div class="animated-mail">
@@ -20,7 +21,7 @@ function Contact() {
           <div class="body"></div>
           <div class="left-fold"></div>
         </div>
-        <div class="shadow"></div>
+      </div>
       </div>
       <div className="home_conseils_sli">
           <div className="home_conseils_sli_left">
@@ -40,8 +41,9 @@ function Contact() {
             </p>
             <a href="https://www.islonline.com/fr/fr/join/" class="btn_help btn_help_right" target="blank">
               Besoin d'aide ?
-            </a>{" "}
+            </a>
           </div>
+          
           </div>
     </div>
   );
