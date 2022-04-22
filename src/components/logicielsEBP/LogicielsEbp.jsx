@@ -148,9 +148,17 @@ function LogicielsEbp() {
                 </p>
                 <p>En présentiel, dans les locaux de votre entreprise</p>
                 <p>
-                  En distanciel via Internet en utilisant l’application 
-                  <span><a href="https://www.islonline.com/fr/fr/join/" target="_blank" rel="noreferrer"> ISL
-                  Online</a></span>
+                  En distanciel via Internet en utilisant l’application
+                  <span>
+                    <a
+                      href="https://www.islonline.com/fr/fr/join/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      ISL Online
+                    </a>
+                  </span>
                 </p>
               </div>
               <div className="formations_block">
@@ -187,7 +195,7 @@ function LogicielsEbp() {
                   des opérateurs de compétences. Pour savoir à quel OPCO est
                   affilié votre entreprise, vous devez connaître votre numéro de
                   convention collective (IDCC) qui figure sur votre bulletin de
-                  paie. Trouver votre OPCO
+                  paie. Trouver votre OPCO.
                 </p>
               </div>
               <div className="formations_block">
@@ -199,11 +207,10 @@ function LogicielsEbp() {
                   - L’AGEFICE est le FAF du Commerce, de l’Industrie et des
                   Services. Il finance des actions de formation les dirigeants
                   d’entreprise et conjoints collaborateurs ou conjoints
-                  associés.{" "}
+                  associés.
                 </p>
               </div>
               <div className="formations_block">
-                {" "}
                 <h2>Les autres financeurs</h2>
                 <p>
                   Les régions, l'Europe, Pole Emploi, l'Agefiph... financent
@@ -230,22 +237,29 @@ function LogicielsEbp() {
                 </h2>
                 <p>
                   - Porte d’entrée et ascenseur prévu pour l’accessibilité aux
-                  candidats
+                  candidats.
                 </p>
-                <p>- Toilette et salle de réunion accessible et aux normes</p>
+                <p>- Toilette et salle de réunion accessible et aux normes.</p>
                 <p>
                   Coordonnées MDPH 74 - Maison départementale des personnes
                   handicapées de Haute-Savoie (Administration départementale à
-                  Annecy)
+                  Annecy).
                 </p>
               </div>
               <div className="formations_block">
-                {" "}
                 <h2>Adresse :</h2>
                 <p>26 Av. de Chevéne, 74000 Annecy</p>
                 <p>Téléphone : 04 50 33 22 50</p>
                 <p>
-                  <span><a href="https://www.mdph74.fr" target="_blank" rel="noreferrer">Site internet : MDPH </a></span>
+                  <span>
+                    <a
+                      href="https://www.mdph74.fr"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Site internet : MDPH{" "}
+                    </a>
+                  </span>
                 </p>
               </div>
               <div className="formations_block">
@@ -254,7 +268,15 @@ function LogicielsEbp() {
                   <span>Téléphone</span> : 0 800 11 10 09
                 </p>
                 <p>
-                <span><a href="https://www.agefiph.fr/auvergne-rhone-alpes" target="_blank" rel="noreferrer">Site internet : AGEFIPH </a></span>
+                  <span>
+                    <a
+                      href="https://www.agefiph.fr/auvergne-rhone-alpes"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Site internet : AGEFIPH{" "}
+                    </a>
+                  </span>
                 </p>
                 <p>
                   <span>Contact départemental</span> : Mme Gruyelle :
@@ -271,10 +293,22 @@ function LogicielsEbp() {
                   <span>Téléphone</span> : 04 50 23 92 22
                 </p>
                 <p>
-                <span><a href="mailto:contact.hautesavoie@cma-auvergnerhonealpes.fr">Courriel : Auverge-Rhone-Alpes</a></span>
+                  <span>
+                    <a href="mailto:contact.hautesavoie@cma-auvergnerhonealpes.fr">
+                      Courriel : Auverge-Rhone-Alpes
+                    </a>
+                  </span>
                 </p>
                 <p>
-                <span><a href="https://www.agefiph.fr/auvergne-rhone-alpes" target="_blank" rel="noreferrer">Site internet : AGEFIPH Auverge-Rhone-Alpes</a></span>
+                  <span>
+                    <a
+                      href="https://www.agefiph.fr/auvergne-rhone-alpes"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Site internet : AGEFIPH Auverge-Rhone-Alpes
+                    </a>
+                  </span>
                 </p>
               </div>
               <div className="formations_block">
@@ -285,26 +319,51 @@ function LogicielsEbp() {
                   <span>Téléphone</span> : 09 70 19 26 09
                 </p>
                 <p>
-                <span><a href="https://www.capemploi-73-74.com" target="_blank" rel="noreferrer">Site internet : CAP Emploi</a></span>
+                  <span>
+                    <a
+                      href="https://www.capemploi-73-74.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Site internet : CAP Emploi
+                    </a>
+                  </span>
                 </p>
                 <p>
-                <span><a href="https://www.capemploi-73-74.com/espace-employeur/" target="_blank" rel="noreferrer">Page Espace Employeur : CAP Emploi</a></span>
+                  <span>
+                    <a
+                      href="https://www.capemploi-73-74.com/espace-employeur/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Page Espace Employeur : CAP Emploi
+                    </a>
+                  </span>
                 </p>
                 <p>
-                <span><a href="https://www.monparcourshandicap.gouv.fr/services/autodiag/#/home/accueil-questionnaire" target="_blank" rel="noreferrer">Site internet : Réalisez le bilan de vos actions handicap et progressez en autonomie</a></span>
+                  <span>
+                    <a
+                      href="https://www.monparcourshandicap.gouv.fr/services/autodiag/#/home/accueil-questionnaire"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Site internet : Réalisez le bilan de vos actions handicap
+                      et progressez en autonomie
+                    </a>
+                  </span>
                 </p>
               </div>
 
               <h4>Étape 1 </h4>
               <p>
                 Je renseigne des informations sur ma structure (taille, secteur
-                d’activité et périmètre géographique)
+                d’activité et périmètre géographique).
               </p>
               <h4>Étape 2 </h4>
               <p>
                 Je réponds à 26 questions sur 6 thématiques (stratégie,
                 sensibilisation, recrutement, prévention et maintien,
-                accessibilité et secteur protégé et entreprises adaptées)
+                accessibilité et secteur protégé et entreprises adaptées).
               </p>
               <h4>Étape 3 </h4>
               <p>
@@ -324,11 +383,20 @@ function LogicielsEbp() {
             >
               <div className="overlay">
                 <div className="content">
-                  <h2>Comptabilité</h2>
+                  <h2> Formation Comptabilité</h2>
                   <p>
-                    "Optimisez la gestion de votre trésorerie et analysez la
-                    santé financière de votre entreprise avec nos logiciels de
-                    comptabilité."
+                    <li>
+                      {" "}
+                      Maîtriser le travail quotidien de la tenue d’une
+                      comptabilité : lecture, saisie, lettrage et éditer un état
+                      comptable…
+                    </li>
+                    <li>
+                      {" "}
+                      Gérer son quotidien comptable : échéancier, relances,
+                      comptes à lettrer, imputation de règlement …
+                    </li>
+                    <li> Suivre sa trésorerie</li>
                   </p>
                   <Link className="learn-more-btn" to="/">
                     En savoir plus
@@ -342,11 +410,17 @@ function LogicielsEbp() {
             >
               <div className="overlay">
                 <div className="content">
-                  <h2>Gestion Commerciale</h2>
+                  <h2> Formation Gestion Commerciale</h2>
                   <p>
-                    "Gérez tous les aspects commerciaux de votre entreprise et
-                    gagnez en efficacité avec nos logiciels de Gestion
-                    Commerciale"
+                    <li>
+                      Créer, modifier et enrichir ses bases clients, articles,
+                      modes de règlement….
+                    </li>
+                    <li>
+                      Créer, modifier et émettre des documents commerciaux :
+                      devis, commandes, bons de livraison, factures, avoirs,
+                      retours…
+                    </li>
                   </p>
                   <Link className="learn-more-btn" to="/">
                     En savoir plus
@@ -360,12 +434,14 @@ function LogicielsEbp() {
             >
               <div className="overlay">
                 <div className="content">
-                  <h2>Batiment</h2>
+                  <h2>Formation Batiment</h2>
                   <p>
-                    "Optimisez la rentabilité de vos chantiers, chiffrez et
-                    facturez efficacement et gagnez un temps précieux au
-                    quotidien pour vous consacrer pleinement à votre cœur de
-                    métier : le chantier !"
+                    <li>Maîtriser le chiffrage de son devis de bâtiment</li>
+                    <li>Créer et modifier des documents d’achat et de vente</li>
+                    <li>
+                      Gérer les stocks, le suivi des chantiers et des affaires
+                    </li>
+                    <li>Gérer le flux financier de son entreprise</li>
                   </p>
                   <Link className="learn-more-btn" to="/">
                     En savoir plus

@@ -146,9 +146,11 @@
   right: -375px;
   transition: right 0.8s linear;
   text-align: center;
+  padding: 15px;
 
   p {
     color: black;
+    text-align: justify;
   }
 }
 .card:hover .content {

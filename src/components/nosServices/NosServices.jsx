@@ -1,6 +1,5 @@
 import "./services.scss";
 import $ from "jquery";
-import { Link } from "react-router-dom";
 
 function NosServices() {
   $(".card").hover(
