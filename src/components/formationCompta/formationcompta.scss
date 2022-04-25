@@ -1,0 +1,60 @@
+.form_formations_sli {
+    text-align: center;
+    padding: 50px 0px;
+
+    .formations_place {
+      p {
+        margin: 15px;
+        font-size: 1em;
+      }
+
+      a {
+        text-decoration: none;
+        color: #04a2df;
+      }
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    h2 {
+      padding-top: 30px;
+      color: #04a2df;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      padding-top: 15px;
+      color: #04a2df;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      font-size: 1.5em;
+      padding-top: 30px;
+      color: #04a2df;
+      text-transform: uppercase;
+    }
+  }
+
+  .group_form_sli {
+    display: flex;
+    width: 100%;
+    padding: 50px 0px;
+
+    .form_sli {
+      width: 50%;
+      text-align: center;
+      color: #04a2df;
+
+      h4 {
+        padding-top: 15px;
+        font-size: 1.5em;
+      }
+    }
+
+    .formations_group {
+      font-size: 4em;
+    }
+  }

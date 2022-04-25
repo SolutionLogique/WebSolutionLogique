@@ -30,9 +30,6 @@ function Navbar() {
             <li>
               <Link to="/securite">Sécurité</Link>
             </li>
-            <li>
-              <Link to="/web">Web</Link>
-            </li>
           </ul>
         </li>
       </ul>

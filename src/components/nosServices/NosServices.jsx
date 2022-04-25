@@ -1,5 +1,6 @@
 import "./services.scss";
 import $ from "jquery";
+import { Link } from "react-router-dom";
 
 function NosServices() {
   $(".card").hover(
@@ -30,40 +31,46 @@ function NosServices() {
               industry.
             </div>
           </div>
-          <div class="sinopse">
-            <div class="content-sinopse">
-              <div class="title">Plus d'informations :</div>
-              <div class="text">
-                <ul>
-                  <h3>Infrastructure</h3>
-                  <li className="second_description">Matériel Informatique</li>
-                  <li className="second_description">Serveur de stockage</li>
-                  <li className="second_description">Sécurité de l'infra</li>
-                  <li className="second_description">
-                    Interconnexion de sites
-                  </li>
-                  <li className="second_description">
-                    Virtualisation de l'infrastructure
-                  </li>
-                  <li className="second_description">Vidéo surveillance</li>
-                  <h3>Environnement Utilisateur</h3>
-                  <li className="second_description">Post de travail</li>
-                  <li className="second_description">Sécurité anti virus</li>
-                  <li className="second_description">Outil collaboratif</li>
-                  <h3>Hébergement & Cloud</h3>
-                  <li className="second_description">Sauvegarde Externalisé</li>
-                  <li className="second_description">Sauvegarde sur place</li>
-                  <li className="second_description">Hébergement site web</li>
-                  <li className="second_description">
-                    Hebergement et gestion des boites mails
-                  </li>
-                  <li className="second_description">
-                    Stockage de données sur le cloud
-                  </li>
-                </ul>
+          <Link to="/informatique">
+            <div class="sinopse">
+              <div class="content-sinopse">
+                <div class="title">Plus d'informations :</div>
+                <div class="text">
+                  <ul>
+                    <h3>Infrastructure</h3>
+                    <li className="second_description">
+                      Matériel Informatique
+                    </li>
+                    <li className="second_description">Serveur de stockage</li>
+                    <li className="second_description">Sécurité de l'infra</li>
+                    <li className="second_description">
+                      Interconnexion de sites
+                    </li>
+                    <li className="second_description">
+                      Virtualisation de l'infrastructure
+                    </li>
+                    <li className="second_description">Vidéo surveillance</li>
+                    <h3>Environnement Utilisateur</h3>
+                    <li className="second_description">Post de travail</li>
+                    <li className="second_description">Sécurité anti virus</li>
+                    <li className="second_description">Outil collaboratif</li>
+                    <h3>Hébergement & Cloud</h3>
+                    <li className="second_description">
+                      Sauvegarde Externalisé
+                    </li>
+                    <li className="second_description">Sauvegarde sur place</li>
+                    <li className="second_description">Hébergement site web</li>
+                    <li className="second_description">
+                      Hebergement et gestion des boites mails
+                    </li>
+                    <li className="second_description">
+                      Stockage de données sur le cloud
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div
           class="card card_1"
@@ -78,6 +85,7 @@ function NosServices() {
               industry.
             </div>
           </div>
+          <Link to="/telecom">
           <div class="sinopse">
             <div class="content-sinopse">
               <div class="title">Plus d'informations :</div>
@@ -99,6 +107,7 @@ function NosServices() {
               </div>
             </div>
           </div>
+          </Link>
         </div>
         <div
           class="card card_1"
@@ -113,6 +122,7 @@ function NosServices() {
               industry.
             </div>
           </div>
+          <Link to="/securite">
           <div class="sinopse">
             <div class="content-sinopse">
               <div class="title">Plus d'informations :</div>
@@ -128,6 +138,7 @@ function NosServices() {
               </div>
             </div>
           </div>
+          </Link>
         </div>
       </div>
       <div className="home_conseils_sli">

@@ -18,9 +18,9 @@ function Footer() {
           <Link to="/nosServices">
             <li>Nos Services</li>
           </Link>
-          <Link to="/">
-            <li>Télémaintenance</li>
-          </Link>
+          <a href="https://www.islonline.com/fr/fr/join/" target="blank">
+          Télémaintenance
+        </a>
           <Link to="/contact">
             <li>Contactez nous</li>
           </Link>

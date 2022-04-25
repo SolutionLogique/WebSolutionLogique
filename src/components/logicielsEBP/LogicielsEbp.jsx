@@ -224,7 +224,7 @@ function LogicielsEbp() {
                 <p>Référent, contacts, site internet…</p>
                 <p>
                   <span>Référent en Entreprise</span> : M. Pascal REY
-                  04.50.64.02.33 - pr@solution-logique.fr
+                  04.50.64.02.33 - <span><a href="mailto:pr@solution-logique.fr"> Mail M. Pascal REY</a></span> 
                 </p>
                 <p>
                   <span>Présentation handicap et insertion</span>: CCI
@@ -380,7 +380,7 @@ function LogicielsEbp() {
               style={{
                 backgroundImage: "url(/assets/compta.jpg)",
               }}
-            >
+            > 
               <div className="overlay">
                 <div className="content">
                   <h2> Formation Comptabilité</h2>
@@ -398,7 +398,7 @@ function LogicielsEbp() {
                     </li>
                     <li> Suivre sa trésorerie</li>
                   </p>
-                  <Link className="learn-more-btn" to="/">
+                  <Link className="learn-more-btn" to="/formationCompta">
                     En savoir plus
                   </Link>
                 </div>
@@ -422,7 +422,7 @@ function LogicielsEbp() {
                       retours…
                     </li>
                   </p>
-                  <Link className="learn-more-btn" to="/">
+                  <Link className="learn-more-btn" to="/formationCommerciale">
                     En savoir plus
                   </Link>
                 </div>
@@ -443,7 +443,7 @@ function LogicielsEbp() {
                     </li>
                     <li>Gérer le flux financier de son entreprise</li>
                   </p>
-                  <Link className="learn-more-btn" to="/">
+                  <Link className="learn-more-btn" to="/formationBatiment">
                     En savoir plus
                   </Link>
                 </div>
