@@ -15,6 +15,7 @@ import Securite from "./components/securite/Securite";
 import Web from "./components/web/Web"
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import ConditionsGeneralesVente from "./components/conditionsGeneralesVente/ConditionsGeneralesVente";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "./app.scss";
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="/securite" element={<Securite />} ></Route>
           <Route path="/web" element={<Web />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/conditionsGeneralesVente" element={<ConditionsGeneralesVente />} />
         </Routes>
         <Footer/>
     </Router>
