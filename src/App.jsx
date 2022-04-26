@@ -5,6 +5,7 @@ import Ebpcomptabilite from "./components/ebpcomptabilite/Ebpcomptabilite";
 import Ebpgestionco from "./components/ebpgestionco/Ebpgestionco";
 import Ebpbatiment from "./components/ebpbatiment/Ebpbatiment";
 import FormationCompta from "./components/formationCompta/FormationCompta";
+import EngagementHandicap from "./components/engagementHandicap/EngagementHandicap";
 import FormationCommerciale from "./components/formationCommerciale/FormationCommerciale";
 import FormationBatiment from "./components/formationBatiment/FormationBatiment";
 import NosServices from "./components/nosServices/NosServices";
@@ -39,6 +40,7 @@ function App() {
           <Route path="/formationCompta" element={< FormationCompta />}></Route>
           <Route path="/formationCommerciale" element={< FormationCommerciale />}></Route>
           <Route path="/formationBatiment" element={< FormationBatiment />}></Route>
+          <Route path="/engagementHandicap" element={< EngagementHandicap />}></Route>
           <Route path="/nosServices" element={<NosServices />} />
           <Route path="/informatique" element={<Informatique />} />
           <Route path="/telecom" element={<Telecom />} ></Route>

@@ -36,6 +36,22 @@
       color: #04a2df;
       text-transform: uppercase;
     }
+
+    .formations_block{
+
+     display: inline-table;
+      .test_formation{
+        p{
+          text-align: justify;
+        }
+      }
+
+
+      .test_formations{
+        color: #04a2df;
+         font-weight: 600;
+      }
+    }
   }
 
   .group_form_sli {
