@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@
 h1 {
   text-align: center;
   font-size: 3em;
-  color: #04a2df;
+  color: $main-color;
 }
 
 .banner {
@@ -89,7 +91,7 @@ h1 {
 .home_conseils_sli {
   width: 100%;
   display: flex;
-  padding: 50px 0;
+  padding: 100px 0;
   align-items: center;
   justify-content: center;
 
@@ -107,12 +109,12 @@ h1 {
 
     h2 {
       padding-bottom: 15px;
-      color: #04a2df;
+      color: $main-color;
     }
 
     p {
       padding-bottom: 50px;
-      color: #04a2df;
+      color: $main-color;
     }
 
     .btn_help {
@@ -125,7 +127,7 @@ h1 {
       font-size: 18px;
       text-align: center;
       text-decoration: none;
-      color: white;
+      color: $white;
       backface-visibility: hidden;
       border: 0.3rem solid transparent;
       border-radius: 3rem;
@@ -133,7 +135,7 @@ h1 {
 
     .btn_help_right {
       border-color: transparent;
-      background-color: #04a2df;
+      background-color: $main-color;
       color: white;
       transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
     }

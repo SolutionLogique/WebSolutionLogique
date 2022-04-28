@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .heading_logiciels {
   padding-bottom: 50px;
 }
@@ -17,7 +19,7 @@
 
       .satisfaction_heart {
         font-size: 3em;
-        color: red;
+        color: $white;
         padding-right: 15px;
       }
 
@@ -43,7 +45,7 @@
 
       a {
         text-decoration: none;
-        color: #04a2df;
+        color: $main-color;
       }
     }
 
@@ -53,20 +55,20 @@
 
     h2 {
       padding-top: 30px;
-      color: #04a2df;
+      color: $main-color;
       text-transform: uppercase;
     }
 
     h3 {
       padding-top: 15px;
-      color: #04a2df;
+      color: $main-color;
       text-transform: uppercase;
     }
 
     h4 {
       font-size: 1.5em;
       padding-top: 30px;
-      color: #04a2df;
+      color: $main-color;
       text-transform: uppercase;
     }
   }
@@ -79,7 +81,7 @@
     .form_sli {
       width: 50%;
       text-align: center;
-      color: #04a2df;
+      color: $main-color;
 
       h4 {
         padding-top: 15px;
@@ -170,7 +172,7 @@
 
   &:hover {
     background-color: white;
-    color: #04a2df;
+    color: $main-color;
     border: none;
   }
 }
@@ -184,7 +186,7 @@
     width: 50%;
     margin: 15px;
     color: white;
-    background-color: #04a2df;
+    background-color: $main-color;
     border-radius: 15px;
     text-align: center;
     font-size: 3em;

@@ -1,7 +1,9 @@
+@import "../../global.scss";
+
 .card_home_page {
   a {
     text-decoration: none;
-    color: white;
+    color: $white;
   }
   .device_sli {
     max-width: 100%;
@@ -10,7 +12,7 @@
 
   span {
     font-weight: 600;
-    color: #04a2df;
+    color: $main-color;
   }
   .home_container_both {
     display: flex;
@@ -50,10 +52,10 @@
         }
       }
       h1 {
-        color: white;
+        color: $white;
       }
       p {
-        color: white;
+        color: $white;
         font-size: 1.2em;
       }
       .img_right_side {
@@ -68,11 +70,11 @@
       rgba(4, 162, 223, 1) 0%,
       rgba(0, 206, 255, 1) 100%
     );
-    color: white;
+    color: $white;
     text-align: center;
     padding: 20px 0px;
     h1 {
-      color: white;
+      color: $white;
       font-size: 2em;
     }
     h2 {
@@ -86,7 +88,7 @@
       .home_services_icon {
         font-size: 3.5em;
         cursor: pointer;
-        color: white;
+        color: $white;
 
         &:hover {
           transform: scale(1.1);
@@ -97,7 +99,7 @@
       .home_services_card {
         justify-content: space-evenly;
         margin: 50px 30px;
-        color: white;
+        color: $white;
 
         h1 {
           font-size: 1.2em;
@@ -115,7 +117,7 @@
     }
 
     .sc-ftvSup {
-      background-color: white;
+      background-color: $white;
     }
 
     .krmNah {
@@ -129,18 +131,18 @@
       content: "";
       height: 10px;
       width: 10px;
-      box-shadow: 0 0 1px 3px #04a2df;
+      box-shadow: 0 0 1px 3px $main-color;
       outline: none;
-      background-color: white;
+      background-color: $white;
 
       &:active {
-        color: #04a2df;
+        color: $main-color;
       }
     }
 
     .rec.rec-arrow {
       border-radius: 0;
-      background-color: #04a2df;
+      background-color: $main-color;
     }
     .rec.rec-arrow:hover {
       border-radius: 0%;

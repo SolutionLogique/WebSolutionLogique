@@ -1,17 +1,19 @@
+@import "../../global.scss";
+
 .CGV{
     .CGV_container{
         padding: 25px 0px;
 
         h4{
-            color: #04a2df;
+            color: $main-color;
         }
         h5 {
-            color: #04a2df;
+            color: $main-color;
         }
     }
     span{
         font-weight: 600;
-        color: #04a2df;
+        color: $main-color;
     }
     h3{
         text-transform: uppercase;

@@ -41,7 +41,7 @@ function Home() {
                 informatiques.
               </p>
               <p>
-                Depuis <span>plus de 25 ans</span>, nous avons toujours voulu
+                Depuis <span>plus de 30 ans</span>, nous avons toujours voulu
                 marquer <span>notre volonté</span>, d’une forte implantation
                 locale en Rhône-Alpes.
               </p>
@@ -88,7 +88,7 @@ function Home() {
             <div className="home_services_card">
               <FontAwesomeIcon className="home_services_icon" icon={faServer} />
               <h1>Virtualisation & Serveur</h1>
-              <p>Lorem Ipsum is simply dummy text</p>
+              <p>Gérez tout a distance.</p>
             </div>
             <div className="home_services_card">
               <FontAwesomeIcon className="home_services_icon" icon={faPrint} />
@@ -101,17 +101,17 @@ function Home() {
                 icon={faFloppyDisk}
               />
               <h1>Sauvegarde de données</h1>
-              <p>Lorem Ipsum is simply dummy text</p>
+              <p>Protégez vos données.</p>
             </div>
             <div className="home_services_card">
               <FontAwesomeIcon className="home_services_icon" icon={faPhone} />
               <h1>Opérateur Télécom</h1>
-              <p>Protégez vos données</p>
+              <p>Choisissez une téléphonie.</p>
             </div>
             <div className="home_services_card">
               <FontAwesomeIcon className="home_services_icon" icon={faShield} />
               <h1>Sécurité Informatique</h1>
-              <p>Lorem Ipsum is simply dummy text</p>
+              <p>Protégez votre système.</p>
             </div>
           </div>
         </div>

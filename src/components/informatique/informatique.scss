@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .informatique_section_title {
   text-align: center;
   font-size: 2.2em;
@@ -35,7 +37,7 @@
   cursor: pointer;
 
   .icons_informatique {
-    color: #04a2df;
+    color: $main-color;
     font-size: 25px;
   }
 
@@ -96,7 +98,7 @@
       padding-right: 50px;
       margin: 10px;
       text-align: end;
-      color: #04a2df;
+      color: $main-color;
       font-size: 1.3em;
     }
   }
@@ -147,7 +149,7 @@
 
     h3 {
       margin: 10px;
-      color: #04a2df;
+      color: $main-color;
       font-size: 1.3em;
     }
   }

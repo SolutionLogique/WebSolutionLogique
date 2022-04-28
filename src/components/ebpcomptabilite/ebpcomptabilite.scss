@@ -1,8 +1,10 @@
+@import "../../global.scss";
+
 .ebp_comptabilite {
   text-align: center;
 
   .sub_title_ebp {
-    color: #04a2df;
+    color: $main-color;
   }
 
   h2 {
@@ -20,7 +22,7 @@
     padding: 25px;
     font-weight: 400;
     text-align: left;
-    color: #04a2df;
+    color: $main-color;
   }
 
   img {
@@ -44,7 +46,7 @@
 
     .comptabilite_icons {
       padding-right: 10px;
-      color: #04a2df;
+      color: $main-color;
     }
 
     .colum_software_1 {
@@ -68,7 +70,7 @@
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: $white;
     backface-visibility: hidden;
     border: 0.3rem solid transparent;
     border-radius: 3rem;
@@ -76,8 +78,8 @@
 
   .btn_help_right {
     border-color: transparent;
-    background-color: #04a2df;
-    color: white;
+    background-color: $main-color;
+    color: $white;
     transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
   }
 

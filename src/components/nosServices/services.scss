@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .fullscreen {
   width: 100%;
   height: 60vh;
@@ -6,7 +8,7 @@
     overflow: hidden;
     width: 30%;
     height: 70%;
-    background: #fff;
+    background: $white;
     box-shadow: 1px 22px 44px rgba(0, 0, 0, 0.19);
     transition: 0.6s;
     position: relative;
@@ -54,7 +56,7 @@
       position: absolute;
       top: 25px;
       right: 25px;
-      color: #fff;
+      color: $white;
       font-weight: 300;
       font-size: 1.2em;
       transition: 0.8s;
@@ -113,13 +115,13 @@
       }
     }
     &_1 {
-      background-color: #04a2df;
+      background-color: $main-color;
     }
     &_2 {
-      background-color: #04a2df;
+      background-color: $main-color;
     }
     &_3 {
-      background-color: #04a2df;
+      background-color: $main-color;
     }
   }
 }
@@ -135,7 +137,7 @@
         overflow: hidden;
         width: 45%;
         height: 400px;
-        background: #fff;
+        background: $white;
         box-shadow: 1px 22px 44px rgba(0, 0, 0, 0.19);
         transition: 0.6s;
         border-radius: 2px;
@@ -148,7 +150,7 @@
         .content_services {
           .title {
             width: 100%;
-            color: #fff;
+            color: $white;
             font-size: 28px;
             font-weight: 700;
             line-height: 36px;
@@ -156,7 +158,7 @@
           }
           .text {
             width: 100%;
-            color: #fff;
+            color: $white;
             font-size: 14px;
             font-weight: 300;
           }
@@ -187,9 +189,9 @@
             position: absolute;
             bottom: 15px;
             right: 25px;
-            color: #fff;
+            color: $white;
             font-size: 14px;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid $white;
             opacity: 0;
             transform: translateY(100%);
             transition: 0.6s;
@@ -227,7 +229,7 @@
         overflow: hidden;
         width: 90%;
         height: 400px;
-        background: #fff;
+        background: $white;
         box-shadow: 1px 22px 44px rgba(0, 0, 0, 0.19);
         transition: 0.6s;
         border-radius: 2px;
@@ -237,7 +239,7 @@
         .content_services {
           .title {
             width: 100%;
-            color: #fff;
+            color: $white;
             font-size: 28px;
             font-weight: 700;
             line-height: 36px;
@@ -245,7 +247,7 @@
           }
           .text {
             width: 100%;
-            color: #fff;
+            color: $white;
             font-size: 14px;
             font-weight: 300;
           }
@@ -258,7 +260,7 @@
           left: 0;
           padding: 25px 25px 50px 25px;
           background: rgba(0, 0, 0, 0.78);
-          color: #fff;
+          color: $white;
           font-weight: 300;
           opacity: 0;
           transition: 0.8s;
@@ -276,9 +278,9 @@
             position: absolute;
             bottom: 15px;
             right: 25px;
-            color: #fff;
+            color: $white;
             font-size: 14px;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid $white;
             opacity: 0;
             transform: translateY(100%);
             transition: 0.6s;

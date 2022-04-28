@@ -1,8 +1,10 @@
+@import "../../global.scss";
 
 .footer {
-	background-color: #04a2df;
+	background-color: $main-color;
 	padding: 40px 0;
-	color: white;
+	color: $white;
+	
 
 	.footer_description{
 		display: flex;
@@ -12,7 +14,7 @@
 
 		a{
 			text-decoration: none;
-			color: white;
+			color: $white;
 		}
 
 		li{
@@ -24,11 +26,14 @@
 		padding-top: 15px;
 		p{
 			text-align: center;
+			text-decoration: none;
+		}
+		a{
+			text-decoration: none;
 		}
 		.copyright_sli_bot{
 			font-weight: 800;
-			text-decoration: none;
-			color: white;
+			color: $white;
 		}
 	}
 }

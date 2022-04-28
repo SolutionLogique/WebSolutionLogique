@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .materiel_container {
   display: flex;
   width: 100%;
@@ -15,7 +17,7 @@
 
     span {
       font-weight: 600;
-      color: #04a2df;
+      color: $main-color;
     }
   }
   .materiel_right_side {
