@@ -9,12 +9,21 @@
 .container {
   max-width: 1300px;
   margin: auto;
+
+  @include mobile{
+    max-width: 95%;
+    text-align: center;
+  }
 }
 
 h1 {
   text-align: center;
   font-size: 3em;
   color: $main-color;
+
+  @include mobile{
+    font-size: 2.5em;
+  }
 }
 
 .banner {
@@ -94,6 +103,10 @@ h1 {
   padding: 100px 0;
   align-items: center;
   justify-content: center;
+
+  @include mobile{
+    flex-direction: column;
+  }
 
   .home_conseils_sli_left {
     width: 40%;

@@ -18,10 +18,19 @@
     display: flex;
     width: 100%;
     margin: 100px 0;
+
+    @include mobile {
+      flex-direction: column;
+    }
     .home_container_left_side {
       width: 50%;
       margin: 10px;
       padding-right: 50px;
+
+      @include mobile {
+        width: 90%;
+        text-align: center;
+      }
       h2 {
         font-size: 2em;
       }
@@ -31,6 +40,10 @@
       }
     }
     .home_container_right_side {
+      @include mobile {
+        width: 80%;
+        text-align: center;
+      }
       background: linear-gradient(
         90deg,
         rgba(4, 162, 223, 1) 0%,
@@ -53,6 +66,10 @@
       }
       h1 {
         color: $white;
+
+        @include mobile {
+          font-size: 2em;
+        }
       }
       p {
         color: $white;
@@ -85,6 +102,10 @@
     .home_services {
       display: flex;
 
+      @include mobile {
+        flex-direction: column;
+      }
+
       .home_services_icon {
         font-size: 3.5em;
         cursor: pointer;
@@ -104,6 +125,20 @@
         h1 {
           font-size: 1.2em;
           padding: 15px 0px;
+        }
+      }
+    }
+  }
+
+  .home_conseils_sli {
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .home_conseils_sli_right {
+      p {
+        @include mobile {
+          font-size: 1.2em;
         }
       }
     }

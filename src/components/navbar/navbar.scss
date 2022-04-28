@@ -9,6 +9,12 @@
   z-index: 1;
   position: fixed;
   width: 100%;
+
+  
+  @include mobile{
+    flex-direction: column;
+    position: relative;
+  }
   li {
     list-style-type: none;
     cursor: pointer;

@@ -3,6 +3,10 @@
 .ebp_comptabilite {
   text-align: center;
 
+  .title_ebp{
+    text-transform: uppercase;
+  }
+
   .sub_title_ebp {
     color: $main-color;
   }

@@ -5,7 +5,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 function Ebpcomptabilite() {
   return (
     <div>
-      <h1>EBP Comptabilité</h1>
+      <h1 className="title_ebp">EBP Comptabilité</h1>
       <div className="container ebp_comptabilite">
         <p>
           Bien que la comptabilité soit une discipline universelle, chaque

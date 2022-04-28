@@ -12,6 +12,10 @@
 		justify-content: center;
 		font-size: 1.2em;
 
+		@include mobile{
+			flex-direction: column;
+		  }
+
 		a{
 			text-decoration: none;
 			color: $white;
@@ -20,6 +24,10 @@
 		li{
 			list-style: none;
 			padding: 0px 25px;
+
+			@include mobile{
+				padding: 10px 0px;
+			  }
 		}
 	}
 	.copyright_sli{
