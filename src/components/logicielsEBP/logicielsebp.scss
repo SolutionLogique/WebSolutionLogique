@@ -105,6 +105,10 @@
 }
 .card-grid {
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+  }
 }
 .card {
   width: 100%;
@@ -140,6 +144,11 @@
   transition: opacity 0.8s linear;
   border-radius: 25px;
 
+  @include mobile{
+    padding: 0px;
+    border-radius: 0px;
+  }
+
   &:hover {
     background-color: white;
     opacity: 0.9;
@@ -158,6 +167,11 @@
   transition: right 0.8s linear;
   text-align: center;
   padding: 15px;
+
+  @include mobile{
+    padding: 0px;
+    margin: 0px 20px;
+  }
 
   p {
     color: black;
@@ -178,6 +192,12 @@
   text-decoration: unset;
   padding: 5px 10px;
   border: 1px solid;
+
+  @include mobile{
+    bottom: -20px;
+    margin-top: 10px;
+    
+  }
 
   &:hover {
     background-color: white;

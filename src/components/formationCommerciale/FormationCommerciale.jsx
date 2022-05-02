@@ -22,7 +22,7 @@ function FormationCommerciale() {
           </p>
           <a
             href="assets/Programme_GestionCommerciale_NivInitial.pdf"
-            class="btn_help btn_help_right"
+            className="btn_help btn_help_right"
             target="blank"
           >
             En savoir plus

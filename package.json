@@ -5,6 +5,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
+    "@react-google-maps/api": "^2.10.2",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +15,7 @@
     "jquery": "^3.6.0",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
+    "react-cookie-consent": "^7.4.1",
     "react-countup": "^6.2.0",
     "react-dom": "^17.0.2",
     "react-elastic-carousel": "^0.11.5",

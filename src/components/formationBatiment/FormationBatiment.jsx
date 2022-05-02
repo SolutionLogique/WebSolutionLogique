@@ -20,7 +20,7 @@ function FormationBatiment() {
           </p>
           <a
             href="assets/Programme_GestionBatiment_NivInitial.pdf"
-            class="btn_help btn_help_right"
+            className="btn_help btn_help_right"
             target="blank"
           >
             En savoir plus

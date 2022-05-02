@@ -22,7 +22,7 @@ function FormationCompta() {
             </p>
             <a
               href="assets/Programme_Comptabilite_NivInitial.pdf"
-              class="btn_help btn_help_right"
+              className="btn_help btn_help_right"
               target="blank"
             >
              En savoir plus 

@@ -19,23 +19,23 @@ function NosServices() {
       <h1 className="heading_logiciels">NOS SERVICES</h1>
       <div class="fullscreen">
         <div
-          class="card card_1"
+          className="card card_1"
           style={{
             backgroundImage: "url(/assets/informatique.jpg)",
           }}
         >
-          <div class="content_services">
-            <div class="title">Informatique</div>
-            <div class="text">
+          <div className="content_services">
+            <div className="title">Informatique</div>
+            <div className="text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </div>
           </div>
           <Link to="/informatique">
-            <div class="sinopse">
-              <div class="content-sinopse">
-                <div class="title">Plus d'informations :</div>
-                <div class="text">
+            <div className="sinopse">
+              <div className="content-sinopse">
+                <div className="title">Plus d'informations :</div>
+                <div className="text">
                   <ul>
                     <h3>Infrastructure</h3>
                     <li className="second_description">
@@ -73,23 +73,23 @@ function NosServices() {
           </Link>
         </div>
         <div
-          class="card card_1"
+          className="card card_1"
           style={{
             backgroundImage: "url(/assets/telecom.png)",
           }}
         >
-          <div class="content_services">
-            <div class="title">Télécom</div>
-            <div class="text">
+          <div className="content_services">
+            <div className="title">Télécom</div>
+            <div className="text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </div>
           </div>
           <Link to="/telecom">
-          <div class="sinopse">
-            <div class="content-sinopse">
-              <div class="title">Plus d'informations :</div>
-              <div class="text">
+          <div className="sinopse">
+            <div className="content-sinopse">
+              <div className="title">Plus d'informations :</div>
+              <div className="text">
                 <ul>
                   <h3>Téléphonie fixe et mobile</h3>
                   <li className="second_description">Téléphonie IP</li>
@@ -110,23 +110,23 @@ function NosServices() {
           </Link>
         </div>
         <div
-          class="card card_1"
+          className="card card_1"
           style={{
             backgroundImage: "url(/assets/securite_info.jpg)",
           }}
         >
-          <div class="content_services">
-            <div class="title">Sécurité</div>
-            <div class="text">
+          <div className="content_services">
+            <div className="title">Sécurité</div>
+            <div className="text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </div>
           </div>
           <Link to="/securite">
-          <div class="sinopse">
-            <div class="content-sinopse">
-              <div class="title">Plus d'informations :</div>
-              <div class="text">
+          <div className="sinopse">
+            <div className="content-sinopse">
+              <div className="title">Plus d'informations :</div>
+              <div className="text">
                 <ul>
                   <h3>Sécurité du SI</h3>
                   <li className="second_description">
@@ -159,7 +159,7 @@ function NosServices() {
           </p>
           <a
             href="https://www.islonline.com/fr/fr/join/"
-            class="btn_help btn_help_right"
+            className="btn_help btn_help_right"
             target="blank"
           >
             Besoin d'aide ?

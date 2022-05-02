@@ -320,7 +320,7 @@ function LogicielsEbp() {
             </p>
             <a
               href="https://www.islonline.com/fr/fr/join/"
-              class="btn_help btn_help_right"
+              className="btn_help btn_help_right"
               target="blank"
             >
               Besoin d'aide ?

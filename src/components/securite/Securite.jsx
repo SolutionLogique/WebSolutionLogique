@@ -11,7 +11,7 @@ function Securite() {
     <div className="container">
       <h1>SOLUTIONS SÉCURITÉ</h1>
       <div className="container">
-        <h2 className="informatique_section_title">Sécurité du SI</h2>
+        <h2 className="informatique_section_title">Sécurité du Système d'information</h2>
         <div className="card_informatique">
           <div className="card_informatique_left_side">
             <img
