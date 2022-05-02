@@ -2,6 +2,7 @@
 
 .ebp_comptabilite {
   text-align: center;
+  
 
   .title_ebp{
     text-transform: uppercase;
@@ -39,13 +40,25 @@
     display: flex;
     padding: 50px 0px;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .description_software {
       padding: 0px 50px;
       text-align: left;
+
+      @include mobile {
+        text-align: center;
+      }
     }
 
     h3 {
       padding-bottom: 40px;
+
+      @include mobile {
+        text-align: center;
+      }
     }
 
     .comptabilite_icons {
@@ -55,12 +68,24 @@
 
     .colum_software_1 {
       width: 33.33%;
+
+      @include mobile {
+        width: 100%;
+      }
     }
     .colum_software_2 {
       width: 33.33%;
+
+      @include mobile {
+        width: 100%;
+      }
     }
     .colum_software_3 {
       width: 33.33%;
+
+      @include mobile {
+        width: 100%;
+      }
     }
   }
 
@@ -97,5 +122,9 @@
     padding-bottom: 50px;
     text-align: center;
     padding-top: 20px;
+
+    @include mobile {
+      display: block;
+    }
   }
 }
