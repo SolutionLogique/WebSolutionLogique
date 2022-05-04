@@ -23,7 +23,6 @@ function Telecom() {
           <div className="card_informatique_left_side">
             <img
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/telephonie.png"
             ></img>
           </div>
@@ -84,7 +83,6 @@ function Telecom() {
           <div className="card_informatique_right_side">
             <img
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/connectivité.jpg"
             ></img>
           </div>

@@ -27,7 +27,6 @@ function Informatique() {
           <div className="card_informatique_left_side">
             <img
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/infrastructure.jpg"
             ></img>
           </div>
@@ -100,7 +99,6 @@ function Informatique() {
           <div className="card_informatique_right_side">
             <img
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/environnement.jpg"
             ></img>
           </div>
@@ -110,7 +108,6 @@ function Informatique() {
           <div className="card_informatique_left_side">
             <img
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/hebergement.jpg"
             ></img>
           </div>

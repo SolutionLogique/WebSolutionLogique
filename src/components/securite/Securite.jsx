@@ -16,7 +16,6 @@ function Securite() {
           <div className="card_informatique_left_side">
             <img
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/securite.jpg"
             ></img>
           </div>

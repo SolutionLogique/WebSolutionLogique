@@ -28,7 +28,6 @@ function Home() {
               <img
                 className="device_sli"
                 alt="logo_solution_logique_informatique"
-                href=""
                 src="assets/sli.png"
               ></img>
             </div>
@@ -57,7 +56,6 @@ function Home() {
             <img
               className="img_right_side"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/solution.png"
             ></img>
           </div>
@@ -123,7 +121,6 @@ function Home() {
             <img
               className="img_right_side"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/assistance.png"
             ></img>
           </div>
@@ -152,7 +149,6 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/ebp.png"
             ></img>
           </Item>
@@ -161,7 +157,6 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/stormshield.jpg"
             ></img>
           </Item>
@@ -179,7 +174,6 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/vmware.png"
             ></img>
           </Item>
@@ -188,7 +182,6 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/lenovo.png"
             ></img>
           </Item>
@@ -197,7 +190,6 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/oxatis.png"
             ></img>
           </Item>
@@ -206,7 +198,6 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              href=""
               src="assets/kyocera.png"
             ></img>
           </Item>

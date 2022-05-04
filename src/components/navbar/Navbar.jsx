@@ -7,7 +7,6 @@ function Navbar() {
       <Link to="/">
         <img
           alt="logo_solution_logique_informatique"
-          href=""
           src="assets/logo.png"
         ></img>
       </Link>
