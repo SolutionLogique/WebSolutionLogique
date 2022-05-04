@@ -5,6 +5,13 @@
   height: 60vh;
   display: flex;
 
+  @include tablet{
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
   @include mobile{
     height: 100%;
     flex-direction: column;
@@ -29,9 +36,10 @@
       padding: 50px 0;
     }
 
-    @include mobile{
-      width: 100%;
-      flex-direction: column;
+    @include tablet{
+      width: 50%;
+      height: 50%;
+
     }
     .second_description {
       list-style-type: circle;

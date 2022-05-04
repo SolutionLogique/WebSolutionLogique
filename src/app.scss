@@ -108,8 +108,17 @@ h1 {
     flex-direction: column;
   }
 
+  @include tablet {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+
   .home_conseils_sli_left {
     width: 40%;
+
+    @include tablet {
+      width: 70%;
+    }
 
     img {
       width: 100%;
@@ -122,7 +131,6 @@ h1 {
     @include mobile {
       width: 100%;
     }
-    
 
     h2 {
       padding-bottom: 15px;

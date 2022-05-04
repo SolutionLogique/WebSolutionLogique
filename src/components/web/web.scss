@@ -10,4 +10,9 @@
         width: 100%;
         padding: 0px;
       }
+
+      @include tablet{
+        width: 80%;
+        align-items: center;
+      }
 }

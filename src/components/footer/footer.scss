@@ -21,6 +21,10 @@
 			color: $white;
 		}
 
+		@include tablet{
+			font-size: 0.9em;
+		  }
+
 		li{
 			list-style: none;
 			padding: 0px 25px;
