@@ -21,7 +21,7 @@ function NosServices() {
         <div
           className="card card_1"
           style={{
-            backgroundImage: "url(/assets/informatique.jpg)",
+            backgroundImage: "url(/assets/informatique.webp)",
           }}
         >
           <div className="content_services">
@@ -75,7 +75,7 @@ function NosServices() {
         <div
           className="card card_1"
           style={{
-            backgroundImage: "url(/assets/telecom.png)",
+            backgroundImage: "url(/assets/telecom.webp)",
           }}
         >
           <div className="content_services">
@@ -112,7 +112,7 @@ function NosServices() {
         <div
           className="card card_1"
           style={{
-            backgroundImage: "url(/assets/securite_info.jpg)",
+            backgroundImage: "url(/assets/securite_info.webp)",
           }}
         >
           <div className="content_services">
@@ -146,7 +146,7 @@ function NosServices() {
           <img
             className="img_right_side"
             alt="logo_solution_logique_informatique"
-            src="assets/assistance.png"
+            src="assets/assistance.webp"
           ></img>
         </div>
         <div className="home_conseils_sli_right">

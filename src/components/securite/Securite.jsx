@@ -16,7 +16,7 @@ function Securite() {
           <div className="card_informatique_left_side">
             <img
               alt="logo_solution_logique_informatique"
-              src="assets/securite.jpg"
+              src="assets/securite.webp"
             ></img>
           </div>
           <div className="card_informatique_right_side">

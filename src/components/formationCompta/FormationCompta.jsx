@@ -10,7 +10,7 @@ function FormationCompta() {
             <img
               className="img_right_side"
               alt="logo_solution_logique_informatique"
-              src="assets/formations_ebp.jpg"
+              src="assets/formations_ebp.webp"
             ></img>
           </div>
           <div className="home_conseils_sli_right">

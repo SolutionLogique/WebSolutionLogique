@@ -27,7 +27,7 @@ function Informatique() {
           <div className="card_informatique_left_side">
             <img
               alt="logo_solution_logique_informatique"
-              src="assets/infrastructure.jpg"
+              src="assets/infrastructure.webp"
             ></img>
           </div>
           <div className="card_informatique_right_side">
@@ -99,7 +99,7 @@ function Informatique() {
           <div className="card_informatique_right_side">
             <img
               alt="logo_solution_logique_informatique"
-              src="assets/environnement.jpg"
+              src="assets/environnement.webp"
             ></img>
           </div>
         </div>
@@ -108,7 +108,7 @@ function Informatique() {
           <div className="card_informatique_left_side">
             <img
               alt="logo_solution_logique_informatique"
-              src="assets/hebergement.jpg"
+              src="assets/hebergement.webp"
             ></img>
           </div>
           <div className="card_informatique_right_side">

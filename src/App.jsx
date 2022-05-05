@@ -27,7 +27,7 @@ function App() {
         className="banner"
         alt="logo_solution_logique_informatique"
         href=""
-        src="assets/cloud.jpg"
+        src="assets/cloud.webp"
       ></img>
       <Routes>
         <Route exact path="/" element={<Home />} />

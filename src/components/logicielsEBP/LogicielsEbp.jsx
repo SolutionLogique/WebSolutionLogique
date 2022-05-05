@@ -20,7 +20,7 @@ function LogicielsEbp() {
             <div
               className="card card0"
               style={{
-                backgroundImage: "url(/assets/compta.jpg)",
+                backgroundImage: "url(/assets/compta.webp)",
               }}
             >
               <div className="overlay">
@@ -39,7 +39,7 @@ function LogicielsEbp() {
             </div>
             <div
               className="card card1"
-              style={{ backgroundImage: "url(/assets/gestion-co.jpg)" }}
+              style={{ backgroundImage: "url(/assets/gestion-co.webp)" }}
             >
               <div className="overlay">
                 <div className="content">
@@ -57,7 +57,7 @@ function LogicielsEbp() {
             </div>
             <div
               className="card card2"
-              style={{ backgroundImage: "url(/assets/batiments.jpg)" }}
+              style={{ backgroundImage: "url(/assets/batiments.webp)" }}
             >
               <div className="overlay">
                 <div className="content">
@@ -226,7 +226,7 @@ function LogicielsEbp() {
             <div
               className="card card0"
               style={{
-                backgroundImage: "url(/assets/compta.jpg)",
+                backgroundImage: "url(/assets/compta.webp)",
               }}
             > 
               <div className="overlay">
@@ -254,7 +254,7 @@ function LogicielsEbp() {
             </div>
             <div
               className="card card1"
-              style={{ backgroundImage: "url(/assets/gestion-co.jpg)" }}
+              style={{ backgroundImage: "url(/assets/gestion-co.webp)" }}
             >
               <div className="overlay">
                 <div className="content">
@@ -278,7 +278,7 @@ function LogicielsEbp() {
             </div>
             <div
               className="card card2"
-              style={{ backgroundImage: "url(/assets/batiments.jpg)" }}
+              style={{ backgroundImage: "url(/assets/batiments.webp)" }}
             >
               <div className="overlay">
                 <div className="content">
@@ -307,7 +307,7 @@ function LogicielsEbp() {
             <img
               className="img_right_side"
               alt="logo_solution_logique_informatique"
-              src="assets/assistance.png"
+              src="assets/assistance.webp"
             ></img>
           </div>
           <div className="home_conseils_sli_right">

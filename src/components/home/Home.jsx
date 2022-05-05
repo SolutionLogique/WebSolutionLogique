@@ -28,7 +28,7 @@ function Home() {
               <img
                 className="device_sli"
                 alt="logo_solution_logique_informatique"
-                src="assets/sli.png"
+                src="assets/sli.webp"
               ></img>
             </div>
             <div className="left_bot_side">
@@ -56,7 +56,7 @@ function Home() {
             <img
               className="img_right_side"
               alt="logo_solution_logique_informatique"
-              src="assets/solution.png"
+              src="assets/solution.webp"
             ></img>
           </div>
         </div>
@@ -121,7 +121,7 @@ function Home() {
             <img
               className="img_right_side"
               alt="logo_solution_logique_informatique"
-              src="assets/assistance.png"
+              src="assets/assistance.webp"
             ></img>
           </div>
           <div className="home_conseils_sli_right">
@@ -149,7 +149,7 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/ebp.png"
+              src="assets/ebp.webp"
             ></img>
           </Item>
           <Item>
@@ -157,7 +157,7 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/stormshield.jpg"
+              src="assets/stormshield.webp"
             ></img>
           </Item>
           <Item>
@@ -166,7 +166,7 @@ function Home() {
               className="device_sli"
               alt="logo_solution_logique_informatique"
               href=""
-              src="assets/3cx.png"
+              src="assets/3cx.webp"
             ></img>
           </Item>
           <Item>
@@ -174,7 +174,7 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/vmware.png"
+              src="assets/vmware.webp"
             ></img>
           </Item>
           <Item>
@@ -182,7 +182,7 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/lenovo.png"
+              src="assets/lenovo.webp"
             ></img>
           </Item>
           <Item>
@@ -190,7 +190,7 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/oxatis.png"
+              src="assets/oxatis.webp"
             ></img>
           </Item>
           <Item>
@@ -198,7 +198,7 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/kyocera.png"
+              src="assets/kyocera.webp"
             ></img>
           </Item>
         </Carousel>

@@ -89,7 +89,7 @@ function Contact() {
           <img
             className="img_right_side"
             alt="logo_solution_logique_informatique"
-            src="assets/assistance.png"
+            src="assets/assistance.webp"
           ></img>
         </div>
         <div className="home_conseils_sli_right">
