@@ -225,9 +225,8 @@ function LogicielsEbp() {
               </div>
               <div className="logo_qualiopi">
             <img
-              className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/Logo Qualiopi.jpg"
+              src="assets/Logo Qualiopi-300dpi.png"
             ></img>
             <div className="logo_qualiopi_description">
               <p>
