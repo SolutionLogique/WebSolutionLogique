@@ -184,13 +184,6 @@ function Home() {
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
-              src="assets/logo-qualiopi.webp"
-            ></img>
-          </Item>
-          <Item>
-            <img
-              className="device_sli"
-              alt="logo_solution_logique_informatique"
               src="assets/lenovo.webp"
             ></img>
           </Item>
