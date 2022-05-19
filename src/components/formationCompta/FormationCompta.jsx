@@ -5,6 +5,13 @@ function FormationCompta() {
   return (
     <div className="container">
       <h1>FORMATION AU LOGICIEL EBP COMPTABILITE</h1>
+      <div className="logo_formation">
+        <img
+          className="device_sli"
+          alt="logo_solution_logique_informatique"
+          src="assets/EBP_Compta-Gesco.PNG"
+        ></img>
+      </div>
       <div className="home_conseils_sli">
           <div className="home_conseils_sli_left">
             <img

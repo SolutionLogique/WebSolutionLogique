@@ -15,6 +15,7 @@ import {
   faEnvelopesBulk,
   faWindowClose,
   faCloudArrowUp,
+  faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Informatique() {
@@ -59,6 +60,10 @@ function Informatique() {
             <div className="informations_informatique">
               <FontAwesomeIcon className="icons_informatique" icon={faCamera} />
               <h3>Vidéo surveillance</h3>
+            </div>
+            <div className="informations_informatique">
+              <FontAwesomeIcon className="icons_informatique" icon={faVideo} />
+              <h3>Vidéo projection</h3>
             </div>
           </div>
         </div>

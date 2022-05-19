@@ -55,7 +55,6 @@
       }
 
       @include tablet {
-        width: 90%;
         text-align: center;
       }
       background: linear-gradient(
@@ -126,8 +125,6 @@
 
       @include tablet {
         width: 90%;
-        text-align: center;
-        display: grid;
         grid-template-columns: 200px 200px 200px;
         justify-content: space-between;
         margin: auto;

@@ -2,7 +2,7 @@ $main-color: #04a2df;
 $white: #fff;
 
 $width: 414px;
-$width-tablet: 1347px;
+$width-tablet: 830px;
 
 @mixin mobile {
     @media (max-width: #{$width}){

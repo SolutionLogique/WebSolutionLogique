@@ -7,18 +7,10 @@ function Ebpbatiment() {
       <h1>EBP Bâtiment</h1>
       <div className="container ebp_comptabilite">
         <p>
-          La nouvelle génération de logiciels de Comptabilité laisse désormais
-          place à une nouvelle identité. Le découpage fonctionnel des logiciels
-          que vous connaissez actuellement (Classic, Pro, Ligne PME) fait
-          également peau neuve et sera dorénavant représenté par les gammes
-          suivantes :
+        Grâce à notre logiciel de gestion dédié au bâtiment et aux artisans du BTP, faire un devis
+n’aura jamais été aussi simple ! Calculez vos prix au plus juste et chiffrez facilement vos
+devis. Optimisez votre trésorerie au quotidien en facturant vos clients à l’avancement.
         </p>
-        <h3 className="sub_title_ebp">
-          <span>EBP Comptabilité</span> est une solution qui vous permet de
-          tenir votre comptabilité générale et analytique. L’échange des données
-          entre le logiciel EBP et la solution d’un cabinet d’Expert-Comptable
-          est intégré grâce à l’outil de Communication Entreprise-Expert.
-        </h3>
         <div className="colum_software_compta">
           <div className="colum_software_1">
             <h3 className="title_software">Logiciel Bâtiment</h3>

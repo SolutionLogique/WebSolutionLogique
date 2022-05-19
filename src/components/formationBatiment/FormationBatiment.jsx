@@ -2,6 +2,13 @@ function FormationBatiment() {
   return (
     <div className="container">
       <h1>FORMATION AU LOGICIEL EBP GESTION BÂTIMENT</h1>
+      <div className="logo_formation">
+        <img
+          className="device_sli"
+          alt="logo_solution_logique_informatique"
+          src="assets/EBP_Batiment.png"
+        ></img>
+      </div>
       <div className="home_conseils_sli">
         <div className="home_conseils_sli_left">
           <img

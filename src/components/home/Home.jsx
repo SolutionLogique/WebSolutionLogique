@@ -145,7 +145,6 @@ function Home() {
       <div className="home_carousel_partner">
         <Carousel breakPoints={breakPoints}>
           <Item>
-            {" "}
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
@@ -153,7 +152,13 @@ function Home() {
             ></img>
           </Item>
           <Item>
-            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              src="assets/dell.webp"
+            ></img>
+          </Item>
+          <Item>
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
@@ -161,7 +166,6 @@ function Home() {
             ></img>
           </Item>
           <Item>
-            {" "}
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
@@ -170,7 +174,6 @@ function Home() {
             ></img>
           </Item>
           <Item>
-            {" "}
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
@@ -178,7 +181,13 @@ function Home() {
             ></img>
           </Item>
           <Item>
-            {" "}
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              src="assets/logo-qualiopi.webp"
+            ></img>
+          </Item>
+          <Item>
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
@@ -186,7 +195,6 @@ function Home() {
             ></img>
           </Item>
           <Item>
-            {" "}
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"
@@ -194,7 +202,6 @@ function Home() {
             ></img>
           </Item>
           <Item>
-            {" "}
             <img
               className="device_sli"
               alt="logo_solution_logique_informatique"

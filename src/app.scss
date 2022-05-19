@@ -98,10 +98,15 @@ h1 {
   );
 }
 
+.logo_formation{
+  display: block;
+  text-align: center;
+}
+
 .home_conseils_sli {
   width: 100%;
   display: flex;
-  padding: 100px 0;
+  padding: 50px 0 100px 0;
   align-items: center;
   justify-content: center;
 

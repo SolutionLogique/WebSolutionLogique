@@ -47,7 +47,7 @@ function Telecom() {
                 className="icons_informatique"
                 icon={faMobileScreen}
               />
-              <h3>Forfait 4G et mobiles</h3>
+              <h3>Forfait 4G + 5G et mobiles</h3>
             </div>
             <div className="informations_informatique">
               <FontAwesomeIcon

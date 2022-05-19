@@ -119,7 +119,7 @@ function LogicielsEbp() {
             </div>
           </div>
           <div className="form_formations_sli">
-          <h2>Prix à la ½ journée</h2>
+            <h2>Prix à la ½ journée</h2>
             <h1>485€</h1>
             <h3>
               Nos formations sont accessibles selon les modalités ci-dessous :
@@ -165,8 +165,7 @@ function LogicielsEbp() {
               </div>
               <div className="formations_block">
                 <h2>
-                Délais d’accès en formation Intra-entreprise et Individuel
-                  :
+                  Délais d’accès en formation Intra-entreprise et Individuel :
                 </h2>
                 <p>
                   Solution Logique vous proposera des dates le plus tôt possible
@@ -176,7 +175,11 @@ function LogicielsEbp() {
                   d’accélérer le démarrage de votre formation. Vous êtes acteur
                   de votre demande et seul décisionnaire, les délais de
                   traitement sont donc très rapides si une date de formation est
-                  déjà fixée. <Link to="/engagementHandicap">Notre engagement dans le handicap pour en savoir plus cliquez ici.</Link> 
+                  déjà fixée.{" "}
+                  <Link to="/engagementHandicap">
+                    Notre engagement dans le handicap pour en savoir plus
+                    cliquez ici.
+                  </Link>
                 </p>
               </div>
 
@@ -220,6 +223,20 @@ function LogicielsEbp() {
                   co-financements, de nombreux projets de formation.
                 </p>
               </div>
+              <div className="logo_qualiopi">
+            <img
+              className="device_sli"
+              alt="logo_solution_logique_informatique"
+              src="assets/Logo Qualiopi.jpg"
+            ></img>
+            <div className="logo_qualiopi_description">
+              <p>
+                La certification qualité a été délivrée au titre de la ou des
+                catégories d'actions suivantes :
+              </p>
+              <p>ACTIONS DE FORMATION</p>
+            </div>
+          </div>
             </div>
           </div>
           <div className="card-grid">
@@ -228,7 +245,7 @@ function LogicielsEbp() {
               style={{
                 backgroundImage: "url(/assets/compta.webp)",
               }}
-            > 
+            >
               <div className="overlay">
                 <div className="content">
                   <h2> Formation Comptabilité</h2>
