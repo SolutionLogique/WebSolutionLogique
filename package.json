@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@react-google-maps/api": "^2.10.2",
@@ -26,6 +27,7 @@
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
     "sass": "^1.49.9",
+    "styled-components": "^5.3.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
