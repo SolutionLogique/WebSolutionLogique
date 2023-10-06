@@ -3,6 +3,7 @@
 .informatique_section_title {
   text-align: center;
   font-size: 2.2em;
+  font-weight: 500;
   padding-top: 50px;
   text-transform: uppercase;
 
@@ -32,9 +33,15 @@
 .card_informatique {
   width: 100%;
   display: flex;
-  margin: 50px 0;
+  margin: 20px -60px;
   align-items: center;
   cursor: pointer;
+  background-color: $grey;
+  border-radius: 30%;
+  padding: 70px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.17);
+
+
 
   @include mobile{
     flex-direction: column;
@@ -49,8 +56,14 @@
     font-size: 25px;
   }
 
+  .img-informatique{
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  }
   .card_informatique_left_side {
     width: 50%;
+    padding-left: 50px;
+    padding-right:50px;
 
     @include tablet{
       width: 70%;
@@ -85,6 +98,7 @@
       align-items: center;
       align-content: center;
 
+
       @include mobile{
         flex-direction: column;
       }
@@ -97,7 +111,7 @@
 
     img {
       width: 100%;
-      border-radius: 25px;
+      border-radius: 50px;
 
       @include tablet{
         padding-left: 12px;
@@ -125,6 +139,7 @@
       text-align: end;
       color: $main-color;
       font-size: 1.3em;
+      font-weight: 400;
 
       @include mobile{
         padding-right: 0px;
@@ -138,6 +153,9 @@
   }
   .card_informatique_right_side {
     width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+
 
     @include tablet{
       width: 70%;
@@ -165,18 +183,23 @@
       display: flex;
       align-items: center;
       align-content: center;
-      padding-left: 50px;
+
 
       @include mobile{
         flex-direction: column;
         text-align: center;
-        padding-left: 0px;
+        padding-left: 0;
         margin: 20px 0;
       }
 
       icon {
         color: blue;
       }
+
+      h3 {
+        font-weight: 400;
+      }
+
     }
 
     img {
@@ -198,6 +221,7 @@
         }
       }
     }
+
 
     h3 {
       margin: 10px;

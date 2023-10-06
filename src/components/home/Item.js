@@ -6,8 +6,17 @@ export default styled.div`
   align-items: center;
   height: 250px;
   width: 100%;
-  background-color: #00008B;
   color: #fff;
   margin: 0 15px;
   font-size: 4em;
 `;
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})

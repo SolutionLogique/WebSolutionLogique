@@ -2,9 +2,9 @@
 
 .ebp_comptabilite {
   text-align: center;
-  
 
-  .title_ebp{
+
+  .title_ebp {
     text-transform: uppercase;
   }
 
@@ -48,6 +48,7 @@
       padding: 0px 50px;
       text-align: left;
 
+
       @include mobile {
         text-align: center;
       }
@@ -73,6 +74,7 @@
         width: 100%;
       }
     }
+
     .colum_software_2 {
       width: 33.33%;
 
@@ -80,6 +82,7 @@
         width: 100%;
       }
     }
+
     .colum_software_3 {
       width: 33.33%;
 
@@ -94,7 +97,7 @@
     align-items: center;
     justify-content: center;
     padding: 0.7rem 2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Segoe UI", sans-serif;
     font-weight: 700;
     font-size: 18px;
     text-align: center;

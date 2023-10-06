@@ -1,8 +1,12 @@
-$main-color: #04a2df;
+$main-color: #1889C3;
 $white: #fff;
+$black: #ffffff;
+$grey: rgba(125, 122, 125, 0.1);
 
 $width: 414px;
 $width-tablet: 830px;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
 @mixin mobile {
     @media (max-width: #{$width}){
@@ -15,3 +19,4 @@ $width-tablet: 830px;
         @content
     }
 }
+

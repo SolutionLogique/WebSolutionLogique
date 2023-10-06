@@ -51,7 +51,7 @@ function NosServices() {
                     </li>
                     <li className="second_description">Vidéo surveillance</li>
                     <h3>Environnement Utilisateur</h3>
-                    <li className="second_description">Post de travail</li>
+                    <li className="second_description">Poste de travail</li>
                     <li className="second_description">Sécurité anti virus</li>
                     <li className="second_description">Outil collaboratif</li>
                     <h3>Hébergement & Cloud</h3>
@@ -61,7 +61,7 @@ function NosServices() {
                     <li className="second_description">Sauvegarde sur place</li>
                     <li className="second_description">Hébergement site web</li>
                     <li className="second_description">
-                      Hebergement et gestion des boites mails
+                      Hébergement et gestion des boites mails
                     </li>
                     <li className="second_description">
                       Stockage de données sur le cloud

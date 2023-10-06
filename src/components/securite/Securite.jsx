@@ -14,7 +14,7 @@ function Securite() {
         <h2 className="informatique_section_title">Sécurité du Système d'information</h2>
         <div className="card_informatique">
           <div className="card_informatique_left_side">
-            <img
+            <img className="img-informatique"
               alt="logo_solution_logique_informatique"
               src="assets/securite.webp"
             ></img>
