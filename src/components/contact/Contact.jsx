@@ -15,7 +15,7 @@ function Contact() {
         <div className="home_conseils_sli_right">
           <h1>Besoin de plus d'informations ?</h1>
           <a
-            href="mailto:alexandre@solution-logique.fr"
+            href="mailto:ebp@solution-logique.fr"
             className="btn_help btn_help_right"
             target="blank"
           >
