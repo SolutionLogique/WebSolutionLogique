@@ -1,0 +1,39 @@
+@use './_variables.scss' as *;
+@use './_mixins.scss' as *;
+
+.image_navbar {
+    padding-bottom: 30px;
+}
+
+.home_container_both {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    gap: 1.5rem;
+
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+};
+
+@mixin tablet {
+    @media (max-width: #{$width-tablet}){
+        @content
+    }
+}
+

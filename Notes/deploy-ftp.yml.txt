@@ -1,0 +1,143 @@
+name: 🚀 Deploy to OVH Cloud via FTP
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      skip_deploy:
+        description: 'Skip deployment (true/false)'
+        required: false
+        default: 'false'
+        type: string
+
+env:
+  NODE_VERSION: '18'
+  # Flag global pour désactiver le déploiement
+  SKIP_DEPLOY: ${{ github.event.inputs.skip_deploy || 'false' }}
+
+jobs:
+  # Job de build
+  build:
+    name: 📦 Build Project
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🔍 Run linting
+        run: npm run lint
+
+      - name: 🧪 Run tests
+        run: npm run test
+
+      - name: ⚒️ Build project for export
+        run: npm run export
+
+      - name: 📋 List build output
+        run: |
+          echo "Contenu du dossier out:"
+          ls -la out/ || echo "Dossier out/ introuvable"
+
+      - name: 💾 Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-files
+          path: out/
+          retention-days: 1
+
+  # Job de déploiement
+  deploy:
+    name: 🌐 Deploy to OVH Cloud
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ env.SKIP_DEPLOY != 'true' }}
+    
+    environment:
+      name: production
+      url: ${{ vars.SITE_URL || 'https://solution-logique.fr' }}
+
+    steps:
+      - name: 📥 Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-files
+          path: ./dist
+
+      - name: 📋 Verify downloaded files
+        run: |
+          echo "Fichiers à déployer:"
+          ls -la ./dist
+
+      - name: 🔐 Validate FTP secrets
+        run: |
+          if [ -z "${{ secrets.FTP_HOST }}" ]; then
+            echo "❌ FTP_HOST secret is missing"
+            exit 1
+          fi
+          if [ -z "${{ secrets.FTP_USERNAME }}" ]; then
+            echo "❌ FTP_USERNAME secret is missing"
+            exit 1
+          fi
+          if [ -z "${{ secrets.FTP_PASSWORD }}" ]; then
+            echo "❌ FTP_PASSWORD secret is missing"
+            exit 1
+          fi
+          echo "✅ All FTP secrets are configured"
+
+      - name: 📤 Deploy to OVH Cloud via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_TARGET_DIR || '/' }}
+          protocol: ftps
+          port: 21
+          # Options de sécurité et performance
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.next/**
+            **/.DS_Store
+            **/Thumbs.db
+            **/*.log
+          # Dry run pour tester sans déployer (décommenter si besoin)
+          dry-run: true
+
+  # Job de notification (optionnel)
+  notify:
+    name: 📢 Send Notification
+    runs-on: ubuntu-latest
+    needs: [build, deploy]
+    if: always()
+    
+    steps:
+      - name: 📊 Deployment Status
+        run: |
+          if [ "${{ needs.build.result }}" = "success" ] && [ "${{ needs.deploy.result }}" = "success" ]; then
+            echo "✅ Déploiement réussi !"
+          elif [ "${{ env.SKIP_DEPLOY }}" = "true" ]; then
+            echo "⏭️ Déploiement ignoré (skip-deploy activé)"
+          elif [ "${{ needs.build.result }}" = "failure" ]; then
+            echo "❌ Échec du build"
+            exit 1
+          elif [ "${{ needs.deploy.result }}" = "failure" ]; then
+            echo "❌ Échec du déploiement"
+            exit 1
+          else
+            echo "⚠️ Statut inconnu"
+          fi 
