@@ -108,17 +108,15 @@ function Footer() {
                 ))}
               </ul>
 
-              {/* Télémaintenance externe */}
+              {/* Télémaintenance */}
               <div className="pt-4 border-t border-slate-800">
-                <a 
-                  href="https://www.islonline.com/fr/fr/join/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <Link
+                  href="/telemaintenance"
                   className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"
                 >
                   <span>Accès télémaintenance</span>
                   <ExternalLink className="w-4 h-4" />
-                </a>
+                </Link>
               </div>
             </div>
 

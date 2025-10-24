@@ -71,7 +71,7 @@ function Hero() {
             {/* Logo SLI */}
             <div className="flex justify-center lg:justify-start">
               <Image
-                alt="Solution Logique Informatique"
+                alt="Logo Solution Logique Informatique - Expert informatique Annecy depuis 30 ans"
                 src="/assets/sli.webp"
                 width={280}
                 height={140}
@@ -153,7 +153,7 @@ function Hero() {
 
                 <div className="relative mt-6">
                   <Image
-                    alt="Solution Informatique"
+                    alt="Solutions informatiques complètes pour entreprises - Infrastructure IT, logiciels et télémaintenance"
                     src="/assets/solution.webp"
                     width={500}
                     height={375}

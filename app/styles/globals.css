@@ -285,6 +285,27 @@
   height: auto !important;
 }
 
+/* Styles pour le carousel de partenaires */
+.partners-swiper {
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.partners-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.partners-swiper .swiper-slide {
+  width: auto !important;
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 640px) {
+  .partners-swiper .swiper-slide {
+    max-width: 120px !important;
+  }
+}
+
 /* Focus styles améliorés pour l'accessibilité */
 .focus-visible {
   @apply outline-2 outline-blue-500 outline-offset-2;

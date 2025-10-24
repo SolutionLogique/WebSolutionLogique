@@ -3,7 +3,6 @@ import { POST } from '../route';
 
 // Type pour le mock global
 declare global {
-  // eslint-disable-next-line no-var
   var mockEmailsSend: jest.Mock;
 }
 

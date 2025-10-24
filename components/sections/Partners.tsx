@@ -61,7 +61,7 @@ function Partners() {
                 <div className="group flex items-center justify-center h-24 sm:h-36 px-4 sm:px-8">
                   <div className="relative transition-all duration-500 group-hover:scale-110">
                     <Image
-                      alt={`Logo ${partner.name}`}
+                      alt={`Logo ${partner.name} - Partenaire technologique Solution Logique`}
                       src={`/assets/${partner.logo}`}
                       width={160}
                       height={80}
@@ -87,28 +87,6 @@ function Partners() {
           </p>
         </div>
       </div>
-
-      <style jsx global>{`
-        .partners-swiper {
-          overflow: hidden !important;
-          width: 100% !important;
-        }
-        
-        .partners-swiper .swiper-wrapper {
-          transition-timing-function: linear !important;
-        }
-        
-        .partners-swiper .swiper-slide {
-          width: auto !important;
-          flex-shrink: 0 !important;
-        }
-
-        @media (max-width: 640px) {
-          .partners-swiper .swiper-slide {
-            max-width: 120px !important;
-          }
-        }
-      `}</style>
     </Section>
   );
 }

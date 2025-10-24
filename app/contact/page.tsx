@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+
+// Note: Les métadonnées doivent être ajoutées dans un composant parent server-side
+// ou via un fichier metadata séparé pour les pages client-side
 import Image from "next/image";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import CallbackModal from "@/components/Modal/CallbackModal";

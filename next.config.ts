@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
+const isExportMode = process.env.NEXT_EXPORT === 'true';
+
 const nextConfig: NextConfig = {
     productionBrowserSourceMaps: false,
     reactStrictMode: false,
-    
+
     // Configuration pour l'export statique (activé via variable d'environnement)
-    ...(process.env.NEXT_EXPORT === 'true' && {
+    ...(isExportMode && {
         output: 'export',
         trailingSlash: true,
         images: {
@@ -13,9 +15,10 @@ const nextConfig: NextConfig = {
         },
     }),
 
-    // 🛡️ Headers de sécurité
-    async headers() {
-        return [
+    // 🛡️ Headers de sécurité (désactivés en mode export car gérés par le serveur web)
+    ...(!isExportMode && {
+        async headers() {
+            return [
             {
                 // Appliquer les headers de sécurité à toutes les routes
                 source: '/(.*)',
@@ -53,7 +56,7 @@ const nextConfig: NextConfig = {
                             "script-src 'self' 'unsafe-inline' 'unsafe-eval'", // Next.js a besoin d'unsafe-inline pour le dev
                             "style-src 'self' 'unsafe-inline' fonts.googleapis.com",
                             "img-src 'self' data: https:",
-                            "font-src 'self' fonts.gstatic.com",
+                            "font-src 'self' fonts.gstatic.com data:",
                             "connect-src 'self' api.resend.com",
                             "frame-src 'none'",
                             "object-src 'none'",
@@ -89,7 +92,8 @@ const nextConfig: NextConfig = {
                 ]
             }
         ];
-    },
+        },
+    }),
 };
 
 export default nextConfig;

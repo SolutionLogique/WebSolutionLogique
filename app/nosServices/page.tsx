@@ -1,6 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nos Services - Informatique, Télécom & Sécurité",
+  description: "Découvrez nos services informatiques à Annecy : infrastructure, hébergement cloud, téléphonie IP, sécurité réseau et télémaintenance. Solutions complètes pour entreprises.",
+  keywords: ["services informatiques", "infrastructure IT", "téléphonie IP", "sécurité informatique", "cloud", "télémaintenance", "Annecy"],
+  openGraph: {
+    title: "Services Informatiques Professionnels - Solution Logique",
+    description: "Infrastructure IT, télécom, sécurité et cloud. Solutions complètes pour votre entreprise à Annecy.",
+    type: "website",
+    url: "https://www.solution-logique.fr/nosServices",
+  },
+};
 
 const servicesData = [
   {

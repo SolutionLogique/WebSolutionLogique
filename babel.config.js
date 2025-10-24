@@ -5,8 +5,8 @@ module.exports = {
     '@babel/preset-typescript',
   ],
   plugins: [
-    '@babel/plugin-syntax-jsx',
-    '@babel/plugin-transform-react-jsx',
     '@babel/plugin-syntax-import-attributes',
   ],
+  // Désactiver le mode compact pour éviter les warnings sur les gros fichiers
+  compact: false,
 }; 

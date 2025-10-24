@@ -1,5 +1,26 @@
 import { FormationTemplate } from '@/components/ui';
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Formation EBP Gestion Commerciale - Qualiopi",
+  description: "Formation EBP Gestion Commerciale à Annecy : maîtrisez vos ventes, achats et stocks. Formation certifiée Qualiopi, 3 jours, éligible CPF et OPCO. Formateurs experts.",
+  keywords: ["formation EBP", "gestion commerciale", "formation Qualiopi", "EBP vente", "formation Annecy", "CPF gestion commerciale"],
+  openGraph: {
+    title: "Formation EBP Gestion Commerciale - Certifiée Qualiopi",
+    description: "Apprenez à maîtriser EBP Gestion Commerciale : ventes, achats, stocks, facturation. Formation 3 jours, certifiée Qualiopi, éligible CPF.",
+    type: "website",
+    url: "https://www.solution-logique.fr/formationCommerciale",
+    images: [
+      {
+        url: "/assets/formations_ebp.webp",
+        width: 1200,
+        height: 630,
+        alt: "Formation EBP Gestion Commerciale",
+      },
+    ],
+  },
+};
 
 export default function FormationCommerciale() {
   return (

@@ -1,5 +1,26 @@
 import { EBPTemplate } from '@/components/ui';
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Logiciel EBP Comptabilité - ACTIV, PRO, ELITE",
+  description: "Logiciels EBP Comptabilité à Annecy : solutions ACTIV, PRO et ELITE pour TPE et PME. Comptabilité générale, TVA, rapprochement bancaire. Démo et devis gratuits.",
+  keywords: ["EBP comptabilité", "logiciel comptabilité", "EBP ACTIV", "EBP PRO", "logiciel compta Annecy", "solution comptable PME"],
+  openGraph: {
+    title: "Logiciel EBP Comptabilité - Solutions pour entreprises",
+    description: "Découvrez les logiciels EBP Comptabilité adaptés à votre entreprise : ACTIV, PRO, ELITE. Comptabilité complète, TVA, états financiers.",
+    type: "website",
+    url: "https://www.solution-logique.fr/ebpcomptabilite",
+    images: [
+      {
+        url: "/assets/EBP_Compta-Gesco.PNG",
+        width: 1200,
+        height: 630,
+        alt: "Logiciels EBP Comptabilité",
+      },
+    ],
+  },
+};
 
 export default function EBPComptabilite() {
   return (
