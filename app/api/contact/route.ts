@@ -16,7 +16,7 @@ const corsHeaders = {
   'Access-Control-Max-Age': '86400',
 };
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Resend client initialized lazily in POST handler
 
 // Fonction pour gérer les requêtes preflight OPTIONS
 export async function OPTIONS() {
@@ -124,6 +124,7 @@ export async function POST(req: Request) {
       );
     }
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: 'Solution Logique <site@solution-logique.fr>',
       to: ['site@solution-logique.fr'],
