@@ -4,28 +4,29 @@ import { cn } from '@/lib/utils';
 interface ModernCardProps {
   children: ReactNode;
   className?: string;
-  variant?: 'default' | 'elevated' | 'outline' | 'glass' | 'hover-lift';
+  variant?: 'default' | 'elevated' | 'outline' | 'glass' | 'hover-lift' | 'feature';
   size?: 'sm' | 'md' | 'lg' | 'xl';
   onClick?: () => void;
   interactive?: boolean;
 }
 
-export function ModernCard({ 
-  children, 
-  className, 
+export function ModernCard({
+  children,
+  className,
   variant = 'default',
   size = 'md',
   onClick,
   interactive = false
 }: ModernCardProps) {
-  const baseClasses = "bg-white rounded-xl transition-all duration-200";
-  
+  const baseClasses = "bg-white rounded-xl transition-all duration-300";
+
   const variants = {
     default: "border border-border shadow-sm hover:shadow-md hover:border-border-strong",
     elevated: "border border-border-strong shadow-lg hover:shadow-xl",
     outline: "border-2 border-border hover:border-primary-300 hover:shadow-sm",
     glass: "bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-white/90 hover:shadow-xl",
-    'hover-lift': "border border-border shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-border-strong"
+    'hover-lift': "border border-border shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-border-strong",
+    'feature': "border border-border shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent-400"
   };
 
   const sizes = {
@@ -38,7 +39,7 @@ export function ModernCard({
   const interactiveClasses = interactive || onClick ? "cursor-pointer hover:scale-[1.02] active:scale-[0.98]" : "";
 
   return (
-    <div 
+    <div
       className={cn(
         baseClasses,
         variants[variant],
@@ -59,4 +60,4 @@ export function ModernCard({
       {children}
     </div>
   );
-} 
+}

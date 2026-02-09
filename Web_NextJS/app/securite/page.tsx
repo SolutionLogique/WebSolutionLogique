@@ -4,12 +4,13 @@ import React, { useState } from "react";
 import Image from 'next/image';
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
-import { 
-  Shield, 
-  Lock, 
-  Eye, 
-  AlertTriangle, 
-  ShieldCheck, 
+import PageHero from "@/components/sections/PageHero";
+import {
+  Shield,
+  Lock,
+  Eye,
+  AlertTriangle,
+  ShieldCheck,
   Server,
   CheckCircle,
   ArrowRight,
@@ -144,57 +145,24 @@ export default function Securite() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <ModernSection background="gradient" padding="2xl" className="relative">
-        <div className="absolute inset-0 bg-[url('/assets/securite.webp')] bg-cover bg-center opacity-10" />
-        <div className="relative z-10 text-center">
-          <div className="inline-flex items-center px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-medium mb-8">
-            <Shield className="w-4 h-4 mr-2" />
-            Solutions de cybersécurité
-          </div>
-          
-          <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight">
-            Solutions
-            <span className="block bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
-              Sécurité
-            </span>
-          </h1>
-          
-          <p className="text-xl lg:text-2xl text-slate-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Protégez votre entreprise contre les cybermenaces avec nos solutions de sécurité avancées. 
-            Infrastructure, réseaux et données sécurisés.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <ModernButton 
-              href="/contact"
-              variant="accent" 
-              size="lg"
-              icon={<ArrowRight />}
-              iconPosition="right"
-            >
-              Demander un devis
-            </ModernButton>
-            
-            <ModernButton 
-              href="tel:0450640233"
-              variant="secondary" 
-              size="lg"
-              icon={<Phone />}
-              iconPosition="left"
-            >
-              04 50 64 02 33
-            </ModernButton>
-          </div>
-        </div>
-      </ModernSection>
+      <PageHero
+        badge={{
+          icon: <Shield className="w-4 h-4" />,
+          text: "Solutions de cybersecurite"
+        }}
+        title="Solutions"
+        titleHighlight="Securite"
+        description="Protegez votre entreprise contre les cybermenaces avec nos solutions de securite avancees. Infrastructure, reseaux et donnees securises."
+        backgroundImage="/assets/securite.webp"
+      />
 
       {/* Stats Section */}
       <ModernSection background="white" padding="lg">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {statsData.map((stat, index) => (
             <div key={index} className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-2xl mb-4 group-hover:bg-red-600 transition-colors duration-300">
-                <div className="text-red-600 group-hover:text-white transition-colors duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-2xl mb-4 group-hover:bg-primary-600 transition-colors duration-300">
+                <div className="text-primary-600 group-hover:text-white transition-colors duration-300">
                   {stat.icon}
                 </div>
               </div>
@@ -221,7 +189,7 @@ export default function Securite() {
             <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300">
               <div className={`inline-flex px-3 py-1 rounded-full text-xs font-medium mb-3 ${
                 threat.risk === 'Critique' 
-                  ? 'bg-red-100 text-red-700' 
+                  ? 'bg-primary-100 text-primary-700' 
                   : 'bg-orange-100 text-orange-700'
               }`}>
                 {threat.risk}
@@ -247,8 +215,8 @@ export default function Securite() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {securitySolutions.map((solution, index) => (
             <div key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-100">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-2xl mb-4">
-                <div className="text-red-600">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-2xl mb-4">
+                <div className="text-primary-600">
                   {solution.icon}
                 </div>
               </div>
@@ -280,7 +248,7 @@ export default function Securite() {
         <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-xl">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
                 <Shield className="w-4 h-4 mr-2" />
                 Service en détail
               </div>
@@ -295,8 +263,8 @@ export default function Securite() {
 
               <div className="grid grid-cols-3 gap-3 mb-6">
                 {securityServices[activeService].benefits.map((benefit, index) => (
-                  <div key={index} className="text-center p-4 bg-red-50 rounded-xl">
-                    <CheckCircle className="w-6 h-6 text-red-600 mx-auto mb-2" />
+                  <div key={index} className="text-center p-4 bg-primary-50 rounded-xl">
+                    <CheckCircle className="w-6 h-6 text-primary-600 mx-auto mb-2" />
                     <span className="text-sm font-medium text-slate-700">{benefit}</span>
                   </div>
                 ))}

@@ -1,10 +1,15 @@
-// Couleurs
-$main-color: #04a2df;
-$secondary-color: #00ceff;
-$text-color: #333333;
+// Couleurs - Palette Corporate Clean alignée avec Tailwind
+$main-color: #1e40af;       // Royal Blue - aligné avec primary-500
+$secondary-color: #10b981;  // Emerald - accent
+$text-color: #0f172a;       // Slate 900
 $white: #fff;
-$dark-gray: #333333;
-$light-gray: #f5f5f5;
+$dark-gray: #0f172a;
+$light-gray: #f8fafc;
+
+// Couleurs supplémentaires
+$primary-light: #dbeafe;    // Pour backgrounds subtils
+$accent-light: #d1fae5;     // Pour backgrounds accent
+$muted-text: #64748b;       // Texte secondaire
 
 // Breakpoints
 $width: 414px;

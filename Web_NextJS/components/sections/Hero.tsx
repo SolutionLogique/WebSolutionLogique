@@ -3,171 +3,197 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { TextPlugin } from "gsap/dist/TextPlugin";
-import Section from "@/components/ui/Section";
-import { ModernButton } from "@/components/ui/modernButton";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Sparkles, Shield, Zap } from "lucide-react";
 import Link from "next/link";
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(TextPlugin);
-}
 
 function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const subtitleRef = useRef<HTMLHeadingElement>(null);
-  const textRef = useRef<HTMLParagraphElement>(null);
-  const imageRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline();
-      
-      // Animation d'entrée moderne et plus subtile
-      tl.from(titleRef.current, {
-        y: 30,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power3.out"
-      })
-      .from(subtitleRef.current, {
-        y: 20,
-        opacity: 0,
-        duration: 0.6,
-        ease: "power3.out"
-      }, "-=0.4")
-      .from(textRef.current, {
-        y: 20,
-        opacity: 0,
-        duration: 0.6,
-        ease: "power3.out"
-      }, "-=0.3")
-      .from(imageRef.current, {
-        x: 50,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out"
-      }, "-=0.6");
+      const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+      tl.from(".hero-badge", { y: -30, opacity: 0, duration: 0.8 })
+        .from(".hero-title", { y: 60, opacity: 0, duration: 1 }, "-=0.5")
+        .from(".hero-subtitle", { y: 40, opacity: 0, duration: 0.8 }, "-=0.6")
+        .from(".hero-description", { y: 30, opacity: 0, duration: 0.8 }, "-=0.5")
+        .from(".hero-cta", { y: 20, opacity: 0, duration: 0.6, stagger: 0.1 }, "-=0.4")
+        .from(".hero-stats", { y: 30, opacity: 0, duration: 0.8 }, "-=0.3")
+        .from(".hero-visual", { x: 100, opacity: 0, duration: 1.2 }, "-=1")
+        .from(".floating-card", { y: 50, opacity: 0, duration: 0.8, stagger: 0.15 }, "-=0.8");
     }, heroRef);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <Section 
-      padding="lg" 
-      className="relative overflow-hidden gradient-subtle"
-      containerSize="xl"
+    <section
+      ref={heroRef}
+      className="relative min-h-screen overflow-hidden"
+      style={{
+        background: "linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #1e40af 100%)",
+      }}
     >
-      {/* Background decoration subtile */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-50/50 to-transparent" />
-      
-      <div ref={heroRef} className="relative">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[400px]">
-          
+      {/* Background Effects */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Gradient Orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-indigo-500/15 rounded-full blur-3xl animate-float" style={{ animationDelay: "4s" }} />
+
+        {/* Grid Pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+            backgroundSize: "60px 60px",
+          }}
+        />
+      </div>
+
+      <div ref={contentRef} className="relative container-wide py-20 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[80vh]">
           {/* Left Content */}
-          <div className="space-y-6">
-            {/* Logo SLI */}
+          <div className="space-y-8 text-center lg:text-left">
+            {/* Badge */}
+            <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90">
+              <Sparkles className="w-4 h-4 text-emerald-400" />
+              <span className="text-sm font-medium">30+ ans d&apos;expertise en Rhône-Alpes</span>
+            </div>
+
+            {/* Logo */}
             <div className="flex justify-center lg:justify-start">
               <Image
-                alt="Logo Solution Logique Informatique - Expert informatique Annecy depuis 30 ans"
+                alt="Solution Logique Informatique"
                 src="/assets/sli.webp"
-                width={280}
-                height={140}
+                width={300}
+                height={150}
                 priority
-                className="h-auto w-auto max-w-[260px]"
+                className="h-auto w-auto max-w-[280px]"
               />
             </div>
 
-            {/* Main Content avec espacements optimisés */}
-            <div className="space-y-4 text-center lg:text-left">
-              <h1 
-                ref={titleRef}
-                className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight tracking-tight"
-              >
-                Bienvenue chez{" "}
-                <span className="text-gradient">
-                  Solution Logique
+            {/* Title */}
+            <div className="space-y-4">
+              <h1 className="hero-title text-white">
+                Votre partenaire
+                <br />
+                <span className="gradient-text bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-400 bg-clip-text text-transparent">
+                  IT de confiance
                 </span>
               </h1>
-              
-              <h2 
-                ref={subtitleRef}
-                className="text-xl lg:text-2xl text-foreground-muted font-medium"
-              >
-                Qui sommes-nous ?
-              </h2>
-              
-              <p 
-                ref={textRef}
-                className="text-lg text-foreground-muted leading-relaxed max-w-2xl"
-              >
-                L&apos;équipe de Solution Logique est à votre écoute pour réaliser vos projets informatiques.
-                Depuis plus de 30 ans, nous avons toujours voulu marquer notre volonté d&apos;une forte 
-                implantation locale en Rhône-Alpes.
-              </p>
 
-              {/* CTAs avec nouveaux boutons modernisés */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
-                <Link href="/nosServices">
-                  <ModernButton 
-                    variant="accent" 
-                    size="lg"
-                    icon={<ArrowRight />}
-                    iconPosition="right"
-                  >
-                    Découvrir nos services
-                  </ModernButton>
-                </Link>
-                
-                <ModernButton 
-                  href="tel:0450640233"
-                  variant="secondary" 
-                  size="lg"
-                  icon={<Phone />}
-                  iconPosition="left"
-                >
-                  04.50.64.02.33
-                </ModernButton>
+              <p className="hero-subtitle text-xl lg:text-2xl text-white/70 font-medium">
+                Solutions informatiques sur-mesure pour PME
+              </p>
+            </div>
+
+            {/* Description */}
+            <p className="hero-description text-lg text-white/60 max-w-xl leading-relaxed">
+              Intégrateur de solutions complètes, nous accompagnons les entreprises
+              de Rhône-Alpes dans leur transformation numérique avec un service de proximité et d&apos;excellence.
+            </p>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link href="/nosServices" className="hero-cta">
+                <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-[0_0_40px_rgba(16,185,129,0.4)] hover:-translate-y-1">
+                  <span>Découvrir nos services</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </Link>
+
+              <a href="tel:0450640233" className="hero-cta">
+                <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold rounded-2xl transition-all duration-300 hover:bg-white/20 hover:-translate-y-1">
+                  <Phone className="w-5 h-5" />
+                  <span>04 50 64 02 33</span>
+                </button>
+              </a>
+            </div>
+
+            {/* Stats */}
+            <div className="hero-stats flex flex-wrap justify-center lg:justify-start gap-8 pt-8 border-t border-white/10">
+              <div className="text-center">
+                <div className="text-3xl lg:text-4xl font-black text-white">500+</div>
+                <div className="text-sm text-white/50">Clients</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl lg:text-4xl font-black text-emerald-400">99%</div>
+                <div className="text-sm text-white/50">Satisfaction</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl lg:text-4xl font-black text-white">24/7</div>
+                <div className="text-sm text-white/50">Support</div>
               </div>
             </div>
           </div>
 
-          {/* Right Content - Card modernisée */}
-          <div 
-            ref={imageRef}
-            className="relative"
-          >
-            <div className="gradient-primary rounded-3xl p-8 lg:p-10 text-white shadow-xl hover:shadow-2xl transition-all duration-300">
-              <div className="space-y-4">
-                <div className="space-y-3">
-                  <h3 className="text-2xl lg:text-3xl font-bold leading-tight force-white-title">
-                    Apporteur de solution informatique
-                  </h3>
-                  <p className="text-primary-100 text-lg leading-relaxed">
-                    Intégrateur de solutions complètes et prestataire de services en conseils informatiques, 
-                    nous innovons quotidiennement pour les PME, PMI, TPE, indépendants, collectivités et associations.
-                  </p>
-                </div>
+          {/* Right Visual */}
+          <div className="hero-visual relative hidden lg:block">
+            {/* Main Card */}
+            <div className="relative z-10">
+              <div className="glass-dark rounded-3xl p-8 border border-white/10">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
+                      <Shield className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white">Solutions complètes</h3>
+                      <p className="text-white/50">Infrastructure & Services</p>
+                    </div>
+                  </div>
 
-                <div className="relative mt-6">
                   <Image
-                    alt="Solutions informatiques complètes pour entreprises - Infrastructure IT, logiciels et télémaintenance"
+                    alt="Solutions informatiques"
                     src="/assets/solution.webp"
                     width={500}
-                    height={375}
-                    className="w-full h-auto rounded-2xl shadow-lg opacity-95 hover:opacity-100 transition-opacity"
-                    style={{ objectFit: "cover" }}
+                    height={300}
+                    className="w-full h-auto rounded-2xl"
                   />
+
+                  <p className="text-white/70 leading-relaxed">
+                    De la maintenance à la sécurité, nous couvrons tous vos besoins IT
+                    avec une approche personnalisée.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Cards */}
+            <div className="floating-card absolute -top-4 right-0 translate-x-1/3 z-20 glass rounded-2xl p-4 border border-white/20 shadow-xl">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-blue-500 flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-slate-800">Performance</div>
+                  <div className="text-xs text-slate-500">Optimisée</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="floating-card absolute bottom-8 -left-4 -translate-x-1/3 z-20 glass rounded-2xl p-4 border border-white/20 shadow-xl">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-slate-800">Sécurité</div>
+                  <div className="text-xs text-slate-500">Renforcée</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </Section>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+    </section>
   );
 }
 
-export default Hero; 
+export default Hero;

@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import { ModernSection, ServiceCard, ModernButton } from "@/components/ui";
 import { cn } from "@/lib/utils";
-import { 
-  Calculator, 
-  TrendingUp, 
-  Building, 
+import {
+  Calculator,
+  TrendingUp,
+  Building,
   Award,
   BookOpen,
   Download,
@@ -122,52 +122,68 @@ export default function Logiciels() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <ModernSection background="gradient" padding="2xl" className="relative">
-        <div className="absolute inset-0 bg-[url('/assets/ebp.webp')] bg-cover bg-center opacity-10" />
-        <div className="relative z-10 text-center">
-          <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-8">
-            <Laptop className="w-4 h-4 mr-2" />
-            Solutions EBP & Formations professionnelles
-          </div>
-          
-          <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight">
-            Logiciels
-            <span className="block bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-              EBP & Formations
-            </span>
-          </h1>
-          
-          <p className="text-xl lg:text-2xl text-slate-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Découvrez nos solutions EBP et nos formations certifiées pour optimiser 
-            la gestion de votre entreprise. Plus de 30 ans d'expertise à votre service.
-          </p>
+      <section
+        className="relative min-h-[50vh] overflow-hidden flex items-center"
+        style={{
+          background: "linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #1e40af 100%)",
+        }}
+      >
+        {/* Background Effects */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+          <div className="absolute inset-0 bg-[url('/assets/ebp.webp')] bg-contain bg-center bg-no-repeat opacity-20" />
+        </div>
 
-          <div className="flex justify-center">
-            <div className="inline-flex bg-white rounded-xl p-1 shadow-lg">
-              <button
-                onClick={() => setActiveTab('logiciels')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
-                  activeTab === 'logiciels'
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'text-slate-600 hover:text-slate-900'
-                }`}
-              >
-                Nos Logiciels
-              </button>
-              <button
-                onClick={() => setActiveTab('formations')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
-                  activeTab === 'formations'
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'text-slate-600 hover:text-slate-900'
-                }`}
-              >
-                Nos Formations
-              </button>
+        <div className="relative container-wide py-16 lg:py-24 w-full">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 mb-8">
+              <Laptop className="w-4 h-4" />
+              <span className="text-sm font-medium">Solutions EBP & Formations professionnelles</span>
+            </div>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Logiciels
+              <span className="block bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent mt-2">
+                EBP & Formations
+              </span>
+            </h1>
+
+            <p className="text-lg lg:text-xl text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
+              Decouvrez nos solutions EBP et nos formations certifiees pour optimiser
+              la gestion de votre entreprise. Plus de 30 ans d&apos;expertise a votre service.
+            </p>
+
+            <div className="flex justify-center">
+              <div className="inline-flex bg-white/10 backdrop-blur-sm rounded-xl p-1 border border-white/20">
+                <button
+                  onClick={() => setActiveTab('logiciels')}
+                  className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+                    activeTab === 'logiciels'
+                      ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white shadow-lg'
+                      : 'text-white/70 hover:text-white'
+                  }`}
+                >
+                  Nos Logiciels
+                </button>
+                <button
+                  onClick={() => setActiveTab('formations')}
+                  className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+                    activeTab === 'formations'
+                      ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white shadow-lg'
+                      : 'text-white/70 hover:text-white'
+                  }`}
+                >
+                  Nos Formations
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </ModernSection>
+
+        {/* Bottom gradient fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      </section>
 
       {/* Logiciels Section */}
       {activeTab === 'logiciels' && (

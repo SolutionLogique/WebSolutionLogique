@@ -3,12 +3,13 @@
 import React, { useState } from "react";
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
-import { 
-  Phone, 
-  Smartphone, 
-  Wifi, 
-  Router, 
-  Network, 
+import PageHero from "@/components/sections/PageHero";
+import {
+  Phone,
+  Smartphone,
+  Wifi,
+  Router,
+  Network,
   Signal,
   Headphones,
   ArrowRight,
@@ -109,57 +110,24 @@ export default function Telecom() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <ModernSection background="gradient" padding="lg" className="relative">
-        <div className="absolute inset-0 bg-[url('/assets/telecom.webp')] bg-cover bg-center opacity-10" />
-        <div className="relative z-10 text-center">
-          <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-8">
-            <Signal className="w-4 h-4 mr-2" />
-            Solutions télécom professionnelles
-          </div>
-          
-          <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight">
-            Solutions
-            <span className="block bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-              Télécom
-            </span>
-          </h1>
-          
-          <p className="text-xl lg:text-2xl text-slate-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Optimisez vos communications d'entreprise avec nos solutions télécom modernes. 
-            Téléphonie IP, connectivité haut débit et réseaux sécurisés.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <ModernButton 
-              href="/contact"
-              variant="accent" 
-              size="lg"
-              icon={<ArrowRight />}
-              iconPosition="right"
-            >
-              Demander un devis
-            </ModernButton>
-            
-            <ModernButton 
-              href="tel:0450640233"
-              variant="secondary" 
-              size="lg"
-              icon={<Phone />}
-              iconPosition="left"
-            >
-              04 50 64 02 33
-            </ModernButton>
-          </div>
-        </div>
-      </ModernSection>
+      <PageHero
+        badge={{
+          icon: <Signal className="w-4 h-4" />,
+          text: "Solutions telecom professionnelles"
+        }}
+        title="Solutions"
+        titleHighlight="Telecom"
+        description="Optimisez vos communications d'entreprise avec nos solutions telecom modernes. Telephonie IP, connectivite haut debit et reseaux securises."
+        backgroundImage="/assets/telecom.webp"
+      />
 
       {/* Stats Section */}
       <ModernSection background="white" padding="md">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {statsData.map((stat, index) => (
             <div key={index} className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-2xl mb-4 group-hover:bg-green-600 transition-colors duration-300">
-                <div className="text-green-600 group-hover:text-white transition-colors duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-2xl mb-4 group-hover:bg-primary-600 transition-colors duration-300">
+                <div className="text-primary-600 group-hover:text-white transition-colors duration-300">
                   {stat.icon}
                 </div>
               </div>
@@ -184,8 +152,8 @@ export default function Telecom() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {telecomSolutions.map((solution, index) => (
             <div key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-2xl mb-4">
-                <div className="text-green-600">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-2xl mb-4">
+                <div className="text-primary-600">
                   {solution.icon}
                 </div>
               </div>
@@ -214,10 +182,10 @@ export default function Telecom() {
 
       {/* Detailed Service View */}
       <ModernSection background="white" padding="lg">
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-8 lg:p-12">
+        <div className="bg-gradient-to-r from-primary-50 to-slate-50 rounded-3xl p-8 lg:p-12">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
                 <Signal className="w-4 h-4 mr-2" />
                 Service en détail
               </div>
@@ -233,7 +201,7 @@ export default function Telecom() {
               <div className="grid grid-cols-3 gap-3 mb-6">
                 {telecomServices[activeService].benefits.map((benefit, index) => (
                   <div key={index} className="text-center p-4 bg-white rounded-xl shadow-sm">
-                    <CheckCircle className="w-6 h-6 text-green-600 mx-auto mb-2" />
+                    <CheckCircle className="w-6 h-6 text-primary-600 mx-auto mb-2" />
                     <span className="text-sm font-medium text-slate-700">{benefit}</span>
                   </div>
                 ))}
@@ -254,7 +222,7 @@ export default function Telecom() {
               </h4>
               {telecomServices[activeService].features.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-white transition-colors duration-200">
-                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
                   <span className="text-slate-700">{feature}</span>
                 </div>
               ))}
@@ -277,7 +245,7 @@ export default function Telecom() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {operatorPartners.map((partner, index) => (
             <div key={index} className="bg-white p-6 rounded-xl text-center shadow-sm hover:shadow-lg transition-all duration-300 group">
-              <div className="text-xl font-bold text-slate-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+              <div className="text-xl font-bold text-slate-900 mb-2 group-hover:text-primary-600 transition-colors duration-300">
                 {partner.name}
               </div>
               <p className="text-slate-600 text-sm">{partner.description}</p>

@@ -10,19 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Palette principale moderne et sophistiquée
+        // Palette Corporate Clean - Royal Blue (cohérente)
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe', 
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9', // Bleu principal moderne
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-          950: '#082f49',
+          50: '#eef2ff',
+          100: '#e0e7ff',
+          200: '#c7d2fe',
+          300: '#a5b4fc',
+          400: '#818cf8',
+          500: '#1e40af', // Royal Blue - couleur principale
+          600: '#1e3a8a',
+          700: '#1e3380',
+          800: '#1a2f6d',
+          900: '#162557',
+          950: '#0f172a',
         },
         secondary: {
           50: '#f8fafc',
@@ -30,21 +30,21 @@ const config: Config = {
           200: '#e2e8f0',
           300: '#cbd5e1',
           400: '#94a3b8',
-          500: '#64748b', // Gris neutre principal
+          500: '#64748b',
           600: '#475569',
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
           950: '#020617',
         },
-        // Couleur d'accent pour les actions importantes
+        // Couleur d'accent Emerald
         accent: {
           50: '#ecfdf5',
           100: '#d1fae5',
           200: '#a7f3d0',
           300: '#6ee7b7',
           400: '#34d399',
-          500: '#10b981', // Vert moderne
+          500: '#10b981',
           600: '#059669',
           700: '#047857',
           800: '#065f46',
@@ -55,7 +55,7 @@ const config: Config = {
         warning: '#f59e0b',
         error: '#ef4444',
         info: '#3b82f6',
-        
+
         // Backgrounds sophistiqués
         background: {
           DEFAULT: '#ffffff',
@@ -63,14 +63,14 @@ const config: Config = {
           muted: '#f1f5f9',
           elevated: '#ffffff',
         },
-        
+
         // Bordures modernes
         border: {
           DEFAULT: '#e2e8f0',
           muted: '#f1f5f9',
           strong: '#cbd5e1',
         },
-        
+
         // Textes avec hiérarchie claire
         foreground: {
           DEFAULT: '#0f172a',
@@ -87,6 +87,12 @@ const config: Config = {
           'Roboto',
           '"Helvetica Neue"',
           'Arial',
+          'sans-serif',
+        ],
+        display: [
+          'Inter',
+          '-apple-system',
+          'BlinkMacSystemFont',
           'sans-serif',
         ],
         mono: [
@@ -109,9 +115,9 @@ const config: Config = {
         '2xl': ['1.5rem', { lineHeight: '2rem' }],
         '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
         '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
-        '5xl': ['3rem', { lineHeight: '3.5rem' }],
-        '6xl': ['3.75rem', { lineHeight: '1' }],
-        '7xl': ['4.5rem', { lineHeight: '1' }],
+        '5xl': ['3rem', { lineHeight: '1.2' }],
+        '6xl': ['3.75rem', { lineHeight: '1.1' }],
+        '7xl': ['4.5rem', { lineHeight: '1.1' }],
         '8xl': ['6rem', { lineHeight: '1' }],
         '9xl': ['8rem', { lineHeight: '1' }],
       },
@@ -122,6 +128,9 @@ const config: Config = {
         'scale-in': 'scaleIn 0.3s ease-out',
         'float': 'float 3s ease-in-out infinite',
         'pulse-subtle': 'pulseSubtle 2s ease-in-out infinite',
+        'glow': 'glow 2s ease-in-out infinite',
+        'shimmer': 'shimmer 2s linear infinite',
+        'bounce-soft': 'bounceSoft 2s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -148,6 +157,18 @@ const config: Config = {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.8' },
         },
+        glow: {
+          '0%, 100%': { boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)' },
+          '50%': { boxShadow: '0 0 40px rgba(16, 185, 129, 0.5)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+        bounceSoft: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
       },
       boxShadow: {
         'xs': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
@@ -157,8 +178,11 @@ const config: Config = {
         'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
         '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
         'inner': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
-        'glow': '0 0 0 1px rgb(59 130 246 / 0.15), 0 8px 25px rgb(59 130 246 / 0.15)',
-        'glow-lg': '0 0 0 1px rgb(59 130 246 / 0.2), 0 16px 32px rgb(59 130 246 / 0.2)',
+        'glow': '0 0 20px rgba(30, 64, 175, 0.15)',
+        'glow-lg': '0 0 40px rgba(30, 64, 175, 0.2)',
+        'glow-accent': '0 0 20px rgba(16, 185, 129, 0.3)',
+        'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
+        'card-hover': '0 12px 40px rgba(0, 0, 0, 0.12)',
       },
       spacing: {
         '18': '4.5rem',
@@ -194,9 +218,14 @@ const config: Config = {
           '2xl': '3.5rem',
         },
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern': 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%231e40af\' fill-opacity=\'0.03\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+      },
     },
   },
   plugins: [],
 }
 
-export default config 
+export default config
