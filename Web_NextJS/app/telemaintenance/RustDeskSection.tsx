@@ -9,7 +9,7 @@ export default function RustDeskSection() {
 
   const handleDownloadExe = () => {
     setDownloadStarted(true);
-    window.location.href = '/rustDesk/rustdesk-1.4.5-x86_64.exe';
+    window.location.href = '/rustDesk/rustdesk-1.4.6-x86_64.exe';
 
     setTimeout(() => {
       setDownloadStarted(false);
@@ -18,7 +18,7 @@ export default function RustDeskSection() {
 
   const handleDownloadMsi = () => {
     setDownloadStarted(true);
-    window.location.href = '/rustDesk/rustdesk-1.4.5-x86_64.msi';
+    window.location.href = '/rustDesk/rustdesk-1.4.6-x86_64.msi';
 
     setTimeout(() => {
       setDownloadStarted(false);
