@@ -52,15 +52,21 @@ Après la construction, vérifiez que le dossier `out/` a été créé avec :
 1. **Sauvegarder l'ancien site** (recommandé)
    - Télécharger le contenu actuel de `/www` vers votre ordinateur
 
-2. **Nettoyer le serveur**
-   - Sélectionner tout le contenu dans `/www` sur le serveur
-   - Supprimer les fichiers existants
+2. **⚠️ NE PAS vider le serveur**
+   - **Ne PAS supprimer le contenu existant de `/www`.** Un nettoyage complet effacerait des fichiers qui ne sont **pas** régénérés par le build et qui sont indispensables :
+     - `.htaccess` (redirection HTTPS)
+     - `_oldwp-includes/` (reliquat de l'ancien site)
+     - `footer/`, `navbar/` (anciennes pages)
+     - les anciennes versions RustDesk (`rustDesk/`)
+   - On déploie donc en **écrasement (overlay)** : on remplace/ajoute uniquement, sans rien supprimer.
+   - *(Optionnel)* Pour éviter d'accumuler d'anciens fichiers `_next` inutilisés, tu peux supprimer **uniquement** le dossier `/www/_next` avant l'upload (lui est 100 % régénéré par le build). Ne touche à rien d'autre.
 
 3. **Transférer les nouveaux fichiers**
    - Ouvrir le dossier `out/` local
    - Sélectionner **tout le contenu** du dossier `out/` (pas le dossier lui-même)
    - Glisser-déposer vers `/www` sur le serveur
-   - Attendre la fin du transfert (~210kB de JS + assets)
+   - À la demande de FileZilla : choisir **« Écraser »** (et cocher « Toujours utiliser cette action »)
+   - Attendre la fin du transfert
 
 4. **Vérification**
    - S'assurer que `index.html` est à la racine de `/www`
