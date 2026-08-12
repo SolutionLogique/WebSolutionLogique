@@ -47,6 +47,14 @@ const NAV_ITEMS: NavItem[] = [
       { href: '/securite', label: 'Sécurité' },
     ],
   },
+  {
+    href: '/sur-mesure',
+    label: 'Sur-mesure & IA',
+    children: [
+      { href: '/developpement-sur-mesure', label: 'Développement sur-mesure' },
+      { href: '/accompagnement-ia', label: 'Accompagnement IA' },
+    ],
+  },
   { href: '/telemaintenance', label: 'Télémaintenance' },
 ];
 

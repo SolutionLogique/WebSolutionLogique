@@ -30,6 +30,11 @@ const LIENS = {
     { href: "/securite", label: "Sécurité" },
     { href: "/telemaintenance", label: "Télémaintenance" },
   ],
+  surMesure: [
+    { href: "/sur-mesure", label: "Sur-mesure & IA" },
+    { href: "/developpement-sur-mesure", label: "Développement sur-mesure" },
+    { href: "/accompagnement-ia", label: "Accompagnement IA" },
+  ],
   formations: [
     { href: "/formationCompta", label: "Formation Comptabilité" },
     { href: "/formationCommerciale", label: "Formation Gestion commerciale" },
@@ -69,7 +74,7 @@ function Footer() {
   return (
     <footer className="border-t border-sand-200 bg-sand-100">
       <div className="mx-auto max-w-container px-gutter">
-        <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-6">
           {/* Identite et coordonnees */}
           <div className="lg:col-span-2">
             <Image
@@ -114,6 +119,7 @@ function Footer() {
 
           <ColonneLiens titre="Logiciels EBP" liens={LIENS.logiciels} />
           <ColonneLiens titre="Services" liens={LIENS.services} />
+          <ColonneLiens titre="Sur-mesure & IA" liens={LIENS.surMesure} />
           <ColonneLiens titre="Formations" liens={LIENS.formations} />
         </div>
 

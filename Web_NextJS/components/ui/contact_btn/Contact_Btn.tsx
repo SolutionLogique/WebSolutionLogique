@@ -1,158 +1,177 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { Phone, MessageCircle, Mail, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
-import React from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { Phone, Mail, Headphones, X, MessageCircle } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+/* Bouton de contact flottant.
+
+   La version precedente posait plusieurs problemes :
+   - un badge rouge « ! » rebondissant en permanence alors qu'aucune
+     notification n'existe : une urgence fabriquee ;
+   - un anneau de texte en rotation infinie (12 s), illisible a 5,5 px, et
+     un halo pulse — deux animations sans fin qui ignoraient
+     prefers-reduced-motion ;
+   - aucun nom accessible sur le bouton principal : un lecteur d'ecran
+     n'annoncait rien d'exploitable, et aucun aria-expanded ;
+   - un premier clic ouvrait le menu, un second naviguait vers /contact.
+     Un utilisateur qui cliquait deux fois se retrouvait deplace sans
+     l'avoir demande.
+
+   Ici : une action, un libelle explicite, aucune animation en boucle, et le
+   focus qui revient sur le declencheur a la fermeture. */
+
+const CANAUX = [
+  {
+    href: "tel:0450640233",
+    icon: Phone,
+    libelle: "Appeler",
+    detail: "04 50 64 02 33",
+    externe: true,
+  },
+  {
+    href: "mailto:site@solution-logique.fr",
+    icon: Mail,
+    libelle: "Écrire",
+    detail: "site@solution-logique.fr",
+    externe: true,
+  },
+  {
+    href: "/telemaintenance",
+    icon: Headphones,
+    libelle: "Télémaintenance",
+    detail: "Prise en main à distance",
+    externe: false,
+  },
+  {
+    href: "/contact",
+    icon: MessageCircle,
+    libelle: "Être rappelé",
+    detail: "Formulaire de contact",
+    externe: false,
+  },
+];
 
 function Contact_Btn() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [ouvert, setOuvert] = useState(false);
+  const declencheur = useRef<HTMLButtonElement>(null);
+  const panneau = useRef<HTMLDivElement>(null);
 
-  // Gestion de la touche Échap
+  // Echap ferme et rend le focus au declencheur
   useEffect(() => {
-    const handleEscapeKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setIsExpanded(false);
+    if (!ouvert) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOuvert(false);
+        declencheur.current?.focus();
+      }
+    };
+    const onPointerDown = (e: PointerEvent) => {
+      const cible = e.target as Node;
+      if (!panneau.current?.contains(cible) && !declencheur.current?.contains(cible)) {
+        setOuvert(false);
       }
     };
 
-    if (isExpanded) {
-      document.addEventListener('keydown', handleEscapeKey);
-      return () => {
-        document.removeEventListener('keydown', handleEscapeKey);
-      };
-    }
-  }, [isExpanded]);
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
+  }, [ouvert]);
 
-  const handleMainClick = () => {
-    if (!isExpanded) {
-      setIsExpanded(true);
-    } else {
-      window.location.href = '/contact';
-    }
-  };
+  // Le premier lien du panneau prend le focus a l'ouverture
+  useEffect(() => {
+    if (ouvert) panneau.current?.querySelector("a")?.focus();
+  }, [ouvert]);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 group">
-      {/* Options expandues */}
-      {isExpanded && (
-        <div className="absolute bottom-20 right-16 transform -translate-x-full space-y-3 transition-all duration-300 ease-out opacity-100 translate-y-0">
-          {/* Bouton fermer */}
-          <div className="flex justify-end mb-2">
+    <div className="fixed bottom-5 right-5 z-40 print:hidden">
+      {ouvert && (
+        <div
+          ref={panneau}
+          id="panneau-contact"
+          role="dialog"
+          aria-label="Nous contacter"
+          className="absolute bottom-full right-0 mb-3 w-[min(19rem,calc(100vw-2.5rem))] overflow-hidden rounded-2xl border border-sand-200 bg-sand-0 shadow-lg animate-fade-in-scale"
+        >
+          <div className="flex items-center justify-between border-b border-sand-200 px-4 py-3">
+            <span className="font-display text-sm font-bold text-sand-900">Nous contacter</span>
             <button
-              onClick={() => setIsExpanded(false)}
-              className="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
-              title="Fermer"
+              type="button"
+              onClick={() => {
+                setOuvert(false);
+                declencheur.current?.focus();
+              }}
+              aria-label="Fermer"
+              className="rounded-lg p-1.5 text-sand-500 transition-colors hover:bg-sand-50 hover:text-sand-900"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <X className="h-4 w-4" />
             </button>
           </div>
 
-          {/* Email */}
-          <a
-            href="mailto:site@solution-logique.fr"
-            className="bg-white hover:bg-gray-50 text-gray-800 px-4 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl border border-gray-200 flex items-center space-x-3 min-w-max"
-            title="Envoyer un email"
-          >
-            <div className="bg-green-500 text-white p-2 rounded-full">
-              <Mail className="w-4 h-4" />
-            </div>
-            <span className="font-medium">Email</span>
-          </a>
+          <ul className="p-1.5">
+            {CANAUX.map((canal) => {
+              const contenu = (
+                <>
+                  <span className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-primary-50">
+                    <canal.icon className="h-4 w-4 text-primary-600" aria-hidden="true" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-sm font-semibold text-sand-900">{canal.libelle}</span>
+                    <span className="block truncate text-xs text-sand-500">{canal.detail}</span>
+                  </span>
+                </>
+              );
+              const classes =
+                "flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-sand-50";
 
-          {/* Téléphone */}
-          <a
-            href="tel:0450640233"
-            className="bg-white hover:bg-gray-50 text-gray-800 px-4 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl border border-gray-200 flex items-center space-x-3 min-w-max"
-            title="Appeler"
-          >
-            <div className="bg-blue-500 text-white p-2 rounded-full">
-              <Phone className="w-4 h-4" />
-            </div>
-            <span className="font-medium">04 50 64 02 33</span>
-          </a>
-
-          {/* Télémaintenance */}
-          <Link
-            href="/telemaintenance"
-            className="bg-white hover:bg-gray-50 text-gray-800 px-4 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl border border-gray-200 flex items-center space-x-3 min-w-max"
-            title="Support technique"
-          >
-            <div className="bg-gray-600 text-white p-2 rounded-full">
-              <MessageCircle className="w-4 h-4" />
-            </div>
-            <span className="font-medium">Support</span>
-          </Link>
+              return (
+                <li key={canal.href}>
+                  {canal.externe ? (
+                    <a href={canal.href} className={classes} onClick={() => setOuvert(false)}>
+                      {contenu}
+                    </a>
+                  ) : (
+                    <Link href={canal.href} className={classes} onClick={() => setOuvert(false)}>
+                      {contenu}
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       )}
 
-      {/* Bouton principal */}
-      <div className="relative">
-        {/* Cercle lumineux en arrière-plan */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full animate-pulse opacity-40 scale-110"></div>
-        
-        {/* Bouton principal */}
-        <button
-          onClick={handleMainClick}
-          className="relative bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white p-4 rounded-full shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl group/btn border-2 border-white/20"
-        >
-          {/* Animation de rotation du texte */}
-          <div className="absolute inset-0 rounded-full">
-            <svg 
-              className="w-full h-full animate-spin" 
-              style={{ animationDuration: '12s' }} 
-              viewBox="0 0 100 100"
-            >
-              <defs>
-                <path
-                  id="circlePath"
-                  d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"
-                />
-              </defs>
-              <text 
-                fill="white" 
-                fontSize="5.5" 
-                fontWeight="600" 
-                className="uppercase tracking-widest"
-                opacity="0.9"
-              >
-                <textPath href="#circlePath" startOffset="0%">
-                  • NOUS CONTACTER • ÊTRE RAPPELÉ • SUPPORT TECHNIQUE • 
-                </textPath>
-              </text>
-            </svg>
-          </div>
-
-          {/* Icône centrale */}
-          <div className="relative z-10 transition-transform duration-200 group-hover/btn:scale-110">
-            {isExpanded ? (
-              <ArrowRight className="w-6 h-6" />
-            ) : (
-              <Phone className="w-6 h-6" />
-            )}
-          </div>
-
-          {/* Effet de brillance au survol */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-        </button>
-
-        {/* Badge notification modernisé */}
-        {!isExpanded && (
-          <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold animate-bounce shadow-lg border-2 border-white">
-            !
-          </div>
+      {/* Declencheur. Libelle visible des sm: — un bouton nomme convertit
+          mieux qu'une icone seule, et reste comprehensible sans survol. */}
+      <button
+        ref={declencheur}
+        type="button"
+        onClick={() => setOuvert(!ouvert)}
+        aria-expanded={ouvert}
+        aria-controls="panneau-contact"
+        aria-label={ouvert ? "Fermer le menu de contact" : "Nous contacter"}
+        className={cn(
+          "flex min-h-[52px] items-center gap-2.5 rounded-full px-4 shadow-lg transition-colors sm:px-5",
+          ouvert
+            ? "bg-sand-800 text-sand-0 hover:bg-sand-900"
+            : "bg-primary-600 text-sand-0 hover:bg-primary-700"
         )}
-      </div>
-
-      {/* Overlay pour fermer avec backdrop blur */}
-      {isExpanded && (
-        <div
-          className="fixed inset-0 bg-black/10 backdrop-blur-sm -z-10 transition-all duration-200"
-          onClick={() => setIsExpanded(false)}
-        />
-      )}
+      >
+        {ouvert ? (
+          <X className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
+        ) : (
+          <Phone className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
+        )}
+        <span className="hidden text-sm font-semibold sm:inline">
+          {ouvert ? "Fermer" : "Nous contacter"}
+        </span>
+      </button>
     </div>
   );
 }
