@@ -1,42 +1,145 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { Loader2 } from 'lucide-react';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-  size?: 'sm' | 'md' | 'lg' | 'xl';
-  children: React.ReactNode;
+/* Composant bouton canonique.
+   Il reprend l'API de l'ancien modernButton, qui etait la meilleure des deux
+   implementations : gestion de href, etat de chargement, icones, cibles
+   tactiles correctes. L'ancien Button ne savait produire qu'un <button>,
+   ce qui obligeait les pages a ecrire <Link><button> — du HTML invalide,
+   un element interactif imbrique dans un autre.
+
+   Un href interne produit un <Link> Next (navigation client) ; un href
+   externe ou un lien tel:/mailto: produit un <a> simple. */
+
+type Variant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'accent' | 'destructive';
+type Size = 'sm' | 'md' | 'lg' | 'xl';
+
+interface BaseProps {
+  children: ReactNode;
+  className?: string;
+  variant?: Variant;
+  size?: Size;
+  disabled?: boolean;
+  loading?: boolean;
+  icon?: ReactNode;
+  iconPosition?: 'left' | 'right';
+  'aria-label'?: string;
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = 'primary', size = 'md', children, ...props }, ref) => {
-    const baseClasses = "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
-    
-    const variants = {
-      primary: "bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5",
-      secondary: "bg-slate-100 text-slate-900 hover:bg-slate-200 border border-slate-200",
-      outline: "border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white",
-      ghost: "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
-    };
-    
-    const sizes = {
-      sm: "h-9 px-4 text-sm",
-      md: "h-11 px-6 text-base",
-      lg: "h-12 px-8 text-lg",
-      xl: "h-14 px-10 text-xl"
-    };
+interface AsButton extends BaseProps {
+  href?: never;
+  onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
+  target?: never;
+  rel?: never;
+}
+
+interface AsLink extends BaseProps {
+  href: string;
+  onClick?: never;
+  type?: never;
+  target?: string;
+  rel?: string;
+}
+
+export type ButtonProps = AsButton | AsLink;
+
+const base =
+  'inline-flex items-center justify-center gap-2 font-semibold transition-colors ' +
+  'disabled:opacity-50 disabled:cursor-not-allowed ' +
+  'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2';
+
+/* Aplats unis. Plus aucun degrade : avec les ombres lumineuses, c'etait le
+   principal marqueur d'apparence generique du site. */
+const variants: Record<Variant, string> = {
+  primary:
+    'bg-primary-600 text-sand-0 hover:bg-primary-700 focus-visible:outline-primary-600 shadow-sm',
+  secondary:
+    'bg-sand-0 text-sand-800 border border-sand-300 hover:bg-sand-50 focus-visible:outline-primary-600 shadow-sm',
+  outline:
+    'border-2 border-primary-600 text-primary-600 hover:bg-primary-50 focus-visible:outline-primary-600',
+  ghost:
+    'text-primary-600 hover:bg-primary-50 focus-visible:outline-primary-600',
+  accent:
+    'bg-accent-600 text-sand-0 hover:bg-accent-700 focus-visible:outline-accent-600 shadow-sm',
+  destructive:
+    'bg-error text-sand-0 hover:opacity-90 focus-visible:outline-error shadow-sm',
+};
+
+/* min-h garantit une cible tactile d'au moins 44 px sur les tailles lg et xl. */
+const sizes: Record<Size, string> = {
+  sm: 'h-9 px-3.5 text-sm rounded-lg',
+  md: 'h-11 px-5 text-sm rounded-lg min-h-[44px]',
+  lg: 'h-12 px-6 text-base rounded-lg min-h-[48px]',
+  xl: 'h-14 px-8 text-lg rounded-xl min-h-[56px]',
+};
+
+const iconSizes: Record<Size, string> = {
+  sm: 'w-4 h-4',
+  md: 'w-4 h-4',
+  lg: 'w-5 h-5',
+  xl: 'w-5 h-5',
+};
+
+export function Button({
+  children,
+  className,
+  variant = 'primary',
+  size = 'md',
+  disabled = false,
+  loading = false,
+  icon,
+  iconPosition = 'left',
+  href,
+  onClick,
+  type = 'button',
+  target,
+  rel,
+  ...rest
+}: ButtonProps) {
+  const classes = cn(base, variants[variant], sizes[size], className);
+
+  const content = (
+    <>
+      {loading && <Loader2 className={cn('animate-spin', iconSizes[size])} aria-hidden="true" />}
+      {!loading && icon && iconPosition === 'left' && (
+        <span className={cn('flex items-center', iconSizes[size])} aria-hidden="true">{icon}</span>
+      )}
+      {children}
+      {!loading && icon && iconPosition === 'right' && (
+        <span className={cn('flex items-center', iconSizes[size])} aria-hidden="true">{icon}</span>
+      )}
+    </>
+  );
+
+  if (href) {
+    // tel:, mailto:, http(s):, ancres et cibles _blank sortent du routeur Next.
+    const isExternal = /^(https?:|tel:|mailto:|#)/.test(href) || target === '_blank';
+
+    if (isExternal) {
+      return (
+        <a href={href} target={target} rel={target === '_blank' ? (rel ?? 'noopener noreferrer') : rel} className={classes} {...rest}>
+          {content}
+        </a>
+      );
+    }
 
     return (
-      <button
-        className={cn(baseClasses, variants[variant], sizes[size], className)}
-        ref={ref}
-        {...props}
-      >
-        {children}
-      </button>
+      <Link href={href} className={classes} {...rest}>
+        {content}
+      </Link>
     );
   }
-);
 
-Button.displayName = "Button";
+  return (
+    <button type={type} onClick={onClick} disabled={disabled || loading} className={classes} {...rest}>
+      {content}
+    </button>
+  );
+}
 
-export default Button; 
+Button.displayName = 'Button';
+
+export default Button;

@@ -43,7 +43,7 @@ function Stats() {
       suffix: "+",
       label: "Années",
       description: "D'expertise en solutions IT",
-      color: "from-blue-500 to-blue-600",
+      color: "bg-accent-600",
       size: "lg",
     },
     {
@@ -52,7 +52,7 @@ function Stats() {
       suffix: "+",
       label: "Clients",
       description: "Nous font confiance",
-      color: "from-emerald-500 to-emerald-600",
+      color: "bg-primary-600",
     },
     {
       icon: Award,
@@ -60,7 +60,7 @@ function Stats() {
       suffix: "",
       label: "Experts",
       description: "Certifiés à votre service",
-      color: "from-indigo-500 to-indigo-600",
+      color: "bg-primary-600",
     },
     {
       icon: ThumbsUp,
@@ -68,7 +68,7 @@ function Stats() {
       suffix: "%",
       label: "Satisfaction",
       description: "Client garantie",
-      color: "from-emerald-500 to-teal-600",
+      color: "bg-accent-600",
       size: "lg",
     },
     {
@@ -77,7 +77,7 @@ function Stats() {
       suffix: "j/7",
       label: "Support",
       description: "Lun-Ven, 8h30-17h30",
-      color: "from-violet-500 to-purple-600",
+      color: "bg-primary-600",
     },
     {
       icon: Building2,
@@ -85,7 +85,7 @@ function Stats() {
       suffix: "",
       label: "Agence",
       description: "En Rhône-Alpes",
-      color: "from-orange-500 to-red-500",
+      color: "bg-primary-600",
     },
   ];
 
@@ -123,10 +123,10 @@ function Stats() {
                 <div
                   className={`
                     ${stat.size === "lg" ? "w-20 h-20" : "w-14 h-14"}
-                    rounded-2xl bg-gradient-to-br ${stat.color}
+                    rounded-2xl ${stat.color}
                     flex items-center justify-center mb-4 lg:mb-0
-                    group-hover:scale-110 transition-transform duration-500
-                    shadow-lg
+                    transition-transform
+                    shadow-sm
                   `}
                 >
                   <stat.icon className={`${stat.size === "lg" ? "w-10 h-10" : "w-7 h-7"} text-white`} />
@@ -135,6 +135,13 @@ function Stats() {
                 {/* Content */}
                 <div className={stat.size === "lg" ? "flex-1" : ""}>
                   <div className={`${stat.size === "lg" ? "text-5xl lg:text-6xl" : "text-4xl lg:text-5xl"} font-black text-slate-900 mb-1`}>
+                    {/* La vraie valeur est ecrite dans le balisage, pas un zero.
+                        Avant, le HTML statique livre contenait « 0+ », « 0% »,
+                        « 0j/7 » : les moteurs de recherche sans execution JS et
+                        les visiteurs sans JS lisaient « 0 client, 0 % de
+                        satisfaction ». Sans photos ni temoignages, ce sont ces
+                        chiffres qui portent la credibilite.
+                        L'animation n'est plus qu'une amelioration progressive. */}
                     {isVisible ? (
                       <CountUp
                         end={stat.value}
@@ -142,7 +149,7 @@ function Stats() {
                         suffix={stat.suffix}
                       />
                     ) : (
-                      `0${stat.suffix}`
+                      `${stat.value}${stat.suffix}`
                     )}
                   </div>
                   <div className="text-lg font-bold text-slate-700 mb-1">

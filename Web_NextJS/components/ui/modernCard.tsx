@@ -1,5 +1,13 @@
 import React, { ReactNode } from 'react';
-import { cn } from '@/lib/utils';
+import Card from './Card';
+
+/* Adaptateur de transition — voir modernButton.tsx pour le contexte.
+   Card est desormais le composant unique et a absorbe les variantes de
+   ModernCard.
+
+   Ce n'est pas un simple re-export : ModernCard avait size="md" par defaut
+   la ou Card n'applique aucun padding par defaut. Un re-export nu aurait
+   donc retire le padding des cartes des 5 pages concernees. */
 
 interface ModernCardProps {
   children: ReactNode;
@@ -10,54 +18,8 @@ interface ModernCardProps {
   interactive?: boolean;
 }
 
-export function ModernCard({
-  children,
-  className,
-  variant = 'default',
-  size = 'md',
-  onClick,
-  interactive = false
-}: ModernCardProps) {
-  const baseClasses = "bg-white rounded-xl transition-all duration-300";
-
-  const variants = {
-    default: "border border-border shadow-sm hover:shadow-md hover:border-border-strong",
-    elevated: "border border-border-strong shadow-lg hover:shadow-xl",
-    outline: "border-2 border-border hover:border-primary-300 hover:shadow-sm",
-    glass: "bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-white/90 hover:shadow-xl",
-    'hover-lift': "border border-border shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-border-strong",
-    'feature': "border border-border shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-accent-400"
-  };
-
-  const sizes = {
-    sm: "p-4",
-    md: "p-6",
-    lg: "p-8",
-    xl: "p-10"
-  };
-
-  const interactiveClasses = interactive || onClick ? "cursor-pointer hover:scale-[1.02] active:scale-[0.98]" : "";
-
-  return (
-    <div
-      className={cn(
-        baseClasses,
-        variants[variant],
-        sizes[size],
-        interactiveClasses,
-        className
-      )}
-      onClick={onClick}
-      role={onClick ? "button" : undefined}
-      tabIndex={onClick ? 0 : undefined}
-      onKeyDown={onClick ? (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          onClick();
-        }
-      } : undefined}
-    >
-      {children}
-    </div>
-  );
+export function ModernCard({ size = 'md', variant = 'default', ...props }: ModernCardProps) {
+  return <Card size={size} variant={variant} {...props} />;
 }
+
+export default ModernCard;
