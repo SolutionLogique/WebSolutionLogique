@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Typewriter.scss";
+import "./Typewriter.css";
 
 interface TypewriterParagraphsProps {
   texts: string[]; // Liste des paragraphes à afficher

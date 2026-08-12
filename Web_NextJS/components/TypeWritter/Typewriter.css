@@ -1,6 +1,6 @@
 .typewriter-paragraphs {
   font-family: "Courier New", Courier, monospace;
-  white-space: pre-wrap; // Conserve les espaces et sauts de ligne
+  white-space: pre-wrap; /* Conserve les espaces et sauts de ligne */
   display: flex;
   flex-direction: column;
   gap: 1em;

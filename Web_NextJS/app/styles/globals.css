@@ -2,544 +2,208 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Variables CSS pour le design system avant-gardiste */
+/* ============================================================
+   JETONS
+   Direction « Bleu confiance, neutres chauds ».
+   Les valeurs canoniques vivent dans tailwind.config.ts ;
+   celles-ci servent aux quelques regles CSS brutes ci-dessous.
+   ============================================================ */
 :root {
-  --primary: #1e40af;
-  --primary-light: #3b82f6;
-  --primary-dark: #1e3a8a;
-  --accent: #10b981;
-  --accent-light: #34d399;
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #10b981 100%);
-  --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%);
-  --gradient-mesh: radial-gradient(at 40% 20%, #3b82f6 0px, transparent 50%),
-                   radial-gradient(at 80% 0%, #10b981 0px, transparent 50%),
-                   radial-gradient(at 0% 50%, #1e40af 0px, transparent 50%),
-                   radial-gradient(at 80% 100%, #6366f1 0px, transparent 50%),
-                   radial-gradient(at 0% 100%, #10b981 0px, transparent 50%);
+  --primary: #14487F;
+  --primary-dark: #113A67;
+  --accent: #1B9AAA;
+  --accent-dark: #146673;
+
+  --sand-0: #FFFFFF;
+  --sand-50: #FAF8F5;
+  --sand-100: #F3EFE9;
+  --sand-200: #EDE7DE;
+  --sand-500: #8A837B;
+  --sand-600: #6B6660;
+  --sand-900: #1A1815;
+
+  --nav-height: 4.5rem;
 }
 
+/* ============================================================
+   BASE
+   Les titres gardent une taille par defaut — 54 d'entre eux n'en
+   declarent aucune et retomberaient sinon a la taille du texte.
+   Deux differences avec l'ancien systeme, qui etait le vrai probleme :
+     - l'echelle redescend (h1 plafonnait a 4.5rem en graisse 900,
+       tout hurlait en meme temps) ;
+     - AUCUNE regle de couleur, ni ici ni sur `p` et `a`. C'etait elle
+       qui imposait les contournements type .force-white-title.
+   Etant dans @layer base, ces regles cedent devant n'importe quelle
+   classe utilitaire explicite.
+   ============================================================ */
 @layer base {
+  h1 { @apply font-display text-h1 font-bold; }
+  h2 { @apply font-display text-h2 font-bold; }
+  h3 { @apply font-display text-h3 font-semibold; }
+  h4 { @apply font-display text-lg font-semibold; }
+  h5, h6 { @apply font-display text-base font-semibold; }
+
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* Compense la barre de navigation fixe pour les ancres */
+    scroll-padding-top: calc(var(--nav-height) + 1rem);
   }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #ffffff;
-    color: #0f172a;
-    overflow-x: hidden;
-    max-width: 100vw;
+    text-rendering: optimizeLegibility;
   }
 
-  * {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Typographie avant-gardiste - Plus impactante */
-  h1 {
-    @apply text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight;
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-  }
-
-  h2 {
-    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-  }
-
-  h3 {
-    @apply text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight;
-    line-height: 1.15;
-  }
-
-  h4 {
-    @apply text-2xl sm:text-3xl lg:text-4xl font-semibold;
-    line-height: 1.2;
-  }
-
-  h5 {
-    @apply text-xl sm:text-2xl lg:text-3xl font-semibold;
-    line-height: 1.25;
-  }
-
-  h6 {
-    @apply text-lg sm:text-xl lg:text-2xl font-medium text-foreground-muted;
-    line-height: 1.3;
-  }
-
-  p {
-    @apply text-base lg:text-lg text-foreground-muted leading-relaxed;
-  }
-
-  a {
-    @apply text-primary-500 hover:text-primary-600 transition-all duration-300;
-  }
-
+  /* Focus visible sur tout element interactif */
   *:focus-visible {
-    @apply outline-2 outline-primary-500 outline-offset-2 rounded-sm;
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
+/* ============================================================
+   COUCHE DE COMPATIBILITE
+   Ces classes restent utilisees par des pages non encore reprises.
+   Elles sont REDEFINIES sur la nouvelle direction plutot que
+   supprimees : le rendu bascule immediatement partout, sans rien
+   casser. Elles disparaitront au fur et a mesure de la reprise
+   des pages, quand plus aucune ne les utilisera.
+   ============================================================ */
 @layer components {
-  /* ========================================
-     BOUTONS AVANT-GARDISTES
-     ======================================== */
 
-  .btn-primary {
-    @apply relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white rounded-2xl;
-    @apply transition-all duration-300 ease-out;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.4);
-  }
-
-  .btn-primary:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 8px 30px rgba(30, 64, 175, 0.5);
-  }
-
-  .btn-primary:active {
-    transform: translateY(0) scale(0.98);
-  }
-
-  .btn-accent {
-    @apply relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white rounded-2xl;
-    @apply transition-all duration-300 ease-out overflow-hidden;
-    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-  }
-
-  .btn-accent::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: inherit;
-  }
-
-  .btn-accent:hover::before {
-    opacity: 1;
-  }
-
-  .btn-accent:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.5);
-  }
-
-  .btn-accent span {
-    position: relative;
-    z-index: 1;
-  }
-
-  .btn-secondary {
-    @apply inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-2xl;
-    @apply border-2 border-primary-500/20 text-primary-600 bg-white;
-    @apply transition-all duration-300 ease-out;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  }
-
-  .btn-secondary:hover {
-    @apply border-primary-500/40 bg-primary-50;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.15);
-  }
-
-  .btn-ghost {
-    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-2xl;
-    @apply text-foreground-muted hover:text-foreground hover:bg-slate-100;
-    @apply transition-all duration-300;
-  }
-
-  /* Bouton CTA avec glow pulsé */
-  .btn-glow {
-    @apply relative;
-    animation: glowPulse 2s ease-in-out infinite;
-  }
-
-  @keyframes glowPulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4), 0 4px 15px rgba(16, 185, 129, 0.3); }
-    50% { box-shadow: 0 0 40px rgba(16, 185, 129, 0.6), 0 8px 30px rgba(16, 185, 129, 0.4); }
-  }
-
-  /* ========================================
-     GLASSMORPHISM CARDS
-     ======================================== */
-
-  .glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .glass-dark {
-    background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .card-modern {
-    @apply bg-white rounded-3xl border border-slate-100;
-    @apply transition-all duration-500 ease-out;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  }
-
-  .card-modern:hover {
-    @apply border-accent-200;
-    transform: translateY(-8px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-  }
-
-  .card-gradient {
-    @apply relative rounded-3xl overflow-hidden;
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
-  }
-
-  .card-gradient::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  .card-gradient:hover::before {
-    opacity: 1;
-  }
-
-  /* ========================================
-     BENTO GRID LAYOUTS
-     ======================================== */
-
-  .bento-grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-  }
-
-  .bento-item-lg {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .bento-item-wide {
-    grid-column: span 2;
-  }
-
-  .bento-item-tall {
-    grid-row: span 2;
-  }
-
-  @media (max-width: 1024px) {
-    .bento-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .bento-item-lg {
-      grid-column: span 2;
-      grid-row: span 1;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .bento-grid {
-      grid-template-columns: 1fr;
-    }
-    .bento-item-lg, .bento-item-wide {
-      grid-column: span 1;
-    }
-  }
-
-  /* ========================================
-     GRADIENTS AVANT-GARDISTES
-     ======================================== */
-
-  .gradient-primary {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-  }
-
-  .gradient-hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #1e40af 100%);
-  }
-
-  .gradient-accent {
-    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
-  }
-
-  .gradient-mesh {
-    background:
-      radial-gradient(at 40% 20%, rgba(59, 130, 246, 0.3) 0px, transparent 50%),
-      radial-gradient(at 80% 0%, rgba(16, 185, 129, 0.3) 0px, transparent 50%),
-      radial-gradient(at 0% 50%, rgba(30, 64, 175, 0.2) 0px, transparent 50%),
-      radial-gradient(at 80% 100%, rgba(99, 102, 241, 0.2) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, rgba(16, 185, 129, 0.2) 0px, transparent 50%);
-  }
-
-  .gradient-text {
-    background: linear-gradient(135deg, #1e40af 0%, #10b981 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .gradient-text-hero {
-    background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* ========================================
-     SECTIONS MODERNES
-     ======================================== */
-
-  .section-padding {
-    @apply py-20 lg:py-32;
-  }
-
-  .section-hero {
-    @apply relative min-h-[90vh] flex items-center;
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #1e40af 100%);
-  }
-
-  .section-light {
-    @apply bg-white;
-  }
-
-  .section-subtle {
-    @apply bg-slate-50;
-  }
-
-  .section-dark {
-    @apply bg-slate-900 text-white;
-  }
-
-  /* ========================================
-     BADGES ET TAGS
-     ======================================== */
-
-  .badge {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold;
-    @apply transition-all duration-300;
-  }
-
-  .badge-primary {
-    @apply bg-primary-100 text-primary-700 border border-primary-200;
-  }
-
-  .badge-accent {
-    @apply bg-accent-100 text-accent-700 border border-accent-200;
-  }
-
-  .badge-glass {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    @apply text-white border border-white/20;
-  }
-
-  /* ========================================
-     ANIMATIONS SOPHISTIQUÉES
-     ======================================== */
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-10px) rotate(1deg); }
-    50% { transform: translateY(-5px) rotate(-1deg); }
-    75% { transform: translateY(-15px) rotate(1deg); }
-  }
-
-  .animate-blob {
-    animation: blob 7s infinite;
-  }
-
-  @keyframes blob {
-    0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-  }
-
-  .animate-gradient {
-    background-size: 200% 200%;
-    animation: gradientMove 8s ease infinite;
-  }
-
-  @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .animate-scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
-  }
-
-  @keyframes scaleIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
-  }
-
-  @keyframes slideUp {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  /* Stagger animations */
-  .stagger-1 { animation-delay: 0.1s; }
-  .stagger-2 { animation-delay: 0.2s; }
-  .stagger-3 { animation-delay: 0.3s; }
-  .stagger-4 { animation-delay: 0.4s; }
-  .stagger-5 { animation-delay: 0.5s; }
-
-  /* ========================================
-     EFFETS SPÉCIAUX
-     ======================================== */
-
-  .glow {
-    box-shadow: 0 0 40px rgba(30, 64, 175, 0.3);
-  }
-
-  .glow-accent {
-    box-shadow: 0 0 40px rgba(16, 185, 129, 0.3);
-  }
-
-  .blur-circle {
-    @apply absolute rounded-full blur-3xl opacity-30;
-  }
-
-  .noise-overlay {
-    position: relative;
-  }
-
-  .noise-overlay::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.03;
-    pointer-events: none;
-  }
-
-  /* ========================================
-     UTILITAIRES
-     ======================================== */
-
-  .text-balance {
-    text-wrap: balance;
+  /* --- Conteneurs --- */
+  .container-wide {
+    @apply mx-auto w-full max-w-container px-gutter;
   }
 
   .container-tight {
-    @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-3xl px-gutter;
   }
 
-  .container-wide {
-    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  /* --- Rythme vertical, identique partout --- */
+  .section-padding {
+    padding-top: clamp(4rem, 8vw, 7rem);
+    padding-bottom: clamp(4rem, 8vw, 7rem);
   }
 
-  /* Scrollbar moderne */
-  ::-webkit-scrollbar {
-    width: 8px;
+  .section-light  { @apply bg-sand-0; }
+  .section-subtle { @apply bg-sand-50; }
+  .section-dark   { @apply bg-primary-900 text-sand-0; }
+
+  /* --- Badges --- */
+  .badge {
+    @apply inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm font-semibold;
+  }
+  .badge-primary { @apply bg-primary-50 text-primary-700 border border-primary-100; }
+  .badge-accent  { @apply bg-accent-50 text-accent-700 border border-accent-100; }
+  .badge-glass   { @apply bg-sand-0/15 text-sand-0 border border-sand-0/25; }
+
+  /* --- Surfaces ---
+     Le glassmorphisme (flou d'arriere-plan) est abandonne : cout de rendu
+     eleve et lisibilite instable selon ce qui passe dessous.
+     Remplace par des surfaces opaques. */
+  .glass {
+    @apply bg-sand-0 border border-sand-200 shadow-sm;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #f1f5f9;
+  .glass-dark {
+    @apply bg-primary-800 border border-sand-0/10;
   }
 
-  ::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 4px;
+  .card-modern {
+    @apply rounded-2xl border border-sand-200 bg-sand-0 shadow-card transition-shadow;
+  }
+  .card-modern:hover {
+    @apply shadow-card-hover;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
-  }
-
-  /* Selection */
-  ::selection {
-    background: rgba(16, 185, 129, 0.3);
-    color: #0f172a;
-  }
-}
-
-@layer utilities {
+  /* --- Anciennes classes de degrade ---
+     Redefinies en aplats. Les degrades bleu-vers-vert etaient le principal
+     marqueur d'apparence generique. Les noms survivent pour ne rien casser. */
+  .gradient-text,
   .text-gradient {
-    @apply gradient-text;
+    @apply text-primary-600;
+    background: none;
+    -webkit-text-fill-color: currentColor;
   }
 
-  .animate-fade-in-scale {
-    animation: fadeInScale 0.3s ease-out forwards;
+  .gradient-text-hero {
+    @apply text-sand-0;
+    background: none;
+    -webkit-text-fill-color: currentColor;
   }
 
-  @keyframes fadeInScale {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
+  .gradient-primary { @apply bg-primary-600; }
+  .gradient-accent  { @apply bg-accent-600; }
+  .gradient-hero    { @apply bg-primary-800; }
+  .gradient-mesh    { @apply bg-sand-50; }
+
+  /* --- Anciens boutons ---
+     Aplats unis, sans degrade ni ombre lumineuse. */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-6 py-3
+           text-base font-semibold text-sand-0 shadow-sm transition-colors;
   }
-}
+  .btn-primary:hover { @apply bg-primary-700; }
 
-/* Styles pour les composants externes */
-.swiper-slide {
-  height: auto !important;
-}
-
-.partners-swiper {
-  overflow: hidden !important;
-  width: 100% !important;
-}
-
-.partners-swiper .swiper-wrapper {
-  transition-timing-function: linear !important;
-}
-
-.partners-swiper .swiper-slide {
-  width: auto !important;
-  flex-shrink: 0 !important;
-}
-
-@media (max-width: 640px) {
-  .partners-swiper .swiper-slide {
-    max-width: 120px !important;
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent-600 px-6 py-3
+           text-base font-semibold text-sand-0 shadow-sm transition-colors;
   }
-}
+  .btn-accent:hover { @apply bg-accent-700; }
 
-/* Accessibilité */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-sand-300
+           bg-sand-0 px-6 py-3 text-base font-semibold text-sand-800 transition-colors;
   }
+  .btn-secondary:hover { @apply bg-sand-50; }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3
+           text-base font-semibold text-primary-600 transition-colors;
+  }
+  .btn-ghost:hover { @apply bg-primary-50; }
+
+  /* Anciennement une animation de halo pulsee, en boucle infinie.
+     Neutralise : distrayant, et incompatible avec prefers-reduced-motion. */
+  .btn-glow { @apply shadow-sm; }
+
+  /* Utilise par un titre de app/home/Intro/IntroRight.tsx.
+     La taille vient desormais de la regle de base sur h1 ; il ne reste
+     que la couleur. Retire quand cette page sera reprise. */
+  .force-white-title {
+    @apply text-sand-0;
+  }
+
+  .text-balance { text-wrap: balance; }
 }
 
-/* Force white color for specific elements */
-.force-white-title {
-  color: white !important;
+/* ============================================================
+   BARRE DE DEFILEMENT
+   ============================================================ */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--sand-100); }
+::-webkit-scrollbar-thumb {
+  background: var(--sand-200);
+  border-radius: 5px;
 }
+::-webkit-scrollbar-thumb:hover { background: #DDD4C7; }
