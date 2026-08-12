@@ -93,7 +93,7 @@ export default function Informatique() {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <PageHero
         badge={{
@@ -257,6 +257,6 @@ export default function Informatique() {
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 }

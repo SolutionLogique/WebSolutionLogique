@@ -74,7 +74,7 @@ const formationsData = [
     description: "Maîtrisez EBP Comptabilité en quelques heures avec nos formateurs certifiés",
     duration: "2 jours",
     level: "Débutant à avancé",
-    href: "/formationCompta",
+    href: "/ebpcomptabilite#formation",
     icon: <Calculator />
   },
   {
@@ -82,7 +82,7 @@ const formationsData = [
     description: "Optimisez votre process commercial avec une formation personnalisée",
     duration: "2 jours",
     level: "Débutant à avancé",
-    href: "/formationCommerciale",
+    href: "/ebpgestionco#formation",
     icon: <TrendingUp />
   },
   {
@@ -90,7 +90,7 @@ const formationsData = [
     description: "Spécialisez-vous dans la gestion de projets BTP avec EBP Bâtiment",
     duration: "3 jours",
     level: "Intermédiaire",
-    href: "/formationBatiment",
+    href: "/ebpbatiment#formation",
     icon: <Building />
   }
 ];
@@ -120,7 +120,7 @@ export default function Logiciels() {
   const [activeTab, setActiveTab] = useState<'logiciels' | 'formations'>('logiciels');
 
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <section
         className="relative min-h-[50vh] overflow-hidden flex items-center"
@@ -473,6 +473,6 @@ export default function Logiciels() {
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 }

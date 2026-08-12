@@ -1,8 +1,27 @@
 // 📌 Ce fichier ne doit pas avoir "use client"
 import React, { ReactNode } from "react";
 import { Metadata } from "next";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import ClientLayout from "./ClientLayout";
 import "./styles/globals.css";
+
+/* Les polices sont telechargees et auto-hebergees par next/font : pas de requete
+   vers Google, pas de decalage au chargement. Avant, Inter etait declaree partout
+   mais jamais chargee — le site rendait dans la police systeme, donc differemment
+   selon l'OS du visiteur. */
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  variable: "--font-jakarta",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.solution-logique.fr'),
@@ -87,8 +106,20 @@ export default function Layout({ children }: { children: ReactNode }) {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
+        "opens": "08:30",
+        "closes": "12:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "14:00",
+        "closes": "17:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "00:00"
       }
     ],
     "priceRange": "€€",
@@ -108,14 +139,14 @@ export default function Layout({ children }: { children: ReactNode }) {
   };
 
   return (
-    <html lang="fr">
+    <html lang="fr" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className="bg-white overflow-x-hidden">
+      <body className="bg-sand-50 text-sand-600 font-sans antialiased overflow-x-hidden">
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

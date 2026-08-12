@@ -143,7 +143,7 @@ export default function Securite() {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <PageHero
         badge={{
@@ -358,6 +358,6 @@ export default function Securite() {
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 }

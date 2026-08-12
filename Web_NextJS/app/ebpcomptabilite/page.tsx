@@ -28,7 +28,6 @@ export default function EBPComptabilite() {
       title="EBP Comptabilité"
       description="Bien que la comptabilité soit une discipline universelle, chaque activité détient ses propres spécificités : bilan et compte de résultat (CSE, associations, etc.), gestion des dons fiscaux, dossiers de gestion, etc. Pour répondre au mieux aux exigences de votre métier/secteur, choisissez le logiciel de comptabilité qui facilite la tenue de votre trésorerie."
       category="Comptabilité"
-      colorScheme="blue"
       softwares={[
         {
           title: "EBP Comptabilité ACTIV",
@@ -74,6 +73,38 @@ export default function EBPComptabilite() {
           pdfLink: "ebp-logiciel-comptabilite-elite-2022.pdf"
         }
       ]}
+      formation={{
+        titre: "Formation EBP Comptabilité",
+        description:
+          "Notre formation EBP Comptabilité vous permettra d'acquérir une maîtrise complète du logiciel. De la saisie des écritures à l'édition des états comptables, vous apprendrez toutes les fonctionnalités essentielles pour une gestion comptable efficace.",
+        duree: "3 jours",
+        niveau: "Débutant à intermédiaire",
+        prix: "Sur devis",
+        pdfUrl: "/assets/Programme_Comptabilite_NivInitial.pdf",
+        objectifs: [
+          "Maîtriser les bases de la comptabilité dans EBP",
+          "Paramétrer et personnaliser le logiciel",
+          "Effectuer la saisie comptable au quotidien",
+          "Réaliser les opérations de fin de période",
+          "Éditer les états comptables réglementaires",
+          "Gérer la TVA et les déclarations fiscales",
+        ],
+        programme: [
+          "Découverte de l'interface et paramétrage initial",
+          "Création et gestion du plan comptable",
+          "Saisie des écritures comptables",
+          "Rapprochement bancaire et lettrage",
+          "Gestion des immobilisations",
+          "TVA et déclarations fiscales",
+          "Clôture d'exercice et états de synthèse",
+          "Sauvegarde et archivage des données",
+        ],
+        prerequis: [
+          "Connaissances de base en comptabilité générale",
+          "Utilisation courante de Windows",
+          "Notions de base en informatique",
+        ],
+      }}
     />
   );
 }

@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import typography from '@tailwindcss/typography'
 
 const config: Config = {
   content: [
@@ -10,127 +11,128 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Palette Corporate Clean - Royal Blue (cohérente)
+        /* Bleu de marque, ancre sur le bleu du logo.
+           Echelle monotone : chaque nuance est plus sombre que la precedente,
+           sans saut de teinte. L'ancienne melangeait indigo (50-400) et bleu (500+),
+           ce qui rendait primary-400 plus clair que primary-500. */
         primary: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          200: '#c7d2fe',
-          300: '#a5b4fc',
-          400: '#818cf8',
-          500: '#1e40af', // Royal Blue - couleur principale
-          600: '#1e3a8a',
-          700: '#1e3380',
-          800: '#1a2f6d',
-          900: '#162557',
-          950: '#0f172a',
+          50: '#F0F5FA',
+          100: '#DCE8F3',
+          200: '#BBD1E7',
+          300: '#8FB2D5',
+          400: '#5C8CBE',
+          500: '#366BA3',
+          600: '#14487F', // couleur de marque : actions, liens, titres accentues
+          700: '#113A67',
+          800: '#0E2E51',
+          900: '#0B2340',
+          950: '#06172B',
         },
-        secondary: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
-          950: '#020617',
-        },
-        // Couleur d'accent Emerald
+
+        /* Turquoise, rappel du logo, en touches rares.
+           Jamais en texte courant sur fond clair : contraste insuffisant.
+           Pour du texte, accent-700 au minimum. */
         accent: {
-          50: '#ecfdf5',
-          100: '#d1fae5',
-          200: '#a7f3d0',
-          300: '#6ee7b7',
-          400: '#34d399',
-          500: '#10b981',
-          600: '#059669',
-          700: '#047857',
-          800: '#065f46',
-          900: '#064e3b',
+          50: '#EFFAFB',
+          100: '#D3F2F5',
+          200: '#A8E5EB',
+          300: '#71D1DB',
+          400: '#3FB6C4',
+          500: '#1B9AAA',
+          600: '#14808F',
+          700: '#146673',
+          800: '#15525C',
+          900: '#14444C',
         },
-        // États et feedback
-        success: '#10b981',
-        warning: '#f59e0b',
-        error: '#ef4444',
-        info: '#3b82f6',
 
-        // Backgrounds sophistiqués
+        /* Neutres chauds. Remplacent les gris froids : c'est ce qui rechauffe
+           l'ensemble sans toucher au logo. */
+        sand: {
+          0: '#FFFFFF',
+          50: '#FAF8F5',  // fond de page
+          100: '#F3EFE9',
+          200: '#EDE7DE', // bordures
+          300: '#DDD4C7',
+          400: '#B5AC9E',
+          500: '#8A837B', // legendes uniquement, jamais un paragraphe
+          600: '#6B6660', // texte courant
+          700: '#4A463F',
+          800: '#2C2A28',
+          900: '#1A1815', // titres
+        },
+
+        success: '#2F855A',
+        warning: '#B7791F',
+        error: '#C53030',
+        info: '#14487F',
+
+        /* Alias retro-compatibles : des pages y font encore reference.
+           Retires au lot 5, quand les pages migrent. */
+        secondary: {
+          50: '#FAF8F5',
+          100: '#F3EFE9',
+          200: '#EDE7DE',
+          300: '#DDD4C7',
+          400: '#B5AC9E',
+          500: '#8A837B',
+          600: '#6B6660',
+          700: '#4A463F',
+          800: '#2C2A28',
+          900: '#1A1815',
+          950: '#0F0E0D',
+        },
         background: {
-          DEFAULT: '#ffffff',
-          subtle: '#f8fafc',
-          muted: '#f1f5f9',
-          elevated: '#ffffff',
+          DEFAULT: '#FFFFFF',
+          subtle: '#FAF8F5',
+          muted: '#F3EFE9',
+          elevated: '#FFFFFF',
         },
-
-        // Bordures modernes
         border: {
-          DEFAULT: '#e2e8f0',
-          muted: '#f1f5f9',
-          strong: '#cbd5e1',
+          DEFAULT: '#EDE7DE',
+          muted: '#F3EFE9',
+          strong: '#DDD4C7',
         },
-
-        // Textes avec hiérarchie claire
         foreground: {
-          DEFAULT: '#0f172a',
-          muted: '#64748b',
-          subtle: '#94a3b8',
+          DEFAULT: '#1A1815',
+          muted: '#6B6660',
+          subtle: '#8A837B',
         },
       },
+
       fontFamily: {
-        sans: [
-          'Inter',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          'sans-serif',
-        ],
-        display: [
-          'Inter',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'sans-serif',
-        ],
-        mono: [
-          '"Fira Code"',
-          'ui-monospace',
-          'SFMono-Regular',
-          '"SF Mono"',
-          'Consolas',
-          '"Liberation Mono"',
-          'Menlo',
-          'monospace',
-        ],
+        /* Alimentees par next/font dans app/layout.tsx.
+           Les familles sont desormais reellement telechargees et auto-hebergees :
+           l'ancienne config declarait Inter sans jamais la charger. */
+        sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        display: ['var(--font-jakarta)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Consolas', 'Menlo', 'monospace'],
       },
+
       fontSize: {
         'xs': ['0.75rem', { lineHeight: '1rem' }],
-        'sm': ['0.875rem', { lineHeight: '1.25rem' }],
-        'base': ['1rem', { lineHeight: '1.5rem' }],
-        'lg': ['1.125rem', { lineHeight: '1.75rem' }],
-        'xl': ['1.25rem', { lineHeight: '1.75rem' }],
-        '2xl': ['1.5rem', { lineHeight: '2rem' }],
-        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
-        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
-        '5xl': ['3rem', { lineHeight: '1.2' }],
-        '6xl': ['3.75rem', { lineHeight: '1.1' }],
-        '7xl': ['4.5rem', { lineHeight: '1.1' }],
-        '8xl': ['6rem', { lineHeight: '1' }],
-        '9xl': ['8rem', { lineHeight: '1' }],
+        'sm': ['0.875rem', { lineHeight: '1.55' }],
+        'base': ['1rem', { lineHeight: '1.65' }],
+        'lg': ['1.125rem', { lineHeight: '1.65' }],
+        'xl': ['1.25rem', { lineHeight: '1.5' }],
+        '2xl': ['1.5rem', { lineHeight: '1.35' }],
+        '3xl': ['1.875rem', { lineHeight: '1.25' }],
+        '4xl': ['2.25rem', { lineHeight: '1.18' }],
+        '5xl': ['3rem', { lineHeight: '1.1' }],
+        '6xl': ['3.75rem', { lineHeight: '1.06' }],
+        '7xl': ['4.5rem', { lineHeight: '1.04' }],
+
+        /* Echelle fluide : supprime les sauts entre mobile et bureau. */
+        'display': ['clamp(2.25rem, 1.35rem + 3.6vw, 3.5rem)', { lineHeight: '1.06', letterSpacing: '-0.025em' }],
+        'h1': ['clamp(2rem, 1.35rem + 2.6vw, 3rem)', { lineHeight: '1.1', letterSpacing: '-0.022em' }],
+        'h2': ['clamp(1.625rem, 1.25rem + 1.5vw, 2.25rem)', { lineHeight: '1.18', letterSpacing: '-0.015em' }],
+        'h3': ['clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem)', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
       },
+
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-out',
-        'slide-up': 'slideUp 0.6s ease-out',
-        'slide-down': 'slideDown 0.6s ease-out',
-        'scale-in': 'scaleIn 0.3s ease-out',
+        'fade-in': 'fadeIn 0.5s ease-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'fade-in-scale': 'fadeInScale 0.2s ease-out',
         'float': 'float 3s ease-in-out infinite',
-        'pulse-subtle': 'pulseSubtle 2s ease-in-out infinite',
-        'glow': 'glow 2s ease-in-out infinite',
-        'shimmer': 'shimmer 2s linear infinite',
-        'bounce-soft': 'bounceSoft 2s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -138,94 +140,67 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '0%': { transform: 'translateY(16px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        slideDown: {
-          '0%': { transform: 'translateY(-20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        scaleIn: {
-          '0%': { transform: 'scale(0.95)', opacity: '0' },
+        fadeInScale: {
+          '0%': { transform: 'scale(0.97)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-8px)' },
         },
-        pulseSubtle: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.8' },
-        },
-        glow: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)' },
-          '50%': { boxShadow: '0 0 40px rgba(16, 185, 129, 0.5)' },
-        },
-        shimmer: {
-          '0%': { backgroundPosition: '-200% 0' },
-          '100%': { backgroundPosition: '200% 0' },
-        },
-        bounceSoft: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-5px)' },
-        },
       },
+
+      /* Ombres discretes uniquement. Les ombres lumineuses (glow) sont supprimees :
+         avec les degrades, c'est ce qui donnait l'apparence generique. */
       boxShadow: {
-        'xs': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-        'sm': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
-        'md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-        'lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
-        'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-        '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
-        'inner': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
-        'glow': '0 0 20px rgba(30, 64, 175, 0.15)',
-        'glow-lg': '0 0 40px rgba(30, 64, 175, 0.2)',
-        'glow-accent': '0 0 20px rgba(16, 185, 129, 0.3)',
-        'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
-        'card-hover': '0 12px 40px rgba(0, 0, 0, 0.12)',
+        'xs': '0 1px 2px rgba(26, 24, 21, 0.04)',
+        'sm': '0 1px 2px rgba(26, 24, 21, 0.05)',
+        'md': '0 4px 12px rgba(26, 24, 21, 0.07)',
+        'lg': '0 12px 28px rgba(26, 24, 21, 0.10)',
+        'xl': '0 20px 40px rgba(26, 24, 21, 0.12)',
+        'card': '0 1px 2px rgba(26, 24, 21, 0.05)',
+        'card-hover': '0 12px 28px rgba(26, 24, 21, 0.10)',
       },
+
       spacing: {
         '18': '4.5rem',
         '22': '5.5rem',
         '88': '22rem',
         '128': '32rem',
+        'section': 'clamp(4rem, 8vw, 7rem)',
+        'gutter': 'clamp(1rem, 4vw, 2.5rem)',
       },
+
       borderRadius: {
-        'sm': '0.25rem',
-        'md': '0.375rem',
-        'lg': '0.5rem',
+        'sm': '0.375rem',
+        'md': '0.5rem',
+        'lg': '0.75rem',
         'xl': '0.75rem',
         '2xl': '1rem',
-        '3xl': '1.5rem',
-        '4xl': '2rem',
+        '3xl': '1rem',
+        '4xl': '1.25rem',
       },
+
       maxWidth: {
+        'container': '75rem', // 1200px
         '8xl': '88rem',
         '9xl': '96rem',
       },
+
       screens: {
         'mobile': '414px',
         'tablet': '830px',
       },
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '1.5rem',
-          md: '2rem',
-          lg: '2.5rem',
-          xl: '3rem',
-          '2xl': '3.5rem',
-        },
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-pattern': 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%231e40af\' fill-opacity=\'0.03\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+
+      transitionDuration: {
+        DEFAULT: '180ms',
       },
     },
   },
-  plugins: [],
+  plugins: [typography],
 }
 
 export default config
