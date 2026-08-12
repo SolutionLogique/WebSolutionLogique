@@ -71,7 +71,7 @@ export function FormationTemplate({
   const currentColors = colors[colorScheme];
 
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <ModernSection background="gradient" padding="2xl">
         <div className="text-center">
@@ -293,6 +293,6 @@ export function FormationTemplate({
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 } 

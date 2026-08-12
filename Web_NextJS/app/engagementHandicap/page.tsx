@@ -68,7 +68,7 @@ export default function EngagementHandicap() {
   ];
 
   return (
-    <main>
+    <div>
       <PageHero
         title="Notre engagement"
         titleHighlight="Handicap"
@@ -198,6 +198,6 @@ export default function EngagementHandicap() {
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 }

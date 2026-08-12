@@ -108,7 +108,7 @@ export default function Telecom() {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <PageHero
         badge={{
@@ -289,6 +289,6 @@ export default function Telecom() {
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 }

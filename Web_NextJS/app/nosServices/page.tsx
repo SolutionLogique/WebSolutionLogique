@@ -98,7 +98,7 @@ const servicesData = [
 
 function NosServices() {
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <PageHero
         badge={{
@@ -278,7 +278,7 @@ function NosServices() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 

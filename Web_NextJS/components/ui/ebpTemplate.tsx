@@ -86,7 +86,7 @@ export function EBPTemplate({
   };
 
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <ModernSection background="gradient" padding="2xl">
         <div className="text-center">
@@ -273,6 +273,6 @@ export function EBPTemplate({
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 }

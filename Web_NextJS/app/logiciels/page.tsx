@@ -120,7 +120,7 @@ export default function Logiciels() {
   const [activeTab, setActiveTab] = useState<'logiciels' | 'formations'>('logiciels');
 
   return (
-    <main className="overflow-hidden">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <section
         className="relative min-h-[50vh] overflow-hidden flex items-center"
@@ -473,6 +473,6 @@ export default function Logiciels() {
           </div>
         </div>
       </ModernSection>
-    </main>
+    </div>
   );
 }

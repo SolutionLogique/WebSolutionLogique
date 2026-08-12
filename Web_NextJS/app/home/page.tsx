@@ -11,7 +11,7 @@ import FinalCTA from "@/components/sections/FinalCTA";
 
 function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <Hero />
       <Stats />
       <Services />
@@ -19,7 +19,7 @@ function Home() {
       <Telemaintenance />
       <Partners />
       <FinalCTA />
-    </main>
+    </div>
   );
 }
 
