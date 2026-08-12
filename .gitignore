@@ -1,0 +1,9 @@
+.superpowers/
+.playwright-mcp/
+
+# Secrets — Web_NextJS/env contient identifiants FTP et cles d'API.
+# Le fichier n'a pas de point initial, les motifs .env* seuls ne le couvrent pas.
+env
+.env
+.env.*
+!.env.example
