@@ -109,7 +109,7 @@ function Telemaintenance() {
                 <span className="text-sm font-medium">Connexion sécurisée SSL</span>
               </div>
               <span className="text-slate-300">•</span>
-              <span className="text-sm">Support 7j/7</span>
+              <span className="text-sm">Support 8h30-17h30</span>
             </div>
           </div>
         </div>

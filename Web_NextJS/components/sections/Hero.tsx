@@ -124,8 +124,8 @@ function Hero() {
                 <div className="text-sm text-white/50">Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-black text-white">24/7</div>
-                <div className="text-sm text-white/50">Support</div>
+                <div className="text-3xl lg:text-4xl font-black text-white">30+</div>
+                <div className="text-sm text-white/50">Ans d&apos;expérience</div>
               </div>
             </div>
           </div>

@@ -73,10 +73,10 @@ function Stats() {
     },
     {
       icon: TrendingUp,
-      value: 24,
-      suffix: "/7",
+      value: 5,
+      suffix: "j/7",
       label: "Support",
-      description: "Assistance continue",
+      description: "Lun-Ven, 8h30-17h30",
       color: "from-violet-500 to-purple-600",
     },
     {

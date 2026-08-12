@@ -73,10 +73,6 @@ function FinalCTA() {
             {/* Trust badges */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 mt-8 pt-8 border-t border-white/10">
               <div className="flex items-center gap-2 text-white/60">
-                <Clock className="w-4 h-4" />
-                <span className="text-sm">Réponse sous 24h</span>
-              </div>
-              <div className="flex items-center gap-2 text-white/60">
                 <MapPin className="w-4 h-4" />
                 <span className="text-sm">Basé à Annecy</span>
               </div>
@@ -112,9 +108,9 @@ function FinalCTA() {
                 <div>
                   <p className="text-sm text-slate-500">Adresse</p>
                   <p className="font-bold text-slate-900">
-                    13 rue Président Favre
+                    475 Rte des Vernes
                   </p>
-                  <p className="text-slate-600">74000 Annecy</p>
+                  <p className="text-slate-600">74370 Annecy</p>
                 </div>
               </div>
 
@@ -126,9 +122,9 @@ function FinalCTA() {
                 <div>
                   <p className="text-sm text-slate-500">Horaires</p>
                   <p className="font-bold text-slate-900">
-                    Lun - Ven : 8h30 - 18h00
+                    Lun - Ven : 8h30 - 12h00 / 14h00 - 17h30
                   </p>
-                  <p className="text-slate-600">Support 24/7 disponible</p>
+                  <p className="text-slate-600">Fermé samedi et dimanche</p>
                 </div>
               </div>
             </div>
