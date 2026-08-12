@@ -7,8 +7,6 @@ export default function EBPGestionCo() {
       title="EBP Gestion Commerciale"
       description="Optimisez votre gestion commerciale avec les solutions EBP dédiées aux ventes, achats, stocks et relation client. Des outils puissants pour développer votre chiffre d'affaires et fidéliser votre clientèle avec une gestion commerciale professionnelle et intuitive."
       category="Gestion Commerciale"
-      colorScheme="green"
-      formationLink="/formationCommerciale"
       softwares={[
         {
           title: "EBP Gestion Commerciale ACTIV",
@@ -54,6 +52,38 @@ export default function EBPGestionCo() {
           pdfLink: "ebp-logiciel-gestion-commerciale-elite-2022.pdf"
         }
       ]}
+      formation={{
+        titre: "Formation EBP Gestion Commerciale",
+        description:
+          "Apprenez à maîtriser toutes les fonctionnalités d'EBP Gestion Commerciale pour gérer efficacement vos ventes, achats, stocks et relations clients. Une formation complète pour transformer votre approche commerciale.",
+        duree: "3 jours",
+        niveau: "Débutant à confirmé",
+        prix: "Sur devis",
+        pdfUrl: "/assets/Programme_GestionCommerciale_NivInitial.pdf",
+        objectifs: [
+          "Paramétrer EBP Gestion Commerciale selon vos besoins",
+          "Gérer efficacement vos fichiers clients et fournisseurs",
+          "Maîtriser le processus de vente complet",
+          "Optimiser la gestion des stocks et approvisionnements",
+          "Éditer devis, factures et documents commerciaux",
+          "Analyser vos performances commerciales",
+        ],
+        programme: [
+          "Installation et paramétrage du logiciel",
+          "Création des fichiers clients et fournisseurs",
+          "Gestion du catalogue articles et tarifs",
+          "Cycle de vente : devis, commandes, livraisons, factures",
+          "Gestion des achats et des stocks",
+          "Encaissements et règlements",
+          "États et statistiques commerciales",
+          "Liaison avec la comptabilité",
+        ],
+        prerequis: [
+          "Connaissances de base en gestion commerciale",
+          "Maîtrise de l'environnement Windows",
+          "Expérience en gestion d'entreprise recommandée",
+        ],
+      }}
     />
   );
 }

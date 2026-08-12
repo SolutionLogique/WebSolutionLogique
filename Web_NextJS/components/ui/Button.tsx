@@ -46,26 +46,30 @@ interface AsLink extends BaseProps {
 
 export type ButtonProps = AsButton | AsLink;
 
+/* Le focus visible vient de la regle globale *:focus-visible de globals.css
+   (2px solid, offset 2), unique pour tout le site.
+   On ne le redeclare pas ici : tailwind-merge considere `outline` et
+   `outline-2` comme un meme groupe et supprimait `outline`, donc
+   l'outline-style — une largeur sans style ne rend rien. */
 const base =
   'inline-flex items-center justify-center gap-2 font-semibold transition-colors ' +
-  'disabled:opacity-50 disabled:cursor-not-allowed ' +
-  'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2';
+  'disabled:opacity-50 disabled:cursor-not-allowed';
 
 /* Aplats unis. Plus aucun degrade : avec les ombres lumineuses, c'etait le
    principal marqueur d'apparence generique du site. */
 const variants: Record<Variant, string> = {
   primary:
-    'bg-primary-600 text-sand-0 hover:bg-primary-700 focus-visible:outline-primary-600 shadow-sm',
+    'bg-primary-600 text-sand-0 hover:bg-primary-700 shadow-sm',
   secondary:
-    'bg-sand-0 text-sand-800 border border-sand-300 hover:bg-sand-50 focus-visible:outline-primary-600 shadow-sm',
+    'bg-sand-0 text-sand-800 border border-sand-300 hover:bg-sand-50 shadow-sm',
   outline:
-    'border-2 border-primary-600 text-primary-600 hover:bg-primary-50 focus-visible:outline-primary-600',
+    'border-2 border-primary-600 text-primary-600 hover:bg-primary-50',
   ghost:
-    'text-primary-600 hover:bg-primary-50 focus-visible:outline-primary-600',
+    'text-primary-600 hover:bg-primary-50',
   accent:
-    'bg-accent-600 text-sand-0 hover:bg-accent-700 focus-visible:outline-accent-600 shadow-sm',
+    'bg-accent-600 text-sand-0 hover:bg-accent-700 shadow-sm',
   destructive:
-    'bg-error text-sand-0 hover:opacity-90 focus-visible:outline-error shadow-sm',
+    'bg-error text-sand-0 hover:opacity-90 shadow-sm',
 };
 
 /* min-h garantit une cible tactile d'au moins 44 px sur les tailles lg et xl. */

@@ -17,6 +17,5 @@ export { ModernSection } from './modernSection';
 
 // Gabarits de page
 export { ServiceCard } from './serviceCard';
-export { FormationTemplate } from './formationTemplate';
 export { EBPTemplate } from './ebpTemplate';
 export { LogoCard } from './logoCard';

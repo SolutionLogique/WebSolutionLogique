@@ -36,9 +36,9 @@ const LIENS = {
     { href: "/accompagnement-ia", label: "Accompagnement IA" },
   ],
   formations: [
-    { href: "/formationCompta", label: "Formation Comptabilité" },
-    { href: "/formationCommerciale", label: "Formation Gestion commerciale" },
-    { href: "/formationBatiment", label: "Formation Bâtiment" },
+    { href: "/ebpcomptabilite#formation", label: "Formation Comptabilité" },
+    { href: "/ebpgestionco#formation", label: "Formation Gestion commerciale" },
+    { href: "/ebpbatiment#formation", label: "Formation Bâtiment" },
     { href: "/engagementHandicap", label: "Engagement handicap" },
   ],
   legal: [

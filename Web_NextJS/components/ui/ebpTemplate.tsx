@@ -24,13 +24,30 @@ interface EBPSoftware {
   level: 'Essentiel' | 'Professionnel' | 'Expert';
 }
 
+/* Donnees de la formation associee au logiciel.
+   Les pages /formationCompta, /formationCommerciale et /formationBatiment
+   sont fusionnees ici : la formation devient un argument de vente du
+   logiciel plutot qu'une offre isolee, et les trois pages autonomes sont
+   redirigees en 301 vers la page du logiciel correspondant. */
+interface FormationAssociee {
+  titre: string;
+  description: string;
+  duree: string;
+  niveau: string;
+  prix: string;
+  objectifs: string[];
+  programme: string[];
+  prerequis?: string[];
+  pdfUrl?: string;
+}
+
 interface EBPTemplateProps {
   title: string;
   description: string;
   softwares: EBPSoftware[];
   colorScheme?: 'blue' | 'green' | 'orange';
   category: string;
-  formationLink?: string;
+  formation?: FormationAssociee;
 }
 
 export function EBPTemplate({
@@ -39,7 +56,7 @@ export function EBPTemplate({
   softwares,
   colorScheme = 'blue',
   category,
-  formationLink = '/formationCompta'
+  formation
 }: EBPTemplateProps) {
   const colors = {
     blue: {
@@ -112,12 +129,14 @@ export function EBPTemplate({
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             
-            <Link
-              href={formationLink}
-              className="bg-white/90 backdrop-blur text-slate-700 px-8 py-4 rounded-lg font-semibold hover:bg-white border border-slate-200 hover:border-slate-300 transition-all duration-200 shadow-lg"
-            >
-              Voir les formations
-            </Link>
+            {formation && (
+              <a
+                href="#formation"
+                className="rounded-lg border border-sand-200 bg-sand-0 px-8 py-4 font-semibold text-sand-800 shadow-sm transition-colors hover:bg-sand-50"
+              >
+                Voir la formation associée
+              </a>
+            )}
           </div>
         </div>
       </ModernSection>
@@ -244,6 +263,105 @@ export function EBPTemplate({
         </div>
       </ModernSection>
 
+      {/* Formation associee */}
+      {formation && (
+        <ModernSection background="gray" padding="lg" id="formation">
+          <div className="mx-auto max-w-4xl text-left">
+            <div className="mb-8 text-center">
+              <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-accent-100 bg-accent-50 px-3.5 py-1.5 text-sm font-semibold text-accent-700">
+                <Award className="h-4 w-4" aria-hidden="true" />
+                Formation certifiée Qualiopi
+              </span>
+              <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">{formation.titre}</h2>
+              <p className="mx-auto max-w-2xl leading-relaxed text-sand-600">{formation.description}</p>
+            </div>
+
+            <dl className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              {[
+                { libelle: 'Durée', valeur: formation.duree },
+                { libelle: 'Niveau', valeur: formation.niveau },
+                { libelle: 'Tarif', valeur: formation.prix },
+              ].map((info) => (
+                <div key={info.libelle} className="rounded-xl border border-sand-200 bg-sand-0 p-4 text-center">
+                  <dt className="text-sm text-sand-500">{info.libelle}</dt>
+                  <dd className="font-display font-semibold text-sand-900">{info.valeur}</dd>
+                </div>
+              ))}
+            </dl>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="rounded-2xl border border-sand-200 bg-sand-0 p-6">
+                <h3 className="mb-4 font-display text-lg font-semibold text-sand-900">Objectifs</h3>
+                <ul className="space-y-2.5">
+                  {formation.objectifs.map((o) => (
+                    <li key={o} className="flex items-start gap-3 text-sm text-sand-600">
+                      <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-600" aria-hidden="true" />
+                      {o}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-sand-200 bg-sand-0 p-6">
+                <h3 className="mb-4 font-display text-lg font-semibold text-sand-900">Programme</h3>
+                <ol className="space-y-2.5">
+                  {formation.programme.map((p, i) => (
+                    <li key={p} className="flex items-start gap-3 text-sm text-sand-600">
+                      <span className="mt-0.5 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary-50 text-xs font-semibold text-primary-700">
+                        {i + 1}
+                      </span>
+                      {p}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+
+            {formation.prerequis && formation.prerequis.length > 0 && (
+              <div className="mt-6 rounded-2xl border border-sand-200 bg-sand-0 p-6">
+                <h3 className="mb-4 font-display text-lg font-semibold text-sand-900">Prérequis</h3>
+                <ul className="grid gap-2.5 sm:grid-cols-3">
+                  {formation.prerequis.map((p) => (
+                    <li key={p} className="flex items-start gap-3 text-sm text-sand-600">
+                      <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-sand-400" aria-hidden="true" />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg bg-primary-600 px-6 font-semibold text-sand-0 shadow-sm transition-colors hover:bg-primary-700"
+              >
+                S&apos;inscrire à la formation
+                <ArrowRight className="h-5 w-5" aria-hidden="true" />
+              </Link>
+              {formation.pdfUrl && (
+                <a
+                  href={formation.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg border border-sand-300 bg-sand-0 px-6 font-semibold text-sand-800 transition-colors hover:bg-sand-50"
+                >
+                  <Download className="h-5 w-5" aria-hidden="true" />
+                  Programme détaillé
+                </a>
+              )}
+            </div>
+
+            <p className="mt-6 text-center text-sm text-sand-500">
+              Formation accessible aux personnes en situation de handicap —{' '}
+              <Link href="/engagementHandicap" className="font-medium text-primary-600 hover:underline">
+                consulter notre engagement
+              </Link>
+            </p>
+          </div>
+        </ModernSection>
+      )}
+
       {/* CTA Section */}
       <ModernSection background="dark" padding="lg">
         <div className="text-center">
@@ -264,12 +382,14 @@ export function EBPTemplate({
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             
-            <Link
-              href={formationLink}
-              className="bg-white/90 backdrop-blur text-slate-700 px-8 py-4 rounded-lg font-semibold hover:bg-white border border-slate-200 hover:border-slate-300 transition-all duration-200 shadow-lg"
-            >
-              Voir les formations
-            </Link>
+            {formation && (
+              <a
+                href="#formation"
+                className="rounded-lg border border-sand-200 bg-sand-0 px-8 py-4 font-semibold text-sand-800 shadow-sm transition-colors hover:bg-sand-50"
+              >
+                Voir la formation associée
+              </a>
+            )}
           </div>
         </div>
       </ModernSection>
