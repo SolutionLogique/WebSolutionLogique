@@ -345,7 +345,17 @@ export default function Securite() {
             >
               Consultation gratuite
             </ModernButton>
-            <ModernButton 
+            <ModernButton
+              href="/audit-cybersecurite"
+              variant="secondary"
+              size="lg"
+              icon={<ShieldCheck />}
+              iconPosition="left"
+              className="min-w-[200px] h-12"
+            >
+              Audit et test d&apos;intrusion
+            </ModernButton>
+            <ModernButton
               href="tel:0450640233"
               variant="secondary" 
               size="lg"
