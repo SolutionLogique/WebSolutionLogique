@@ -207,3 +207,10 @@
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover { background: #DDD4C7; }
+
+
+/* Barre de progression du telephone qui defile seul (ParcoursTerrain) */
+@keyframes progression {
+  from { width: 0%; }
+  to { width: 100%; }
+}
