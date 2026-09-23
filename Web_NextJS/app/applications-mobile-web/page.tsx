@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   Smartphone,
   Monitor,
@@ -74,6 +75,22 @@ const REALISATIONS = [
     texte:
       "Articles, stocks et grilles tarifaires de plusieurs réseaux de distribution repris depuis des classeurs, contrôlés ligne à ligne, puis importés dans chaque dossier EBP.",
     points: ["Plusieurs milliers de prix contrôlés", "Un dossier EBP par société", "Livré"],
+  },
+];
+
+/* Captures de l'application d'intervention en production. Noms, sociétés,
+   téléphones et libellés sont remplacés par des valeurs fictives avant la
+   capture : aucune donnée client réelle n'apparaît. */
+const CAPTURES_WEB = [
+  {
+    src: "/assets/realisations/web-liste-interventions.webp",
+    alt: "Liste des interventions avec client, date, type et technicien assigné",
+    legende: "Le bureau suit toutes les interventions, filtre par période et affecte les techniciens.",
+  },
+  {
+    src: "/assets/realisations/web-fiche-intervention.webp",
+    alt: "Fiche d'une intervention avec description, planification, client et technicien",
+    legende: "Chaque intervention a sa fiche : planification, pièces, temps passé, signatures et rapport PDF.",
   },
 ];
 
@@ -156,6 +173,51 @@ export default function ApplicationsMobileWebPage() {
       <section className="bg-sand-0 py-section">
         <div className="mx-auto max-w-container px-gutter">
           <div className="mx-auto mb-14 max-w-2xl text-center">
+            <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">L&apos;application en images</h2>
+            <p className="text-lg text-sand-600">
+              L&apos;application d&apos;intervention que nous utilisons au quotidien, côté bureau et côté
+              terrain. Les noms affichés sont fictifs.
+            </p>
+          </div>
+
+          <div className="grid items-start gap-8 lg:grid-cols-3">
+            <div className="space-y-8 lg:col-span-2">
+              {CAPTURES_WEB.map((c) => (
+                <figure key={c.src}>
+                  <div className="overflow-hidden rounded-xl border border-sand-200 bg-sand-900 shadow-card">
+                    <div className="flex items-center gap-1.5 px-4 py-2.5" aria-hidden="true">
+                      <span className="h-2.5 w-2.5 rounded-full bg-sand-600" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-sand-600" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-sand-600" />
+                    </div>
+                    <Image src={c.src} alt={c.alt} width={1440} height={900} className="h-auto w-full" />
+                  </div>
+                  <figcaption className="mt-3 text-sm text-sand-600">{c.legende}</figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <figure className="mx-auto w-full max-w-[280px] lg:sticky lg:top-28">
+              <div className="overflow-hidden rounded-[2.5rem] border-[10px] border-sand-900 bg-sand-900 shadow-card">
+                <Image
+                  src="/assets/realisations/mobile-etape-photos.webp"
+                  alt="Application mobile : étape photos d'une intervention en cours, avec chronomètre et bouton de prise de photo"
+                  width={540}
+                  height={1158}
+                  className="h-auto w-full rounded-[1.8rem]"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-sm text-sand-600">
+                Sur le terrain, le technicien avance étape par étape : photos, checklist, pièces, signature.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-sand-200 bg-sand-50 py-section">
+        <div className="mx-auto max-w-container px-gutter">
+          <div className="mx-auto mb-14 max-w-2xl text-center">
             <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">Votre ERP n'est pas EBP ?</h2>
             <p className="text-lg text-sand-600">
               Nous travaillons aussi avec d'autres ERP et logiciels métier, dès qu'ils proposent
@@ -176,7 +238,7 @@ export default function ApplicationsMobileWebPage() {
         </div>
       </section>
 
-      <section className="border-t border-sand-200 bg-sand-50 py-section">
+      <section className="border-t border-sand-200 bg-sand-0 py-section">
         <div className="mx-auto max-w-2xl px-gutter text-center">
           <div className="mb-6 flex justify-center gap-3 text-accent-600">
             <Database className="h-6 w-6" aria-hidden="true" />

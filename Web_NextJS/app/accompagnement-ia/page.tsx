@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   Sparkles,
   Search,
@@ -101,6 +102,19 @@ const EXEMPLES = [
   },
 ];
 
+const CAPTURES = [
+  {
+    src: "/assets/realisations/web-journal-appels.webp",
+    alt: "Journal d'appels : correspondant, technicien, client reconnu, durée et suite à donner",
+    legende: "Le journal d'appels : chaque appel est rattaché au client et au technicien, puis résumé.",
+  },
+  {
+    src: "/assets/realisations/web-anomalies.webp",
+    alt: "Écran des anomalies commerciales : factures dupliquées, écarts de prix, délais de règlement",
+    legende: "Les anomalies repérées dans la facturation, avec la règle qui les a déclenchées.",
+  },
+];
+
 export default function AccompagnementIAPage() {
   return (
     <>
@@ -175,6 +189,25 @@ export default function AccompagnementIAPage() {
               </article>
             ))}
           </div>
+
+          <div className="mt-14 grid gap-8 lg:grid-cols-2">
+            {CAPTURES.map((c) => (
+              <figure key={c.src}>
+                <div className="overflow-hidden rounded-xl border border-sand-200 bg-sand-900 shadow-card">
+                  <div className="flex items-center gap-1.5 px-4 py-2.5" aria-hidden="true">
+                    <span className="h-2.5 w-2.5 rounded-full bg-sand-600" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-sand-600" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-sand-600" />
+                  </div>
+                  <Image src={c.src} alt={c.alt} width={1440} height={900} className="h-auto w-full" />
+                </div>
+                <figcaption className="mt-3 text-sm text-sand-600">{c.legende}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-6 text-center text-xs text-sand-500">
+            Captures de nos outils en production. Noms, sociétés et numéros affichés sont fictifs.
+          </p>
         </div>
       </section>
 
