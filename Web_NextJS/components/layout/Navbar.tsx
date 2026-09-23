@@ -45,6 +45,7 @@ const NAV_ITEMS: NavItem[] = [
       { href: '/informatique', label: 'Informatique' },
       { href: '/telecom', label: 'Télécom' },
       { href: '/securite', label: 'Sécurité' },
+      { href: '/audit-cybersecurite', label: 'Audit & test d\'intrusion' },
     ],
   },
   {
@@ -52,6 +53,7 @@ const NAV_ITEMS: NavItem[] = [
     label: 'Sur-mesure & IA',
     children: [
       { href: '/developpement-sur-mesure', label: 'Développement sur-mesure' },
+      { href: '/applications-mobile-web', label: 'Applications mobile & web' },
       { href: '/accompagnement-ia', label: 'Accompagnement IA' },
     ],
   },
