@@ -1,6 +1,21 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Sparkles, Search, GraduationCap, Rocket, ArrowRight, ShieldCheck, Users, FileSearch } from "lucide-react";
+import {
+  Sparkles,
+  Search,
+  GraduationCap,
+  Rocket,
+  ArrowRight,
+  ShieldCheck,
+  Users,
+  FileSearch,
+  Database,
+  PhoneCall,
+  TrendingUp,
+  MessageCircle,
+  Activity,
+  Bot,
+} from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
 
@@ -43,6 +58,46 @@ const ETAPES = [
       { icon: ShieldCheck, texte: "Maîtrise de ce qui sort de l'entreprise" },
       { icon: Users, texte: "Suivi de l'usage après mise en service" },
     ],
+  },
+];
+
+/* Exemples tires de projets reellement menes, decrits sans nommer les
+   clients : un nom ne s'affiche sur le site qu'avec leur accord. */
+const EXEMPLES = [
+  {
+    icon: Database,
+    titre: "Un assistant qui interroge votre gestion",
+    texte:
+      "Vous posez la question en français, par exemple « quels clients n'ont rien réglé depuis 60 jours ? », et l'assistant va chercher la réponse dans votre base EBP.",
+    garde: "Accès en lecture seule : il consulte, il ne modifie rien.",
+  },
+  {
+    icon: PhoneCall,
+    titre: "Des appels transcrits et rattachés au client",
+    texte:
+      "Les appels téléphoniques sont transcrits, résumés et rangés sur la fiche du client. Plus besoin de reprendre ses notes pour savoir ce qui a été dit.",
+    garde: "Transcription effectuée sur nos serveurs, pas chez un tiers.",
+  },
+  {
+    icon: TrendingUp,
+    titre: "Des anomalies repérées dans la facturation",
+    texte:
+      "Un modèle apprend à quoi ressemble une facture ou une affaire normale chez vous, puis signale celles qui s'en écartent : remise inhabituelle, montant incohérent, oubli.",
+    garde: "Il signale, un humain décide.",
+  },
+  {
+    icon: MessageCircle,
+    titre: "Une assistante de réservation par messagerie",
+    texte:
+      "Pour un institut de soins : consulter le planning, bloquer un créneau, être prévenu d'un paiement ou d'une annulation, le tout depuis une messagerie.",
+    garde: "Les modifications du site passent par une validation humaine.",
+  },
+  {
+    icon: Activity,
+    titre: "Une surveillance qui travaille la nuit",
+    texte:
+      "Des agents vérifient chaque nuit que les services, les sauvegardes et les certificats sont en bon état, et préviennent avant que l'incident ne se voie.",
+    garde: "Chaque alerte renvoie vers la mesure qui l'a déclenchée.",
   },
 ];
 
@@ -91,7 +146,39 @@ export default function AccompagnementIAPage() {
         </div>
       </section>
 
-      <section className="border-y border-sand-200 bg-sand-50 py-section">
+      <section className="border-t border-sand-200 bg-sand-50 py-section">
+        <div className="mx-auto max-w-container px-gutter">
+          <div className="mx-auto mb-14 max-w-2xl text-center">
+            <span className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-accent-600">
+              <Bot className="h-4 w-4" aria-hidden="true" />
+              Modules et agents
+            </span>
+            <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">Ce que nous avons déjà construit</h2>
+            <p className="text-lg text-sand-600">
+              Des modules branchés sur des données réelles, en service aujourd'hui. Chacun peut
+              servir de point de départ pour votre propre cas.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {EXEMPLES.map((ex) => (
+              <article key={ex.titre} className="flex flex-col rounded-2xl border border-sand-200 bg-sand-0 p-7 shadow-card">
+                <span className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary-600">
+                  <ex.icon className="h-5 w-5 text-sand-0" aria-hidden="true" />
+                </span>
+                <h3 className="mb-3 font-display text-lg font-semibold text-sand-900">{ex.titre}</h3>
+                <p className="mb-5 text-sm leading-relaxed text-sand-600">{ex.texte}</p>
+                <p className="mt-auto flex items-start gap-3 border-t border-sand-200 pt-5 text-sm text-sand-700">
+                  <ShieldCheck className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-600" aria-hidden="true" />
+                  {ex.garde}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-sand-200 bg-sand-0 py-section">
         <div className="mx-auto max-w-3xl px-gutter">
           <h2 className="mb-6 text-center font-display text-h2 font-bold text-sand-900">
             Ce que nous ne ferons pas
