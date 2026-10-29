@@ -48,207 +48,6 @@ const LU_LE = "2026-10-29";
 
 export const ARTICLES: Article[] = [
   {
-    slug: "facture-electronique-pme-2026-2027",
-    titre: "Facture électronique : ce qui change pour les PME en 2026 et 2027",
-    titreSeo: "Facture électronique : guide pour les PME",
-    libelle: "Facture électronique et PME",
-    description:
-      "Facture électronique 2026-2027 pour les PME : calendrier, plateforme agréée, nouvelles mentions, e-reporting, sanctions, et comment préparer vos logiciels.",
-    resume:
-      "Depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques. Les PME et les micro-entreprises devront aussi les émettre au 1er septembre 2027. Le calendrier, les obligations, et comment préparer ses logiciels et ses équipes.",
-    datePublication: "2026-10-29",
-    dateModification: "2026-10-29",
-    blocs: [
-      { type: "h2", texte: "Le calendrier en vigueur" },
-      {
-        type: "p",
-        texte:
-          "La réforme est entrée en application le 1er septembre 2026. Depuis cette date, toutes les entreprises assujetties à la TVA en France, quelle que soit leur taille, doivent être en mesure de recevoir des factures électroniques. Les grandes entreprises et les entreprises de taille intermédiaire doivent, elles, déjà émettre leurs factures sous forme électronique et transmettre à l'administration leurs données de transaction et de paiement.",
-      },
-      {
-        type: "p",
-        texte:
-          "Pour les PME et les micro-entreprises, l'obligation d'émettre arrive au 1er septembre 2027, en même temps que la transmission des données (l'e-reporting). L'administration fiscale parle d'un « maintien du calendrier légal » : aucune page officielle ne fait état d'un report. Une entreprise peut aussi passer à l'émission électronique avant son échéance si elle le souhaite.",
-      },
-      {
-        type: "encadre",
-        texte:
-          "Qui est une PME ? Une entreprise de moins de 250 personnes dont le chiffre d'affaires ne dépasse pas 50 millions d'euros, ou dont le total de bilan ne dépasse pas 43 millions. Une micro-entreprise compte moins de 10 personnes, avec un chiffre d'affaires ou un total de bilan d'au plus 2 millions d'euros.",
-      },
-      { type: "h2", texte: "Une facture électronique n'est pas un PDF envoyé par mail" },
-      {
-        type: "p",
-        texte:
-          "C'est le point qui surprend le plus. Une facture électronique contient des données structurées, lisibles par un logiciel, dans un format reconnu : UBL, CII, ou un format mixte qui associe un fichier de données et une image de la facture. Le Factur-X est de ce type. Un PDF ordinaire joint à un mail ne compte pas.",
-      },
-      {
-        type: "p",
-        texte:
-          "Les factures ne circulent plus directement d'une entreprise à l'autre : elles passent par des plateformes agréées, autrefois appelées PDP, immatriculées par la DGFiP pour trois ans renouvelables. Chaque entreprise en choisit une pour recevoir ses factures. L'État n'a pas créé de portail unique d'échange, mais il tient un annuaire national qui indique à quelle adresse chaque entreprise reçoit ses factures. Une facture reçue par mail ou sur papier pendant la mise en route ne doit pas être rejetée pour ce seul motif.",
-      },
-      { type: "h2", texte: "Quatre nouvelles mentions sur vos factures" },
-      {
-        type: "liste",
-        items: [
-          "le numéro SIREN du client ;",
-          "la catégorie de l'opération : vente, prestation de services, ou les deux ;",
-          "l'option pour le paiement de la TVA sur les débits, le cas échéant ;",
-          "l'adresse de livraison du bien, si elle diffère de l'adresse de facturation.",
-        ],
-      },
-      {
-        type: "p",
-        texte:
-          "Dans un logiciel de gestion, cela veut dire des fiches clients complètes (le SIREN surtout) et des articles bien rangés entre biens et services.",
-      },
-      { type: "h2", texte: "L'e-reporting, pour ce qui n'est pas facturé entre entreprises françaises" },
-      {
-        type: "p",
-        texte:
-          "Les ventes aux particuliers et les opérations avec l'étranger (exportations, échanges intracommunautaires) ne donnent pas lieu à une facture électronique, mais leurs données doivent être transmises à l'administration. S'y ajoutent les données de paiement des prestations de services quand la TVA est due à l'encaissement. Cette transmission ne se fait ni au fil de l'eau ni chaque jour : sa fréquence dépend du régime de TVA de l'entreprise.",
-      },
-      { type: "h2", texte: "Préparer ses logiciels" },
-      {
-        type: "p",
-        texte:
-          "Toute la chaîne est concernée : le logiciel de gestion commerciale ou l'ERP qui émet les factures, le logiciel métier ou la boutique en ligne s'ils en produisent aussi, et la comptabilité, qui reçoit les factures des fournisseurs. Chaque logiciel doit savoir produire ou lire une facture structurée et échanger avec une plateforme agréée.",
-      },
-      {
-        type: "liste",
-        items: [
-          "Recensez les logiciels qui émettent des factures et ceux qui doivent en recevoir.",
-          "Pour chacun, demandez à l'éditeur quelle plateforme agréée il raccorde, à partir de quelle version, et si une offre ou un abonnement particulier est nécessaire.",
-          "Vérifiez que les outils qui se passent des données aujourd'hui par export ou ressaisie (facturation, comptabilité, banque, boutique en ligne) le feront encore une fois la réforme en place.",
-        ],
-      },
-      {
-        type: "p",
-        texte:
-          "Un exemple parmi les logiciels que nous installons : EBP s'appuie sur la plateforme agréée Shine (numéro délivré le 21 mai 2026) ; seules ses versions Plus émettent les factures électroniques et automatisent l'e-reporting, l'émission arrive avec les versions de novembre, déployées progressivement depuis le 27 octobre 2026, et l'éditeur annonce encore des cas d'e-reporting des paiements à traiter d'ici la fin de 2026. Pour un autre logiciel, c'est la page de son éditeur qui fait foi.",
-      },
-      { type: "h2", texte: "Les sanctions" },
-      {
-        type: "p",
-        texte:
-          "La loi de finances pour 2026 a relevé les amendes : 50 € par facture non émise sous forme électronique et 500 € par transmission d'e-reporting manquante, avec un plafond de 15 000 € par année civile dans les deux cas. Une entreprise qui ne s'est pas dotée d'une plateforme de réception est mise en demeure, puis, trois mois plus tard, s'expose à 500 €, et à 1 000 € de plus tous les trois mois. Une première infraction réparée à temps n'est pas sanctionnée. Le ministère a annoncé qu'aucune sanction ne serait prononcée avant la fin de 2026, sans que ce soit un report de l'obligation.",
-      },
-      { type: "h2", texte: "Par où commencer" },
-      {
-        type: "liste",
-        items: [
-          "Vérifiez que votre entreprise a bien désigné sa plateforme de réception : c'est obligatoire depuis le 1er septembre 2026.",
-          "Demandez à l'éditeur de chaque logiciel qui facture la version et la plateforme prévues.",
-          "Complétez les fiches clients (SIREN, adresses de livraison) et rangez les articles entre biens et services.",
-          "Si vous êtes une PME, prévoyez le passage à l'émission avant le 1er septembre 2027, sans attendre l'été.",
-        ],
-      },
-      {
-        type: "p",
-        texte:
-          "Nous accompagnons les PME de Haute-Savoie sur l'ensemble : liaisons entre facturation, comptabilité, banque et boutique en ligne, mises à jour et paramétrage des logiciels de gestion, formation des équipes. Voir nos pages [Développement sur mesure](/developpement-sur-mesure/) et [Logiciels EBP](/logiciels/). L'administration répond aussi aux questions au 0806 807 807.",
-      },
-      {
-        type: "encadre",
-        texte:
-          "Article à jour au 29 octobre 2026. Les versions et les conditions des éditeurs évoluent : les notes de version de votre logiciel font foi.",
-      },
-    ],
-    services: ["/developpement-sur-mesure", "/telemaintenance", "/logiciels"],
-    sources: [
-      {
-        titre: "À partir de quand suis-je concerné par la réforme de la facturation électronique ?",
-        editeur: "impots.gouv.fr",
-        url: "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
-        datePage: "2026-01-16",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Facturation électronique : guide pratique de démarrage au 1er septembre 2026",
-        editeur: "DGFiP",
-        url: "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf",
-        datePage: "2026-07-09",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Je découvre la facturation électronique",
-        editeur: "impots.gouv.fr",
-        url: "https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique",
-        datePage: "2026-05-26",
-        consultee: LU_LE,
-      },
-      {
-        titre: "J'approfondis mes connaissances sur la réforme",
-        editeur: "impots.gouv.fr",
-        url: "https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme",
-        datePage: "2026-01-06",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Foire aux questions : j'approfondis la facturation électronique",
-        editeur: "DGFiP",
-        url: "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_japprofondis-la-facturation-electronique.pdf",
-        datePage: "2026-09-01",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Je consulte la liste des plateformes agréées",
-        editeur: "impots.gouv.fr",
-        url: "https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees",
-        datePage: "2026-10-13",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Facturation électronique : les sanctions évoluent",
-        editeur: "Service Public Entreprendre",
-        url: "https://entreprendre.service-public.gouv.fr/actualites/A18802",
-        datePage: "2026-02-20",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Facturation électronique : le premier comité dresse le bilan du déploiement et engage la préparation de 2027",
-        editeur: "ministère de l'Économie (communiqué)",
-        url: "https://presse.economie.gouv.fr/facturation-electronique-le-premier-comite-dresse-le-bilan-du-deploiement-et-engage-la-preparation-de-2027/",
-        datePage: "2026-10-09",
-        consultee: LU_LE,
-      },
-      {
-        titre: "FAQ : réforme de la facturation électronique",
-        editeur: "EBP",
-        url: "https://support.ebp.com/hc/fr/articles/37858547802653-FAQ-R%C3%A9forme-de-la-facturation-%C3%A9lectronique",
-        datePage: "2026-10-02",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Nouveautés et corrections des versions EBP Gestion Commerciale",
-        editeur: "EBP",
-        url: "https://support.ebp.com/hc/fr/articles/360015954438-Nouveaut%C3%A9s-et-corrections-des-versions-EBP-Gestion-Commerciale",
-        datePage: "2026-10-27",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Nouveautés et corrections des versions Bâtiment",
-        editeur: "EBP",
-        url: "https://support.ebp.com/hc/fr/articles/4407465019281-Nouveaut%C3%A9s-et-corrections-des-versions-B%C3%A2timent",
-        datePage: "2026-10-27",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Nouveautés et corrections des versions EBP Comptabilité",
-        editeur: "EBP",
-        url: "https://support.ebp.com/hc/fr/articles/360015870817-Nouveaut%C3%A9s-et-corrections-des-versions-EBP-Comptabilit%C3%A9",
-        datePage: "2026-10-29",
-        consultee: LU_LE,
-      },
-      {
-        titre: "Désigner la Plateforme Agréée Shine : solution EBP Plus",
-        editeur: "EBP",
-        url: "https://support.ebp.com/hc/fr/articles/33416588642333-D%C3%A9signer-la-Plateforme-Agr%C3%A9%C3%A9e-Shine-Solution-EBP-Plus",
-        datePage: "2026-09-08",
-        consultee: LU_LE,
-      },
-    ],
-  },
-  {
     slug: "sauvegardes-pme-regle-3-2-1",
     titre: "Sauvegardes d'une PME : appliquer la règle 3-2-1",
     titreSeo: "Sauvegardes d'une PME : la règle 3-2-1",
@@ -484,6 +283,207 @@ export const ARTICLES: Article[] = [
         editeur: "ANSSI",
         url: "https://messervices.cyber.gouv.fr/documents-guides/anssi_fondamentaux_sauvegarde_systemes_dinformation_v1.1.pdf",
         datePage: "2025-11-27",
+        consultee: LU_LE,
+      },
+    ],
+  },
+  {
+    slug: "facture-electronique-pme-2026-2027",
+    titre: "Facture électronique : ce qui change pour les PME en 2026 et 2027",
+    titreSeo: "Facture électronique : guide pour les PME",
+    libelle: "Facture électronique et PME",
+    description:
+      "Facture électronique 2026-2027 pour les PME : calendrier, plateforme agréée, nouvelles mentions, e-reporting, sanctions, et comment préparer vos logiciels.",
+    resume:
+      "Depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques. Les PME et les micro-entreprises devront aussi les émettre au 1er septembre 2027. Le calendrier, les obligations, et comment préparer ses logiciels et ses équipes.",
+    datePublication: "2026-10-29",
+    dateModification: "2026-10-29",
+    blocs: [
+      { type: "h2", texte: "Le calendrier en vigueur" },
+      {
+        type: "p",
+        texte:
+          "La réforme est entrée en application le 1er septembre 2026. Depuis cette date, toutes les entreprises assujetties à la TVA en France, quelle que soit leur taille, doivent être en mesure de recevoir des factures électroniques. Les grandes entreprises et les entreprises de taille intermédiaire doivent, elles, déjà émettre leurs factures sous forme électronique et transmettre à l'administration leurs données de transaction et de paiement.",
+      },
+      {
+        type: "p",
+        texte:
+          "Pour les PME et les micro-entreprises, l'obligation d'émettre arrive au 1er septembre 2027, en même temps que la transmission des données (l'e-reporting). L'administration fiscale parle d'un « maintien du calendrier légal » : aucune page officielle ne fait état d'un report. Une entreprise peut aussi passer à l'émission électronique avant son échéance si elle le souhaite.",
+      },
+      {
+        type: "encadre",
+        texte:
+          "Qui est une PME ? Une entreprise de moins de 250 personnes dont le chiffre d'affaires ne dépasse pas 50 millions d'euros, ou dont le total de bilan ne dépasse pas 43 millions. Une micro-entreprise compte moins de 10 personnes, avec un chiffre d'affaires ou un total de bilan d'au plus 2 millions d'euros.",
+      },
+      { type: "h2", texte: "Une facture électronique n'est pas un PDF envoyé par mail" },
+      {
+        type: "p",
+        texte:
+          "C'est le point qui surprend le plus. Une facture électronique contient des données structurées, lisibles par un logiciel, dans un format reconnu : UBL, CII, ou un format mixte qui associe un fichier de données et une image de la facture. Le Factur-X est de ce type. Un PDF ordinaire joint à un mail ne compte pas.",
+      },
+      {
+        type: "p",
+        texte:
+          "Les factures ne circulent plus directement d'une entreprise à l'autre : elles passent par des plateformes agréées, autrefois appelées PDP, immatriculées par la DGFiP pour trois ans renouvelables. Chaque entreprise en choisit une pour recevoir ses factures. L'État n'a pas créé de portail unique d'échange, mais il tient un annuaire national qui indique à quelle adresse chaque entreprise reçoit ses factures. Une facture reçue par mail ou sur papier pendant la mise en route ne doit pas être rejetée pour ce seul motif.",
+      },
+      { type: "h2", texte: "Quatre nouvelles mentions sur vos factures" },
+      {
+        type: "liste",
+        items: [
+          "le numéro SIREN du client ;",
+          "la catégorie de l'opération : vente, prestation de services, ou les deux ;",
+          "l'option pour le paiement de la TVA sur les débits, le cas échéant ;",
+          "l'adresse de livraison du bien, si elle diffère de l'adresse de facturation.",
+        ],
+      },
+      {
+        type: "p",
+        texte:
+          "Dans un logiciel de gestion, cela veut dire des fiches clients complètes (le SIREN surtout) et des articles bien rangés entre biens et services.",
+      },
+      { type: "h2", texte: "L'e-reporting, pour ce qui n'est pas facturé entre entreprises françaises" },
+      {
+        type: "p",
+        texte:
+          "Les ventes aux particuliers et les opérations avec l'étranger (exportations, échanges intracommunautaires) ne donnent pas lieu à une facture électronique, mais leurs données doivent être transmises à l'administration. S'y ajoutent les données de paiement des prestations de services quand la TVA est due à l'encaissement. Cette transmission ne se fait ni au fil de l'eau ni chaque jour : sa fréquence dépend du régime de TVA de l'entreprise.",
+      },
+      { type: "h2", texte: "Préparer ses logiciels" },
+      {
+        type: "p",
+        texte:
+          "Toute la chaîne est concernée : le logiciel de gestion commerciale ou l'ERP qui émet les factures, le logiciel métier ou la boutique en ligne s'ils en produisent aussi, et la comptabilité, qui reçoit les factures des fournisseurs. Chaque logiciel doit savoir produire ou lire une facture structurée et échanger avec une plateforme agréée.",
+      },
+      {
+        type: "liste",
+        items: [
+          "Recensez les logiciels qui émettent des factures et ceux qui doivent en recevoir.",
+          "Pour chacun, demandez à l'éditeur quelle plateforme agréée il raccorde, à partir de quelle version, et si une offre ou un abonnement particulier est nécessaire.",
+          "Vérifiez que les outils qui se passent des données aujourd'hui par export ou ressaisie (facturation, comptabilité, banque, boutique en ligne) le feront encore une fois la réforme en place.",
+        ],
+      },
+      {
+        type: "p",
+        texte:
+          "Un exemple parmi les logiciels que nous installons : EBP s'appuie sur la plateforme agréée Shine (numéro délivré le 21 mai 2026) ; seules ses versions Plus émettent les factures électroniques et automatisent l'e-reporting, l'émission arrive avec les versions de novembre, déployées progressivement depuis le 27 octobre 2026, et l'éditeur annonce encore des cas d'e-reporting des paiements à traiter d'ici la fin de 2026. Pour un autre logiciel, c'est la page de son éditeur qui fait foi.",
+      },
+      { type: "h2", texte: "Les sanctions" },
+      {
+        type: "p",
+        texte:
+          "La loi de finances pour 2026 a relevé les amendes : 50 € par facture non émise sous forme électronique et 500 € par transmission d'e-reporting manquante, avec un plafond de 15 000 € par année civile dans les deux cas. Une entreprise qui ne s'est pas dotée d'une plateforme de réception est mise en demeure, puis, trois mois plus tard, s'expose à 500 €, et à 1 000 € de plus tous les trois mois. Une première infraction réparée à temps n'est pas sanctionnée. Le ministère a annoncé qu'aucune sanction ne serait prononcée avant la fin de 2026, sans que ce soit un report de l'obligation.",
+      },
+      { type: "h2", texte: "Par où commencer" },
+      {
+        type: "liste",
+        items: [
+          "Vérifiez que votre entreprise a bien désigné sa plateforme de réception : c'est obligatoire depuis le 1er septembre 2026.",
+          "Demandez à l'éditeur de chaque logiciel qui facture la version et la plateforme prévues.",
+          "Complétez les fiches clients (SIREN, adresses de livraison) et rangez les articles entre biens et services.",
+          "Si vous êtes une PME, prévoyez le passage à l'émission avant le 1er septembre 2027, sans attendre l'été.",
+        ],
+      },
+      {
+        type: "p",
+        texte:
+          "Nous accompagnons les PME de Haute-Savoie sur l'ensemble : liaisons entre facturation, comptabilité, banque et boutique en ligne, mises à jour et paramétrage des logiciels de gestion, formation des équipes. Voir nos pages [Développement sur mesure](/developpement-sur-mesure/) et [Logiciels EBP](/logiciels/). L'administration répond aussi aux questions au 0806 807 807.",
+      },
+      {
+        type: "encadre",
+        texte:
+          "Article à jour au 29 octobre 2026. Les versions et les conditions des éditeurs évoluent : les notes de version de votre logiciel font foi.",
+      },
+    ],
+    services: ["/developpement-sur-mesure", "/telemaintenance", "/logiciels"],
+    sources: [
+      {
+        titre: "À partir de quand suis-je concerné par la réforme de la facturation électronique ?",
+        editeur: "impots.gouv.fr",
+        url: "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
+        datePage: "2026-01-16",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Facturation électronique : guide pratique de démarrage au 1er septembre 2026",
+        editeur: "DGFiP",
+        url: "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf",
+        datePage: "2026-07-09",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Je découvre la facturation électronique",
+        editeur: "impots.gouv.fr",
+        url: "https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique",
+        datePage: "2026-05-26",
+        consultee: LU_LE,
+      },
+      {
+        titre: "J'approfondis mes connaissances sur la réforme",
+        editeur: "impots.gouv.fr",
+        url: "https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme",
+        datePage: "2026-01-06",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Foire aux questions : j'approfondis la facturation électronique",
+        editeur: "DGFiP",
+        url: "https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq---fe_japprofondis-la-facturation-electronique.pdf",
+        datePage: "2026-09-01",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Je consulte la liste des plateformes agréées",
+        editeur: "impots.gouv.fr",
+        url: "https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees",
+        datePage: "2026-10-13",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Facturation électronique : les sanctions évoluent",
+        editeur: "Service Public Entreprendre",
+        url: "https://entreprendre.service-public.gouv.fr/actualites/A18802",
+        datePage: "2026-02-20",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Facturation électronique : le premier comité dresse le bilan du déploiement et engage la préparation de 2027",
+        editeur: "ministère de l'Économie (communiqué)",
+        url: "https://presse.economie.gouv.fr/facturation-electronique-le-premier-comite-dresse-le-bilan-du-deploiement-et-engage-la-preparation-de-2027/",
+        datePage: "2026-10-09",
+        consultee: LU_LE,
+      },
+      {
+        titre: "FAQ : réforme de la facturation électronique",
+        editeur: "EBP",
+        url: "https://support.ebp.com/hc/fr/articles/37858547802653-FAQ-R%C3%A9forme-de-la-facturation-%C3%A9lectronique",
+        datePage: "2026-10-02",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Nouveautés et corrections des versions EBP Gestion Commerciale",
+        editeur: "EBP",
+        url: "https://support.ebp.com/hc/fr/articles/360015954438-Nouveaut%C3%A9s-et-corrections-des-versions-EBP-Gestion-Commerciale",
+        datePage: "2026-10-27",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Nouveautés et corrections des versions Bâtiment",
+        editeur: "EBP",
+        url: "https://support.ebp.com/hc/fr/articles/4407465019281-Nouveaut%C3%A9s-et-corrections-des-versions-B%C3%A2timent",
+        datePage: "2026-10-27",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Nouveautés et corrections des versions EBP Comptabilité",
+        editeur: "EBP",
+        url: "https://support.ebp.com/hc/fr/articles/360015870817-Nouveaut%C3%A9s-et-corrections-des-versions-EBP-Comptabilit%C3%A9",
+        datePage: "2026-10-29",
+        consultee: LU_LE,
+      },
+      {
+        titre: "Désigner la Plateforme Agréée Shine : solution EBP Plus",
+        editeur: "EBP",
+        url: "https://support.ebp.com/hc/fr/articles/33416588642333-D%C3%A9signer-la-Plateforme-Agr%C3%A9%C3%A9e-Shine-Solution-EBP-Plus",
+        datePage: "2026-09-08",
         consultee: LU_LE,
       },
     ],

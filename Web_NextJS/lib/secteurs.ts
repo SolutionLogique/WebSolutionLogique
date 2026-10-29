@@ -12,8 +12,9 @@
      EBP, maintenance, telephonie, deplacements factures sur place), plus
      l'offre de developpement et d'IA, proposee partout sans pretendre que
      des clients du secteur l'ont deja.
-   Ordre de mise en avant (direction, 29/10/2026) : l'IA et le developpement
-   d'abord, l'informatique ensuite, EBP en dernier.
+   Ordre de mise en avant (direction, 29/10/2026, 16:00) : l'informatique et
+   le materiel d'abord, le developpement sur mesure et l'IA ensuite, EBP en
+   dernier.
    Chaque page a son propre texte : pas de page copiee d'un secteur a l'autre.
    Une page ajoutee ici doit l'etre aussi dans lib/seo.ts (fait par SECTEURS). */
 
@@ -39,7 +40,7 @@ export const SECTEURS: Secteur[] = [
     titre: "Votre prestataire informatique dans le Chablais",
     titreSeo: "Prestataire informatique dans le Chablais",
     description:
-      "Entreprises du Chablais, de Thonon-les-Bains à Publier : applications sur mesure et IA, maintenance informatique, télémaintenance et logiciels EBP.",
+      "Entreprises du Chablais, de Thonon-les-Bains à Publier : maintenance informatique, télémaintenance, applications sur mesure et logiciels EBP.",
     accroche:
       "Des entreprises de Thonon-les-Bains et de ses environs nous confient leur informatique et leurs logiciels de gestion, à plus d'une heure de route de nos bureaux.",
     communes: ["Thonon-les-Bains", "Allinges", "Publier"],
@@ -50,10 +51,10 @@ export const SECTEURS: Secteur[] = [
       "Pour une installation ou une formation, nous convenons de la date avec vous ; pour le reste, le support répond du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30, au 04 50 64 02 33.",
     ],
     services: [
-      { chemin: "/developpement-sur-mesure", texte: "applications métier sur mesure" },
-      { chemin: "/accompagnement-ia", texte: "accompagnement IA" },
       { chemin: "/informatique", texte: "maintenance des postes et des serveurs" },
       { chemin: "/telemaintenance", texte: "assistance à distance" },
+      { chemin: "/developpement-sur-mesure", texte: "applications métier sur mesure" },
+      { chemin: "/accompagnement-ia", texte: "accompagnement IA" },
       { chemin: "/logiciels", texte: "logiciels EBP, installation et formation" },
     ],
     acces:
@@ -65,7 +66,7 @@ export const SECTEURS: Secteur[] = [
     titre: "Votre prestataire informatique dans la vallée de l'Arve",
     titreSeo: "Prestataire informatique vallée de l'Arve",
     description:
-      "Applications sur mesure et IA, maintenance, téléphonie et logiciels EBP pour les entreprises de la vallée de l'Arve, de La Roche-sur-Foron à Sallanches.",
+      "Maintenance informatique, téléphonie, applications sur mesure et logiciels EBP pour les entreprises de la vallée de l'Arve, de La Roche-sur-Foron à Sallanches.",
     accroche:
       "De La Roche-sur-Foron à Sallanches, en passant par Bonneville et Cluses, nous suivons des entreprises de la vallée pour leur informatique, leur téléphonie et leurs logiciels de gestion.",
     communes: [
@@ -85,13 +86,13 @@ export const SECTEURS: Secteur[] = [
     paragraphes: [
       "La vallée de l'Arve et le Faucigny sont, après le bassin annécien, l'un des secteurs où nous suivons le plus d'entreprises : leur informatique, leur téléphonie et, pour la plupart, leurs logiciels EBP en comptabilité, en gestion commerciale ou dans le bâtiment.",
       "La Roche-sur-Foron et Bonneville sont à une demi-heure de nos bureaux de Pringy, Cluses à quarante minutes. Nous venons sur place pour installer une nouvelle version, former une équipe ou reprendre un dossier, et nous réglons à distance, par télémaintenance, les questions du quotidien.",
-      "Plusieurs entreprises de la vallée nous confient aussi leur téléphonie et la maintenance de leur informatique : un seul interlocuteur pour le logiciel, les postes et le téléphone. Quand le logiciel standard ne suffit plus, nous développons l'application qui manque, et nous accompagnons les équipes qui veulent se servir de l'IA.",
+      "Plusieurs entreprises de la vallée nous confient aussi leur téléphonie et la maintenance de leur informatique : un seul interlocuteur pour les postes, le téléphone et le logiciel. Quand le logiciel standard ne suffit plus, nous développons l'application qui manque, et nous accompagnons les équipes qui veulent se servir de l'IA.",
     ],
     services: [
+      { chemin: "/informatique", texte: "maintenance informatique" },
+      { chemin: "/telecom", texte: "téléphonie d'entreprise" },
       { chemin: "/applications-mobile-web", texte: "applications mobile et web pour les équipes de terrain" },
       { chemin: "/accompagnement-ia", texte: "accompagnement IA" },
-      { chemin: "/telecom", texte: "téléphonie d'entreprise" },
-      { chemin: "/informatique", texte: "maintenance informatique" },
       { chemin: "/logiciels", texte: "logiciels EBP (comptabilité, gestion commerciale, bâtiment)" },
     ],
     acces:
@@ -103,7 +104,7 @@ export const SECTEURS: Secteur[] = [
     titre: "Votre prestataire informatique en Savoie",
     titreSeo: "Prestataire informatique en Savoie",
     description:
-      "Entreprises de Savoie, d'Aix-les-Bains et Chambéry à Ugine et Moûtiers : applications sur mesure et IA, maintenance, télémaintenance, logiciels EBP.",
+      "Entreprises de Savoie, d'Aix-les-Bains et Chambéry à Ugine et Moûtiers : maintenance informatique, télémaintenance, applications sur mesure, logiciels EBP.",
     accroche:
       "Aix-les-Bains est à une demi-heure de nos bureaux, Chambéry à peine plus : nous suivons aussi des entreprises de l'autre côté de la limite du département.",
     communes: ["Aix-les-Bains", "Viviers-du-Lac", "Chambéry", "Ugine", "Moûtiers"],
@@ -113,11 +114,11 @@ export const SECTEURS: Secteur[] = [
       "Pour les entreprises plus éloignées, vers Ugine ou en Tarentaise, l'assistance passe d'abord par la télémaintenance, et les déplacements se prévoient avec vous. Il en va de même pour une application sur mesure ou un accompagnement à l'IA : le cadrage et la formation sur place, le reste à distance.",
     ],
     services: [
-      { chemin: "/developpement-sur-mesure", texte: "applications métier sur mesure" },
-      { chemin: "/accompagnement-ia", texte: "accompagnement IA" },
       { chemin: "/informatique", texte: "maintenance informatique" },
       { chemin: "/securite", texte: "sécurité du réseau et des données" },
       { chemin: "/telemaintenance", texte: "assistance à distance" },
+      { chemin: "/developpement-sur-mesure", texte: "applications métier sur mesure" },
+      { chemin: "/accompagnement-ia", texte: "accompagnement IA" },
       { chemin: "/logiciels", texte: "logiciels EBP" },
     ],
     acces:
