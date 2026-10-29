@@ -61,6 +61,7 @@ const NAV_ITEMS: NavItem[] = [
       { href: '/ebpbatiment', label: 'Bâtiment' },
     ],
   },
+  { href: '/conseils', label: 'Conseils' },
 ];
 
 function Navbar() {

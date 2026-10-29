@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { ARTICLES } from "@/lib/articles";
+import { SECTEURS } from "@/lib/secteurs";
 
 /* Referencement : une seule source pour les pages du site.
 
@@ -250,6 +252,34 @@ export const PAGES: PageSite[] = [
     sources: ["app/confidentialite"],
     prioritePlan: 0.3,
   },
+  {
+    chemin: "/conseils",
+    titre: "Conseils informatiques pour les PME",
+    description:
+      "Conseils de Solution Logique pour les PME : sauvegardes, cybersécurité, facture électronique. Des articles sourcés, écrits par notre équipe d'Annecy.",
+    libelle: "Conseils",
+    sources: ["app/conseils/page.tsx", "lib/articles.ts"],
+    prioritePlan: 0.6,
+  },
+  /* Articles de la rubrique Conseils : un par entree de lib/articles.ts */
+  ...ARTICLES.map((a) => ({
+    chemin: `/conseils/${a.slug}`,
+    titre: a.titreSeo,
+    description: a.description,
+    libelle: a.libelle,
+    parent: "/conseils",
+    sources: ["app/conseils", "lib/articles.ts"],
+    prioritePlan: 0.5,
+  })),
+  /* Pages locales : un secteur de lib/secteurs.ts par page */
+  ...SECTEURS.map((s) => ({
+    chemin: `/secteurs/${s.slug}`,
+    titre: s.titreSeo,
+    description: s.description,
+    libelle: s.nom,
+    sources: ["app/secteurs", "lib/secteurs.ts"],
+    prioritePlan: 0.6,
+  })),
 ];
 
 /* Adresse complete d'une page, barre finale comprise */
