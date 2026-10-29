@@ -1,4 +1,4 @@
-Le site en prod actuelle est dans le dossier www, attention avant toute MAJ, il faut bien télécharger le www sur le serveur distant pour "assurer" la mise a jour.
+Le site en prod est le dossier `www/` de la branche `main`. Depuis le 29/10/2026, `www/` est exactement la sortie du build (`Web_NextJS/out/`), `.htaccess` compris : il vient de `Web_NextJS/public/.htaccess` (hôte unique sans www, redirections des anciennes pages, en-têtes). Avant toute mise à jour, repartir de `main` à jour (`git pull`), jamais d'une copie téléchargée du serveur : c'est ainsi que des restes revenaient en ligne.
 
 Les démarches de mises a jour sont dans /Notes, attention a si vous activez les github action , le merge sur master en prod est automatique sur certaines branch si merge possible!!!
 
@@ -25,21 +25,21 @@ Le projet est configuré pour l'export statique grâce à :
 ## 📤 Méthode 1 : Déploiement Manuel (FileZilla)
 
 ### Prérequis
-- FileZilla installé et configuré pour votre serveur OVH
-- Accès aux identifiants FTP de votre hébergement
+- FileZilla installé, site configuré en **SFTP** : protocole « SFTP - SSH File Transfer Protocol », hôte `ftp.cluster110.hosting.ovh.net`, port **22**, mêmes identifiants que le FTP. Le FTP simple fait circuler le mot de passe en clair ; le FTPS est refusé par OVH sur cet hébergement.
+- Quelques mots de passe faux de suite bloquent l'adresse IP sur le port 22 une dizaine de minutes : attendre plutôt que réessayer.
 
 ### Étapes
 
 #### 1. Construction du site
 ```powershell
-# Sur Windows (PowerShell)
+# Dans Web_NextJS, sur Windows (PowerShell)
 $env:NEXT_EXPORT="true"; npm run build
 
 # Sur Linux/Mac
-NEXT_EXPORT=true npm run build
+npm run export
 ```
 
-**✅ Build réussi :** 25 pages générées sans warning
+Le build lit l'historique git pour dater chaque page du plan du site (`app/sitemap.ts`) : le lancer depuis le dépôt cloné, pas depuis une copie sans `.git`.
 
 #### 2. Vérification des fichiers
 Après la construction, vérifiez que le dossier `out/` a été créé avec :
@@ -48,30 +48,15 @@ Après la construction, vérifiez que le dossier `out/` a été créé avec :
 - Dossier `assets/` (images optimisées)
 - Pages HTML pour tous les services (25 pages au total)
 
-#### 3. Upload via FileZilla
-1. **Sauvegarder l'ancien site** (recommandé)
-   - Télécharger le contenu actuel de `/www` vers votre ordinateur
+#### 3. Mise à jour de `www/` dans le dépôt
+- Vider `www/`, y copier **tout le contenu** de `Web_NextJS/out/` (le `.htaccess` est dedans), commiter sur `main`.
+- `git status` doit montrer les pages modifiées et les nouveaux fichiers de `_next/static/` : rien d'autre ne doit apparaître ni disparaître sans raison.
 
-2. **⚠️ NE PAS vider le serveur**
-   - **Ne PAS supprimer le contenu existant de `/www`.** Un nettoyage complet effacerait des fichiers qui ne sont **pas** régénérés par le build et qui sont indispensables :
-     - `.htaccess` (redirection HTTPS)
-     - `_oldwp-includes/` (reliquat de l'ancien site)
-     - `footer/`, `navbar/` (anciennes pages)
-     - les anciennes versions RustDesk (`rustDesk/`)
-   - On déploie donc en **écrasement (overlay)** : on remplace/ajoute uniquement, sans rien supprimer.
-   - *(Optionnel)* Pour éviter d'accumuler d'anciens fichiers `_next` inutilisés, tu peux supprimer **uniquement** le dossier `/www/_next` avant l'upload (lui est 100 % régénéré par le build). Ne touche à rien d'autre.
-
-3. **Transférer les nouveaux fichiers**
-   - Ouvrir le dossier `out/` local
-   - Sélectionner **tout le contenu** du dossier `out/` (pas le dossier lui-même)
-   - Glisser-déposer vers `/www` sur le serveur
-   - À la demande de FileZilla : choisir **« Écraser »** (et cocher « Toujours utiliser cette action »)
-   - Attendre la fin du transfert
-
-4. **Vérification**
-   - S'assurer que `index.html` est à la racine de `/www`
-   - Tester le site web
-   - Vérifier que les images s'affichent correctement
+#### 4. Dépôt sur le serveur (FileZilla en SFTP)
+1. **Sauvegarder le site en ligne** : télécharger `/www` du serveur dans un dossier daté, hors du dépôt.
+2. **Transférer** le contenu de `www/` (pas le dossier lui-même) vers `/www` du serveur, en choisissant « Écraser ». Le `.htaccess` part avec : ne pas l'oublier (les fichiers commençant par un point peuvent être masqués dans FileZilla, menu Serveur > Forcer l'affichage des fichiers cachés).
+3. **Ne rien supprimer d'autre** : les anciens fichiers de `/www/_next/static/` peuvent rester, ils servent aux visiteurs qui ont une page ouverte pendant la mise à jour.
+4. **Vérifier** : l'accueil et une page s'affichent ; `http://www.solution-logique.fr/contact` mène en une seule redirection à `https://solution-logique.fr/contact/`. En cas d'erreur 500 après le dépôt du `.htaccess`, redéposer aussitôt celui de la sauvegarde.
 
 ## 🤖 Méthode 2 : Déploiement Automatique (GitHub Actions)
 
