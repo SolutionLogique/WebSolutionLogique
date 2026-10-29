@@ -23,8 +23,8 @@ export default function Conseils() {
         <div className="mx-auto max-w-3xl px-gutter py-14 lg:py-16">
           <h1 className="mb-4 font-display text-h1 font-bold text-sand-900">Conseils</h1>
           <p className="text-lg leading-relaxed text-sand-600">
-            Ce que nous expliquons le plus souvent à nos clients, mis par écrit : la facture
-            électronique, les sauvegardes, la sécurité informatique d&apos;une PME.
+            Ce que nous expliquons le plus souvent à nos clients, mis par écrit : les
+            sauvegardes, la sécurité informatique d&apos;une PME, la facture électronique.
             Chaque article cite ses sources.
           </p>
         </div>
