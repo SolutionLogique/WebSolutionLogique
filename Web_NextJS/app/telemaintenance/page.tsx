@@ -3,19 +3,6 @@ import Section from '@/components/ui/Section'
 import Container from '@/components/ui/Container'
 import RustDeskSection from './RustDeskSection'
 import NinjaOneInput from './NinjaOneInput'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: "Télémaintenance - Assistance à Distance Sécurisée",
-  description: "Service de télémaintenance Solution Logique à Annecy : assistance technique à distance sécurisée via RustDesk et NinjaOne, support en temps réel pour vos problèmes informatiques.",
-  keywords: ["télémaintenance", "assistance à distance", "support informatique", "dépannage distance", "RustDesk", "NinjaOne", "Annecy"],
-  openGraph: {
-    title: "Service de Télémaintenance Sécurisé - Solution Logique",
-    description: "Accédez à notre service de télémaintenance RustDesk ou NinjaOne pour une assistance technique à distance immédiate et sécurisée.",
-    type: "website",
-    url: "https://www.solution-logique.fr/telemaintenance",
-  },
-};
 
 function Telemaintenance() {
   return (

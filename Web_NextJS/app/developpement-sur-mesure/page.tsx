@@ -1,14 +1,7 @@
 import React from "react";
-import type { Metadata } from "next";
 import { Code2, Plug, FileSpreadsheet, ArrowRight, Smartphone, Database, RefreshCw } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
-
-export const metadata: Metadata = {
-  title: "Développement sur-mesure autour d'EBP",
-  description:
-    "Applications métier, intégrations et états sur-mesure autour de vos logiciels EBP. Solution Logique, Annecy — 30 ans d'expérience terrain.",
-};
 
 const OFFRES = [
   {

@@ -1,5 +1,4 @@
 import React from "react";
-import type { Metadata } from "next";
 import {
   Smartphone,
   Monitor,
@@ -17,12 +16,6 @@ import {
 import PageHero from "@/components/sections/PageHero";
 import ParcoursTerrain from "@/components/sections/ParcoursTerrain";
 import Button from "@/components/ui/Button";
-
-export const metadata: Metadata = {
-  title: "Applications mobile et web connectées à EBP ou à votre ERP",
-  description:
-    "Applications terrain, portails web et tableaux de bord connectés à EBP ou à votre ERP existant. Données synchronisées, usage hors ligne. Solution Logique, Annecy.",
-};
 
 const PRINCIPES = [
   {

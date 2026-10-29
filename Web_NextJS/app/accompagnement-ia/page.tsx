@@ -1,5 +1,4 @@
 import React from "react";
-import type { Metadata } from "next";
 import Image from "next/image";
 import {
   Sparkles,
@@ -19,12 +18,6 @@ import {
 } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
-
-export const metadata: Metadata = {
-  title: "Accompagnement IA pour les PME",
-  description:
-    "Audit des cas d'usage, formation des équipes et déploiement d'assistants connectés à vos données métier. Solution Logique, Annecy.",
-};
 
 const ETAPES = [
   {
