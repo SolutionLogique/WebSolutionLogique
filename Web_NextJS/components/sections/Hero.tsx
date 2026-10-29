@@ -42,9 +42,8 @@ function Hero() {
           </h1>
 
           <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-sand-600">
-            Nous développons les outils que votre logiciel standard ne fournit pas, nous vous
-            aidons à tirer parti de l&apos;IA sur vos propres données, et nous entretenons votre
-            informatique, votre sécurité et votre téléphonie. Une équipe à Annecy.
+            Les outils et les usages de l&apos;IA qui manquent à votre PME, sur une informatique
+            entretenue de près. Une équipe à Annecy.
           </p>
 
           {/* Les appels a l'action viennent avant tout element decoratif :

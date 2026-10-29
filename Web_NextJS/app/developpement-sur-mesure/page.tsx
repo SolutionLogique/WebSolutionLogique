@@ -21,7 +21,7 @@ const OFFRES = [
     icon: Plug,
     titre: "Intégrations et automatisations",
     texte:
-      "Vos outils se parlent rarement d'eux-mêmes. Nous relions EBP à votre CRM, votre banque, votre boutique en ligne ou vos outils métier, et nous supprimons les ressaisies.",
+      "Vos outils se parlent rarement d'eux-mêmes. Nous relions votre logiciel de gestion (EBP ou un autre) à votre CRM, votre banque, votre boutique en ligne ou vos outils métier, et nous supprimons les ressaisies.",
     exemples: [
       { icon: RefreshCw, texte: "Synchronisation entre applications" },
       { icon: Database, texte: "Imports et exports automatisés" },
@@ -53,9 +53,9 @@ export default function DeveloppementSurMesurePage() {
     <>
       <PageHero
         badge={{ icon: <Code2 />, text: "Développement sur-mesure" }}
-        title="Quand EBP s'arrête,"
-        titleHighlight="on continue"
-        description="Applications métier, intégrations et états conçus autour de vos logiciels et de votre façon de travailler."
+        title="Les outils qui manquent"
+        titleHighlight="à votre organisation"
+        description="Applications métier, intégrations et états conçus autour de vos logiciels et de votre façon de travailler, quand le logiciel standard s'arrête."
       />
 
       <section className="bg-sand-0 py-section">

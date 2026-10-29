@@ -14,7 +14,7 @@ const POLES = [
     resume:
       "Quand le logiciel standard s'arrête, on continue. Applications métier, intégrations et états conçus pour votre organisation.",
     points: [
-      { icon: Code2, texte: "Applications métier autour d'EBP" },
+      { icon: Code2, texte: "Applications métier reliées à vos logiciels" },
       { icon: Plug, texte: "Intégrations et automatisations" },
       { icon: FileSpreadsheet, texte: "États, rapports et requêtes" },
     ],

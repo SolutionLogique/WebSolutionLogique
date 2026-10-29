@@ -88,8 +88,25 @@ function Contact_Btn() {
     if (ouvert) panneau.current?.querySelector("a")?.focus();
   }, [ouvert]);
 
+  /* Sur telephone, le bouton recouvrait le premier ecran (la bande de
+     chiffres de l'accueil, maquette du 29/10/2026) alors que l'en-tete y
+     offre deja l'appel et le devis : il n'apparait qu'apres un ecran de
+     defilement. Sur ordinateur, il reste toujours visible. */
+  const [apresPremierEcran, setApresPremierEcran] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setApresPremierEcran(window.scrollY > window.innerHeight * 0.8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div className="fixed bottom-5 right-5 z-40 print:hidden">
+    <div
+      className={cn(
+        "fixed bottom-5 right-5 z-40 print:hidden",
+        !apresPremierEcran && !ouvert && "max-sm:hidden"
+      )}
+    >
       {ouvert && (
         <div
           ref={panneau}
