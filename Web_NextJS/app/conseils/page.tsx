@@ -24,7 +24,7 @@ export default function Conseils() {
           <h1 className="mb-4 font-display text-h1 font-bold text-sand-900">Conseils</h1>
           <p className="text-lg leading-relaxed text-sand-600">
             Ce que nous expliquons le plus souvent à nos clients, mis par écrit : la facture
-            électronique et les logiciels EBP, les sauvegardes, la sécurité informatique d&apos;une PME.
+            électronique, les sauvegardes, la sécurité informatique d&apos;une PME.
             Chaque article cite ses sources.
           </p>
         </div>

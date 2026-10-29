@@ -254,9 +254,9 @@ export const PAGES: PageSite[] = [
   },
   {
     chemin: "/conseils",
-    titre: "Conseils informatiques et EBP",
+    titre: "Conseils informatiques pour les PME",
     description:
-      "Conseils de Solution Logique pour les PME : facture électronique et EBP, sauvegardes, cybersécurité. Des articles sourcés, écrits par notre équipe d'Annecy.",
+      "Conseils de Solution Logique pour les PME : facture électronique, sauvegardes, cybersécurité. Des articles sourcés, écrits par notre équipe d'Annecy.",
     libelle: "Conseils",
     sources: ["app/conseils/page.tsx", "lib/articles.ts"],
     prioritePlan: 0.6,
