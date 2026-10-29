@@ -40,7 +40,7 @@ export const SECTEURS: Secteur[] = [
       "Des entreprises de Thonon-les-Bains et de ses environs nous confient leurs logiciels EBP et leur informatique, à plus d'une heure de route de nos bureaux.",
     communes: ["Thonon-les-Bains", "Allinges", "Publier"],
     paragraphes: [
-      "Le Chablais est le secteur le plus éloigné de nos bureaux de Pringy : un peu plus de 70 km et environ une heure de route jusqu'à Thonon-les-Bains. Nous y suivons pourtant des entreprises depuis des années, surtout pour leurs logiciels EBP et pour la maintenance de leur informatique.",
+      "Le Chablais est l'un des secteurs les plus éloignés de nos bureaux de Pringy : un peu plus de 70 km et environ une heure de route jusqu'à Thonon-les-Bains. Nous y suivons pourtant des entreprises depuis des années, surtout pour leurs logiciels EBP et pour la maintenance de leur informatique.",
       "La distance change notre façon de travailler, pas le service. Un poste bloqué, un logiciel qui refuse de démarrer ou une question sur une écriture se règlent d'abord à distance, par télémaintenance, sans attendre un déplacement. Nous venons sur place quand il le faut : installation d'un serveur ou de postes, mise en route d'EBP, formation des équipes dans vos locaux.",
       "Pour une installation ou une formation, nous convenons de la date avec vous ; pour le reste, le support répond du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30, au 04 50 64 02 33.",
     ],
