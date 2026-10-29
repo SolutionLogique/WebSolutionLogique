@@ -7,7 +7,9 @@ import Link from "next/link";
    - denomination, forme, siege, RCS, president : annuaire des entreprises
      (API recherche-entreprises) et annonces BODACC du greffe d'Annecy ;
    - TVA intracommunautaire : calculee depuis le SIREN, validee par VIES ;
-   - hebergeur : mentions legales publiees par OVHcloud.
+   - hebergeur : mentions legales publiees par OVHcloud
+     (www.ovhcloud.com/fr/terms-and-conditions/) ; telephone 1007 : documents
+     d'OVHcloud (« appelez-nous au 1007 », relu le 29/10/2026).
    Le capital social n'a pas ete retrouve dans une source publique : il n'est
    pas ecrit ici tant que la direction ne l'a pas confirme. */
 
@@ -26,6 +28,7 @@ const HEBERGEUR = [
   { libelle: "Hébergeur", valeur: "OVH SAS" },
   { libelle: "Adresse", valeur: "2 rue Kellermann, 59100 Roubaix, France" },
   { libelle: "Immatriculation", valeur: "RCS Lille Métropole 424 761 419" },
+  { libelle: "Téléphone", valeur: "1007 (depuis la France)", href: "tel:1007" },
   { libelle: "Site", valeur: "www.ovhcloud.com", href: "https://www.ovhcloud.com/fr/" },
 ];
 
