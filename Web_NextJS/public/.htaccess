@@ -1,0 +1,129 @@
+# www/.htaccess - solution-logique.fr (OVH mutualise Pro, cluster110)
+# Mis en ligne le 29/10/2026 (corrections SEO). Source : Web_NextJS/public/.htaccess,
+# copie dans out/ par le build : il fait partie de chaque mise en ligne, ne pas
+# l'oublier en deposant out/ sur le serveur.
+#
+# Une ligne terminee par « \ » continue sur la suivante (syntaxe Apache).
+# Chez OVH, le chiffrement s'arrete avant Apache, et une cible de redirection
+# relative ressort en https://solution-logique.fr:443/... : toujours ecrire
+# l'adresse complete.
+
+# --- 0. Reglages de base ------------------------------------------------
+# Plus de « Index of / » sur les dossiers sans index.html (403 a la place)
+Options -Indexes
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+# La page d'erreur du site (menu, liens), pas la page brute d'Apache
+ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html
+
+RewriteEngine On
+
+# Les trois noms rattaches a ce dossier chez OVH (29/10/2026) :
+# solution-logique.fr, www.solution-logique.fr et le domaine technique de
+# l'hebergement (<compte>.clusterNNN.ovh.net). Tout autre nom n'est pas touche ici.
+RewriteCond %{HTTP_HOST} !^(solution-logique\.fr|www\.solution-logique\.fr|[a-z0-9-]+\.cluster[0-9]+\.ovh\.net)(:[0-9]+)?$ [NC]
+RewriteRule ^ - [L]
+
+# Page d'erreur servie en interne (ErrorDocument d'un 404 ou d'un 410) :
+# aucune redirection, sinon un 410 en http repart en 301 vers /404.html
+RewriteCond %{ENV:REDIRECT_STATUS} !^$
+RewriteRule ^ - [L]
+
+# Validation des certificats : jamais redirigee
+RewriteRule ^\.well-known/ - [L]
+
+# --- 1. Ancien WordPress : 410, les moteurs oublient plus vite ----------
+RewriteRule ^virtual-card(/|$) - [G,L]
+RewriteRule (^|/)feed/?$ - [G,L]
+# Anciens logos d'une certification que le site n'affiche plus
+RewriteRule ^assets/.*qualiopi - [NC,G,L]
+
+# --- 2. Anciennes pages vers leur equivalent (un seul saut) ------------
+RewriteRule ^home(/.*)?$ https://solution-logique.fr/ [R=301,L]
+RewriteRule ^equipe/?$ https://solution-logique.fr/contact/ [R=301,L]
+RewriteRule ^materiels(/.*)?$ \
+    https://solution-logique.fr/informatique/ [R=301,L]
+RewriteRule ^maintenance-informatique-depannage/?$ \
+    https://solution-logique.fr/informatique/ [R=301,L]
+RewriteRule ^informatique-depannage-[a-z-]+/?$ \
+    https://solution-logique.fr/informatique/ [R=301,L]
+RewriteRule ^(solution-telephonie-ip|operateur-telecom-adslsdsl)(/.*)?$ \
+    https://solution-logique.fr/telecom/ [R=301,L]
+RewriteRule ^video-ip/?$ https://solution-logique.fr/securite/ [R=301,L]
+RewriteRule ^nos-services/?$ \
+    https://solution-logique.fr/nosServices/ [R=301,L]
+RewriteRule ^logiciels/revendeur/?$ \
+    https://solution-logique.fr/logiciels/ [R=301,L]
+RewriteRule ^telemaintenance/hotline/?$ \
+    https://solution-logique.fr/telemaintenance/ [R=301,L]
+RewriteRule ^formationCompta(/.*)?$ \
+    https://solution-logique.fr/ebpcomptabilite/#formation [R=301,NE,L]
+RewriteRule ^formationCommerciale(/.*)?$ \
+    https://solution-logique.fr/ebpgestionco/#formation [R=301,NE,L]
+RewriteRule ^formationBatiment(/.*)?$ \
+    https://solution-logique.fr/ebpbatiment/#formation [R=301,NE,L]
+# Ancienne politique RGPD en PDF, encore demandee par Google
+RewriteRule ^wp-content/uploads/RGPD-Solution-Logique\.pdf$ \
+    https://solution-logique.fr/confidentialite/ [R=301,L]
+# Noms de plan du site essayes par les robots
+RewriteRule ^(sitemaps\.xml|sitemap_index\.xml|sitemap\.txt)$ \
+    https://solution-logique.fr/sitemap.xml [R=301,L]
+
+# --- 3. RustDesk : un lien ancien mene toujours a la version publiee ----
+# Sans [NC] : ne touche que la graphie en minuscules (/rustdesk/)
+RewriteRule ^rustdesk/(.*)$ \
+    https://solution-logique.fr/rustDesk/$1 [R=301,L]
+RewriteRule ^rustDesk/?$ \
+    https://solution-logique.fr/telemaintenance/ [R=302,L]
+# 302 : la cible change a chaque mise a jour. Changer le numero ici en meme
+# temps que app/telemaintenance/RustDeskSection.tsx, sinon la regle renvoie
+# vers une version absente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^rustDesk/rustdesk-[0-9.]+-x86_64\.(exe|msi)$ \
+    https://solution-logique.fr/rustDesk/rustdesk-1.4.9-x86_64.$1 [R=302,L]
+
+# --- 4. Adresse canonique en un seul saut -------------------------------
+# https, sans www, barre finale. Les pages sont des dossiers (trailingSlash:
+# true) : sans la regle a), Apache (DirectorySlash) redirigerait /contact vers
+# https://solution-logique.fr:443/contact/.
+# a) dossier sans barre finale, quels que soient protocole et hote
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+[^/])$ https://solution-logique.fr/$1/ [R=301,L]
+# b) /index.html et /<page>/index.html : doublons de la page
+RewriteCond %{THE_REQUEST} \s/+((?:[^?\s]*/)?)index\.html[?\s]
+RewriteRule ^ https://solution-logique.fr/%1 [R=301,L]
+# c) http vers https. Garder ces deux conditions (commit 6c501f7 du 24/09) :
+# %{ENV:HTTPS} ne marche pas ici
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{SERVER_PORT} ^80$
+RewriteRule ^(.*)$ https://solution-logique.fr/$1 [R=301,L]
+# d) www et domaine technique vers l'hote unique
+RewriteCond %{HTTP_HOST} !^solution-logique\.fr(:[0-9]+)?$ [NC]
+RewriteRule ^(.*)$ https://solution-logique.fr/$1 [R=301,L]
+
+# --- 5. En-tetes --------------------------------------------------------
+<IfModule mod_headers.c>
+  # HSTS sur l'hote seul : ni includeSubDomains ni preload
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy \
+      "camera=(), microphone=(), geolocation=()"
+  # Donnees de navigation de Next : servies, mais hors index des moteurs
+  <FilesMatch "^index\.txt$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+  # Cache : fichiers de build nommes par empreinte = 1 an, immuables ;
+  # images et documents = 7 jours ; pages et donnees de page = 5 minutes
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  <ElseIf "%{REQUEST_URI} =~ m#^/assets/#">
+    Header set Cache-Control "public, max-age=604800"
+  </ElseIf>
+  <ElseIf "%{REQUEST_URI} =~ m#(/|\.html|/index\.txt)$#">
+    Header set Cache-Control "public, max-age=300"
+  </ElseIf>
+</IfModule>
