@@ -58,6 +58,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { href: '/telemaintenance', label: 'Télémaintenance' },
+  { href: '/conseils', label: 'Conseils' },
 ];
 
 function Navbar() {

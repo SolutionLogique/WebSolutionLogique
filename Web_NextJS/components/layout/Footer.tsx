@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { SECTEURS } from "@/lib/secteurs";
 
 /* Pied de page.
 
@@ -15,7 +16,8 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
    Les sous-menus de la navigation ne sont rendus qu'au survol, un robot ne
    les voit pas ; c'est ici que /audit-cybersecurite et
    /applications-mobile-web trouvent leur lien (ajoutes le 29/10/2026), comme
-   les mentions legales et la politique de confidentialite. */
+   les mentions legales et la politique de confidentialite. Les pages locales
+   (lib/secteurs.ts) sont liees sous l'adresse. */
 
 const LIENS = {
   logiciels: [
@@ -120,6 +122,18 @@ function Footer() {
                 </span>
               </div>
             </address>
+
+            <p className="mt-5 text-sm text-sand-600">
+              Nous intervenons aussi :{" "}
+              {SECTEURS.map((s, i) => (
+                <React.Fragment key={s.slug}>
+                  {i > 0 && <span aria-hidden="true"> · </span>}
+                  <Link href={`/secteurs/${s.slug}/`} className="font-medium text-primary-600 hover:underline">
+                    {s.nom}
+                  </Link>
+                </React.Fragment>
+              ))}
+            </p>
           </div>
 
           <ColonneLiens titre="Logiciels EBP" liens={LIENS.logiciels} />
