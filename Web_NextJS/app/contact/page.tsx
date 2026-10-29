@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 
 // Note: Les métadonnées doivent être ajoutées dans un composant parent server-side
 // ou via un fichier metadata séparé pour les pages client-side
@@ -137,6 +138,7 @@ export default function Contact() {
   };
 
   return (
+    <>
     <Section background="subtle" padding="lg">
       <Container>
         {/* Modals */}
@@ -338,5 +340,7 @@ export default function Contact() {
         </div>
       </Container>
     </Section>
+    <AncrageLocal chemin="/contact" />
+    </>
   );
 }

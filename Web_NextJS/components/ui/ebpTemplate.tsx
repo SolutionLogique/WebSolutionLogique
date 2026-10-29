@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import LiensVoisins from './LiensVoisins';
+import AncrageLocal from '@/components/sections/AncrageLocal';
 
 /* Pages EBP, pour les liens « Voir aussi » du bas de page : les deux autres
    logiciels et la page Logiciels. */
@@ -371,6 +372,8 @@ export function EBPTemplate({
           </div>
         </ModernSection>
       )}
+
+      <AncrageLocal chemin={PAGE_PAR_CATEGORIE[category]} />
 
       {/* CTA Section */}
       <ModernSection background="dark" padding="lg">

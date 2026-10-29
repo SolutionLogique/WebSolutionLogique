@@ -1,4 +1,5 @@
 import React from 'react'
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import Section from '@/components/ui/Section'
 import Container from '@/components/ui/Container'
 import RustDeskSection from './RustDeskSection'
@@ -6,6 +7,7 @@ import NinjaOneInput from './NinjaOneInput'
 
 function Telemaintenance() {
   return (
+    <>
     <Section background="subtle" padding="lg">
       <Container size="md">
         <div className="text-center mb-8">
@@ -40,6 +42,8 @@ function Telemaintenance() {
         <NinjaOneInput />
       </Container>
     </Section>
+    <AncrageLocal chemin="/telemaintenance" />
+    </>
   )
 }
 

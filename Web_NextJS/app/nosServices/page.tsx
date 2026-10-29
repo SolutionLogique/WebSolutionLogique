@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import Image from "next/image";
 import React from "react";
 import { Monitor, Phone as PhoneIcon, Shield, Layers, ArrowRight, Headphones, CheckCircle } from "lucide-react";
@@ -171,6 +172,8 @@ function NosServices() {
           </div>
         </div>
       </section>
+
+      <AncrageLocal chemin="/nosServices" />
 
       {/* Telemaintenance Section */}
       <section className="section-padding bg-slate-50">

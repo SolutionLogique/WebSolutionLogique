@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
 import PageHero from "@/components/sections/PageHero";
@@ -254,6 +255,8 @@ export default function Telecom() {
           ))}
         </div>
       </ModernSection>
+
+      <AncrageLocal chemin="/telecom" />
 
       {/* CTA Section */}
       <ModernSection background="dark" padding="lg">

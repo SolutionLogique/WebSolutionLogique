@@ -1,4 +1,5 @@
 import React from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import Link from "next/link";
 import { Code2, Sparkles, ArrowRight, Plug, FileSpreadsheet, GraduationCap } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
@@ -78,6 +79,8 @@ export default function SurMesurePage() {
           </div>
         </div>
       </section>
+
+      <AncrageLocal chemin="/sur-mesure" />
 
       <section className="border-t border-sand-200 bg-sand-50 py-section">
         <div className="mx-auto max-w-2xl px-gutter text-center">

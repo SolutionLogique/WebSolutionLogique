@@ -1,4 +1,5 @@
 import React from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import {
   ShieldCheck,
   Search,
@@ -155,6 +156,8 @@ export default function AuditCybersecuritePage() {
           </ol>
         </div>
       </section>
+
+      <AncrageLocal chemin="/audit-cybersecurite" />
 
       <section className="bg-sand-0 py-section">
         <div className="mx-auto max-w-2xl px-gutter text-center">
