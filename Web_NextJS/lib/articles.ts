@@ -48,14 +48,14 @@ const LU_LE = "2026-10-29";
 
 export const ARTICLES: Article[] = [
   {
-    slug: "facture-electronique-ebp-2026-2027",
-    titre: "Facture électronique : ce qui change pour les utilisateurs d'EBP",
-    titreSeo: "Facture électronique et logiciels EBP",
-    libelle: "Facture électronique et EBP",
+    slug: "facture-electronique-pme-2026-2027",
+    titre: "Facture électronique : ce qui change pour les PME en 2026 et 2027",
+    titreSeo: "Facture électronique : guide pour les PME",
+    libelle: "Facture électronique et PME",
     description:
-      "Facture électronique 2026-2027 : calendrier, nouvelles mentions, e-reporting, sanctions, et ce que proposent les logiciels EBP avec la plateforme agréée Shine.",
+      "Facture électronique 2026-2027 pour les PME : calendrier, plateforme agréée, nouvelles mentions, e-reporting, sanctions, et comment préparer vos logiciels.",
     resume:
-      "Depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques. Les PME et les micro-entreprises devront aussi les émettre au 1er septembre 2027. Le calendrier, les obligations, et ce que font aujourd'hui les logiciels EBP.",
+      "Depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques. Les PME et les micro-entreprises devront aussi les émettre au 1er septembre 2027. Le calendrier, les obligations, et comment préparer ses logiciels et ses équipes.",
     datePublication: "2026-10-29",
     dateModification: "2026-10-29",
     blocs: [
@@ -79,7 +79,7 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         texte:
-          "C'est le point qui surprend le plus. Une facture électronique contient des données structurées, lisibles par un logiciel, dans un format reconnu : UBL, CII, ou un format mixte qui associe un fichier de données et une image de la facture. Le Factur-X, que les logiciels EBP savent produire, est de ce type. Un PDF ordinaire joint à un mail ne compte pas.",
+          "C'est le point qui surprend le plus. Une facture électronique contient des données structurées, lisibles par un logiciel, dans un format reconnu : UBL, CII, ou un format mixte qui associe un fichier de données et une image de la facture. Le Factur-X est de ce type. Un PDF ordinaire joint à un mail ne compte pas.",
       },
       {
         type: "p",
@@ -107,26 +107,24 @@ export const ARTICLES: Article[] = [
         texte:
           "Les ventes aux particuliers et les opérations avec l'étranger (exportations, échanges intracommunautaires) ne donnent pas lieu à une facture électronique, mais leurs données doivent être transmises à l'administration. S'y ajoutent les données de paiement des prestations de services quand la TVA est due à l'encaissement. Cette transmission ne se fait ni au fil de l'eau ni chaque jour : sa fréquence dépend du régime de TVA de l'entreprise.",
       },
-      { type: "h2", texte: "Ce que proposent les logiciels EBP" },
+      { type: "h2", texte: "Préparer ses logiciels" },
       {
         type: "p",
         texte:
-          "EBP n'est pas lui-même plateforme agréée : il s'appuie sur la plateforme Shine, inscrite sur la liste officielle de l'administration (numéro délivré le 21 mai 2026). D'après la FAQ d'EBP mise à jour le 2 octobre 2026, les logiciels EBP en version Plus ne peuvent, à ce stade, être raccordés qu'à Shine.",
+          "Toute la chaîne est concernée : le logiciel de gestion commerciale ou l'ERP qui émet les factures, le logiciel métier ou la boutique en ligne s'ils en produisent aussi, et la comptabilité, qui reçoit les factures des fournisseurs. Chaque logiciel doit savoir produire ou lire une facture structurée et échanger avec une plateforme agréée.",
       },
       {
         type: "liste",
         items: [
-          "Seules les versions Plus émettent les factures électroniques et automatisent l'e-reporting. Pour le savoir, ouvrez « À propos » dans le menu du logiciel : le nom du produit doit contenir « Plus ».",
-          "L'émission arrive avec les versions de novembre : EBP Gestion Commerciale V25.7 et EBP Bâtiment V25.9, déployées progressivement depuis le 27 octobre 2026. Pour EBP Comptabilité, la version V25.9 transmet les données d'e-reporting à partir du 3 novembre 2026.",
-          "Pour s'inscrire à Shine depuis le logiciel, il faut au moins la version de juin 2026 : V25.4 en Gestion Commerciale, V25.6 en Bâtiment et en Comptabilité.",
-          "L'inscription doit être faite par le représentant légal de l'entreprise ; depuis une version Plus, elle passe par FranceConnect.",
-          "Sans version Plus, l'inscription à Shine reste gratuite par son site, mais les factures reçues sont à importer à la main et l'émission depuis le logiciel n'est pas prévue.",
+          "Recensez les logiciels qui émettent des factures et ceux qui doivent en recevoir.",
+          "Pour chacun, demandez à l'éditeur quelle plateforme agréée il raccorde, à partir de quelle version, et si une offre ou un abonnement particulier est nécessaire.",
+          "Vérifiez que les outils qui se passent des données aujourd'hui par export ou ressaisie (facturation, comptabilité, banque, boutique en ligne) le feront encore une fois la réforme en place.",
         ],
       },
       {
         type: "p",
         texte:
-          "EBP signale encore des cas que Shine ne traite pas pour l'e-reporting des paiements (paiements partiels, paiements avant facture, factures à plusieurs taux de TVA), annoncés d'ici la fin de 2026. Côté paramétrage, chaque unité doit recevoir son code normalisé (UNECE) et chaque mention légale un code prédéfini.",
+          "Un exemple parmi les logiciels que nous installons : EBP s'appuie sur la plateforme agréée Shine (numéro délivré le 21 mai 2026) ; seules ses versions Plus émettent les factures électroniques et automatisent l'e-reporting, l'émission arrive avec les versions de novembre, déployées progressivement depuis le 27 octobre 2026, et l'éditeur annonce encore des cas d'e-reporting des paiements à traiter d'ici la fin de 2026. Pour un autre logiciel, c'est la page de son éditeur qui fait foi.",
       },
       { type: "h2", texte: "Les sanctions" },
       {
@@ -139,23 +137,23 @@ export const ARTICLES: Article[] = [
         type: "liste",
         items: [
           "Vérifiez que votre entreprise a bien désigné sa plateforme de réception : c'est obligatoire depuis le 1er septembre 2026.",
-          "Regardez la version de vos logiciels EBP et si ce sont des versions Plus.",
-          "Complétez les fiches clients (SIREN, adresses de livraison) et les codes des unités.",
+          "Demandez à l'éditeur de chaque logiciel qui facture la version et la plateforme prévues.",
+          "Complétez les fiches clients (SIREN, adresses de livraison) et rangez les articles entre biens et services.",
           "Si vous êtes une PME, prévoyez le passage à l'émission avant le 1er septembre 2027, sans attendre l'été.",
         ],
       },
       {
         type: "p",
         texte:
-          "Nous installons les mises à jour EBP, paramétrons les logiciels et formons les équipes : voir nos pages [EBP Gestion Commerciale](/ebpgestionco/), [EBP Comptabilité](/ebpcomptabilite/) et [EBP Bâtiment](/ebpbatiment/). L'administration répond aussi aux questions au 0806 807 807.",
+          "Nous accompagnons les PME de Haute-Savoie sur l'ensemble : liaisons entre facturation, comptabilité, banque et boutique en ligne, mises à jour et paramétrage des logiciels de gestion, formation des équipes. Voir nos pages [Développement sur mesure](/developpement-sur-mesure/) et [Logiciels EBP](/logiciels/). L'administration répond aussi aux questions au 0806 807 807.",
       },
       {
         type: "encadre",
         texte:
-          "Article à jour au 29 octobre 2026. Les dates de version et les conditions d'EBP évoluent : la page de notes de version de votre logiciel fait foi.",
+          "Article à jour au 29 octobre 2026. Les versions et les conditions des éditeurs évoluent : les notes de version de votre logiciel font foi.",
       },
     ],
-    services: ["/logiciels", "/ebpgestionco", "/ebpcomptabilite", "/ebpbatiment"],
+    services: ["/developpement-sur-mesure", "/telemaintenance", "/logiciels"],
     sources: [
       {
         titre: "À partir de quand suis-je concerné par la réforme de la facturation électronique ?",
