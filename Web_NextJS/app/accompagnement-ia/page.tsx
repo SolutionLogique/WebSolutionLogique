@@ -1,4 +1,5 @@
 import React from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import Image from "next/image";
 import {
   Sparkles,
@@ -225,6 +226,8 @@ export default function AccompagnementIAPage() {
           </ul>
         </div>
       </section>
+
+      <AncrageLocal chemin="/accompagnement-ia" />
 
       <section className="bg-sand-0 py-section">
         <div className="mx-auto max-w-2xl px-gutter text-center">

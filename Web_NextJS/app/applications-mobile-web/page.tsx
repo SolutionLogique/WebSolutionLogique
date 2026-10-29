@@ -1,4 +1,5 @@
 import React from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import {
   Smartphone,
   Monitor,
@@ -182,6 +183,8 @@ export default function ApplicationsMobileWebPage() {
           </ol>
         </div>
       </section>
+
+      <AncrageLocal chemin="/applications-mobile-web" />
 
       <section className="border-t border-sand-200 bg-sand-0 py-section">
         <div className="mx-auto max-w-2xl px-gutter text-center">

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import { ModernSection, ServiceCard, ModernButton } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import {
@@ -421,6 +422,8 @@ export default function Logiciels() {
           ))}
         </div>
       </ModernSection>
+
+      <AncrageLocal chemin="/logiciels" />
 
       {/* CTA Final */}
       <ModernSection background="dark" padding="2xl">

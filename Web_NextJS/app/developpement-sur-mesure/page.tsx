@@ -1,4 +1,5 @@
 import React from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import { Code2, Plug, FileSpreadsheet, ArrowRight, Smartphone, Database, RefreshCw } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
@@ -110,6 +111,8 @@ export default function DeveloppementSurMesurePage() {
           </ol>
         </div>
       </section>
+
+      <AncrageLocal chemin="/developpement-sur-mesure" />
 
       <section className="bg-sand-0 py-section">
         <div className="mx-auto max-w-2xl px-gutter text-center">

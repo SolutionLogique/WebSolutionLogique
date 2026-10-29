@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import { useState } from "react";
 import Image from 'next/image';
 import { ModernSection, ServiceCard } from "@/components/ui";
@@ -223,6 +224,8 @@ export default function Informatique() {
           ))}
         </div>
       </ModernSection>
+
+      <AncrageLocal chemin="/informatique" />
 
       {/* CTA Section */}
       <ModernSection background="dark" padding="2xl">

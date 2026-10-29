@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import AncrageLocal from "@/components/sections/AncrageLocal";
 import Image from 'next/image';
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
@@ -323,6 +324,8 @@ export default function Securite() {
           </div>
         </div>
       </ModernSection>
+
+      <AncrageLocal chemin="/securite" />
 
       {/* CTA Section */}
       <ModernSection background="dark" padding="2xl">
