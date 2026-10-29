@@ -2,6 +2,7 @@ import React from "react";
 import { Code2, Plug, FileSpreadsheet, ArrowRight, Smartphone, Database, RefreshCw } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 
 const OFFRES = [
   {
@@ -127,6 +128,7 @@ export default function DeveloppementSurMesurePage() {
               04 50 64 02 33
             </Button>
           </div>
+          <LiensVoisins chemins={["/applications-mobile-web", "/accompagnement-ia", "/sur-mesure"]} />
         </div>
       </section>
     </>

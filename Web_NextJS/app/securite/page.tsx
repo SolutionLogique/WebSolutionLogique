@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
 import PageHero from "@/components/sections/PageHero";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 import {
   Shield,
   Lock,
@@ -148,11 +149,11 @@ export default function Securite() {
       <PageHero
         badge={{
           icon: <Shield className="w-4 h-4" />,
-          text: "Solutions de cybersecurite"
+          text: "Solutions de cybersécurité"
         }}
-        title="Solutions"
-        titleHighlight="Securite"
-        description="Protegez votre entreprise contre les cybermenaces avec nos solutions de securite avancees. Infrastructure, reseaux et donnees securises."
+        title="Solutions de"
+        titleHighlight="sécurité"
+        description="Protégez votre entreprise contre les cybermenaces avec nos solutions de sécurité avancées. Infrastructure, réseaux et données sécurisés."
         backgroundImage="/assets/securite.webp"
       />
 
@@ -366,6 +367,7 @@ export default function Securite() {
               04 50 64 02 33
             </ModernButton>
           </div>
+          <LiensVoisins fond="sombre" chemins={["/informatique", "/telecom", "/telemaintenance", "/nosServices"]} />
         </div>
       </ModernSection>
     </div>

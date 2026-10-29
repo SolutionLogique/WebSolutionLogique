@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 
 const ETAPES = [
   {
@@ -242,6 +243,7 @@ export default function AccompagnementIAPage() {
               04 50 64 02 33
             </Button>
           </div>
+          <LiensVoisins chemins={["/developpement-sur-mesure", "/applications-mobile-web", "/sur-mesure"]} />
         </div>
       </section>
     </>

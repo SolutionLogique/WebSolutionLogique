@@ -13,6 +13,16 @@ import {
   Award
 } from 'lucide-react';
 import Link from 'next/link';
+import LiensVoisins from './LiensVoisins';
+
+/* Pages EBP, pour les liens « Voir aussi » du bas de page : les deux autres
+   logiciels et la page Logiciels. */
+const PAGE_PAR_CATEGORIE: Record<string, string> = {
+  'Comptabilité': '/ebpcomptabilite',
+  'Gestion Commerciale': '/ebpgestionco',
+  'Bâtiment': '/ebpbatiment',
+};
+const PAGES_EBP = Object.values(PAGE_PAR_CATEGORIE);
 
 interface EBPSoftware {
   title: string;
@@ -391,6 +401,11 @@ export function EBPTemplate({
               </a>
             )}
           </div>
+
+          <LiensVoisins
+            fond="sombre"
+            chemins={[...PAGES_EBP.filter((c) => c !== PAGE_PAR_CATEGORIE[category]), "/logiciels"]}
+          />
         </div>
       </ModernSection>
     </div>

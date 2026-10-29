@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
 import PageHero from "@/components/sections/PageHero";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 import {
   Phone,
   Smartphone,
@@ -113,11 +114,11 @@ export default function Telecom() {
       <PageHero
         badge={{
           icon: <Signal className="w-4 h-4" />,
-          text: "Solutions telecom professionnelles"
+          text: "Solutions télécom professionnelles"
         }}
         title="Solutions"
-        titleHighlight="Telecom"
-        description="Optimisez vos communications d'entreprise avec nos solutions telecom modernes. Telephonie IP, connectivite haut debit et reseaux securises."
+        titleHighlight="télécom"
+        description="Optimisez vos communications d'entreprise avec nos solutions télécom modernes. Téléphonie IP, connectivité haut débit et réseaux sécurisés."
         backgroundImage="/assets/telecom.webp"
       />
 
@@ -287,6 +288,7 @@ export default function Telecom() {
               04 50 64 02 33
             </ModernButton>
           </div>
+          <LiensVoisins fond="sombre" chemins={["/informatique", "/securite", "/telemaintenance", "/nosServices"]} />
         </div>
       </ModernSection>
     </div>

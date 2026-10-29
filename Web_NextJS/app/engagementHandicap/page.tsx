@@ -71,7 +71,7 @@ export default function EngagementHandicap() {
     <div>
       <PageHero
         title="Notre engagement"
-        titleHighlight="Handicap"
+        titleHighlight="handicap"
         description="Une entreprise inclusive et accessible. Nous nous engageons pour l'insertion professionnelle et l'accessibilité de nos locaux."
         backgroundImage="/assets/handicap-hero.webp" 
       />

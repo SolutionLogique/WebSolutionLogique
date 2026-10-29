@@ -16,6 +16,7 @@ import {
 import PageHero from "@/components/sections/PageHero";
 import ParcoursTerrain from "@/components/sections/ParcoursTerrain";
 import Button from "@/components/ui/Button";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 
 const PRINCIPES = [
   {
@@ -204,6 +205,7 @@ export default function ApplicationsMobileWebPage() {
               Développement sur-mesure
             </Button>
           </div>
+          <LiensVoisins chemins={["/accompagnement-ia", "/sur-mesure"]} />
         </div>
       </section>
     </>

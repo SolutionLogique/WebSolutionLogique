@@ -51,7 +51,7 @@ describe("Ebpbatiment Component", () => {
 
     test("devrait avoir un badge indiquant \"Logiciels EBP Bâtiment\"", () => {
       render(<Ebpbatiment />);
-      expect(screen.getByText(/Logiciels EBP/)).toBeInTheDocument();
+      expect(screen.getAllByText(/Logiciels EBP/)[0]).toBeInTheDocument();
       expect(screen.getAllByText(/Bâtiment/)[0]).toBeInTheDocument();
     });
   });

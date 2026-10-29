@@ -150,8 +150,8 @@ export default function Logiciels() {
             </h1>
 
             <p className="text-lg lg:text-xl text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Decouvrez nos solutions EBP et nos formations pour optimiser
-              la gestion de votre entreprise. Plus de 30 ans d&apos;expertise a votre service.
+              Découvrez nos solutions EBP et nos formations pour optimiser
+              la gestion de votre entreprise. Plus de 30 ans d&apos;expertise à votre service.
             </p>
 
             <div className="flex justify-center">

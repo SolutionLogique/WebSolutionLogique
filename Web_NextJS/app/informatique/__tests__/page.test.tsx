@@ -35,7 +35,7 @@ describe("Informatique Component", () => {
     test("devrait afficher le titre principal", () => {
       render(<Informatique />);
       expect(screen.getByText('Solutions')).toBeInTheDocument();
-      expect(screen.getByText('Informatiques')).toBeInTheDocument();
+      expect(screen.getByText('informatiques')).toBeInTheDocument();
     });
 
     test("devrait afficher la description", () => {
@@ -326,7 +326,7 @@ describe("Informatique Component", () => {
       render(<Informatique />);
       // Vérifier la présence de contenu significatif
       expect(screen.getAllByText('Solutions')[0]).toBeInTheDocument();
-      expect(screen.getByText('Informatiques')).toBeInTheDocument();
+      expect(screen.getByText('informatiques')).toBeInTheDocument();
       expect(screen.getByText(/Transformez votre infrastructure IT/)).toBeInTheDocument();
     });
 

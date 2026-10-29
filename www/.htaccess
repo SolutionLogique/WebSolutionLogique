@@ -66,6 +66,9 @@ RewriteRule ^formationBatiment(/.*)?$ \
 # Ancienne politique RGPD en PDF, encore demandee par Google
 RewriteRule ^wp-content/uploads/RGPD-Solution-Logique\.pdf$ \
     https://solution-logique.fr/confidentialite/ [R=301,L]
+# Adresse habituelle d'une politique de confidentialite, essayee par les robots
+RewriteRule ^politique-de-confidentialite/?$ \
+    https://solution-logique.fr/confidentialite/ [R=301,L]
 # Noms de plan du site essayes par les robots
 RewriteRule ^(sitemaps\.xml|sitemap_index\.xml|sitemap\.txt)$ \
     https://solution-logique.fr/sitemap.xml [R=301,L]
@@ -116,14 +119,19 @@ RewriteRule ^(.*)$ https://solution-logique.fr/$1 [R=301,L]
     Header set X-Robots-Tag "noindex"
   </FilesMatch>
   # Cache : fichiers de build nommes par empreinte = 1 an, immuables ;
-  # images et documents = 7 jours ; pages et donnees de page = 5 minutes
+  # images et documents = 7 jours ; pages et donnees de page = 5 minutes.
+  # OVH ajoute un en-tete Expires a 15 minutes (mod_expires) qui contredit
+  # ces durees : il est retire la ou Cache-Control est pose.
   <If "%{REQUEST_URI} =~ m#^/_next/static/#">
     Header set Cache-Control "public, max-age=31536000, immutable"
+    Header unset Expires
   </If>
   <ElseIf "%{REQUEST_URI} =~ m#^/assets/#">
     Header set Cache-Control "public, max-age=604800"
+    Header unset Expires
   </ElseIf>
   <ElseIf "%{REQUEST_URI} =~ m#(/|\.html|/index\.txt)$#">
     Header set Cache-Control "public, max-age=300"
+    Header unset Expires
   </ElseIf>
 </IfModule>

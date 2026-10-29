@@ -383,7 +383,7 @@ function ConditionsGeneralesVente() {
 
                   <p>Tout déplacement non-pré facturé (ou non couvert par le contrat) sera facturé, en sus, au tarif en vigueur. Ledit contrat de maintenance ne peut être cédé avec la vente du matériel à un tiers ; dans ce cas, les obligations du vendeur cesseront de plein droit sans qu'il lui soit fait obligation de rembourser tout ou partie des sommes versées.</p>
 
-                  <p>En cas d'absence de document dument signé par le client depuis un an, la présente facture tient lieu de contrat et prend en compte les conditions inscrites dans l'article 7, que le client accepte dans son intégralité et sans réserve.</p>
+                  <p>En cas d'absence de document dûment signé par le client depuis un an, la présente facture tient lieu de contrat et prend en compte les conditions inscrites dans l'article 7, que le client accepte dans son intégralité et sans réserve.</p>
                 </div>
               </div>
 

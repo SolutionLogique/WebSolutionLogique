@@ -60,7 +60,7 @@ export const PAGES: PageSite[] = [
     chemin: "/nosServices",
     titre: "Services informatiques à Annecy",
     description:
-      "Les services informatiques de Solution Logique à Annecy : infrastructure, hébergement et cloud, téléphonie IP, sécurité réseau et télémaintenance pour les entreprises.",
+      "Services informatiques de Solution Logique à Annecy : infrastructure, hébergement et cloud, téléphonie IP, sécurité réseau et télémaintenance des entreprises.",
     libelle: "Nos services",
     sources: ["app/nosServices"],
     prioritePlan: 0.7,
@@ -69,7 +69,7 @@ export const PAGES: PageSite[] = [
     chemin: "/informatique",
     titre: "Infrastructure informatique et cloud",
     description:
-      "Infrastructure IT, postes de travail, serveurs, hébergement et cloud : Solution Logique conçoit et maintient l'informatique des PME de Haute-Savoie depuis Annecy.",
+      "Infrastructure IT, postes, serveurs, hébergement et cloud : Solution Logique conçoit et maintient l'informatique des PME de Haute-Savoie depuis Annecy.",
     libelle: "Informatique",
     parent: "/nosServices",
     service: { nom: "Infrastructure informatique", type: "Infrastructure informatique et maintenance" },
@@ -100,9 +100,9 @@ export const PAGES: PageSite[] = [
   },
   {
     chemin: "/audit-cybersecurite",
-    titre: "Audit de cybersécurité et test d'intrusion",
+    titre: "Audit de cybersécurité, test d'intrusion",
     description:
-      "Audit de sécurité, test d'intrusion externe, applicatif et interne pour les PME. Mandat écrit, périmètre défini, rapport priorisé et contre-audit. Solution Logique, Annecy.",
+      "Test d'intrusion externe, applicatif et interne pour les PME : mandat écrit, périmètre défini, rapport priorisé et contre-audit. Solution Logique, Annecy.",
     libelle: "Audit de cybersécurité",
     parent: "/securite",
     service: { nom: "Audit de cybersécurité et test d'intrusion", type: "Audit de sécurité informatique" },
@@ -113,7 +113,7 @@ export const PAGES: PageSite[] = [
     chemin: "/telemaintenance",
     titre: "Télémaintenance, assistance à distance",
     description:
-      "Télémaintenance Solution Logique : assistance technique à distance sécurisée avec RustDesk ou NinjaOne, pour régler vos problèmes informatiques sans attendre un déplacement.",
+      "Télémaintenance Solution Logique : assistance à distance sécurisée avec RustDesk ou NinjaOne, pour régler un problème informatique sans attendre un déplacement.",
     libelle: "Télémaintenance",
     parent: "/nosServices",
     service: { nom: "Télémaintenance", type: "Assistance informatique à distance" },
@@ -145,7 +145,7 @@ export const PAGES: PageSite[] = [
     chemin: "/ebpgestionco",
     titre: "Logiciel EBP Gestion Commerciale à Annecy",
     description:
-      "EBP Gestion Commerciale ACTIV, PRO et ELITE : ventes, achats, stocks et relation client. Démonstration, accompagnement et formation par Solution Logique à Annecy.",
+      "EBP Gestion Commerciale ACTIV, PRO, ELITE : ventes, achats, stocks et relation client. Démonstration, accompagnement et formation par Solution Logique à Annecy.",
     libelle: "EBP Gestion Commerciale",
     parent: "/logiciels",
     service: { nom: "EBP Gestion Commerciale", type: "Revente, intégration et formation EBP Gestion Commerciale" },
@@ -156,7 +156,7 @@ export const PAGES: PageSite[] = [
     chemin: "/ebpbatiment",
     titre: "Logiciel EBP Bâtiment pour le BTP",
     description:
-      "EBP Gestion Bâtiment, Expert Bâtiment et Bâtiment PRO : devis, métrés, chantiers et facturation pour le BTP. Démonstration et formation par Solution Logique à Annecy.",
+      "EBP Gestion Bâtiment, Expert Bâtiment et Bâtiment PRO : devis, métrés, chantiers et facturation du BTP. Démonstration et formation par Solution Logique, Annecy.",
     libelle: "EBP Bâtiment",
     parent: "/logiciels",
     service: { nom: "EBP Bâtiment", type: "Revente, intégration et formation EBP Bâtiment" },
@@ -185,9 +185,9 @@ export const PAGES: PageSite[] = [
   },
   {
     chemin: "/applications-mobile-web",
-    titre: "Applications mobile et web connectées à EBP",
+    titre: "Applications mobile et web liées à EBP",
     description:
-      "Applications terrain, portails web et tableaux de bord connectés à EBP ou à votre ERP existant. Données synchronisées, usage hors ligne. Solution Logique, Annecy.",
+      "Applications terrain, portails web et tableaux de bord connectés à EBP ou à votre ERP. Données synchronisées, usage hors ligne. Solution Logique, Annecy.",
     libelle: "Applications mobile et web",
     parent: "/sur-mesure",
     service: { nom: "Applications mobile et web connectées à EBP", type: "Développement d'applications mobile et web" },
@@ -209,7 +209,7 @@ export const PAGES: PageSite[] = [
     chemin: "/contact",
     titre: "Contact, nous joindre à Annecy",
     description:
-      "Contactez Solution Logique à Annecy : 04 50 64 02 33, 475 route des Vernes, 74370 Annecy. Devis gratuit pour vos logiciels EBP, formations et solutions informatiques.",
+      "Contactez Solution Logique : 04 50 64 02 33, 475 route des Vernes, 74370 Annecy. Devis gratuit pour vos logiciels EBP, formations et solutions informatiques.",
     libelle: "Contact",
     sources: ["app/contact"],
     prioritePlan: 0.6,
