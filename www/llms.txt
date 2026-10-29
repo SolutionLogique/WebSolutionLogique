@@ -1,6 +1,6 @@
 # Solution Logique
 
-> Solution Logique (SAS, RCS Annecy 379 868 540, créée en 1990) est un prestataire informatique et un revendeur intégrateur des logiciels EBP installé à Pringy, sur la commune d'Annecy (Haute-Savoie). Elle installe, maintient et sécurise l'informatique des PME, TPE et collectivités, vend et forme aux logiciels EBP (Comptabilité, Gestion commerciale, Bâtiment), développe des applications sur mesure autour d'EBP et accompagne les entreprises dans l'usage de l'intelligence artificielle.
+> Solution Logique (SAS, RCS Annecy 379 868 540, créée en 1990) est une société de services informatiques installée à Pringy, sur la commune d'Annecy (Haute-Savoie). Elle accompagne les PME, TPE et collectivités dans l'usage de l'intelligence artificielle et leur développe des applications sur mesure (applications métier, mobiles et web, intégrations entre logiciels). Elle installe, maintient et sécurise leur informatique (postes, serveurs, réseau, sauvegarde, sécurité, téléphonie IP) et les assiste à distance par télémaintenance, avec des interlocuteurs locaux, les mêmes d'une intervention à l'autre. Elle vend, installe et forme aussi aux logiciels de gestion EBP (Comptabilité, Gestion commerciale, Bâtiment).
 
 Coordonnées :
 
@@ -11,6 +11,13 @@ Coordonnées :
 - Site : https://solution-logique.fr/
 
 Zone d'intervention : Annecy et son agglomération, le reste de la Haute-Savoie (Chablais, vallée de l'Arve, Genevois) et la Savoie, dans les locaux du client ou à distance par télémaintenance.
+
+## Intelligence artificielle et développement sur mesure
+
+- [Sur-mesure et IA](https://solution-logique.fr/sur-mesure/) : les trois offres
+- [Accompagnement IA](https://solution-logique.fr/accompagnement-ia/) : cas d'usage, formation des équipes, assistants reliés aux données de l'entreprise
+- [Développement d'applications sur mesure](https://solution-logique.fr/developpement-sur-mesure/) : applications métier, intégrations entre logiciels (EBP, CRM, banque, boutique en ligne), états
+- [Applications mobile et web](https://solution-logique.fr/applications-mobile-web/) : applications terrain, portails et tableaux de bord reliés à EBP ou à l'ERP de l'entreprise
 
 ## Informatique et réseaux
 
@@ -27,13 +34,6 @@ Zone d'intervention : Annecy et son agglomération, le reste de la Haute-Savoie 
 - [EBP Comptabilité](https://solution-logique.fr/ebpcomptabilite/) : gammes ACTIV, PRO et ELITE
 - [EBP Gestion Commerciale](https://solution-logique.fr/ebpgestionco/) : ventes, achats, stocks, relation client
 - [EBP Bâtiment](https://solution-logique.fr/ebpbatiment/) : devis, métrés, chantiers et facturation du BTP
-
-## Sur mesure et intelligence artificielle
-
-- [Sur-mesure et IA](https://solution-logique.fr/sur-mesure/) : les trois offres
-- [Développement sur-mesure autour d'EBP](https://solution-logique.fr/developpement-sur-mesure/) : applications métier, intégrations, états
-- [Applications mobile et web](https://solution-logique.fr/applications-mobile-web/) : applications terrain et portails reliés à EBP
-- [Accompagnement IA](https://solution-logique.fr/accompagnement-ia/) : cas d'usage, formation des équipes, assistants reliés aux données de l'entreprise
 
 ## Entreprise
 

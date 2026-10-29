@@ -23,7 +23,7 @@ export const IMAGE_PARTAGE = {
   url: "/assets/partage-solution-logique.png",
   width: 1200,
   height: 630,
-  alt: "Solution Logique, informatique et logiciels EBP à Annecy",
+  alt: "Solution Logique, IA, applications sur mesure et informatique des PME depuis 1990, à Annecy",
 };
 
 export interface PageSite {
@@ -51,9 +51,9 @@ export const PAGES: PageSite[] = [
   {
     chemin: "",
     titre: "Accueil",
-    titreAbsolu: "Solution Logique, informatique et logiciels EBP à Annecy",
+    titreAbsolu: "Solution Logique, IA, développement et informatique à Annecy",
     description:
-      "Solution Logique à Annecy : informatique pour PME, TPE et collectivités. Logiciels EBP, infrastructure, sur-mesure, IA et télémaintenance depuis plus de 30 ans.",
+      "Solution Logique, Annecy : IA et applications sur mesure pour les PME, informatique, sécurité et téléphonie avec un interlocuteur local, et logiciels EBP.",
     libelle: "Accueil",
     sources: ["app/page.tsx", "components/sections"],
     prioritePlan: 1,
@@ -169,30 +169,30 @@ export const PAGES: PageSite[] = [
     chemin: "/sur-mesure",
     titre: "Sur-mesure et intelligence artificielle",
     description:
-      "Applications métier autour d'EBP, intégrations, états sur-mesure et accompagnement IA pour les PME de Haute-Savoie. Solution Logique, Annecy.",
+      "Applications métier, intégrations, applications mobile et web et accompagnement IA pour les PME de Haute-Savoie. Solution Logique, Annecy.",
     libelle: "Sur-mesure & IA",
     sources: ["app/sur-mesure"],
     prioritePlan: 0.6,
   },
   {
     chemin: "/developpement-sur-mesure",
-    titre: "Développement sur-mesure autour d'EBP",
+    titre: "Développement d'applications sur mesure",
     description:
-      "Applications métier, intégrations et états sur-mesure autour de vos logiciels EBP. Solution Logique, Annecy, 30 ans d'expérience terrain.",
+      "Applications métier, intégrations et états sur mesure reliés à vos outils : EBP, CRM, banque, boutique en ligne. Solution Logique, Annecy, 30 ans de terrain.",
     libelle: "Développement sur-mesure",
     parent: "/sur-mesure",
-    service: { nom: "Développement sur-mesure autour d'EBP", type: "Développement d'applications métier" },
+    service: { nom: "Développement d'applications métier sur mesure", type: "Développement d'applications métier" },
     sources: ["app/developpement-sur-mesure"],
     prioritePlan: 0.7,
   },
   {
     chemin: "/applications-mobile-web",
-    titre: "Applications mobile et web liées à EBP",
+    titre: "Applications mobile et web sur mesure",
     description:
       "Applications terrain, portails web et tableaux de bord connectés à EBP ou à votre ERP. Données synchronisées, usage hors ligne. Solution Logique, Annecy.",
     libelle: "Applications mobile et web",
     parent: "/sur-mesure",
-    service: { nom: "Applications mobile et web connectées à EBP", type: "Développement d'applications mobile et web" },
+    service: { nom: "Applications mobile et web sur mesure", type: "Développement d'applications mobile et web" },
     sources: ["app/applications-mobile-web", "components/sections/ParcoursTerrain.tsx"],
     prioritePlan: 0.7,
   },
@@ -211,7 +211,7 @@ export const PAGES: PageSite[] = [
     chemin: "/contact",
     titre: "Contact, nous joindre à Annecy",
     description:
-      "Contactez Solution Logique : 04 50 64 02 33, 475 route des Vernes, 74370 Annecy. Devis gratuit pour vos logiciels EBP, formations et solutions informatiques.",
+      "Contactez Solution Logique : 04 50 64 02 33, 475 route des Vernes, 74370 Annecy. Devis gratuit : sur-mesure, IA, informatique, téléphonie et logiciels EBP.",
     libelle: "Contact",
     sources: ["app/contact"],
     prioritePlan: 0.6,
