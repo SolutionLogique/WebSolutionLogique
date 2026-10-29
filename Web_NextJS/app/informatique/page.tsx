@@ -104,7 +104,7 @@ export default function Informatique() {
         }}
         title="Solutions"
         titleHighlight="informatiques"
-        description="Transformez votre infrastructure IT avec nos solutions sur mesure. Performance, sécurité et innovation pour votre entreprise."
+        description="Postes, serveurs et réseau fournis, installés et maintenus sous contrat, avec des sauvegardes suivies et un dépannage à distance par télémaintenance."
         backgroundImage="/assets/infrastructure.webp"
       />
 

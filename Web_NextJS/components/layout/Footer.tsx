@@ -26,9 +26,9 @@ const LIENS = {
   ],
   services: [
     { href: "/nosServices", label: "Tous nos services" },
-    { href: "/informatique", label: "Informatique" },
-    { href: "/telecom", label: "Télécom" },
+    { href: "/informatique", label: "Infogérance et matériel" },
     { href: "/securite", label: "Sécurité" },
+    { href: "/telecom", label: "Télécom" },
     { href: "/telemaintenance", label: "Télémaintenance" },
     { href: "/audit-cybersecurite", label: "Audit de cybersécurité" },
   ],
@@ -122,8 +122,8 @@ function Footer() {
             </address>
           </div>
 
-          <ColonneLiens titre="IA & sur-mesure" liens={LIENS.surMesure} />
           <ColonneLiens titre="Services" liens={LIENS.services} />
+          <ColonneLiens titre="Sur-mesure & IA" liens={LIENS.surMesure} />
           <ColonneLiens titre="Logiciels EBP" liens={LIENS.logiciels} />
           <ColonneLiens titre="Formations" liens={LIENS.formations} />
         </div>

@@ -55,7 +55,7 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     requete: "maintenance informatique Annecy",
     titre: "Votre informatique suivie depuis Annecy",
     paragraphes: [
-      "Postes de travail, serveurs, sauvegardes, hébergement : Solution Logique installe et maintient l'informatique des entreprises de Haute-Savoie depuis ses bureaux de Pringy, à Annecy. Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et réglons à distance ce qui peut l'être par télémaintenance.",
+      "Postes de travail, serveurs, sauvegardes, hébergement : Solution Logique fournit, installe et maintient l'informatique des entreprises de Haute-Savoie depuis ses bureaux de Pringy, à Annecy. Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et réglons à distance ce qui peut l'être par télémaintenance.",
       "Vos interlocuteurs sont les mêmes d'une intervention à l'autre.",
     ],
   },

@@ -2,9 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { Code2, Plug, Sparkles, ArrowRight } from "lucide-react";
 
-/* Mise en vedette du nouveau positionnement.
-   C'est ce que l'entreprise veut pousser (direction, 29/10/2026) : il merite
-   une section, pas une ligne dans une liste. */
+/* Le developpement sur mesure, apres le coeur de l'offre (direction,
+   29/10/2026, 16:00 : la technique d'abord, sans insister sur l'IA). */
 
 const VOLETS = [
   {
@@ -36,8 +35,8 @@ function SurMesureIA() {
       <div className="mx-auto max-w-container px-gutter">
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-accent-100 bg-accent-50 px-3.5 py-1.5 text-sm font-semibold text-accent-700">
-            <Sparkles className="h-4 w-4" aria-hidden="true" />
-            Notre différence
+            <Code2 className="h-4 w-4" aria-hidden="true" />
+            Sur mesure
           </span>
           <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">
             Quand le standard s&apos;arrête, <span className="text-primary-600">on continue</span>

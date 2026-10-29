@@ -16,13 +16,14 @@ import Button from "@/components/ui/Button";
    - le fond degrade bleu nuit cede la place au sable, et le titre en degrade
      bleu-vers-vert a un aplat. */
 
-/* Maquette du 29/10/2026 : trois faits deja ecrits ailleurs sur le site
-   (creation en 1990, les cinq modules d'IA de /accompagnement-ia, les memes
-   interlocuteurs d'une intervention a l'autre) a la place de « 500+ clients »
-   et « 8 experts certifies », sans source. Chiffres a valider par la direction. */
+/* Maquette du 29/10/2026 (ordre de 16:00 : la technique et le materiel
+   d'abord) : trois faits deja ecrits ailleurs sur le site (creation en 1990,
+   les zones servies des donnees structurees, les memes interlocuteurs d'une
+   intervention a l'autre) a la place de « 500+ clients » et « 8 experts
+   certifies », sans source. Chiffres a valider par la direction. */
 const PREUVES = [
   { valeur: "1990", libelle: "Créée à Annecy" },
-  { valeur: "5", libelle: "Modules d'IA en service" },
+  { valeur: "74 · 73", libelle: "Sur site en Haute-Savoie et en Savoie" },
   { valeur: "1", libelle: "Interlocuteur, le même à chaque fois" },
 ];
 
@@ -37,20 +38,20 @@ function Hero() {
           </span>
 
           <h1 className="mb-5 font-display text-h1 font-bold text-sand-900">
-            <span className="text-primary-600">Applications sur mesure, IA</span> et informatique
-            pour les PME de Haute-Savoie
+            <span className="text-primary-600">Informatique, maintenance et matériel</span> pour
+            les PME de <span className="whitespace-nowrap">Haute-Savoie</span>
           </h1>
 
           <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-sand-600">
-            Les outils et les usages de l&apos;IA qui manquent à votre PME, sur une informatique
-            entretenue de près. Une équipe à Annecy.
+            Postes, serveurs, réseau, sécurité et téléphonie fournis, installés et suivis sous
+            contrat, par une équipe à Annecy qui connaît votre installation.
           </p>
 
           {/* Les appels a l'action viennent avant tout element decoratif :
               c'est ce qui garantit leur visibilite sans defilement sur mobile. */}
           <div className="flex flex-col justify-center gap-3 sm:flex-row">
             <Button href="/contact" size="lg" icon={<ArrowRight />} iconPosition="right">
-              Parler de votre projet
+              Parler de votre informatique
             </Button>
             <Button href="tel:0450640233" variant="secondary" size="lg" icon={<Phone />}>
               04 50 64 02 33
