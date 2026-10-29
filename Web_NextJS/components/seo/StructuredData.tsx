@@ -83,9 +83,14 @@ export const ORGANISATION = {
     },
   ],
   "priceRange": "€€",
+  /* Profils officiels verifies le 29/10/2026 : la page LinkedIn qui porte
+     l'adresse et le lien du site, et la page Facebook vivante (l'ancienne
+     adresse facebook.com/solutionlogique affiche « contenu indisponible »).
+     La 2e page LinkedIn « Solution Logique Informatique », non lisible sans
+     compte, n'est pas citee tant qu'elle n'est pas fusionnee ou confirmee. */
   "sameAs": [
-    "https://www.facebook.com/solutionlogique",
     "https://www.linkedin.com/company/solution-logique",
+    "https://www.facebook.com/solutionlogiqueannecy",
   ],
   "areaServed": ZONES_SERVIES,
 };
