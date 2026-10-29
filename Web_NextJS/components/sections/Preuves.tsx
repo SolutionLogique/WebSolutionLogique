@@ -1,17 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
-/* Certifications et partenaires.
+/* Partenaires.
 
    Remplace deux sections : les temoignages, signes « Marie Dupont »,
    « Jean-Luc Bernard » et « Sophie Laurent » — des noms fictifs en
    production — et le second bloc partenaires, qui faisait doublon.
 
    Aucun avis client reel n'etant disponible, mieux vaut rien qu'un faux.
-   Ces logos-ci sont reels et verifiables. */
+   Ces logos-ci sont reels et verifiables. Le logo de certification des
+   organismes de formation est retire le 29/10/2026 : SLI n'apparait pas
+   dans les registres publics des organismes certifies. */
 
 const PARTENAIRES = [
-  { src: "/assets/logo-qualiopi.webp", alt: "Certifié Qualiopi", legende: "Organisme de formation certifié" },
   { src: "/assets/ebp.webp", alt: "Partenaire EBP", legende: "Revendeur et intégrateur agréé" },
   { src: "/assets/dell.webp", alt: "Dell Technologies", legende: "Partenaire matériel" },
   { src: "/assets/lenovo.webp", alt: "Lenovo", legende: "Partenaire matériel" },
@@ -27,7 +28,7 @@ function Preuves() {
       <div className="mx-auto max-w-container px-gutter">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">
-            Certifications et partenaires
+            Nos partenaires
           </h2>
           <p className="text-lg text-sand-600">
             Nos compétences sont validées par les éditeurs et constructeurs dont nous

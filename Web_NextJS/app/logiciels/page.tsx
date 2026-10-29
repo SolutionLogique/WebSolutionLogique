@@ -150,7 +150,7 @@ export default function Logiciels() {
             </h1>
 
             <p className="text-lg lg:text-xl text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Decouvrez nos solutions EBP et nos formations certifiees pour optimiser
+              Decouvrez nos solutions EBP et nos formations pour optimiser
               la gestion de votre entreprise. Plus de 30 ans d&apos;expertise a votre service.
             </p>
 
@@ -319,28 +319,12 @@ export default function Logiciels() {
       {activeTab === 'formations' && (
         <ModernSection background="white" padding="2xl">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-6">
-              <Award className="w-4 h-4 mr-2" />
-              Organisme de formation certifié Qualiopi
-            </div>
-            
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-              Formations EBP Certifiées
+              Formations EBP
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Développez vos compétences avec nos formations personnalisées dispensées par des experts certifiés
             </p>
-          </div>
-
-          {/* Qualiopi Logo */}
-          <div className="flex justify-center mb-12">
-            <Image
-              src="/assets/logo-qualiopi.webp"
-              alt="Certification Qualiopi"
-              width={150}
-              height={100}
-              className="opacity-80"
-            />
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -375,8 +359,7 @@ export default function Logiciels() {
                     "Formations individuelles ou en groupe",
                     "Dans nos locaux ou sur site",
                     "Programme adapté à vos besoins",
-                    "Formateurs certifiés EBP",
-                    "Prise en charge OPCO possible"
+                    "Formateurs certifiés EBP"
                   ].map((item, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />

@@ -21,9 +21,9 @@ const RAISONS = [
   },
   {
     icon: BadgeCheck,
-    titre: "Des compétences certifiées",
+    titre: "Des compétences reconnues",
     texte:
-      "Organisme de formation certifié Qualiopi, partenaire EBP, Microsoft et Dell Technologies. Nos techniciens sont formés sur les solutions qu'ils déploient.",
+      "Partenaire EBP, Microsoft et Dell Technologies. Nos techniciens sont formés sur les solutions qu'ils déploient.",
   },
   {
     icon: PhoneCall,
