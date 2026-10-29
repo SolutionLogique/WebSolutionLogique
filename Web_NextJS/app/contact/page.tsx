@@ -11,6 +11,7 @@ import StatusModal from "@/components/Modal/StatusModal";
 import { ModernButton } from "@/components/ui/modernButton";
 import { Input } from "@/components/ui/Input";
 import { ModernCard } from "@/components/ui/modernCard";
+import CarteGoogle from "@/components/ui/CarteGoogle";
 import Section from "@/components/ui/Section";
 import Container from "@/components/ui/Container";
 import { HoneypotField, useHoneypot } from "@/components/security/HoneypotField";
@@ -329,17 +330,10 @@ export default function Contact() {
           </ModernCard>
         </div>
         
-        {/* Google Maps modernisé */}
+        {/* Carte Google Maps : chargee au clic seulement (components/ui/CarteGoogle.tsx) */}
         <div className="mt-12">
           <ModernCard variant="elevated" className="overflow-hidden p-0">
-            <iframe
-              title="iframe_sli_map"
-              className="w-full h-96"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.5863184807336!2d6.126918815830903!3d45.93956730961823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8fac0b9e7fbf%3A0x857a5fad72b9eb0!2sSolution%20Logique%20Informatique!5e0!3m2!1sfr!2sfr!4v1651504531648!5m2!1sfr!2sfr"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <CarteGoogle />
           </ModernCard>
         </div>
       </Container>

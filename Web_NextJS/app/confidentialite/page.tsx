@@ -10,7 +10,8 @@ import Link from "next/link";
      Vercel (solutionlogique.vercel.app, region cdg1 de vercel.json), qui
      envoient un e-mail par Resend a site@solution-logique.fr ; l'adresse IP
      sert a limiter les envois (lib/security.ts, lib/monitoring.ts) ;
-   - carte Google Maps en iframe sur /contact ;
+   - carte Google Maps sur /contact, chargee seulement au clic
+     (components/ui/CarteGoogle.tsx) ;
    - polices auto-hebergees (next/font), aucun outil de mesure d'audience,
      aucun cookie depose par le site lui-meme ;
    - journaux d'acces de l'hebergeur OVH.
@@ -125,9 +126,10 @@ export default function Confidentialite() {
 
           <Bloc titre="La carte de la page Contact">
             <p>
-              La page Contact affiche une carte Google Maps, chargée depuis les serveurs de Google.
-              En l&apos;affichant, votre navigateur transmet votre adresse IP à Google, qui peut
-              aussi déposer ses propres cookies, selon sa{" "}
+              La page Contact propose une carte Google Maps. Elle ne se charge que si vous
+              cliquez sur « Afficher la carte » : votre navigateur contacte alors les serveurs de
+              Google, qui reçoivent votre adresse IP et peuvent déposer leurs propres cookies,
+              selon leur{" "}
               <a
                 href="https://policies.google.com/privacy?hl=fr"
                 className="font-medium text-primary-600 hover:underline"
@@ -151,7 +153,8 @@ export default function Confidentialite() {
           <Bloc titre="Vos droits">
             <p>
               Vous pouvez accéder à vos données, les faire rectifier ou effacer, vous opposer à
-              leur traitement ou en demander la limitation, en écrivant à{" "}
+              leur traitement, en demander la limitation ou les recevoir dans un format courant
+              (portabilité), en écrivant à{" "}
               <a href="mailto:site@solution-logique.fr" className="font-medium text-primary-600 hover:underline">
                 site@solution-logique.fr
               </a>{" "}
