@@ -26,16 +26,18 @@ export const ZONES_SERVIES = [
   { "@type": "AdministrativeArea", "name": "Savoie", "sameAs": "https://fr.wikipedia.org/wiki/Savoie_(d%C3%A9partement)" },
 ];
 
-/* Pages des offres, dans l'ordre de mise en avant (direction, 29/10/2026) */
+/* Pages des offres, dans l'ordre de mise en avant (direction, 29/10/2026,
+   16:00) : la technique et le materiel d'abord, le developpement et l'IA
+   ensuite, EBP en dernier */
 const OFFRES = [
-  "/accompagnement-ia",
-  "/developpement-sur-mesure",
-  "/applications-mobile-web",
   "/informatique",
   "/securite",
-  "/audit-cybersecurite",
   "/telecom",
   "/telemaintenance",
+  "/audit-cybersecurite",
+  "/developpement-sur-mesure",
+  "/applications-mobile-web",
+  "/accompagnement-ia",
   "/logiciels",
 ];
 
@@ -50,21 +52,23 @@ export const ORGANISATION = {
   "logo": `${SITE_URL}/assets/sli.webp`,
   "image": `${SITE_URL}/assets/solution.webp`,
   "description":
-    "Accompagnement IA, développement d'applications sur mesure et informatique des entreprises (postes, serveurs, sécurité, téléphonie IP, télémaintenance), avec un interlocuteur local, et logiciels EBP depuis plus de 30 ans en Haute-Savoie.",
-  /* Domaines dans l'ordre des activites voulu par la direction le 29/10/2026 :
-     l'IA et le developpement sur mesure d'abord, puis l'informatique (le
-     socle), et EBP en dernier. Chaque domaine a sa page sur le site. */
+    "Informatique des entreprises depuis plus de 30 ans en Haute-Savoie : maintenance sous contrat, matériel (postes, serveurs, réseau), sécurité, téléphonie IP, Microsoft 365, sauvegarde et télémaintenance, avec un interlocuteur local ; développement d'applications sur mesure, accompagnement IA et logiciels EBP.",
+  /* Domaines dans l'ordre des activites voulu par la direction le 29/10/2026
+     (16:00) : la technique et le materiel d'abord, le coeur de l'offre ; le
+     developpement et l'IA ensuite ; EBP en dernier. */
   "knowsAbout": [
-    "Intelligence artificielle pour les PME",
+    "Maintenance informatique",
+    "Matériel informatique",
+    "Infrastructure informatique et cloud",
+    "Sécurité informatique",
+    "Téléphonie IP et réseaux",
+    "Microsoft 365",
+    "Sauvegarde des données",
+    "Télémaintenance",
+    "Audit de cybersécurité",
     "Développement d'applications sur mesure",
     "Applications mobile et web",
-    "Maintenance informatique",
-    "Infrastructure informatique et cloud",
-    "Sauvegarde des données",
-    "Sécurité informatique",
-    "Audit de cybersécurité",
-    "Téléphonie IP et réseaux",
-    "Télémaintenance",
+    "Intelligence artificielle pour les PME",
     "Logiciels EBP",
   ],
   /* Les offres, dans le meme ordre, chacune vers sa page */

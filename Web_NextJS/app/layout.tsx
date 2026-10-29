@@ -32,12 +32,12 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Solution Logique, IA, développement et informatique à Annecy",
+    default: "Solution Logique, informatique et matériel des PME à Annecy",
     template: "%s | Solution Logique",
   },
   description:
-    "Solution Logique à Annecy (74) : accompagnement IA, développement d'applications sur mesure, infrastructure, sécurité, téléphonie IP, télémaintenance, logiciels EBP et formations. Plus de 30 ans d'expertise.",
-  keywords: ["accompagnement IA PME", "développement sur-mesure", "application mobile entreprise", "informatique Annecy", "prestataire informatique Annecy", "sécurité informatique", "téléphonie IP", "télémaintenance", "logiciel EBP", "formation EBP", "Haute-Savoie"],
+    "Solution Logique à Annecy (74) : maintenance informatique, matériel, sécurité, téléphonie IP et télémaintenance des entreprises, développement sur mesure, logiciels EBP. Plus de 30 ans d'expertise.",
+  keywords: ["informatique Annecy", "prestataire informatique Annecy", "maintenance informatique", "matériel informatique", "sécurité informatique", "téléphonie IP", "Microsoft 365", "télémaintenance", "développement sur-mesure", "accompagnement IA PME", "logiciel EBP", "Haute-Savoie"],
   authors: [{ name: "Solution Logique" }],
   creator: "Solution Logique",
   publisher: "Solution Logique",
