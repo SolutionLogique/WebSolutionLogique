@@ -1,0 +1,48 @@
+# Solution Logique
+
+> Solution Logique (SAS, RCS Annecy 379 868 540, créée en 1990) est un prestataire informatique et un revendeur intégrateur des logiciels EBP installé à Pringy, sur la commune d'Annecy (Haute-Savoie). Elle installe, maintient et sécurise l'informatique des PME, TPE et collectivités, vend et forme aux logiciels EBP (Comptabilité, Gestion commerciale, Bâtiment), développe des applications sur mesure autour d'EBP et accompagne les entreprises dans l'usage de l'intelligence artificielle.
+
+Coordonnées :
+
+- Adresse : 475 route des Vernes, 74370 Annecy (Pringy), France
+- Téléphone : 04 50 64 02 33 (+33 4 50 64 02 33)
+- Courriel : site@solution-logique.fr
+- Horaires : du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30
+- Site : https://solution-logique.fr/
+
+Zone d'intervention : Annecy et son agglomération, le reste de la Haute-Savoie (Chablais, vallée de l'Arve, Genevois) et la Savoie, dans les locaux du client ou à distance par télémaintenance.
+
+## Informatique et réseaux
+
+- [Services informatiques](https://solution-logique.fr/nosServices/) : vue d'ensemble des services aux entreprises
+- [Infrastructure informatique et cloud](https://solution-logique.fr/informatique/) : postes, serveurs, hébergement, sauvegardes
+- [Téléphonie IP et réseaux](https://solution-logique.fr/telecom/) : téléphonie fixe et mobile, trunk SIP, liaisons entre sites
+- [Sécurité informatique](https://solution-logique.fr/securite/) : pare-feu, protection des données, antivirus, surveillance
+- [Audit de cybersécurité](https://solution-logique.fr/audit-cybersecurite/) : test d'intrusion externe, applicatif et interne, rapport priorisé
+- [Télémaintenance](https://solution-logique.fr/telemaintenance/) : assistance à distance avec RustDesk ou NinjaOne
+
+## Logiciels EBP
+
+- [Logiciels EBP et formations](https://solution-logique.fr/logiciels/) : revente, installation, paramétrage et formation
+- [EBP Comptabilité](https://solution-logique.fr/ebpcomptabilite/) : gammes ACTIV, PRO et ELITE
+- [EBP Gestion Commerciale](https://solution-logique.fr/ebpgestionco/) : ventes, achats, stocks, relation client
+- [EBP Bâtiment](https://solution-logique.fr/ebpbatiment/) : devis, métrés, chantiers et facturation du BTP
+
+## Sur mesure et intelligence artificielle
+
+- [Sur-mesure et IA](https://solution-logique.fr/sur-mesure/) : les trois offres
+- [Développement sur-mesure autour d'EBP](https://solution-logique.fr/developpement-sur-mesure/) : applications métier, intégrations, états
+- [Applications mobile et web](https://solution-logique.fr/applications-mobile-web/) : applications terrain et portails reliés à EBP
+- [Accompagnement IA](https://solution-logique.fr/accompagnement-ia/) : cas d'usage, formation des équipes, assistants reliés aux données de l'entreprise
+
+## Entreprise
+
+- [Contact](https://solution-logique.fr/contact/) : formulaire, demande de rappel, plan d'accès
+- [Engagement handicap](https://solution-logique.fr/engagementHandicap/)
+- [Mentions légales](https://solution-logique.fr/mentions-legales/)
+
+## Optional
+
+- [Conditions générales de vente](https://solution-logique.fr/conditionsGeneralesVente/)
+- [Politique de confidentialité](https://solution-logique.fr/confidentialite/)
+- [Plan du site](https://solution-logique.fr/sitemap.xml)
