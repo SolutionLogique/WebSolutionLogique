@@ -66,6 +66,9 @@ RewriteRule ^formationBatiment(/.*)?$ \
 # Ancienne politique RGPD en PDF, encore demandee par Google
 RewriteRule ^wp-content/uploads/RGPD-Solution-Logique\.pdf$ \
     https://solution-logique.fr/confidentialite/ [R=301,L]
+# Anciennes CGV en PDF (WordPress, 2015), encore demandees par les robots en octobre 2026
+RewriteRule ^wp-content/uploads/2015/07/CGV_Solution_Logique\.pdf$ \
+    https://solution-logique.fr/conditionsGeneralesVente/ [R=301,L]
 # Adresse habituelle d'une politique de confidentialite, essayee par les robots
 RewriteRule ^politique-de-confidentialite/?$ \
     https://solution-logique.fr/confidentialite/ [R=301,L]
