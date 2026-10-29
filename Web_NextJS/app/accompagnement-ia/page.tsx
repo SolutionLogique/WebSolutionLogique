@@ -157,7 +157,7 @@ export default function AccompagnementIAPage() {
       <section className="border-t border-sand-200 bg-sand-50 py-section">
         <div className="mx-auto max-w-container px-gutter">
           <div className="mx-auto mb-14 max-w-2xl text-center">
-            <span className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-accent-600">
+            <span className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-accent-700">
               <Bot className="h-4 w-4" aria-hidden="true" />
               Modules et agents
             </span>
