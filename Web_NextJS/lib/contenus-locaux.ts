@@ -1,7 +1,7 @@
 /* Textes d'ancrage local et FAQ des pages de services et des pages EBP.
 
    Proposition du 29/10/2026 (revue SEO, actions 13, 14 et 21 du rapport
-   d'audit), A FAIRE VALIDER avant publication. Chaque phrase reprend un fait
+   d'audit), validee et publiee le 29/10/2026. Chaque phrase reprend un fait
    deja publie sur le site ou un fait du registre des entreprises :
    - « Basés à Annecy, nous intervenons en Haute-Savoie et dans le bassin
      annécien. Vos interlocuteurs sont les mêmes d'une intervention à
@@ -91,7 +91,7 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
       {
         question: "Faut-il installer un logiciel ?",
         reponse:
-          "Non avec la version EXE de RustDesk : il suffit de la lancer, elle ne demande pas d'installation. La version MSI, elle, s'installe sur le poste.",
+          "Non, avec la version EXE de RustDesk : il suffit de la lancer, elle ne demande pas d'installation. La version MSI, elle, s'installe sur le poste.",
       },
       {
         question: "Que dois-je communiquer au technicien ?",
