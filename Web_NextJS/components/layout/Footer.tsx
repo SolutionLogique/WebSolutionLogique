@@ -11,10 +11,11 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
    illisible sur fond sombre, aucune surface sombre ne porte le logo. Le registre
    chaleureux de la direction retenue y gagne aussi.
 
-   Il porte desormais le plan de site COMPLET. Sept pages n'etaient referencees
-   ni ici ni dans la navigation — les trois logiciels EBP, les trois formations
-   et engagementHandicap. Cette derniere est exigee par la certification
-   Qualiopi, qui impose de rendre l'engagement accessible. */
+   Il porte le plan de site COMPLET : toute page du site doit y etre liee.
+   Les sous-menus de la navigation ne sont rendus qu'au survol, un robot ne
+   les voit pas ; c'est ici que /audit-cybersecurite et
+   /applications-mobile-web trouvent leur lien (ajoutes le 29/10/2026), comme
+   les mentions legales et la politique de confidentialite. */
 
 const LIENS = {
   logiciels: [
@@ -29,10 +30,12 @@ const LIENS = {
     { href: "/telecom", label: "Télécom" },
     { href: "/securite", label: "Sécurité" },
     { href: "/telemaintenance", label: "Télémaintenance" },
+    { href: "/audit-cybersecurite", label: "Audit de cybersécurité" },
   ],
   surMesure: [
     { href: "/sur-mesure", label: "Sur-mesure & IA" },
     { href: "/developpement-sur-mesure", label: "Développement sur-mesure" },
+    { href: "/applications-mobile-web", label: "Applications mobile et web" },
     { href: "/accompagnement-ia", label: "Accompagnement IA" },
   ],
   formations: [
@@ -42,6 +45,8 @@ const LIENS = {
     { href: "/engagementHandicap", label: "Engagement handicap" },
   ],
   legal: [
+    { href: "/mentions-legales", label: "Mentions légales" },
+    { href: "/confidentialite", label: "Confidentialité" },
     { href: "/conditionsGeneralesVente", label: "Conditions générales de vente" },
   ],
 };
@@ -127,7 +132,7 @@ function Footer() {
           <p className="text-sm text-sand-500">
             © {annee} Solution Logique Informatique. Tous droits réservés.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             {LIENS.legal.map((lien) => (
               <Link
                 key={lien.href}
