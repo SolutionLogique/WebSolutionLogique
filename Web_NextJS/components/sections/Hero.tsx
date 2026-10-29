@@ -20,7 +20,6 @@ const PREUVES = [
   { valeur: "30+", libelle: "Années d'expertise" },
   { valeur: "500+", libelle: "Clients accompagnés" },
   { valeur: "8", libelle: "Experts certifiés" },
-  { valeur: "Qualiopi", libelle: "Organisme certifié" },
 ];
 
 function Hero() {
@@ -55,7 +54,7 @@ function Hero() {
         </div>
 
         {/* Bande de preuve */}
-        <dl className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-6 border-t border-sand-200 pt-10 sm:grid-cols-4">
+        <dl className="mx-auto mt-14 grid max-w-3xl grid-cols-3 gap-6 border-t border-sand-200 pt-10">
           {PREUVES.map((p) => (
             <div key={p.libelle} className="text-center">
               <dt className="sr-only">{p.libelle}</dt>

@@ -61,27 +61,30 @@ function FinalCTA() {
           <div className="rounded-2xl border border-sand-200 bg-sand-0 p-7 shadow-card lg:p-8">
             <h3 className="mb-6 font-display text-h3 font-semibold text-sand-900">Nos coordonnées</h3>
 
+            {/* Chaque groupe du <dl> ne contient que son <dt> et son <dd> :
+                l'icone passe dans le <dt>, en position absolue. Avant, un <div>
+                intermediaire cassait la liste de definitions (accessibilite). */}
             <dl className="space-y-5">
               {COORDONNEES.map((c) => (
-                <div key={c.libelle} className="flex items-start gap-4">
-                  <span className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-primary-50">
-                    <c.icon className="h-5 w-5 text-primary-600" aria-hidden="true" />
-                  </span>
-                  <div>
-                    <dt className="text-sm text-sand-500">{c.libelle}</dt>
-                    <dd className="font-semibold text-sand-900">
-                      {c.href ? (
-                        <a href={c.href} className="transition-colors hover:text-primary-600">
-                          {c.valeur}
-                        </a>
-                      ) : (
-                        c.valeur
-                      )}
-                      {c.complement && (
-                        <span className="block text-sm font-normal text-sand-500">{c.complement}</span>
-                      )}
-                    </dd>
-                  </div>
+                <div key={c.libelle} className="relative min-h-10 pl-14">
+                  <dt className="text-sm text-sand-500">
+                    <span className="absolute left-0 top-0 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary-50">
+                      <c.icon className="h-5 w-5 text-primary-600" aria-hidden="true" />
+                    </span>
+                    {c.libelle}
+                  </dt>
+                  <dd className="font-semibold text-sand-900">
+                    {c.href ? (
+                      <a href={c.href} className="transition-colors hover:text-primary-600">
+                        {c.valeur}
+                      </a>
+                    ) : (
+                      c.valeur
+                    )}
+                    {c.complement && (
+                      <span className="block text-sm font-normal text-sand-500">{c.complement}</span>
+                    )}
+                  </dd>
                 </div>
               ))}
             </dl>

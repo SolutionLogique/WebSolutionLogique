@@ -16,48 +16,9 @@ Le projet est configuré pour l'export statique grâce à :
 
 ## 📤 Méthode 1 : Déploiement Manuel (FileZilla)
 
-### Prérequis
-- FileZilla installé et configuré pour votre serveur OVH
-- Accès aux identifiants FTP de votre hébergement
+### Prérequis, étapes et précautions
 
-### Étapes
-
-#### 1. Construction du site
-```powershell
-# Sur Windows (PowerShell)
-$env:NEXT_EXPORT="true"; npm run build
-
-# Sur Linux/Mac
-NEXT_EXPORT=true npm run build
-```
-
-**✅ Build réussi :** 25 pages générées sans warning
-
-#### 2. Vérification des fichiers
-Après la construction, vérifiez que le dossier `out/` a été créé avec :
-- `index.html` (page d'accueil)
-- Dossier `_next/` (assets JS/CSS optimisés)
-- Dossier `assets/` (images optimisées)
-- Pages HTML pour tous les services (25 pages au total)
-
-#### 3. Upload via FileZilla
-1. **Sauvegarder l'ancien site** (recommandé)
-   - Télécharger le contenu actuel de `/www` vers votre ordinateur
-
-2. **Nettoyer le serveur**
-   - Sélectionner tout le contenu dans `/www` sur le serveur
-   - Supprimer les fichiers existants
-
-3. **Transférer les nouveaux fichiers**
-   - Ouvrir le dossier `out/` local
-   - Sélectionner **tout le contenu** du dossier `out/` (pas le dossier lui-même)
-   - Glisser-déposer vers `/www` sur le serveur
-   - Attendre la fin du transfert (~210kB de JS + assets)
-
-4. **Vérification**
-   - S'assurer que `index.html` est à la racine de `/www`
-   - Tester le site web
-   - Vérifier que les images s'affichent correctement
+La procédure à jour (29/10/2026 : SFTP, `www/` = sortie exacte du build avec son `.htaccess`, sauvegarde, vérification) est dans le `README.md` à la racine du dépôt, section « Méthode 1 ». Ne pas « nettoyer le serveur » en vidant `/www` : il suffit de déposer le build en écrasement, les anciens fichiers de `_next/static/` sont inoffensifs.
 
 ## 🤖 Méthode 2 : Déploiement Automatique (GitHub Actions)
 

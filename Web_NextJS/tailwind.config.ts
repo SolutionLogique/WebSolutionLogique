@@ -54,7 +54,10 @@ const config: Config = {
           200: '#EDE7DE', // bordures
           300: '#DDD4C7',
           400: '#B5AC9E',
-          500: '#8A837B', // legendes uniquement, jamais un paragraphe
+          /* 500 assombri le 29/10/2026 : #8A837B ne donnait que 3,3 a 3,7:1 sur les
+             fonds clairs (accessibilite 89 sur l'accueil). #716B63 tient 4,6:1 sur
+             sand-100, le fond le plus sombre ou il sert de texte. */
+          500: '#716B63', // legendes uniquement, jamais un paragraphe
           600: '#6B6660', // texte courant
           700: '#4A463F',
           800: '#2C2A28',
@@ -74,7 +77,7 @@ const config: Config = {
           200: '#EDE7DE',
           300: '#DDD4C7',
           400: '#B5AC9E',
-          500: '#8A837B',
+          500: '#716B63',
           600: '#6B6660',
           700: '#4A463F',
           800: '#2C2A28',

@@ -1,5 +1,4 @@
 import React from "react";
-import type { Metadata } from "next";
 import {
   ShieldCheck,
   Search,
@@ -14,12 +13,6 @@ import {
 } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
-
-export const metadata: Metadata = {
-  title: "Audit de cybersécurité et test d'intrusion",
-  description:
-    "Audit de sécurité, test d'intrusion externe, applicatif et interne pour les PME. Mandat écrit, périmètre défini, rapport priorisé et contre-audit. Solution Logique, Annecy.",
-};
 
 const OFFRES = [
   {

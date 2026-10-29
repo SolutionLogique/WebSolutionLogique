@@ -185,7 +185,7 @@ function ConditionsGeneralesVente() {
                     <div className="bg-white rounded-lg p-4 shadow-sm">
                       <h4 className="font-bold text-blue-600 mb-2">Société Solution Logique</h4>
                       <p className="text-sm text-gray-600">
-                        Sarl au capital social de 15 000 Euros<br />
+                        SAS au capital social de 15 000 Euros<br />
                         RCS Annecy : 379 868 540<br />
                         475 route des Vernes 74370 Pringy<br />
                         <span className="font-semibold">Prestataire Solution Logique</span>

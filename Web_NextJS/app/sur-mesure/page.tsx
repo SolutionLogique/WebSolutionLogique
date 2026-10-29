@@ -1,15 +1,8 @@
 import React from "react";
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Code2, Sparkles, ArrowRight, Plug, FileSpreadsheet, GraduationCap } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
-
-export const metadata: Metadata = {
-  title: "Développement sur-mesure & accompagnement IA",
-  description:
-    "Applications métier autour d'EBP, intégrations, états sur-mesure et accompagnement IA pour les PME de Haute-Savoie. Solution Logique, Annecy.",
-};
 
 const POLES = [
   {

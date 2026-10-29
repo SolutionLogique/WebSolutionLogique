@@ -270,7 +270,7 @@ export function EBPTemplate({
             <div className="mb-8 text-center">
               <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-accent-100 bg-accent-50 px-3.5 py-1.5 text-sm font-semibold text-accent-700">
                 <Award className="h-4 w-4" aria-hidden="true" />
-                Formation certifiée Qualiopi
+                Formation EBP
               </span>
               <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">{formation.titre}</h2>
               <p className="mx-auto max-w-2xl leading-relaxed text-sand-600">{formation.description}</p>

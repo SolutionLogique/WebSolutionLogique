@@ -1,12 +1,6 @@
 User-Agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
 
-User-Agent: Googlebot
-Allow: /
-Disallow: /api/
-Disallow: /_next/
-
-Sitemap: https://www.solution-logique.fr/sitemap.xml
+Sitemap: https://solution-logique.fr/sitemap.xml

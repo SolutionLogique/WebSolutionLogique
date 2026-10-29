@@ -1,30 +1,20 @@
 import React from "react";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { DonneesPage } from "@/components/seo/StructuredData";
+import { metadonneesPage } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact - Nous contacter à Annecy",
-  description: "Contactez Solution Logique à Annecy (74) : 04 50 64 02 33 - 475 Route des Vernes, 74370. Devis gratuit pour logiciels EBP, formations et solutions informatiques.",
-  keywords: ["contact informatique Annecy", "devis logiciel EBP", "contact Solution Logique", "informatique Haute-Savoie"],
-  openGraph: {
-    title: "Contactez Solution Logique à Annecy",
-    description: "Besoin d'un devis ou d'informations ? Contactez nos experts informatiques à Annecy. Tel : 04 50 64 02 33",
-    type: "website",
-    url: "https://www.solution-logique.fr/contact",
-    images: [
-      {
-        url: "/assets/data.png",
-        width: 1200,
-        height: 630,
-        alt: "Bureau Solution Logique Informatique Annecy",
-      },
-    ],
-  },
-};
+/* Titre, description, canonical, partage et donnees structurees de la page :
+   tout vient du registre des pages de lib/seo.ts. */
 
-export default function ContactLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return <>{children}</>;
+const CHEMIN = "/contact";
+
+export const metadata: Metadata = metadonneesPage(CHEMIN);
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <DonneesPage chemin={CHEMIN} />
+      {children}
+    </>
+  );
 }
