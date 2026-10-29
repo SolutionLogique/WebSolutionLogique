@@ -35,7 +35,10 @@ export default function ClientLayout({
         {children}
       </main>
 
-      {pathname !== "/contact" && <Contact_Btn />}
+      {/* Pas de bouton « Nous contacter » sur la page Contact elle-meme. Avec
+          trailingSlash, le chemin vaut « /contact/ » dans le navigateur : la
+          barre finale est retiree avant la comparaison. */}
+      {pathname?.replace(/\/$/, "") !== "/contact" && <Contact_Btn />}
       <Footer />
     </>
   );
