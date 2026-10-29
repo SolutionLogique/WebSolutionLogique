@@ -122,9 +122,9 @@ function Footer() {
             </address>
           </div>
 
-          <ColonneLiens titre="Logiciels EBP" liens={LIENS.logiciels} />
+          <ColonneLiens titre="IA & sur-mesure" liens={LIENS.surMesure} />
           <ColonneLiens titre="Services" liens={LIENS.services} />
-          <ColonneLiens titre="Sur-mesure & IA" liens={LIENS.surMesure} />
+          <ColonneLiens titre="Logiciels EBP" liens={LIENS.logiciels} />
           <ColonneLiens titre="Formations" liens={LIENS.formations} />
         </div>
 

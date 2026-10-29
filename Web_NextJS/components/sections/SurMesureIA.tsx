@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Code2, Plug, Sparkles, ArrowRight } from "lucide-react";
 
 /* Mise en vedette du nouveau positionnement.
-   C'est ce qui distingue l'entreprise d'un simple revendeur EBP : il merite
+   C'est ce que l'entreprise veut pousser (direction, 29/10/2026) : il merite
    une section, pas une ligne dans une liste. */
 
 const VOLETS = [
@@ -19,7 +19,7 @@ const VOLETS = [
     icon: Plug,
     titre: "Intégrations",
     texte:
-      "EBP relié à votre CRM, votre banque, votre boutique en ligne. Fin des doubles saisies et des exports manuels.",
+      "Votre logiciel de gestion relié à votre CRM, votre banque, votre boutique en ligne. Fin des doubles saisies et des exports manuels.",
   },
   {
     href: "/accompagnement-ia",
@@ -40,7 +40,7 @@ function SurMesureIA() {
             Notre différence
           </span>
           <h2 className="mb-4 font-display text-h2 font-bold text-sand-900">
-            Quand EBP s&apos;arrête, <span className="text-primary-600">on continue</span>
+            Quand le standard s&apos;arrête, <span className="text-primary-600">on continue</span>
           </h2>
           <p className="text-lg text-sand-600">
             Trente ans à installer et maintenir des systèmes nous ont appris où le standard
