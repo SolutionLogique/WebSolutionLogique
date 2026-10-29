@@ -26,6 +26,19 @@ export const ZONES_SERVIES = [
   { "@type": "AdministrativeArea", "name": "Savoie", "sameAs": "https://fr.wikipedia.org/wiki/Savoie_(d%C3%A9partement)" },
 ];
 
+/* Pages des offres, dans l'ordre de mise en avant (direction, 29/10/2026) */
+const OFFRES = [
+  "/accompagnement-ia",
+  "/developpement-sur-mesure",
+  "/applications-mobile-web",
+  "/informatique",
+  "/securite",
+  "/audit-cybersecurite",
+  "/telecom",
+  "/telemaintenance",
+  "/logiciels",
+];
+
 export const ORGANISATION = {
   "@context": "https://schema.org",
   "@type": ["Organization", "LocalBusiness"],
@@ -37,7 +50,35 @@ export const ORGANISATION = {
   "logo": `${SITE_URL}/assets/sli.webp`,
   "image": `${SITE_URL}/assets/solution.webp`,
   "description":
-    "Solutions informatiques, logiciels EBP, développement sur-mesure, accompagnement IA et télémaintenance depuis plus de 30 ans en Haute-Savoie.",
+    "Accompagnement IA, développement d'applications sur mesure et informatique des entreprises (postes, serveurs, sécurité, téléphonie IP, télémaintenance), avec un interlocuteur local, et logiciels EBP depuis plus de 30 ans en Haute-Savoie.",
+  /* Domaines dans l'ordre des activites voulu par la direction le 29/10/2026 :
+     l'IA et le developpement sur mesure d'abord, puis l'informatique (le
+     socle), et EBP en dernier. Chaque domaine a sa page sur le site. */
+  "knowsAbout": [
+    "Intelligence artificielle pour les PME",
+    "Développement d'applications sur mesure",
+    "Applications mobile et web",
+    "Maintenance informatique",
+    "Infrastructure informatique et cloud",
+    "Sauvegarde des données",
+    "Sécurité informatique",
+    "Audit de cybersécurité",
+    "Téléphonie IP et réseaux",
+    "Télémaintenance",
+    "Logiciels EBP",
+  ],
+  /* Les offres, dans le meme ordre, chacune vers sa page */
+  "makesOffer": OFFRES.map((chemin) => {
+    const page = pageSite(chemin);
+    return {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": page.service?.nom ?? page.titre,
+        "url": urlPage(chemin),
+      },
+    };
+  }),
   "foundingDate": "1990-11-08",
   "identifier": {
     "@type": "PropertyValue",
