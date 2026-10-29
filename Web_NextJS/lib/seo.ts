@@ -23,7 +23,7 @@ export const IMAGE_PARTAGE = {
   url: "/assets/partage-solution-logique.png",
   width: 1200,
   height: 630,
-  alt: "Solution Logique, IA, applications sur mesure et informatique des PME depuis 1990, à Annecy",
+  alt: "Solution Logique, informatique, maintenance et matériel des PME depuis 1990, à Annecy",
 };
 
 export interface PageSite {
@@ -51,9 +51,9 @@ export const PAGES: PageSite[] = [
   {
     chemin: "",
     titre: "Accueil",
-    titreAbsolu: "Solution Logique, IA, développement et informatique à Annecy",
+    titreAbsolu: "Solution Logique, informatique et matériel des PME à Annecy",
     description:
-      "Solution Logique, Annecy : IA et applications sur mesure pour les PME, informatique, sécurité et téléphonie avec un interlocuteur local, et logiciels EBP.",
+      "Solution Logique, Annecy : maintenance, matériel, sécurité et téléphonie des PME avec un interlocuteur local, développement sur mesure et logiciels EBP.",
     libelle: "Accueil",
     sources: ["app/page.tsx", "components/sections"],
     prioritePlan: 1,
@@ -62,7 +62,7 @@ export const PAGES: PageSite[] = [
     chemin: "/nosServices",
     titre: "Services informatiques à Annecy",
     description:
-      "Services informatiques de Solution Logique à Annecy : infrastructure, hébergement et cloud, téléphonie IP, sécurité réseau et télémaintenance des entreprises.",
+      "Services informatiques de Solution Logique à Annecy : maintenance sous contrat, matériel, sécurité, téléphonie IP, sauvegarde et télémaintenance des PME.",
     libelle: "Nos services",
     sources: ["app/nosServices"],
     prioritePlan: 0.7,
@@ -71,10 +71,10 @@ export const PAGES: PageSite[] = [
     chemin: "/informatique",
     titre: "Infrastructure informatique et cloud",
     description:
-      "Infrastructure IT, postes, serveurs, hébergement et cloud : Solution Logique conçoit et maintient l'informatique des PME de Haute-Savoie depuis Annecy.",
+      "Postes, serveurs, réseau, hébergement et cloud : Solution Logique fournit, installe et maintient l'informatique des PME de Haute-Savoie depuis Annecy.",
     libelle: "Informatique",
     parent: "/nosServices",
-    service: { nom: "Infrastructure informatique", type: "Infrastructure informatique et maintenance" },
+    service: { nom: "Infrastructure, matériel et maintenance informatique", type: "Infrastructure informatique et maintenance" },
     sources: ["app/informatique"],
     prioritePlan: 0.7,
   },
@@ -169,7 +169,7 @@ export const PAGES: PageSite[] = [
     chemin: "/sur-mesure",
     titre: "Sur-mesure et intelligence artificielle",
     description:
-      "Applications métier, intégrations, applications mobile et web et accompagnement IA pour les PME de Haute-Savoie. Solution Logique, Annecy.",
+      "Applications métier, intégrations entre logiciels, applications mobile et web, et accompagnement IA pour les PME de Haute-Savoie. Solution Logique, Annecy.",
     libelle: "Sur-mesure & IA",
     sources: ["app/sur-mesure"],
     prioritePlan: 0.6,
@@ -211,7 +211,7 @@ export const PAGES: PageSite[] = [
     chemin: "/contact",
     titre: "Contact, nous joindre à Annecy",
     description:
-      "Contactez Solution Logique : 04 50 64 02 33, 475 route des Vernes, 74370 Annecy. Devis gratuit : sur-mesure, IA, informatique, téléphonie et logiciels EBP.",
+      "Contactez Solution Logique : 04 50 64 02 33, 475 route des Vernes, 74370 Annecy. Devis gratuit : informatique, téléphonie, sur-mesure et logiciels EBP.",
     libelle: "Contact",
     sources: ["app/contact"],
     prioritePlan: 0.6,
