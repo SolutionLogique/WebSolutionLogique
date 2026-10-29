@@ -3,4 +3,15 @@ Allow: /
 Disallow: /api/
 Disallow: /private/
 
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: Claude-SearchBot
+User-Agent: Google-Extended
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
 Sitemap: https://solution-logique.fr/sitemap.xml
