@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
 import PageHero from "@/components/sections/PageHero";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 import {
   Server,
   Monitor,
@@ -255,6 +256,7 @@ export default function Informatique() {
               04 50 64 02 33
             </ModernButton>
           </div>
+          <LiensVoisins fond="sombre" chemins={["/telecom", "/securite", "/telemaintenance", "/nosServices"]} />
         </div>
       </ModernSection>
     </div>

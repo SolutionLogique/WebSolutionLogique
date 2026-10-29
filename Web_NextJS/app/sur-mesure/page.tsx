@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Code2, Sparkles, ArrowRight, Plug, FileSpreadsheet, GraduationCap } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import Button from "@/components/ui/Button";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 
 const POLES = [
   {
@@ -90,6 +91,7 @@ export default function SurMesurePage() {
           <Button href="/contact" size="lg" icon={<ArrowRight />} iconPosition="right">
             Parlons de votre projet
           </Button>
+          <LiensVoisins chemins={["/applications-mobile-web"]} />
         </div>
       </section>
     </>

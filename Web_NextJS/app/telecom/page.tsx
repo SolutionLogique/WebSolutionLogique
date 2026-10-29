@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { ModernSection, ServiceCard } from "@/components/ui";
 import { ModernButton } from "@/components/ui/modernButton";
 import PageHero from "@/components/sections/PageHero";
+import LiensVoisins from "@/components/ui/LiensVoisins";
 import {
   Phone,
   Smartphone,
@@ -287,6 +288,7 @@ export default function Telecom() {
               04 50 64 02 33
             </ModernButton>
           </div>
+          <LiensVoisins fond="sombre" chemins={["/informatique", "/securite", "/telemaintenance", "/nosServices"]} />
         </div>
       </ModernSection>
     </div>
