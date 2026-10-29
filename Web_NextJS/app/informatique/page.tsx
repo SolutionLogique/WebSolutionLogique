@@ -101,8 +101,8 @@ export default function Informatique() {
           text: "Solutions informatiques professionnelles"
         }}
         title="Solutions"
-        titleHighlight="Informatiques"
-        description="Transformez votre infrastructure IT avec nos solutions sur mesure. Performance, securite et innovation pour votre entreprise."
+        titleHighlight="informatiques"
+        description="Transformez votre infrastructure IT avec nos solutions sur mesure. Performance, sécurité et innovation pour votre entreprise."
         backgroundImage="/assets/infrastructure.webp"
       />
 

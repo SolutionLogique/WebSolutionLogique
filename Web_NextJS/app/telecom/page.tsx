@@ -113,11 +113,11 @@ export default function Telecom() {
       <PageHero
         badge={{
           icon: <Signal className="w-4 h-4" />,
-          text: "Solutions telecom professionnelles"
+          text: "Solutions télécom professionnelles"
         }}
         title="Solutions"
-        titleHighlight="Telecom"
-        description="Optimisez vos communications d'entreprise avec nos solutions telecom modernes. Telephonie IP, connectivite haut debit et reseaux securises."
+        titleHighlight="télécom"
+        description="Optimisez vos communications d'entreprise avec nos solutions télécom modernes. Téléphonie IP, connectivité haut débit et réseaux sécurisés."
         backgroundImage="/assets/telecom.webp"
       />
 
