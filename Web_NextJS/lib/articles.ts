@@ -56,8 +56,8 @@ export const ARTICLES: Article[] = [
       "Trois copies, deux supports, une hors ligne : la règle 3-2-1 de l'ANSSI expliquée pour une PME, avec la fréquence, les tests de restauration et le chiffrement.",
     resume:
       "Un rançongiciel, un incendie ou un disque qui lâche : le jour où les données disparaissent, seule une sauvegarde intacte permet de repartir. L'ANSSI recommande la règle 3-2-1. Ce qu'elle veut dire, et comment l'appliquer dans une PME.",
-    datePublication: "2026-10-29",
-    dateModification: "2026-10-29",
+    datePublication: "2026-10-30",
+    dateModification: "2026-10-30",
     blocs: [
       { type: "h2", texte: "Pourquoi les sauvegardes sont une cible" },
       {
@@ -183,8 +183,8 @@ export const ARTICLES: Article[] = [
       "Mises à jour, mots de passe et double authentification, sauvegardes, pare-feu, droits d'administration : les mesures de base des guides de l'ANSSI pour une PME.",
     resume:
       "Les petites entreprises sont des cibles de choix quand elles n'ont pas de protection, rappelle l'ANSSI. La bonne nouvelle : les mesures qui arrêtent la plupart des attaques sont connues et à la portée d'une PME. Les voici, d'après les guides officiels.",
-    datePublication: "2026-10-29",
-    dateModification: "2026-10-29",
+    datePublication: "2026-10-30",
+    dateModification: "2026-10-30",
     blocs: [
       {
         type: "p",
@@ -296,8 +296,8 @@ export const ARTICLES: Article[] = [
       "Facture électronique 2026-2027 pour les PME : calendrier, plateforme agréée, nouvelles mentions, e-reporting, sanctions, et comment préparer vos logiciels.",
     resume:
       "Depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques. Les PME et les micro-entreprises devront aussi les émettre au 1er septembre 2027. Le calendrier, les obligations, et comment préparer ses logiciels et ses équipes.",
-    datePublication: "2026-10-29",
-    dateModification: "2026-10-29",
+    datePublication: "2026-10-30",
+    dateModification: "2026-10-30",
     blocs: [
       { type: "h2", texte: "Le calendrier en vigueur" },
       {
