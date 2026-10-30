@@ -42,6 +42,25 @@ const FAQ_SUR_MESURE_EBP: QuestionReponse = {
     "Quand le paramétrage ne suffit pas, nous développons autour d'EBP les applications, intégrations et états sur-mesure qui manquent. C'est l'objet de notre page Développement sur-mesure.",
 };
 
+/* FAQ de reponses factuelles (referencement IA, 29/10/2026, branche
+   seo/geo-ia-2910) : qui, quoi, ou, pour qui, quand, comment. Memes regles
+   que le reste du fichier : chaque reponse reprend un fait deja publie sur le
+   site, dans llms.txt ou les donnees structurees (zones servies), ou un fait
+   du registre des entreprises. Aucun prix, delai, chiffre ni certification. */
+
+const ZONE =
+  "Annecy et son agglomération, le reste de la Haute-Savoie (Chablais, vallée de l'Arve, Genevois) et la Savoie";
+
+const FAQ_SUR_PLACE_OU_A_DISTANCE: QuestionReponse = {
+  question: "Intervenez-vous sur place ou à distance ?",
+  reponse: `Les deux. Nous réglons à distance ce qui peut l'être, par télémaintenance et avec votre accord. Sinon, un technicien basé à Annecy se déplace dans vos locaux : ${ZONE}.`,
+};
+
+const FAQ_HORAIRES: QuestionReponse = {
+  question: "Quand peut-on joindre le support ?",
+  reponse: `${HORAIRES.charAt(0).toUpperCase()}${HORAIRES.slice(1)}, au 04 50 64 02 33. En dehors de ces horaires, écrivez-nous par le formulaire de contact du site.`,
+};
+
 export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
   "/nosServices": {
     requete: "services informatiques Annecy",
@@ -49,6 +68,27 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     paragraphes: [
       "Solution Logique accompagne les PME, TPE et collectivités de Haute-Savoie depuis 1990 : infrastructure et postes de travail, hébergement et sauvegardes, téléphonie et réseaux, sécurité. Nos bureaux sont à Pringy, sur la commune d'Annecy.",
       `Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et à distance par télémaintenance. Vos interlocuteurs restent les mêmes d'une intervention à l'autre, et le support répond ${HORAIRES}.`,
+    ],
+    faq: [
+      {
+        // Seule reponse qui enumere les activites : dans l'ordre tranche par
+        // Jordan le 29/10/2026 a 16:43 (technique et materiel, puis
+        // developpement et IA, puis EBP).
+        question: "Que fait Solution Logique ?",
+        reponse:
+          "Solution Logique fournit, installe et maintient l'informatique des entreprises : postes de travail, serveurs, réseau, sauvegardes, sécurité et téléphonie IP, avec une assistance à distance par télémaintenance. Elle développe aussi des applications sur mesure, accompagne ses clients dans l'usage de l'intelligence artificielle, et vend, installe et forme aux logiciels de gestion EBP.",
+      },
+      {
+        question: "Pour quelles entreprises travaillez-vous ?",
+        reponse:
+          "Pour les PME, les TPE et les collectivités, à Annecy, en Haute-Savoie et en Savoie.",
+      },
+      {
+        question: "Aurons-nous toujours le même interlocuteur ?",
+        reponse:
+          "Oui. Vos interlocuteurs sont les mêmes d'une intervention à l'autre : une équipe basée à Pringy, à Annecy, qui connaît votre installation.",
+      },
+      FAQ_SUR_PLACE_OU_A_DISTANCE,
     ],
   },
   "/informatique": {
@@ -58,6 +98,19 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
       "Postes de travail, serveurs, sauvegardes, hébergement : Solution Logique fournit, installe et maintient l'informatique des entreprises de Haute-Savoie depuis ses bureaux de Pringy, à Annecy. Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et réglons à distance ce qui peut l'être par télémaintenance.",
       "Vos interlocuteurs sont les mêmes d'une intervention à l'autre.",
     ],
+    faq: [
+      {
+        question: "Fournissez-vous aussi le matériel ?",
+        reponse:
+          "Oui. Nous fournissons, installons et maintenons les postes de travail, les serveurs, le réseau et les sauvegardes, puis nous suivons ce matériel une fois en service.",
+      },
+      {
+        question: "Comment se passe un dépannage ?",
+        reponse:
+          "Vous appelez le support ou ouvrez une session de télémaintenance (RustDesk ou NinjaOne) depuis notre page Télémaintenance ; le technicien prend la main sur le poste avec votre accord. Si le problème demande un déplacement, il intervient dans vos locaux.",
+      },
+      FAQ_HORAIRES,
+    ],
   },
   "/telecom": {
     requete: "téléphonie IP entreprise Annecy",
@@ -65,12 +118,36 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     paragraphes: [
       "Pour les entreprises d'Annecy et de Haute-Savoie, Solution Logique met en place la téléphonie IP, les trunks SIP, les softphones et les liaisons entre sites. Le même interlocuteur suit votre réseau, vos postes et votre téléphonie.",
     ],
+    faq: [
+      {
+        question: "Que mettez-vous en place en téléphonie ?",
+        reponse:
+          "La téléphonie IP de l'entreprise, fixe et mobile : trunks SIP, softphones et liaisons entre vos sites.",
+      },
+      {
+        question: "Le même prestataire peut-il suivre l'informatique et la téléphonie ?",
+        reponse:
+          "Oui. Chez Solution Logique, le même interlocuteur suit votre réseau, vos postes de travail et votre téléphonie.",
+      },
+    ],
   },
   "/securite": {
     requete: "sécurité informatique entreprise Annecy",
     titre: "Sécurité informatique pour les PME de Haute-Savoie",
     paragraphes: [
       "Pare-feu, sauvegardes, antivirus, surveillance du réseau : Solution Logique sécurise l'informatique des PME, TPE et collectivités de Haute-Savoie depuis Annecy. Quand une vérification plus poussée s'impose, notre audit de cybersécurité se déroule sur site, avec vos équipes informées.",
+    ],
+    faq: [
+      {
+        question: "Que couvre la sécurité informatique chez Solution Logique ?",
+        reponse:
+          "Le pare-feu, l'antivirus, les sauvegardes, la protection des données et la surveillance du réseau des PME, TPE et collectivités que nous suivons.",
+      },
+      {
+        question: "Proposez-vous un audit de cybersécurité ?",
+        reponse:
+          "Oui : tests d'intrusion externe, applicatif et interne, sous mandat écrit et sur un périmètre défini à l'avance, avec un rapport qui classe les corrections par priorité. Le test interne se déroule dans vos locaux, avec vos équipes informées. Le détail est sur notre page Audit de cybersécurité.",
+      },
     ],
   },
   "/audit-cybersecurite": {
@@ -219,6 +296,23 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     paragraphes: [
       `Nos bureaux sont au 475 route des Vernes, à Pringy, sur la commune d'Annecy. Le support répond ${HORAIRES} ; en dehors de ces horaires, écrivez-nous par le formulaire ou demandez à être rappelé.`,
       "Les toilettes et salles de réunion sont accessibles et aux normes PMR, et un parking réservé se trouve à proximité immédiate. Pour une assistance immédiate sur votre poste, passez par la page Télémaintenance.",
+    ],
+    faq: [
+      {
+        question: "Où se trouve Solution Logique ?",
+        reponse:
+          "Au 475 route des Vernes, 74370 Annecy, à Pringy (Haute-Savoie).",
+      },
+      {
+        question: "Depuis quand Solution Logique existe-t-elle ?",
+        reponse:
+          "Depuis 1990 : la société a été créée le 8 novembre 1990. C'est une SAS immatriculée au RCS d'Annecy sous le numéro 379 868 540.",
+      },
+      {
+        question: "Dans quelle zone intervenez-vous ?",
+        reponse: `${ZONE}, dans vos locaux ou à distance par télémaintenance.`,
+      },
+      FAQ_HORAIRES,
     ],
   },
 };
