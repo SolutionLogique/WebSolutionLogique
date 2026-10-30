@@ -1,6 +1,6 @@
 # Solution Logique
 
-> Solution Logique (SAS, RCS Annecy 379 868 540, créée en 1990) est une société de services informatiques installée à Pringy, sur la commune d'Annecy (Haute-Savoie). Elle accompagne les PME, TPE et collectivités dans l'usage de l'intelligence artificielle et leur développe des applications sur mesure (applications métier, mobiles et web, intégrations entre logiciels). Elle installe, maintient et sécurise leur informatique (postes, serveurs, réseau, sauvegarde, sécurité, téléphonie IP) et les assiste à distance par télémaintenance, avec des interlocuteurs locaux, les mêmes d'une intervention à l'autre. Elle vend, installe et forme aussi aux logiciels de gestion EBP (Comptabilité, Gestion commerciale, Bâtiment).
+> Solution Logique (SAS, RCS Annecy 379 868 540, créée en 1990) est une société de services informatiques installée à Pringy, sur la commune d'Annecy (Haute-Savoie). Elle fournit, installe, maintient et sécurise l'informatique des PME, TPE et collectivités, le plus souvent sous contrat de maintenance : postes et serveurs, réseau, sécurité, téléphonie IP et accès internet, Microsoft 365, sauvegarde, avec une assistance à distance par télémaintenance et des interlocuteurs locaux, les mêmes d'une intervention à l'autre. Elle développe aussi des applications sur mesure (applications métier, mobiles et web, intégrations entre logiciels) et accompagne les entreprises dans l'usage de l'intelligence artificielle. Elle vend, installe et forme enfin aux logiciels de gestion EBP (Comptabilité, Gestion commerciale, Bâtiment).
 
 Coordonnées :
 
@@ -12,21 +12,21 @@ Coordonnées :
 
 Zone d'intervention : Annecy et son agglomération, le reste de la Haute-Savoie (Chablais, vallée de l'Arve, Genevois) et la Savoie, dans les locaux du client ou à distance par télémaintenance.
 
-## Intelligence artificielle et développement sur mesure
+## Informatique, matériel et réseaux
+
+- [Services informatiques](https://solution-logique.fr/nosServices/) : vue d'ensemble des services aux entreprises (maintenance sous contrat, matériel, sécurité, téléphonie, télémaintenance)
+- [Infrastructure informatique et cloud](https://solution-logique.fr/informatique/) : postes, serveurs et réseau (fourniture, installation, maintenance), hébergement, sauvegardes
+- [Sécurité informatique](https://solution-logique.fr/securite/) : pare-feu, protection des données, antivirus, surveillance
+- [Téléphonie IP et réseaux](https://solution-logique.fr/telecom/) : téléphonie fixe et mobile, trunk SIP, liaisons entre sites
+- [Télémaintenance](https://solution-logique.fr/telemaintenance/) : assistance à distance avec RustDesk ou NinjaOne
+- [Audit de cybersécurité](https://solution-logique.fr/audit-cybersecurite/) : test d'intrusion externe, applicatif et interne, rapport priorisé
+
+## Développement sur mesure et intelligence artificielle
 
 - [Sur-mesure et IA](https://solution-logique.fr/sur-mesure/) : les trois offres
-- [Accompagnement IA](https://solution-logique.fr/accompagnement-ia/) : cas d'usage, formation des équipes, assistants reliés aux données de l'entreprise
 - [Développement d'applications sur mesure](https://solution-logique.fr/developpement-sur-mesure/) : applications métier, intégrations entre logiciels (EBP, CRM, banque, boutique en ligne), états
 - [Applications mobile et web](https://solution-logique.fr/applications-mobile-web/) : applications terrain, portails et tableaux de bord reliés à EBP ou à l'ERP de l'entreprise
-
-## Informatique et réseaux
-
-- [Services informatiques](https://solution-logique.fr/nosServices/) : vue d'ensemble des services aux entreprises
-- [Infrastructure informatique et cloud](https://solution-logique.fr/informatique/) : postes, serveurs, hébergement, sauvegardes
-- [Téléphonie IP et réseaux](https://solution-logique.fr/telecom/) : téléphonie fixe et mobile, trunk SIP, liaisons entre sites
-- [Sécurité informatique](https://solution-logique.fr/securite/) : pare-feu, protection des données, antivirus, surveillance
-- [Audit de cybersécurité](https://solution-logique.fr/audit-cybersecurite/) : test d'intrusion externe, applicatif et interne, rapport priorisé
-- [Télémaintenance](https://solution-logique.fr/telemaintenance/) : assistance à distance avec RustDesk ou NinjaOne
+- [Accompagnement IA](https://solution-logique.fr/accompagnement-ia/) : cas d'usage, formation des équipes, assistants reliés aux données de l'entreprise
 
 ## Logiciels EBP
 

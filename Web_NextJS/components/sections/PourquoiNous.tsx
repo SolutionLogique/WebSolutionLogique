@@ -23,7 +23,7 @@ const RAISONS = [
     icon: BadgeCheck,
     titre: "Des compétences reconnues",
     texte:
-      "Partenaire EBP, Microsoft et Dell Technologies. Nos techniciens sont formés sur les solutions qu'ils déploient.",
+      "Partenaire Microsoft, Dell Technologies et EBP. Nos techniciens sont formés sur les solutions qu'ils déploient.",
   },
   {
     icon: PhoneCall,

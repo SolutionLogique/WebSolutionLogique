@@ -17,7 +17,7 @@ const servicesData = [
       {
         category: "Infrastructure",
         items: [
-          "Matériel informatique",
+          "Matériel informatique : fourniture et installation",
           "Serveur de stockage",
           "Sécurité de l'infrastructure",
           "Interconnexion de sites",
@@ -27,7 +27,7 @@ const servicesData = [
       },
       {
         category: "Environnement utilisateur",
-        items: ["Poste de travail", "Sécurité antivirus", "Outil collaboratif"],
+        items: ["Poste de travail", "Sécurité antivirus", "Microsoft 365 et outils collaboratifs"],
       },
       {
         category: "Hébergement & cloud",
@@ -95,7 +95,7 @@ function NosServices() {
         }}
         title="Nos"
         titleHighlight="services"
-        description="Découvrez notre gamme complète de services informatiques, télécom et sécurité. Des solutions sur mesure pour accompagner la transformation numérique de votre entreprise."
+        description="Maintenance sous contrat, matériel, sécurité, téléphonie et sauvegarde : l'informatique de votre entreprise suivie par une équipe à Annecy, sur place ou à distance."
         primaryCTA={{ text: "Demander un devis", href: "/contact" }}
         secondaryCTA={{ text: "04 50 64 02 33", href: "tel:0450640233" }}
       />

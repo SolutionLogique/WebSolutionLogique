@@ -28,7 +28,30 @@ type NavItem = {
   children?: NavChild[];
 };
 
+/* Ordre de mise en avant voulu par la direction (29/10/2026, 16:00) : la
+   technique et le materiel d'abord, le sur-mesure ensuite (l'IA en dernier
+   de sa rubrique), EBP en dernier. */
 const NAV_ITEMS: NavItem[] = [
+  {
+    href: '/nosServices',
+    label: 'Services IT',
+    children: [
+      { href: '/informatique', label: 'Infogérance & matériel' },
+      { href: '/securite', label: 'Sécurité' },
+      { href: '/telecom', label: 'Téléphonie & internet' },
+      { href: '/audit-cybersecurite', label: 'Audit & test d\'intrusion' },
+    ],
+  },
+  { href: '/telemaintenance', label: 'Télémaintenance' },
+  {
+    href: '/sur-mesure',
+    label: 'Sur-mesure & IA',
+    children: [
+      { href: '/developpement-sur-mesure', label: 'Applications métier' },
+      { href: '/applications-mobile-web', label: 'Applications mobile & web' },
+      { href: '/accompagnement-ia', label: 'Accompagnement IA' },
+    ],
+  },
   {
     href: '/logiciels',
     label: 'Logiciels EBP',
@@ -38,26 +61,7 @@ const NAV_ITEMS: NavItem[] = [
       { href: '/ebpbatiment', label: 'Bâtiment' },
     ],
   },
-  {
-    href: '/nosServices',
-    label: 'Services IT',
-    children: [
-      { href: '/informatique', label: 'Informatique' },
-      { href: '/telecom', label: 'Télécom' },
-      { href: '/securite', label: 'Sécurité' },
-      { href: '/audit-cybersecurite', label: 'Audit & test d\'intrusion' },
-    ],
-  },
-  {
-    href: '/sur-mesure',
-    label: 'Sur-mesure & IA',
-    children: [
-      { href: '/developpement-sur-mesure', label: 'Développement sur-mesure' },
-      { href: '/applications-mobile-web', label: 'Applications mobile & web' },
-      { href: '/accompagnement-ia', label: 'Accompagnement IA' },
-    ],
-  },
-  { href: '/telemaintenance', label: 'Télémaintenance' },
+  { href: '/conseils', label: 'Conseils' },
 ];
 
 function Navbar() {

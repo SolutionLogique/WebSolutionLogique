@@ -95,7 +95,7 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     requete: "maintenance informatique Annecy",
     titre: "Votre informatique suivie depuis Annecy",
     paragraphes: [
-      "Postes de travail, serveurs, sauvegardes, hébergement : Solution Logique installe et maintient l'informatique des entreprises de Haute-Savoie depuis ses bureaux de Pringy, à Annecy. Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et réglons à distance ce qui peut l'être par télémaintenance.",
+      "Postes de travail, serveurs, sauvegardes, hébergement : Solution Logique fournit, installe et maintient l'informatique des entreprises de Haute-Savoie depuis ses bureaux de Pringy, à Annecy. Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et réglons à distance ce qui peut l'être par télémaintenance.",
       "Vos interlocuteurs sont les mêmes d'une intervention à l'autre.",
     ],
     faq: [
@@ -265,15 +265,15 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     requete: "développement logiciel sur mesure Annecy",
     titre: "Trois offres, une même équipe à Annecy",
     paragraphes: [
-      "Développement sur-mesure, applications mobile et web, accompagnement IA : ces trois offres partent de trente ans passés à installer et maintenir les systèmes des entreprises de Haute-Savoie. Elles s'appuient sur les logiciels que vous utilisez déjà, EBP en tête.",
+      "Développement sur-mesure, applications mobile et web, accompagnement IA : ces trois offres partent de trente ans passés à installer et maintenir les systèmes des entreprises de Haute-Savoie. Elles s'appuient sur les logiciels que vous utilisez déjà : logiciel de gestion, CRM, messagerie.",
       "Elles sont menées par l'équipe de Solution Logique, basée à Annecy.",
     ],
   },
   "/developpement-sur-mesure": {
-    requete: "développement sur mesure EBP",
-    titre: "Développement autour d'EBP, en Haute-Savoie",
+    requete: "développement sur mesure Annecy",
+    titre: "Développement sur mesure, en Haute-Savoie",
     paragraphes: [
-      "Nous développons pour les entreprises d'Annecy et de Haute-Savoie qui travaillent sous EBP : applications métier, intégrations entre logiciels, états sur-mesure. Vous gardez le même interlocuteur pour le logiciel standard et pour ce qui le complète.",
+      "Nous développons pour les entreprises d'Annecy et de Haute-Savoie : applications métier, intégrations entre logiciels, états sur-mesure, reliés au logiciel de gestion qu'elles utilisent déjà, EBP ou un autre. Vous gardez le même interlocuteur pour le logiciel standard et pour ce qui le complète.",
     ],
   },
   "/applications-mobile-web": {
