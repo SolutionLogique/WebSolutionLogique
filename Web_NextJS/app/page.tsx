@@ -15,6 +15,9 @@ import { metadonneesPage } from "@/lib/seo";
    sur /home — du contenu duplique a deux URL. /home est desormais redirige
    en 301 vers / (regle posee dans www/.htaccess le 29/10/2026).
 
+   Ordre de la direction (29/10/2026, 16:00) : la technique d'abord, donc
+   « Pourquoi nous » (equipe sur place, support) avant la section sur-mesure.
+
    Sept sections deviennent six. Disparaissent : les temoignages signes de
    noms fictifs, et le second bloc partenaires qui faisait doublon. */
 
@@ -25,8 +28,8 @@ export default function Page() {
     <>
       <Hero />
       <Metiers />
-      <SurMesureIA />
       <PourquoiNous />
+      <SurMesureIA />
       <Preuves />
       <FinalCTA />
     </>
