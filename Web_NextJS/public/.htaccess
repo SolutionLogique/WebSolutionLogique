@@ -82,12 +82,11 @@ RewriteRule ^rustdesk/(.*)$ \
     https://solution-logique.fr/rustDesk/$1 [R=301,L]
 RewriteRule ^rustDesk/?$ \
     https://solution-logique.fr/telemaintenance/ [R=302,L]
-# 302 : la cible change a chaque mise a jour. Changer le numero ici en meme
-# temps que app/telemaintenance/RustDeskSection.tsx, sinon la regle renvoie
-# vers une version absente
+# Ancienne version absente du serveur : vers la page de telechargement
+# (aucun numero de version ici, rien a changer lors d'une mise a jour)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^rustDesk/rustdesk-[0-9.]+-x86_64\.(exe|msi)$ \
-    https://solution-logique.fr/rustDesk/rustdesk-1.4.9-x86_64.$1 [R=302,L]
+    https://solution-logique.fr/telemaintenance/ [R=302,L]
 
 # --- 4. Adresse canonique en un seul saut -------------------------------
 # https, sans www, barre finale. Les pages sont des dossiers (trailingSlash:
