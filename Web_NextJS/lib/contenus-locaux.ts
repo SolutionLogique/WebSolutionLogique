@@ -56,6 +56,13 @@ const FAQ_SUR_PLACE_OU_A_DISTANCE: QuestionReponse = {
   reponse: `Les deux. Nous réglons à distance ce qui peut l'être, par télémaintenance et avec votre accord. Sinon, un technicien basé à Annecy se déplace dans vos locaux : ${ZONE}.`,
 };
 
+/* FAQ des pages d'offres qui n'en avaient pas (referencement IA, 24/11/2026,
+   branche seo/geo-llms-2411) : audit de cybersecurite, sur-mesure,
+   applications, IA, logiciels EBP. Chaque reponse reprend un texte deja
+   affiche sur la page elle-meme (source citee au-dessus de chaque question).
+   Aucun prix, aucune duree de formation (2 jours sur /logiciels, 3 jours sur
+   les pages EBP : a trancher par la direction), aucune certification. */
+
 const FAQ_HORAIRES: QuestionReponse = {
   question: "Quand peut-on joindre le support ?",
   reponse: `${HORAIRES.charAt(0).toUpperCase()}${HORAIRES.slice(1)}, au 04 50 64 02 33. En dehors de ces horaires, écrivez-nous par le formulaire de contact du site.`,
@@ -156,6 +163,32 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     paragraphes: [
       "Solution Logique réalise ses audits de sécurité et tests d'intrusion pour les entreprises d'Annecy et de Haute-Savoie. Le test interne se déroule dans vos locaux, avec vos équipes informées, sous mandat écrit et sur un périmètre défini à l'avance.",
     ],
+    faq: [
+      {
+        // Source : section « Quatre niveaux d'analyse »
+        question: "Quelle différence entre un audit de sécurité et un test d'intrusion ?",
+        reponse:
+          "Un audit dit ce qui est mal configuré ; un test d'intrusion montre ce qu'un attaquant peut en faire. Les deux se complètent, et nous vous aidons à choisir par où commencer.",
+      },
+      {
+        // Source : section « Par où commencer ? »
+        question: "Par où une PME doit-elle commencer ?",
+        reponse:
+          "Pour la plupart des PME, un audit suivi d'un test d'intrusion externe couvre l'essentiel. Nous en parlons avec vous avant de chiffrer quoi que ce soit.",
+      },
+      {
+        // Source : section « Un cadre avant la technique » (mandat, perimetre)
+        question: "Faut-il donner une autorisation écrite ?",
+        reponse:
+          "Oui. Aucun test ne commence sans autorisation signée par un représentant habilité de l'entreprise, car tester un système sans autorisation est un délit. Les cibles, les dates et les horaires sont fixés à l'avance : ce qui n'y figure pas n'est pas testé.",
+      },
+      {
+        // Source : section « Un cadre avant la technique » (rapport, contre-audit)
+        question: "Que contient le rapport ?",
+        reponse:
+          "Une synthèse pour la direction et un détail technique pour votre prestataire, chaque point classé par gravité. Une fois les corrections faites, un contre-audit vérifie qu'elles ferment réellement les failles relevées.",
+      },
+    ],
   },
   "/telemaintenance": {
     requete: "télémaintenance informatique Annecy",
@@ -196,6 +229,21 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     titre: "Votre partenaire EBP à Annecy",
     paragraphes: [
       "Revendeur et intégrateur EBP à Annecy, Solution Logique présente les logiciels EBP Comptabilité, Gestion Commerciale et Bâtiment, les installe, les paramètre et forme vos équipes. Nos bureaux sont à Pringy et nous accompagnons les entreprises de Haute-Savoie et du bassin annécien.",
+    ],
+    faq: [
+      {
+        // Source : paragraphe ci-dessus et cartes de la page
+        question: "Quels logiciels EBP proposez-vous ?",
+        reponse:
+          "EBP Comptabilité, EBP Gestion Commerciale et EBP Bâtiment. Nous les vendons, les installons, les paramétrons et formons vos équipes.",
+      },
+      FAQ_DEMO_EBP,
+      {
+        // Source : onglet « Nos Formations », bloc « Formations sur mesure »
+        question: "Où se déroulent les formations ?",
+        reponse:
+          "Dans nos locaux ou sur site, en individuel ou en groupe, avec un programme adapté à vos besoins.",
+      },
     ],
   },
   "/ebpcomptabilite": {
@@ -275,6 +323,32 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     paragraphes: [
       "Nous développons pour les entreprises d'Annecy et de Haute-Savoie : applications métier, intégrations entre logiciels, états sur-mesure, reliés au logiciel de gestion qu'elles utilisent déjà, EBP ou un autre. Vous gardez le même interlocuteur pour le logiciel standard et pour ce qui le complète.",
     ],
+    faq: [
+      {
+        // Source : section « Trois façons d'intervenir »
+        question: "Que pouvez-vous développer pour nous ?",
+        reponse:
+          "Des applications métier (applications terrain pour les techniciens, portails web pour vos clients, tableaux de bord de pilotage), des intégrations entre vos logiciels, et les états, rapports et requêtes que le logiciel standard ne sait pas produire.",
+      },
+      {
+        // Source : carte « Intégrations et automatisations »
+        question: "Pouvez-vous relier notre logiciel de gestion à nos autres outils ?",
+        reponse:
+          "Oui. Nous relions votre logiciel de gestion, EBP ou un autre, à votre CRM, votre banque, votre boutique en ligne ou vos outils métier, et nous supprimons les ressaisies.",
+      },
+      {
+        // Source : section « Comment nous travaillons »
+        question: "Comment se déroule un projet ?",
+        reponse:
+          "Nous partons de votre organisation réelle, puis nous posons le périmètre, le budget et le délai avant d'écrire la première ligne de code. Nous livrons par étapes, pour que vous voyiez fonctionner ce qui est développé, et nous assurons ensuite la formation des utilisateurs, les corrections et les évolutions.",
+      },
+      {
+        // Source : dernier bloc de la page (« Décrivez-nous ce qui vous fait perdre du temps »)
+        question: "Un développement est-il toujours nécessaire ?",
+        reponse:
+          "Non. Nous vous disons franchement si un développement se justifie, ou si un réglage de l'existant suffit.",
+      },
+    ],
   },
   "/applications-mobile-web": {
     requete: "application mobile EBP",
@@ -282,12 +356,59 @@ export const CONTENUS_LOCAUX: Record<string, ContenuLocal> = {
     paragraphes: [
       "Basés à Annecy, nous construisons ces applications pour les entreprises de Haute-Savoie, à partir d'EBP ou de l'ERP déjà en place : données synchronisées, usage hors ligne sur le terrain.",
     ],
+    faq: [
+      {
+        // Source : carte « Branchée sur votre ERP »
+        question: "Faudra-t-il ressaisir nos données dans l'application ?",
+        reponse:
+          "Non. L'application lit et écrit dans EBP, ou dans l'ERP que vous utilisez déjà : vos données restent à un seul endroit, sans double saisie.",
+      },
+      {
+        // Source : section « Votre ERP n'est pas EBP ? »
+        question: "Notre ERP n'est pas EBP : est-ce possible ?",
+        reponse:
+          "Oui, dès que votre ERP ou votre logiciel métier propose une API, un export ou un accès à sa base. Nous vérifions ce point ensemble, avant tout chiffrage.",
+      },
+      {
+        // Source : carte « Utilisable hors connexion »
+        question: "L'application fonctionne-t-elle sans réseau ?",
+        reponse:
+          "Oui. Sur un chantier ou en sous-sol, elle continue de fonctionner et se synchronise dès que la connexion revient.",
+      },
+      {
+        // Source : section « Votre ERP n'est pas EBP ? », étape 03
+        question: "Quand verrons-nous une première version ?",
+        reponse:
+          "Un premier parcours utile est livré en quelques semaines, et vos équipes le testent avant d'aller plus loin.",
+      },
+    ],
   },
   "/accompagnement-ia": {
     requete: "accompagnement intelligence artificielle PME Annecy",
     titre: "L'IA avec un prestataire de proximité",
     paragraphes: [
       "Audit des cas d'usage, formation des équipes, assistants connectés à vos données métier : Solution Logique accompagne les PME d'Annecy et de Haute-Savoie dans leurs projets d'IA, depuis ses bureaux de Pringy.",
+    ],
+    faq: [
+      {
+        // Source : section « Trois étapes, dans cet ordre »
+        question: "Par quoi commence un projet d'IA ?",
+        reponse:
+          "Par l'usage, pas par l'outil : un audit des cas d'usage repère les tâches où l'IA fait gagner du temps, et celles où elle n'apporte rien. Viennent ensuite la formation des équipes, puis le déploiement d'assistants.",
+      },
+      {
+        // Source : étape « Déploiement d'assistants », « Ce que nous ne ferons pas »
+        // et l'exemple de l'assistant relié à EBP (lecture seule)
+        question: "Que deviennent nos données ?",
+        reponse:
+          "Elles ne partent pas n'importe où sans que vous le sachiez : la maîtrise de ce qui sort de l'entreprise fait partie du déploiement d'un assistant. Un assistant qui interroge votre base EBP, par exemple, n'y a accès qu'en lecture seule : il consulte, il ne modifie rien.",
+      },
+      {
+        // Source : étapes « Formation des équipes » et « Déploiement d'assistants »
+        question: "Nos équipes seront-elles formées ?",
+        reponse:
+          "Oui. Nous formons vos collaborateurs sur leurs propres cas, avec leurs propres documents, jusqu'à ce qu'ils soient autonomes, puis nous suivons l'usage après la mise en service.",
+      },
     ],
   },
   "/contact": {
