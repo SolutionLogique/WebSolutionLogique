@@ -6,6 +6,8 @@
     "dev": "next dev -p 9988",
     "build": "next build",
     "export": "NEXT_EXPORT=true next build",
+    "postbuild": "node scripts/llms-full.js",
+    "postexport": "node scripts/llms-full.js",
     "start": "next start",
     "lint": "next lint",
     "test": "jest"

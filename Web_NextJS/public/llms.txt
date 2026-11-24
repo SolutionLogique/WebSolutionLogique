@@ -41,8 +41,21 @@ Zone d'intervention : Annecy et son agglomération, le reste de la Haute-Savoie 
 - [Engagement handicap](https://solution-logique.fr/engagementHandicap/)
 - [Mentions légales](https://solution-logique.fr/mentions-legales/)
 
+## Conseils pour les PME
+
+- [Sauvegardes d'une PME : appliquer la règle 3-2-1](https://solution-logique.fr/conseils/sauvegardes-pme-regle-3-2-1/) : trois copies, deux supports, une hors ligne : la règle 3-2-1 de l'ANSSI expliquée pour une PME, avec la fréquence, les tests de restauration et le chiffrement
+- [Cybersécurité d'une PME : les mesures de base](https://solution-logique.fr/conseils/cybersecurite-pme-mesures-de-base/) : mises à jour, mots de passe et double authentification, sauvegardes, pare-feu, droits d'administration : les mesures de base des guides de l'ANSSI pour une PME
+- [Facture électronique : ce qui change pour les PME en 2026 et 2027](https://solution-logique.fr/conseils/facture-electronique-pme-2026-2027/) : calendrier, plateforme agréée, nouvelles mentions, e-reporting, sanctions, et comment préparer vos logiciels
+
+## Zones d'intervention
+
+- [Votre prestataire informatique dans le Chablais](https://solution-logique.fr/secteurs/chablais/) : entreprises du Chablais, de Thonon-les-Bains à Publier : maintenance informatique, télémaintenance, applications sur mesure et logiciels EBP
+- [Votre prestataire informatique dans la vallée de l'Arve](https://solution-logique.fr/secteurs/vallee-de-l-arve/) : maintenance informatique, téléphonie, applications sur mesure et logiciels EBP pour les entreprises de la vallée de l'Arve, de La Roche-sur-Foron à Sallanches
+- [Votre prestataire informatique en Savoie](https://solution-logique.fr/secteurs/savoie/) : entreprises de Savoie, d'Aix-les-Bains et Chambéry à Ugine et Moûtiers : maintenance informatique, télémaintenance, applications sur mesure, logiciels EBP
+
 ## Optional
 
+- [Version longue de ce fichier](https://solution-logique.fr/llms-full.txt) : le texte des pages listées ici, en un seul fichier Markdown
 - [Conditions générales de vente](https://solution-logique.fr/conditionsGeneralesVente/)
 - [Politique de confidentialité](https://solution-logique.fr/confidentialite/)
 - [Plan du site](https://solution-logique.fr/sitemap.xml)

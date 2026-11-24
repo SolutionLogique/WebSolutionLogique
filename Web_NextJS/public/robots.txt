@@ -1,0 +1,38 @@
+# robots.txt de solution-logique.fr
+# Fichier statique (public/robots.txt), copie tel quel par le build : il
+# remplace app/robots.ts, qui ne savait pas ecrire de commentaire.
+#
+# /_next/ n'est pas interdit : c'est la que sont le CSS, le JavaScript et les
+# polices. Google doit les charger pour voir les pages telles qu'elles
+# s'affichent (constat T2 de l'audit du 29/10/2026).
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+# Moteurs de reponse par IA (ChatGPT, Perplexity, Claude, Gemini, Apple) :
+# ils sont nommes pour dire clairement qu'ils sont les bienvenus, avec les
+# memes regles que les autres. Un robot qui trouve son nom ici ne lit que son
+# groupe, d'ou la meme liste d'interdits.
+# GPTBot (ajoute le 24/11/2026) collecte pour l'entrainement des modeles
+# d'OpenAI, pas seulement pour les reponses de ChatGPT : il est autorise en
+# connaissance de cause.
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: GPTBot
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: Claude-SearchBot
+User-Agent: Google-Extended
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+# Le site se resume pour les moteurs a reponses IA dans deux fichiers (aucune
+# directive standard n'existe pour les annoncer ici) :
+# https://solution-logique.fr/llms.txt
+# https://solution-logique.fr/llms-full.txt
+
+Sitemap: https://solution-logique.fr/sitemap.xml
