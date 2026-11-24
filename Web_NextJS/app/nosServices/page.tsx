@@ -128,9 +128,9 @@ function NosServices() {
 
                     {/* Content */}
                     <div className="p-6">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
+                      <h2 className="text-2xl font-bold tracking-[-0.01em] text-slate-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
                         {service.title}
-                      </h3>
+                      </h2>
                       <p className="text-slate-600 mb-4 leading-relaxed">
                         {service.description}
                       </p>
@@ -139,9 +139,9 @@ function NosServices() {
                       <div className="space-y-4">
                         {service.details.map((detail, i) => (
                           <div key={i}>
-                            <h4 className="font-semibold text-slate-800 text-sm mb-2">
+                            <h3 className="font-semibold tracking-normal text-slate-800 text-sm mb-2">
                               {detail.category}
-                            </h4>
+                            </h3>
                             <ul className="space-y-1">
                               {detail.items.slice(0, 3).map((item, j) => (
                                 <li key={j} className="flex items-center text-sm text-slate-500">
@@ -203,14 +203,16 @@ function NosServices() {
                 </div>
 
                 {/* Title */}
-                <div>
-                  <h2 className="text-3xl lg:text-4xl font-bold text-white mb-2">
+                {/* Un seul titre sur deux lignes (avant : un h2 et un h3 pour une phrase).
+                    tracking-* : garde l'espacement des lettres des anciennes balises */}
+                <h2>
+                  <span className="block text-3xl lg:text-4xl font-bold text-white mb-2">
                     Besoin d&apos;une aide en
-                  </h2>
-                  <h3 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">
+                  </span>{" "}
+                  <span className="block text-2xl lg:text-3xl font-bold tracking-[-0.01em] bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">
                     télémaintenance ?
-                  </h3>
-                </div>
+                  </span>
+                </h2>
 
                 {/* Description */}
                 <p className="text-white/70 text-lg leading-relaxed">

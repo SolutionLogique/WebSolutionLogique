@@ -43,7 +43,9 @@ const OFFRES = [
 
 export const ORGANISATION = {
   "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness"],
+  /* ProfessionalService : sous-type de LocalBusiness pour les societes de
+     services aux entreprises, plus precis que LocalBusiness seul */
+  "@type": ["Organization", "ProfessionalService"],
   "@id": ID_ORGANISATION,
   "name": "Solution Logique",
   "legalName": "SOLUTION LOGIQUE",

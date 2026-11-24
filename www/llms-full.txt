@@ -1,0 +1,2437 @@
+# Solution Logique
+
+> Solution Logique (SAS, RCS Annecy 379 868 540, créée en 1990) est une société de services informatiques installée à Pringy, sur la commune d'Annecy (Haute-Savoie). Elle fournit, installe, maintient et sécurise l'informatique des PME, TPE et collectivités, le plus souvent sous contrat de maintenance : postes et serveurs, réseau, sécurité, téléphonie IP et accès internet, Microsoft 365, sauvegarde, avec une assistance à distance par télémaintenance et des interlocuteurs locaux, les mêmes d'une intervention à l'autre. Elle développe aussi des applications sur mesure (applications métier, mobiles et web, intégrations entre logiciels) et accompagne les entreprises dans l'usage de l'intelligence artificielle. Elle vend, installe et forme enfin aux logiciels de gestion EBP (Comptabilité, Gestion commerciale, Bâtiment).
+
+Coordonnées :
+
+- Adresse : 475 route des Vernes, 74370 Annecy (Pringy), France
+- Téléphone : 04 50 64 02 33 (+33 4 50 64 02 33)
+- Courriel : site@solution-logique.fr
+- Horaires : du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30
+- Site : https://solution-logique.fr/
+
+Zone d'intervention : Annecy et son agglomération, le reste de la Haute-Savoie (Chablais, vallée de l'Arve, Genevois) et la Savoie, dans les locaux du client ou à distance par télémaintenance.
+
+Ce fichier reprend le texte des pages du site, dans l'ordre de https://solution-logique.fr/llms.txt, sans la navigation ni les formulaires. Il est produit à chaque construction du site.
+
+## Services informatiques
+
+Adresse : https://solution-logique.fr/nosServices/
+Vue d'ensemble des services aux entreprises (maintenance sous contrat, matériel, sécurité, téléphonie, télémaintenance).
+
+### Nos services
+
+Maintenance sous contrat, matériel, sécurité, téléphonie et sauvegarde : l'informatique de votre entreprise suivie par une équipe à Annecy, sur place ou à distance.
+
+#### Informatique
+
+Optimisez vos performances avec des solutions informatiques fiables et sécurisées.
+
+##### Infrastructure
+
+- Matériel informatique : fourniture et installation
+- Serveur de stockage
+- Sécurité de l'infrastructure
+
+##### Environnement utilisateur
+
+- Poste de travail
+- Sécurité antivirus
+- Microsoft 365 et outils collaboratifs
+
+##### Hébergement & cloud
+
+- Sauvegarde externalisée
+- Sauvegarde sur place
+- Hébergement de site web
+
+#### Télécom
+
+Restez connectés grâce à nos solutions télécom innovantes et performantes.
+
+##### Téléphonie fixe et mobile
+
+- Téléphonie IP
+- Trunk SIP
+- Softphone
+
+##### Connectivité
+
+- Interconnexion
+- Accès à Internet
+- Accès sans fil (Wi-Fi)
+
+#### Sécurité
+
+Protégez vos données et votre réseau avec nos solutions de sécurité avancées.
+
+##### Sécurité du SI
+
+- Sécurité de l'infrastructure
+- Sécurité du réseau
+- Sécurité des données
+
+#### Un prestataire informatique à Annecy
+
+Solution Logique accompagne les PME, TPE et collectivités de Haute-Savoie depuis 1990 : infrastructure et postes de travail, hébergement et sauvegardes, téléphonie et réseaux, sécurité. Nos bureaux sont à Pringy, sur la commune d'Annecy.
+
+Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et à distance par télémaintenance. Vos interlocuteurs restent les mêmes d'une intervention à l'autre, et le support répond du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30.
+
+#### Questions fréquentes
+
+**Que fait Solution Logique ?**
+
+Solution Logique fournit, installe et maintient l'informatique des entreprises : postes de travail, serveurs, réseau, sauvegardes, sécurité et téléphonie IP, avec une assistance à distance par télémaintenance. Elle développe aussi des applications sur mesure, accompagne ses clients dans l'usage de l'intelligence artificielle, et vend, installe et forme aux logiciels de gestion EBP.
+
+**Pour quelles entreprises travaillez-vous ?**
+
+Pour les PME, les TPE et les collectivités, à Annecy, en Haute-Savoie et en Savoie.
+
+**Aurons-nous toujours le même interlocuteur ?**
+
+Oui. Vos interlocuteurs sont les mêmes d'une intervention à l'autre : une équipe basée à Pringy, à Annecy, qui connaît votre installation.
+
+**Intervenez-vous sur place ou à distance ?**
+
+Les deux. Nous réglons à distance ce qui peut l'être, par télémaintenance et avec votre accord. Sinon, un technicien basé à Annecy se déplace dans vos locaux : Annecy et son agglomération, le reste de la Haute-Savoie (Chablais, vallée de l'Arve, Genevois) et la Savoie.
+
+#### Besoin d'une aide en télémaintenance ?
+
+Accédez à notre service de télémaintenance pour que nos experts Solution Logique interviennent directement et de manière sécurisée sur votre ordinateur.
+
+Besoin d'une autre forme de support ?
+
+## Infrastructure informatique et cloud
+
+Adresse : https://solution-logique.fr/informatique/
+Postes, serveurs et réseau (fourniture, installation, maintenance), hébergement, sauvegardes.
+
+### Solutions informatiques
+
+Postes, serveurs et réseau fournis, installés et maintenus sous contrat, avec des sauvegardes suivies et un dépannage à distance par télémaintenance.
+
+#### Nos expertises
+
+Des solutions complètes pour accompagner votre transformation digitale
+
+##### Infrastructure IT
+
+Solutions complètes pour votre infrastructure informatique avec du matériel performant et des serveurs haute disponibilité.
+
+- Matériel informatique dernière génération
+- Serveurs haute performance et stockage sécurisé
+- Interconnexion de sites multiples
+- Virtualisation avancée des infrastructures
+- Monitoring et supervision 24/7
+
+##### Environnement Utilisateur
+
+Un environnement de travail optimisé et sécurisé pour vos équipes avec des outils collaboratifs modernes.
+
+- Configuration et optimisation des postes de travail
+- Protection antivirus et anti-malware avancée
+- Gestion centralisée des accès et authentification
+- Outils de collaboration moderne (Teams, Slack, etc.)
+- Support et maintenance proactive
+
+##### Hébergement & Cloud
+
+Solutions cloud complètes avec sauvegarde automatique et hébergement web professionnel haute performance.
+
+- Sauvegarde automatique externalisée dans le cloud
+- Solutions de sauvegarde locale pour récupération rapide
+- Hébergement web haute performance et disponibilité
+- Messagerie professionnelle complète et sécurisée
+- Stockage cloud évolutif accessible partout
+
+##### Infrastructure IT
+
+Solutions complètes pour votre infrastructure informatique avec du matériel performant et des serveurs haute disponibilité.
+
+##### Nos partenaires technologiques
+
+Nous travaillons avec les leaders du marché
+
+#### Votre informatique suivie depuis Annecy
+
+Postes de travail, serveurs, sauvegardes, hébergement : Solution Logique fournit, installe et maintient l'informatique des entreprises de Haute-Savoie depuis ses bureaux de Pringy, à Annecy. Nous intervenons dans vos locaux en Haute-Savoie et dans le bassin annécien, et réglons à distance ce qui peut l'être par télémaintenance.
+
+Vos interlocuteurs sont les mêmes d'une intervention à l'autre.
+
+#### Questions fréquentes
+
+**Fournissez-vous aussi le matériel ?**
+
+Oui. Nous fournissons, installons et maintenons les postes de travail, les serveurs, le réseau et les sauvegardes, puis nous suivons ce matériel une fois en service.
+
+**Comment se passe un dépannage ?**
+
+Vous appelez le support ou ouvrez une session de télémaintenance (RustDesk ou NinjaOne) depuis notre page Télémaintenance ; le technicien prend la main sur le poste avec votre accord. Si le problème demande un déplacement, il intervient dans vos locaux.
+
+**Quand peut-on joindre le support ?**
+
+Du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30, au 04 50 64 02 33. En dehors de ces horaires, écrivez-nous par le formulaire de contact du site.
+
+#### Prêt à transformer votre IT ?
+
+Contactez nos experts pour une consultation gratuite et découvrez comment optimiser votre infrastructure.
+
+## Sécurité informatique
+
+Adresse : https://solution-logique.fr/securite/
+Pare-feu, protection des données, antivirus, surveillance.
+
+### Solutions de sécurité
+
+Protégez votre entreprise contre les cybermenaces avec nos solutions de sécurité avancées. Infrastructure, réseaux et données sécurisés.
+
+#### Menaces courantes
+
+Nous vous protégeons contre les principales cybermenaces
+
+##### Ransomware
+
+Protection contre le chiffrement malveillant
+
+##### Phishing
+
+Détection des tentatives d'hameçonnage
+
+##### Malware
+
+Blocage des logiciels malveillants
+
+##### Intrusion
+
+Prévention des accès non autorisés
+
+#### Nos solutions de sécurité
+
+Une approche multicouche pour une protection complète
+
+##### Pare-feu NGFW
+
+Protection réseau avancée avec inspection approfondie des paquets
+
+##### SIEM/SOC
+
+Surveillance et analyse des événements de sécurité en temps réel
+
+##### Chiffrement
+
+Protection des données en transit et au repos
+
+##### Antivirus Pro
+
+Protection endpoint avancée contre les malwares
+
+##### DLP
+
+Prévention de la fuite de données sensibles
+
+##### Sauvegarde
+
+Solutions de sauvegarde et récupération sécurisées
+
+##### Sécurité de l'Infrastructure
+
+Protection complète de votre infrastructure IT contre les menaces internes et externes avec des solutions de pointe.
+
+- Pare-feu nouvelle génération (NGFW)
+- Protection contre les intrusions (IPS/IDS)
+- Sécurisation des serveurs et postes
+- Monitoring de sécurité 24/7
+- Audits de sécurité réguliers
+
+##### Sécurité du Réseau
+
+Sécurisation avancée de vos réseaux avec segmentation, filtrage et surveillance en temps réel des flux de données.
+
+- Segmentation réseau avancée
+- VPN sécurisés site à site
+- Filtrage web et contrôle d'accès
+- WiFi d'entreprise sécurisé
+- Analyse comportementale du trafic
+
+##### Sécurité des Données
+
+Protection et chiffrement de vos données sensibles avec sauvegarde sécurisée et plan de continuité d'activité.
+
+- Chiffrement des données sensibles
+- Sauvegarde sécurisée externalisée
+- Plan de reprise d'activité (PRA)
+- Contrôle des accès granulaire
+- Archivage sécurisé long terme
+
+##### Sécurité de l'Infrastructure
+
+Protection complète de votre infrastructure IT contre les menaces internes et externes avec des solutions de pointe.
+
+##### Nos partenaires sécurité
+
+Nous collaborons avec les leaders de la cybersécurité
+
+#### Sécurité informatique pour les PME de Haute-Savoie
+
+Pare-feu, sauvegardes, antivirus, surveillance du réseau : Solution Logique sécurise l'informatique des PME, TPE et collectivités de Haute-Savoie depuis Annecy. Quand une vérification plus poussée s'impose, notre audit de cybersécurité se déroule sur site, avec vos équipes informées.
+
+#### Questions fréquentes
+
+**Que couvre la sécurité informatique chez Solution Logique ?**
+
+Le pare-feu, l'antivirus, les sauvegardes, la protection des données et la surveillance du réseau des PME, TPE et collectivités que nous suivons.
+
+**Proposez-vous un audit de cybersécurité ?**
+
+Oui : tests d'intrusion externe, applicatif et interne, sous mandat écrit et sur un périmètre défini à l'avance, avec un rapport qui classe les corrections par priorité. Le test interne se déroule dans vos locaux, avec vos équipes informées. Le détail est sur notre page Audit de cybersécurité.
+
+#### Sécurisez votre entreprise
+
+Bénéficiez d'un audit de sécurité gratuit et découvrez les vulnérabilités de votre infrastructure avant qu'il ne soit trop tard.
+
+## Téléphonie IP et réseaux
+
+Adresse : https://solution-logique.fr/telecom/
+Téléphonie fixe et mobile, trunk SIP, liaisons entre sites.
+
+### Solutions télécom
+
+Optimisez vos communications d'entreprise avec nos solutions télécom modernes. Téléphonie IP, connectivité haut débit et réseaux sécurisés.
+
+#### Nos solutions télécom
+
+Des technologies modernes pour optimiser vos communications
+
+##### Téléphonie IP
+
+Système téléphonique moderne basé sur IP avec fonctionnalités avancées
+
+##### Trunk SIP
+
+Liaisons SIP professionnelles pour optimiser vos communications
+
+##### Softphone
+
+Applications mobiles pour téléphoner depuis n'importe où
+
+##### 4G/5G Pro
+
+Forfaits mobiles professionnels avec data illimitée
+
+##### Interconnexion
+
+Liaison sécurisée entre vos différents sites d'entreprise
+
+##### WiFi Pro
+
+Réseaux sans fil professionnels haute performance et sécurisés
+
+##### Téléphonie fixe et mobile
+
+Solutions complètes de téléphonie moderne pour optimiser vos communications d'entreprise avec la technologie IP.
+
+- Téléphonie IP moderne et évolutive
+- Trunks SIP haute qualité
+- Applications softphone mobiles
+- Forfaits 4G et 5G professionnels
+- Solutions multi-sites intégrées
+
+##### Connectivité et réseaux
+
+Infrastructure réseau professionnelle pour assurer une connectivité optimale et sécurisée entre tous vos sites.
+
+- Interconnexion de sites sécurisée
+- Accès Internet haute performance
+- Réseaux WiFi professionnels
+- Fibre optique et SDSL
+- Redondance et haute disponibilité
+
+##### Téléphonie fixe et mobile
+
+Solutions complètes de téléphonie moderne pour optimiser vos communications d'entreprise avec la technologie IP.
+
+##### Nos partenaires opérateurs
+
+Nous collaborons avec les meilleurs opérateurs français
+
+Fibre et solutions mobiles
+
+Connectivité entreprise
+
+Réseaux et téléphonie
+
+Solutions économiques
+
+#### Téléphonie d'entreprise en Haute-Savoie
+
+Pour les entreprises d'Annecy et de Haute-Savoie, Solution Logique met en place la téléphonie IP, les trunks SIP, les softphones et les liaisons entre sites. Le même interlocuteur suit votre réseau, vos postes et votre téléphonie.
+
+#### Questions fréquentes
+
+**Que mettez-vous en place en téléphonie ?**
+
+La téléphonie IP de l'entreprise, fixe et mobile : trunks SIP, softphones et liaisons entre vos sites.
+
+**Le même prestataire peut-il suivre l'informatique et la téléphonie ?**
+
+Oui. Chez Solution Logique, le même interlocuteur suit votre réseau, vos postes de travail et votre téléphonie.
+
+#### Optimisez vos communications
+
+Contactez nos experts télécom pour un audit gratuit et découvrez comment réduire vos coûts tout en améliorant vos communications.
+
+## Télémaintenance
+
+Adresse : https://solution-logique.fr/telemaintenance/
+Assistance à distance avec RustDesk ou NinjaOne.
+
+### Télémaintenance
+
+Connectez-vous rapidement et en sécurité à notre service de télémaintenance pour obtenir une assistance technique à distance.
+
+#### Télémaintenance RustDesk
+
+Solution de télémaintenance rapide et sécurisée recommandée
+
+##### Instructions
+
+- 1 Téléchargez RustDesk en cliquant sur le bouton ci-dessus (EXE recommandé pour une utilisation immédiate)
+- 2 Lancez le fichier téléchargé (l'EXE ne nécessite pas d'installation)
+- 3 Communiquez au technicien : L'ID affiché dans RustDesk (série de chiffres) Le mot de passe temporaire affiché en dessous
+- 4 Le technicien pourra alors se connecter à votre poste pour vous assister
+
+###### Connexion sécurisée et privée
+
+RustDesk utilise un chiffrement de bout en bout pour garantir la sécurité de votre session. Vos données restent privées et la connexion est temporaire.
+
+#### Connexion NinjaOne
+
+Alternative si vous disposez déjà d'un code NinjaOne
+
+#### Connexion à la télémaintenance
+
+##### Instructions
+
+- 1 Contactez notre support pour obtenir votre code de connexion
+- 2 Entrez votre code de connexion dans le champ ci-dessus
+- 3 Cliquez sur "Se connecter" pour accéder à NinjaOne
+- 4 Suivez les instructions à l'écran pour établir la connexion
+- 5 Notre équipe pourra alors vous assister à distance en toute sécurité
+
+###### Connexion sécurisée
+
+Vous êtes redirigé directement vers notre plateforme NinjaOne sécurisée. Toutes les sessions de télémaintenance sont chiffrées de bout en bout.
+
+#### Une assistance à distance, un technicien près de chez vous
+
+La télémaintenance permet à un technicien de Solution Logique de prendre la main sur votre poste, avec votre accord, pour diagnostiquer et corriger un problème sans attendre un déplacement.
+
+Le support répond du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30, au 04 50 64 02 33. Si le problème demande une intervention sur place, nos techniciens, basés à Annecy, interviennent en Haute-Savoie et dans le bassin annécien.
+
+#### Questions fréquentes
+
+**Faut-il installer un logiciel ?**
+
+Non, avec la version EXE de RustDesk : il suffit de la lancer, elle ne demande pas d'installation. La version MSI, elle, s'installe sur le poste.
+
+**Que dois-je communiquer au technicien ?**
+
+L'identifiant affiché par RustDesk, une série de chiffres, et le mot de passe temporaire affiché juste en dessous.
+
+**La connexion est-elle sécurisée ?**
+
+RustDesk chiffre la session de bout en bout et la connexion est temporaire. Avec NinjaOne, vous êtes dirigé vers notre plateforme sécurisée et les sessions sont également chiffrées de bout en bout.
+
+**J'ai reçu un code NinjaOne, que dois-je faire ?**
+
+Saisissez-le dans le champ « Connexion NinjaOne » de cette page, puis cliquez sur « Se connecter ». Si vous n'avez pas de code, notre support vous le donne.
+
+**Quand puis-je joindre le support ?**
+
+Du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30, au 04 50 64 02 33.
+
+## Audit de cybersécurité
+
+Adresse : https://solution-logique.fr/audit-cybersecurite/
+Test d'intrusion externe, applicatif et interne, rapport priorisé.
+
+### Savoir où vous êtes vulnérable, avant un attaquant
+
+Audit de sécurité et tests d'intrusion pour les PME, dans un cadre écrit et avec un rapport que votre direction peut lire.
+
+#### Quatre niveaux d'analyse
+
+Un audit dit ce qui est mal configuré. Un test d'intrusion montre ce qu'on peut en faire. Les deux se complètent, et nous vous aidons à choisir par où commencer.
+
+##### Audit de sécurité
+
+Un état des lieux de votre informatique tel qu'elle est réellement configurée : postes, serveurs, messagerie, sauvegardes, comptes et droits d'accès.
+
+- Revue des configurations et des mises à jour
+- Comptes, mots de passe et droits d'administration
+- Sauvegardes testées, pas seulement planifiées
+
+##### Test d'intrusion externe
+
+Nous regardons votre entreprise comme le ferait un attaquant depuis Internet : ce qui est exposé, ce qui répond, ce qui ne devrait pas être visible.
+
+- Services et ports accessibles depuis l'extérieur
+- Messagerie, accès distants et VPN
+- Sous-domaines et services oubliés
+
+##### Test d'intrusion applicatif
+
+Votre site, votre extranet ou votre application métier sont testés contre les failles web les plus courantes, selon le référentiel OWASP.
+
+- Authentification et gestion des sessions
+- Injections et contrôles d'accès
+- Exposition de données sensibles
+
+##### Test d'intrusion interne
+
+Que peut faire un poste compromis, ou un visiteur branché sur votre réseau ? Le test se déroule sur site, avec vos équipes informées.
+
+- Cloisonnement du réseau
+- Annuaire et partages de fichiers
+- Élévation de privilèges
+
+#### Un cadre avant la technique
+
+Tester la sécurité d'un système sans autorisation est un délit. Chaque mission est donc encadrée, du premier échange au rapport final.
+
+##### Un mandat écrit
+
+Aucun test ne commence sans autorisation signée par un représentant habilité de l'entreprise.
+
+##### Un périmètre défini
+
+Cibles, dates et horaires sont fixés à l'avance. Ce qui n'y figure pas n'est pas testé.
+
+##### Un rapport lisible
+
+Une synthèse pour la direction, un détail technique pour votre prestataire, chaque point classé par gravité.
+
+##### Un contre-audit
+
+Une fois les corrections faites, nous vérifions qu'elles ferment réellement les failles relevées.
+
+#### Un audit mené sur place, en Haute-Savoie
+
+Solution Logique réalise ses audits de sécurité et tests d'intrusion pour les entreprises d'Annecy et de Haute-Savoie. Le test interne se déroule dans vos locaux, avec vos équipes informées, sous mandat écrit et sur un périmètre défini à l'avance.
+
+#### Questions fréquentes
+
+**Quelle différence entre un audit de sécurité et un test d'intrusion ?**
+
+Un audit dit ce qui est mal configuré ; un test d'intrusion montre ce qu'un attaquant peut en faire. Les deux se complètent, et nous vous aidons à choisir par où commencer.
+
+**Par où une PME doit-elle commencer ?**
+
+Pour la plupart des PME, un audit suivi d'un test d'intrusion externe couvre l'essentiel. Nous en parlons avec vous avant de chiffrer quoi que ce soit.
+
+**Faut-il donner une autorisation écrite ?**
+
+Oui. Aucun test ne commence sans autorisation signée par un représentant habilité de l'entreprise, car tester un système sans autorisation est un délit. Les cibles, les dates et les horaires sont fixés à l'avance : ce qui n'y figure pas n'est pas testé.
+
+**Que contient le rapport ?**
+
+Une synthèse pour la direction et un détail technique pour votre prestataire, chaque point classé par gravité. Une fois les corrections faites, un contre-audit vérifie qu'elles ferment réellement les failles relevées.
+
+#### Par où commencer ?
+
+Pour la plupart des PME, un audit suivi d'un test externe couvre l'essentiel. Nous en parlons avant de chiffrer quoi que ce soit.
+
+## Sur-mesure et IA
+
+Adresse : https://solution-logique.fr/sur-mesure/
+Les trois offres.
+
+### Sur-mesure & intelligence artificielle
+
+Trente ans à installer et maintenir des systèmes nous ont appris où le standard s'arrête. Nous développons ce qui manque, et nous vous accompagnons sur l'IA sans promesse en l'air.
+
+#### Développement sur-mesure
+
+Quand le logiciel standard s'arrête, on continue. Applications métier, intégrations et états conçus pour votre organisation.
+
+- Applications métier reliées à vos logiciels
+- Intégrations et automatisations
+- États, rapports et requêtes
+
+#### Accompagnement IA
+
+Passer de la curiosité à l'usage. On identifie les cas d'usage réels, on forme vos équipes, on déploie ce qui sert vraiment.
+
+- Audit des cas d'usage
+- Formation des équipes
+- Assistants connectés à vos données
+
+#### Trois offres, une même équipe à Annecy
+
+Développement sur-mesure, applications mobile et web, accompagnement IA : ces trois offres partent de trente ans passés à installer et maintenir les systèmes des entreprises de Haute-Savoie. Elles s'appuient sur les logiciels que vous utilisez déjà : logiciel de gestion, CRM, messagerie.
+
+Elles sont menées par l'équipe de Solution Logique, basée à Annecy.
+
+#### Un besoin que le standard ne couvre pas ?
+
+Décrivez-nous votre situation. Nous vous dirons franchement si un développement se justifie, ou si une solution existante suffit.
+
+## Développement d'applications sur mesure
+
+Adresse : https://solution-logique.fr/developpement-sur-mesure/
+Applications métier, intégrations entre logiciels (EBP, CRM, banque, boutique en ligne), états.
+
+### Les outils qui manquent à votre organisation
+
+Applications métier, intégrations et états conçus autour de vos logiciels et de votre façon de travailler, quand le logiciel standard s'arrête.
+
+#### Trois façons d'intervenir
+
+Selon que le manque porte sur un outil absent, des outils qui ne communiquent pas, ou un document que le standard ne sait pas produire.
+
+##### Applications métier
+
+Quand vos équipes saisissent deux fois la même information, ou tiennent un tableur en parallèle du logiciel, c'est qu'il manque un outil. Nous le construisons.
+
+- Applications terrain pour les techniciens
+- Portails web pour vos clients
+- Tableaux de bord de pilotage
+
+##### Intégrations et automatisations
+
+Vos outils se parlent rarement d'eux-mêmes. Nous relions votre logiciel de gestion (EBP ou un autre) à votre CRM, votre banque, votre boutique en ligne ou vos outils métier, et nous supprimons les ressaisies.
+
+- Synchronisation entre applications
+- Imports et exports automatisés
+- Connexions vers des services tiers
+
+##### États, rapports et requêtes
+
+Documents commerciaux à votre image, états comptables spécifiques, extractions ciblées dans la base : le standard couvre le général, nous couvrons votre cas.
+
+- Devis, factures et bons de livraison personnalisés
+- États comptables et analytiques sur mesure
+- Extractions et requêtes récurrentes
+
+#### Comment nous travaillons
+
+Un développement rate rarement pour des raisons techniques. Il rate quand le besoin a été mal compris ou le périmètre mal tenu.
+
+##### On écoute
+
+Nous partons de votre organisation réelle, pas d'un cahier des charges théorique.
+
+##### On cadre
+
+Périmètre, budget et délai sont posés avant d'écrire la première ligne de code.
+
+##### On livre par étapes
+
+Vous voyez fonctionner ce qui est développé au fur et à mesure, sans effet tunnel.
+
+##### On accompagne
+
+Formation des utilisateurs, corrections et évolutions dans la durée.
+
+#### Développement sur mesure, en Haute-Savoie
+
+Nous développons pour les entreprises d'Annecy et de Haute-Savoie : applications métier, intégrations entre logiciels, états sur-mesure, reliés au logiciel de gestion qu'elles utilisent déjà, EBP ou un autre. Vous gardez le même interlocuteur pour le logiciel standard et pour ce qui le complète.
+
+#### Questions fréquentes
+
+**Que pouvez-vous développer pour nous ?**
+
+Des applications métier (applications terrain pour les techniciens, portails web pour vos clients, tableaux de bord de pilotage), des intégrations entre vos logiciels, et les états, rapports et requêtes que le logiciel standard ne sait pas produire.
+
+**Pouvez-vous relier notre logiciel de gestion à nos autres outils ?**
+
+Oui. Nous relions votre logiciel de gestion, EBP ou un autre, à votre CRM, votre banque, votre boutique en ligne ou vos outils métier, et nous supprimons les ressaisies.
+
+**Comment se déroule un projet ?**
+
+Nous partons de votre organisation réelle, puis nous posons le périmètre, le budget et le délai avant d'écrire la première ligne de code. Nous livrons par étapes, pour que vous voyiez fonctionner ce qui est développé, et nous assurons ensuite la formation des utilisateurs, les corrections et les évolutions.
+
+**Un développement est-il toujours nécessaire ?**
+
+Non. Nous vous disons franchement si un développement se justifie, ou si un réglage de l'existant suffit.
+
+#### Décrivez-nous ce qui vous fait perdre du temps
+
+Nous vous dirons franchement si un développement se justifie, ou si un réglage de l'existant suffit.
+
+## Applications mobile et web
+
+Adresse : https://solution-logique.fr/applications-mobile-web/
+Applications terrain, portails et tableaux de bord reliés à EBP ou à l'ERP de l'entreprise.
+
+### Votre ERP dans la poche de vos équipes
+
+Applications terrain, portails web et tableaux de bord connectés à EBP ou à l'ERP que vous utilisez déjà.
+
+#### Ce qui ne change pas d'un projet à l'autre
+
+Une application métier ne vaut que si elle s'appuie sur vos données réelles. Nous la construisons autour de votre ERP, pas à côté.
+
+##### Branchée sur votre ERP
+
+L'application lit et écrit dans EBP, ou dans l'ERP que vous utilisez déjà. Vos données restent à un seul endroit, sans double saisie.
+
+##### Utilisable hors connexion
+
+Sur un chantier ou en sous-sol, le réseau manque. L'application continue de fonctionner et se synchronise dès que la connexion revient.
+
+##### Mobile et web, un seul outil
+
+Le technicien sur son téléphone, le bureau sur son navigateur : les mêmes données, adaptées à chaque écran.
+
+##### Accès maîtrisés
+
+Chaque utilisateur ne voit que ce qui le concerne. Les connexions à votre base sont limitées au strict nécessaire.
+
+#### Quelques réalisations
+
+Des projets menés pour nos clients, décrits sans les nommer.
+
+##### Application d'intervention pour les techniciens
+
+Les techniciens consultent leur planning, la fiche client et l'historique sur leur téléphone, puis saisissent leur intervention sur place. Le bureau la retrouve dans EBP, prête à être facturée.
+
+- Application mobile et interface web
+- Synchronisée avec EBP
+- En production
+
+##### Plateforme de planning de garde
+
+Plusieurs centaines de praticiens consultent leurs gardes, confirment leur présence et échangent leurs créneaux entre eux, avec une carte publique pour les patients.
+
+- Application web responsive
+- Import des fichiers existants
+- En production
+
+##### Reprise de données vers EBP
+
+Articles, stocks et grilles tarifaires de plusieurs réseaux de distribution repris depuis des classeurs, contrôlés ligne à ligne, puis importés dans chaque dossier EBP.
+
+- Plusieurs milliers de prix contrôlés
+- Un dossier EBP par société
+- Livré
+
+#### Le terrain, côté bureau et côté mobile
+
+Trois parcours de l'application que nous utilisons au quotidien, avec des données fictives.
+
+Au bureau, on répartit la charge et on affecte les interventions. Sur le terrain, chacun voit ce qu'il a à faire, dans l'ordre, avec le trajet.
+
+Captures de l'application en production. Les noms, sociétés, adresses et montants affichés sont fictifs.
+
+#### Votre ERP n'est pas EBP ?
+
+Nous travaillons aussi avec d'autres ERP et logiciels métier, dès qu'ils proposent une API, un export ou un accès à leur base. Nous vérifions ce point ensemble, avant tout chiffrage.
+
+##### On part du terrain
+
+Nous observons qui saisit quoi, où, et à quel moment la donnée se perd aujourd'hui.
+
+##### On regarde votre ERP
+
+Ce qu'il sait exposer, ce qu'il faut synchroniser, ce qui doit rester en lecture seule.
+
+##### On livre un premier écran
+
+Un parcours utile en quelques semaines, testé par vos équipes avant d'aller plus loin.
+
+##### On fait évoluer
+
+Nouveaux écrans, nouveaux utilisateurs, maintenance et mises à jour dans la durée.
+
+#### Des applications pour les équipes de terrain de Haute-Savoie
+
+Basés à Annecy, nous construisons ces applications pour les entreprises de Haute-Savoie, à partir d'EBP ou de l'ERP déjà en place : données synchronisées, usage hors ligne sur le terrain.
+
+#### Questions fréquentes
+
+**Faudra-t-il ressaisir nos données dans l'application ?**
+
+Non. L'application lit et écrit dans EBP, ou dans l'ERP que vous utilisez déjà : vos données restent à un seul endroit, sans double saisie.
+
+**Notre ERP n'est pas EBP : est-ce possible ?**
+
+Oui, dès que votre ERP ou votre logiciel métier propose une API, un export ou un accès à sa base. Nous vérifions ce point ensemble, avant tout chiffrage.
+
+**L'application fonctionne-t-elle sans réseau ?**
+
+Oui. Sur un chantier ou en sous-sol, elle continue de fonctionner et se synchronise dès que la connexion revient.
+
+**Quand verrons-nous une première version ?**
+
+Un premier parcours utile est livré en quelques semaines, et vos équipes le testent avant d'aller plus loin.
+
+#### Dites-nous où vos équipes perdent l'information
+
+Un tableur tenu à côté du logiciel, une feuille papier ressaisie le soir : c'est souvent là qu'une application a le plus d'effet.
+
+## Accompagnement IA
+
+Adresse : https://solution-logique.fr/accompagnement-ia/
+Cas d'usage, formation des équipes, assistants reliés aux données de l'entreprise.
+
+### L'IA dans votre PME, sans esbroufe
+
+Identifier ce qui sert vraiment, former vos équipes, déployer ce qui tient dans la durée. Le reste, nous vous le déconseillerons.
+
+#### Trois étapes, dans cet ordre
+
+La plupart des projets d'IA échouent parce qu'ils commencent par l'outil. Nous commençons par l'usage.
+
+##### Audit des cas d'usage
+
+Nous regardons comment vos équipes travaillent réellement et nous identifions les tâches où l'IA fait gagner du temps — ainsi que celles où elle n'apporte rien.
+
+- Analyse des tâches répétitives
+- Cadrage des données mobilisables
+- Priorisation par gain réel
+
+##### Formation des équipes
+
+Un outil que personne ne sait utiliser ne sert à rien. Nous formons vos collaborateurs sur leurs propres cas, avec leurs propres documents.
+
+- Sessions sur vos cas concrets
+- Bonnes pratiques et limites à connaître
+- Montée en autonomie progressive
+
+##### Déploiement d'assistants
+
+Des assistants connectés à vos données métier — documentation, historique commercial, procédures — plutôt qu'un outil générique déconnecté de votre activité.
+
+- Assistants connectés à vos données
+- Maîtrise de ce qui sort de l'entreprise
+- Suivi de l'usage après mise en service
+
+#### Ce que nous avons déjà construit
+
+Des modules branchés sur des données réelles, en service aujourd'hui. Chacun peut servir de point de départ pour votre propre cas.
+
+##### Un assistant qui interroge votre gestion
+
+Vous posez la question en français, par exemple « quels clients n'ont rien réglé depuis 60 jours ? », et l'assistant va chercher la réponse dans votre base EBP.
+
+Accès en lecture seule : il consulte, il ne modifie rien.
+
+##### Des appels transcrits et rattachés au client
+
+Les appels téléphoniques sont transcrits, résumés et rangés sur la fiche du client. Plus besoin de reprendre ses notes pour savoir ce qui a été dit.
+
+Transcription effectuée sur nos serveurs, pas chez un tiers.
+
+##### Des anomalies repérées dans la facturation
+
+Un modèle apprend à quoi ressemble une facture ou une affaire normale chez vous, puis signale celles qui s'en écartent : remise inhabituelle, montant incohérent, oubli.
+
+Il signale, un humain décide.
+
+##### Une assistante de réservation par messagerie
+
+Pour un institut de soins : consulter le planning, bloquer un créneau, être prévenu d'un paiement ou d'une annulation, le tout depuis une messagerie.
+
+Les modifications du site passent par une validation humaine.
+
+##### Une surveillance qui travaille la nuit
+
+Des agents vérifient chaque nuit que les services, les sauvegardes et les certificats sont en bon état, et préviennent avant que l'incident ne se voie.
+
+Chaque alerte renvoie vers la mesure qui l'a déclenchée.
+
+Captures de nos outils en production. Noms, sociétés et numéros affichés sont fictifs.
+
+#### Ce que nous ne ferons pas
+
+- Vous vendre un outil dont vous n'avez pas l'usage.
+- Promettre des gains que nous ne savons pas mesurer.
+- Envoyer vos données sensibles n'importe où sans vous le dire.
+- Vous laisser seul une fois l'outil installé.
+
+#### L'IA avec un prestataire de proximité
+
+Audit des cas d'usage, formation des équipes, assistants connectés à vos données métier : Solution Logique accompagne les PME d'Annecy et de Haute-Savoie dans leurs projets d'IA, depuis ses bureaux de Pringy.
+
+#### Questions fréquentes
+
+**Par quoi commence un projet d'IA ?**
+
+Par l'usage, pas par l'outil : un audit des cas d'usage repère les tâches où l'IA fait gagner du temps, et celles où elle n'apporte rien. Viennent ensuite la formation des équipes, puis le déploiement d'assistants.
+
+**Que deviennent nos données ?**
+
+Elles ne partent pas n'importe où sans que vous le sachiez : la maîtrise de ce qui sort de l'entreprise fait partie du déploiement d'un assistant. Un assistant qui interroge votre base EBP, par exemple, n'y a accès qu'en lecture seule : il consulte, il ne modifie rien.
+
+**Nos équipes seront-elles formées ?**
+
+Oui. Nous formons vos collaborateurs sur leurs propres cas, avec leurs propres documents, jusqu'à ce qu'ils soient autonomes, puis nous suivons l'usage après la mise en service.
+
+#### Par où commencer ?
+
+Un échange suffit souvent à distinguer ce qui vaut le coup de ce qui n'est qu'un effet de mode.
+
+## Logiciels EBP et formations
+
+Adresse : https://solution-logique.fr/logiciels/
+Revente, installation, paramétrage et formation.
+
+### Logiciels EBP & Formations
+
+Découvrez nos solutions EBP et nos formations pour optimiser la gestion de votre entreprise. Plus de 30 ans d'expertise à votre service.
+
+#### Solutions EBP Professionnelles
+
+Choisissez la solution adaptée à votre secteur d'activité
+
+##### EBP Comptabilité
+
+Optimisez la gestion de votre trésorerie et analysez la santé financière de votre entreprise avec nos logiciels de comptabilité professionnels.
+
+- Saisie comptable simplifiée
+- Déclarations fiscales automatiques
+- Tableaux de bord en temps réel
+- Synchronisation bancaire
+- Sauvegarde cloud sécurisée
+
+##### EBP Gestion Commerciale
+
+Gérez tous les aspects commerciaux de votre entreprise et gagnez en efficacité avec nos solutions de gestion commerciale intégrées.
+
+- Gestion des devis et factures
+- Suivi des stocks en temps réel
+- CRM intégré
+- Statistiques commerciales avancées
+- Mobile et multi-sites
+
+##### EBP Bâtiment
+
+Optimisez la rentabilité de vos chantiers, chiffrez et facturez efficacement. Gagnez un temps précieux pour vous consacrer à votre cœur de métier.
+
+- Devis et métrés automatisés
+- Suivi de chantiers en temps réel
+- Gestion des sous-traitants
+- Planning et ressources
+- Facturation intégrée
+
+##### Pourquoi choisir EBP ?
+
+Leader français du logiciel de gestion pour PME depuis plus de 35 ans
+
+###### Sécurisé
+
+Données protégées et sauvegardées
+
+###### Support expert
+
+Accompagnement personnalisé
+
+###### Certifié
+
+Conforme aux normes françaises
+
+###### Intuitif
+
+Interface simple et moderne
+
+##### Ce que disent nos clients
+
+Plus de 1000 entreprises nous font confiance
+
+#### Votre partenaire EBP à Annecy
+
+Revendeur et intégrateur EBP à Annecy, Solution Logique présente les logiciels EBP Comptabilité, Gestion Commerciale et Bâtiment, les installe, les paramètre et forme vos équipes. Nos bureaux sont à Pringy et nous accompagnons les entreprises de Haute-Savoie et du bassin annécien.
+
+#### Questions fréquentes
+
+**Quels logiciels EBP proposez-vous ?**
+
+EBP Comptabilité, EBP Gestion Commerciale et EBP Bâtiment. Nous les vendons, les installons, les paramétrons et formons vos équipes.
+
+**Peut-on voir le logiciel avant de l'acheter ?**
+
+Oui. Demandez une démonstration personnalisée depuis cette page ou au 04 50 64 02 33.
+
+**Où se déroulent les formations ?**
+
+Dans nos locaux ou sur site, en individuel ou en groupe, avec un programme adapté à vos besoins.
+
+#### Prêt à optimiser votre gestion ?
+
+Découvrez nos solutions EBP lors d'une démonstration gratuite ou inscrivez-vous à l'une de nos formations.
+
+## EBP Comptabilité
+
+Adresse : https://solution-logique.fr/ebpcomptabilite/
+Gammes ACTIV, PRO et ELITE.
+
+### EBP Comptabilité
+
+Bien que la comptabilité soit une discipline universelle, chaque activité détient ses propres spécificités : bilan et compte de résultat (CSE, associations, etc.), gestion des dons fiscaux, dossiers de gestion, etc. Pour répondre au mieux aux exigences de votre métier/secteur, choisissez le logiciel de comptabilité qui facilite la tenue de votre trésorerie.
+
+#### Choisissez votre solution EBP
+
+Des solutions adaptées à chaque besoin, de l'essentiel à l'expertise
+
+##### EBP Comptabilité ACTIV
+
+Solution essentielle pour débuter
+
+##### EBP Comptabilité PRO
+
+La solution professionnelle complète
+
+##### EBP Comptabilité ELITE
+
+L'excellence pour les experts
+
+##### Pourquoi choisir EBP ?
+
+###### Fiable et sécurisé
+
+Solutions éprouvées depuis plus de 30 ans
+
+###### Support expert
+
+Accompagnement personnalisé et formations
+
+###### Personnalisable
+
+Adaptable à votre secteur d'activité
+
+###### Évolutif
+
+Grandit avec votre entreprise
+
+#### Formation EBP Comptabilité
+
+Notre formation EBP Comptabilité vous permettra d'acquérir une maîtrise complète du logiciel. De la saisie des écritures à l'édition des états comptables, vous apprendrez toutes les fonctionnalités essentielles pour une gestion comptable efficace.
+
+**Durée**
+
+3 jours
+
+**Niveau**
+
+Débutant à intermédiaire
+
+**Tarif**
+
+Sur devis
+
+##### Objectifs
+
+- Maîtriser les bases de la comptabilité dans EBP
+- Paramétrer et personnaliser le logiciel
+- Effectuer la saisie comptable au quotidien
+- Réaliser les opérations de fin de période
+- Éditer les états comptables réglementaires
+- Gérer la TVA et les déclarations fiscales
+
+##### Programme
+
+- 1 Découverte de l'interface et paramétrage initial
+- 2 Création et gestion du plan comptable
+- 3 Saisie des écritures comptables
+- 4 Rapprochement bancaire et lettrage
+- 5 Gestion des immobilisations
+- 6 TVA et déclarations fiscales
+- 7 Clôture d'exercice et états de synthèse
+- 8 Sauvegarde et archivage des données
+
+##### Prérequis
+
+- Connaissances de base en comptabilité générale
+- Utilisation courante de Windows
+- Notions de base en informatique
+
+Formation accessible aux personnes en situation de handicap — consulter notre engagement
+
+#### EBP Comptabilité avec un intégrateur à Annecy
+
+Revendeur et intégrateur EBP à Annecy, Solution Logique vous aide à choisir entre EBP Comptabilité ACTIV, PRO et ELITE, installe le logiciel, le paramètre et forme vos équipes. Nous accompagnons les entreprises de Haute-Savoie et du bassin annécien depuis nos bureaux de Pringy.
+
+#### Questions fréquentes
+
+**Quelle version d'EBP Comptabilité choisir ?**
+
+ACTIV pour débuter avec une comptabilité générale complète. PRO pour la déclaration de TVA intégrée, la gestion des impayés et le rapprochement bancaire automatique. ELITE pour le multi-dossiers, le multi-utilisateurs, les ratios financiers et le reporting avancé.
+
+**Peut-on voir le logiciel avant de l'acheter ?**
+
+Oui. Demandez une démonstration personnalisée depuis cette page ou au 04 50 64 02 33.
+
+**Combien de temps dure la formation ?**
+
+Trois jours, du niveau débutant à intermédiaire, sur devis. Le programme détaillé figure dans la section Formation de cette page.
+
+**Et si EBP ne fait pas exactement ce dont nous avons besoin ?**
+
+Quand le paramétrage ne suffit pas, nous développons autour d'EBP les applications, intégrations et états sur-mesure qui manquent. C'est l'objet de notre page Développement sur-mesure.
+
+#### Prêt à optimiser votre gestion ?
+
+Contactez-nous pour une démonstration personnalisée et découvrez comment EBP peut transformer votre gestion quotidienne.
+
+## EBP Gestion Commerciale
+
+Adresse : https://solution-logique.fr/ebpgestionco/
+Ventes, achats, stocks, relation client.
+
+### EBP Gestion Commerciale
+
+Optimisez votre gestion commerciale avec les solutions EBP dédiées aux ventes, achats, stocks et relation client. Des outils puissants pour développer votre chiffre d'affaires et fidéliser votre clientèle avec une gestion commerciale professionnelle et intuitive.
+
+#### Choisissez votre solution EBP
+
+Des solutions adaptées à chaque besoin, de l'essentiel à l'expertise
+
+##### EBP Gestion Commerciale ACTIV
+
+L'essentiel pour débuter en gestion commerciale
+
+##### EBP Gestion Commerciale PRO
+
+La solution complète pour professionnels
+
+##### EBP Gestion Commerciale ELITE
+
+L'excellence pour les experts du commerce
+
+##### Pourquoi choisir EBP ?
+
+###### Fiable et sécurisé
+
+Solutions éprouvées depuis plus de 30 ans
+
+###### Support expert
+
+Accompagnement personnalisé et formations
+
+###### Personnalisable
+
+Adaptable à votre secteur d'activité
+
+###### Évolutif
+
+Grandit avec votre entreprise
+
+#### Formation EBP Gestion Commerciale
+
+Apprenez à maîtriser toutes les fonctionnalités d'EBP Gestion Commerciale pour gérer efficacement vos ventes, achats, stocks et relations clients. Une formation complète pour transformer votre approche commerciale.
+
+**Durée**
+
+3 jours
+
+**Niveau**
+
+Débutant à confirmé
+
+**Tarif**
+
+Sur devis
+
+##### Objectifs
+
+- Paramétrer EBP Gestion Commerciale selon vos besoins
+- Gérer efficacement vos fichiers clients et fournisseurs
+- Maîtriser le processus de vente complet
+- Optimiser la gestion des stocks et approvisionnements
+- Éditer devis, factures et documents commerciaux
+- Analyser vos performances commerciales
+
+##### Programme
+
+- 1 Installation et paramétrage du logiciel
+- 2 Création des fichiers clients et fournisseurs
+- 3 Gestion du catalogue articles et tarifs
+- 4 Cycle de vente : devis, commandes, livraisons, factures
+- 5 Gestion des achats et des stocks
+- 6 Encaissements et règlements
+- 7 États et statistiques commerciales
+- 8 Liaison avec la comptabilité
+
+##### Prérequis
+
+- Connaissances de base en gestion commerciale
+- Maîtrise de l'environnement Windows
+- Expérience en gestion d'entreprise recommandée
+
+Formation accessible aux personnes en situation de handicap — consulter notre engagement
+
+#### EBP Gestion Commerciale installé et suivi depuis Annecy
+
+Solution Logique, revendeur et intégrateur EBP à Annecy, vous aide à choisir entre EBP Gestion Commerciale ACTIV, PRO et ELITE, le paramètre selon vos besoins et forme vos équipes au cycle de vente complet. Nous intervenons en Haute-Savoie et dans le bassin annécien.
+
+#### Questions fréquentes
+
+**Quelle version d'EBP Gestion Commerciale choisir ?**
+
+ACTIV pour débuter : clients, fournisseurs, articles, devis et factures. PRO pour le cycle de vente complet, la gestion avancée des stocks, les règlements et les relances clients. ELITE pour le multi-sociétés, le multi-devises, le multi-magasins et les connecteurs e-commerce.
+
+**Peut-on voir le logiciel avant de l'acheter ?**
+
+Oui. Demandez une démonstration personnalisée depuis cette page ou au 04 50 64 02 33.
+
+**Combien de temps dure la formation ?**
+
+Trois jours, du niveau débutant à confirmé, sur devis. Le programme détaillé figure dans la section Formation de cette page.
+
+**Et si EBP ne fait pas exactement ce dont nous avons besoin ?**
+
+Quand le paramétrage ne suffit pas, nous développons autour d'EBP les applications, intégrations et états sur-mesure qui manquent. C'est l'objet de notre page Développement sur-mesure.
+
+#### Prêt à optimiser votre gestion ?
+
+Contactez-nous pour une démonstration personnalisée et découvrez comment EBP peut transformer votre gestion quotidienne.
+
+## EBP Bâtiment
+
+Adresse : https://solution-logique.fr/ebpbatiment/
+Devis, métrés, chantiers et facturation du BTP.
+
+### EBP Bâtiment
+
+Solutions spécialisées pour les professionnels du BTP. Gérez vos devis, chantiers, métrés et facturation avec des outils conçus spécifiquement pour le secteur du bâtiment. De l'artisan à l'entreprise générale, trouvez la solution adaptée à votre activité.
+
+#### Choisissez votre solution EBP
+
+Des solutions adaptées à chaque besoin, de l'essentiel à l'expertise
+
+##### EBP Gestion Bâtiment
+
+La gestion de chantiers simplifiée
+
+##### EBP Expert Bâtiment
+
+L'excellence pour les professionnels du BTP
+
+##### EBP Bâtiment PRO
+
+Solution complète métré-devis-facture
+
+##### Pourquoi choisir EBP ?
+
+###### Fiable et sécurisé
+
+Solutions éprouvées depuis plus de 30 ans
+
+###### Support expert
+
+Accompagnement personnalisé et formations
+
+###### Personnalisable
+
+Adaptable à votre secteur d'activité
+
+###### Évolutif
+
+Grandit avec votre entreprise
+
+#### Formation EBP Gestion Bâtiment
+
+Formation spécialisée pour les professionnels du BTP. Apprenez à gérer efficacement vos devis, chantiers, planning et facturation avec EBP Bâtiment. Une solution complète adaptée aux spécificités du secteur.
+
+**Durée**
+
+3 jours
+
+**Niveau**
+
+Spécialisé BTP
+
+**Tarif**
+
+Sur devis
+
+##### Objectifs
+
+- Paramétrer EBP Bâtiment selon votre activité
+- Créer des devis détaillés avec métrés
+- Gérer le planning et l'avancement des chantiers
+- Maîtriser la facturation et situations de travaux
+- Suivre la rentabilité de vos chantiers
+- Gérer les sous-traitants et fournisseurs
+
+##### Programme
+
+- 1 Paramétrage spécifique BTP et bibliothèques d'ouvrages
+- 2 Création de devis et métrés détaillés
+- 3 Gestion des chantiers et planning
+- 4 Suivi d'avancement et situations de travaux
+- 5 Facturation et attachements
+- 6 Gestion des approvisionnements chantier
+- 7 Sous-traitance et co-traitance
+- 8 Analyse de rentabilité et tableaux de bord
+
+##### Prérequis
+
+- Expérience dans le secteur du BTP
+- Connaissances en gestion de chantiers
+- Maîtrise de base de l'informatique
+
+Formation accessible aux personnes en situation de handicap — consulter notre engagement
+
+#### EBP Bâtiment pour les entreprises du BTP de Haute-Savoie
+
+Artisans et entreprises du BTP de Haute-Savoie : Solution Logique, revendeur et intégrateur EBP à Annecy, vous aide à choisir entre EBP Gestion Bâtiment, Bâtiment PRO et Expert Bâtiment, paramètre vos bibliothèques d'ouvrages et forme vos équipes aux devis, métrés et situations de travaux.
+
+#### Questions fréquentes
+
+**Quelle version d'EBP Bâtiment choisir ?**
+
+EBP Gestion Bâtiment pour les devis, métrés, chantiers et la facturation de situations. Bâtiment PRO pour le métré-devis-facture détaillé avec bibliothèques d'ouvrages et indexation des prix. Expert Bâtiment pour le multi-chantiers, la sous-traitance, le planning Gantt et l'application mobile chantier.
+
+**Peut-on voir le logiciel avant de l'acheter ?**
+
+Oui. Demandez une démonstration personnalisée depuis cette page ou au 04 50 64 02 33.
+
+**Combien de temps dure la formation ?**
+
+Trois jours, sur devis. Elle s'adresse à des personnes qui connaissent déjà le BTP et la gestion de chantiers ; le programme détaillé figure dans la section Formation de cette page.
+
+**Et si EBP ne fait pas exactement ce dont nous avons besoin ?**
+
+Quand le paramétrage ne suffit pas, nous développons autour d'EBP les applications, intégrations et états sur-mesure qui manquent. C'est l'objet de notre page Développement sur-mesure.
+
+#### Prêt à optimiser votre gestion ?
+
+Contactez-nous pour une démonstration personnalisée et découvrez comment EBP peut transformer votre gestion quotidienne.
+
+## Contact
+
+Adresse : https://solution-logique.fr/contact/
+Formulaire, demande de rappel, plan d'accès.
+
+### Contactez-nous
+
+Nous sommes là pour répondre à toutes vos questions et vous accompagner dans vos projets.
+
+#### Envoyez-nous un message
+
+475 Route des Vernes, 74370 Annecy
+
+La carte est fournie par Google : elle ne se charge que si vous cliquez sur « Afficher la carte ».
+
+#### Nous trouver, nous joindre
+
+Nos bureaux sont au 475 route des Vernes, à Pringy, sur la commune d'Annecy. Le support répond du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30 ; en dehors de ces horaires, écrivez-nous par le formulaire ou demandez à être rappelé.
+
+Les toilettes et salles de réunion sont accessibles et aux normes PMR, et un parking réservé se trouve à proximité immédiate. Pour une assistance immédiate sur votre poste, passez par la page Télémaintenance.
+
+#### Questions fréquentes
+
+**Où se trouve Solution Logique ?**
+
+Au 475 route des Vernes, 74370 Annecy, à Pringy (Haute-Savoie).
+
+**Depuis quand Solution Logique existe-t-elle ?**
+
+Depuis 1990 : la société a été créée le 8 novembre 1990. C'est une SAS immatriculée au RCS d'Annecy sous le numéro 379 868 540.
+
+**Dans quelle zone intervenez-vous ?**
+
+Annecy et son agglomération, le reste de la Haute-Savoie (Chablais, vallée de l'Arve, Genevois) et la Savoie, dans vos locaux ou à distance par télémaintenance.
+
+**Quand peut-on joindre le support ?**
+
+Du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30, au 04 50 64 02 33. En dehors de ces horaires, écrivez-nous par le formulaire de contact du site.
+
+## Engagement handicap
+
+Adresse : https://solution-logique.fr/engagementHandicap/
+
+### Notre engagement handicap
+
+Une entreprise inclusive et accessible. Nous nous engageons pour l'insertion professionnelle et l'accessibilité de nos locaux.
+
+#### Référent en Entreprise
+
+Votre contact privilégié chez Solution Logique
+
+#### Accessibilité des locaux
+
+Nos aménagements pour votre confort
+
+- Porte d’entrée et ascenseur adaptés pour l'accessibilité aux candidats
+- Toilettes et salles de réunion accessibles et aux normes PMR
+- Parking réservé à proximité immédiate
+
+#### Partenaires & Ressources
+
+Les organismes qui nous accompagnent
+
+##### Maison Départementale (MDPH 74)
+
+Administration départementale à Annecy
+
+##### Agefiph Auvergne-Rhône-Alpes
+
+Association de gestion pour l'insertion des personnes handicapées
+
+##### Chambre Métier et de l’Artisanat
+
+Haute-Savoie
+
+##### Cap Emploi Savoie Haute-Savoie
+
+Organisme de placement spécialisé
+
+## Mentions légales
+
+Adresse : https://solution-logique.fr/mentions-legales/
+
+### Mentions légales
+
+Le site solution-logique.fr est édité par Solution Logique, entreprise de services informatiques créée en 1990.
+
+#### Éditeur du site
+
+**Dénomination**
+
+SOLUTION LOGIQUE
+
+**Forme**
+
+Société par actions simplifiée (SAS)
+
+**Siège social**
+
+475 route des Vernes, Pringy, 74370 Annecy
+
+**Immatriculation**
+
+RCS Annecy 379 868 540
+
+**SIRET du siège**
+
+379 868 540 00038
+
+**TVA intracommunautaire**
+
+FR65 379 868 540
+
+**Téléphone**
+
+04 50 64 02 33
+
+**E-mail**
+
+site@solution-logique.fr
+
+#### Directeur de la publication
+
+Pascal Rey, président de Solution Logique.
+
+#### Hébergement
+
+**Hébergeur**
+
+OVH SAS
+
+**Adresse**
+
+2 rue Kellermann, 59100 Roubaix, France
+
+**Immatriculation**
+
+RCS Lille Métropole 424 761 419
+
+**Téléphone**
+
+1007 (depuis la France)
+
+**Site**
+
+www.ovhcloud.com
+
+#### Propriété intellectuelle
+
+Les contenus de ce site (textes, images, logo) sont protégés par le droit d'auteur. Les logos et marques des éditeurs et constructeurs cités (EBP, Dell, Lenovo, Stormshield, VMware, 3CX, Kyocera et les autres) appartiennent à leurs titulaires respectifs. Toute reproduction sans autorisation écrite est interdite.
+
+#### Données personnelles
+
+Ce que le site collecte, pourquoi et comment exercer vos droits : politique de confidentialité.
+
+## Sauvegardes d'une PME : appliquer la règle 3-2-1
+
+Adresse : https://solution-logique.fr/conseils/sauvegardes-pme-regle-3-2-1/
+Trois copies, deux supports, une hors ligne : la règle 3-2-1 de l'ANSSI expliquée pour une PME, avec la fréquence, les tests de restauration et le chiffrement.
+
+Conseils Publié le 30 octobre 2026 Par Solution Logique
+
+### Sauvegardes d'une PME : appliquer la règle 3-2-1
+
+Un rançongiciel, un incendie ou un disque qui lâche : le jour où les données disparaissent, seule une sauvegarde intacte permet de repartir. L'ANSSI recommande la règle 3-2-1. Ce qu'elle veut dire, et comment l'appliquer dans une PME.
+
+#### Pourquoi les sauvegardes sont une cible
+
+Une sauvegarde sert le jour où tout le reste a échoué. Les attaquants le savent : l'ANSSI note qu'il est fréquent qu'un attaquant tente de chiffrer, d'effacer ou de rendre indisponible l'infrastructure de sauvegarde avant de déclencher un rançongiciel. Une sauvegarde rangée à côté du serveur, branchée en permanence sur le même réseau, partira avec lui. Elle ne protège pas non plus d'un incendie, d'un dégât des eaux ou d'un vol.
+
+#### La règle 3-2-1 telle que l'ANSSI la formule
+
+Dans son guide « Sauvegarde des systèmes d'information : les fondamentaux » (version 1.1 du 27 novembre 2025), l'ANSSI recommande d'appliquer la règle « 3-2-1 » : trois copies distinctes des données, c'est-à-dire les données en production et deux sauvegardes, stockées sur des supports différents, dont une hors ligne.
+
+Hors ligne veut dire déconnectée de tout système informatique, pas seulement rangée ailleurs. L'ANSSI juge une sauvegarde hors ligne indispensable, même si elle est moins fréquente que les sauvegardes en ligne. La CNIL reprend la même règle.
+
+Cybermalveillance.gouv.fr ne cite pas la règle par son nom, mais ses conseils vont dans le même sens : plusieurs sauvegardes sur des supports différents, une copie conservée dans un autre lieu que les données d'origine, et un support de sauvegarde déconnecté de l'ordinateur ou du réseau quand il ne sert pas.
+
+#### À quoi cela ressemble dans une PME
+
+Prenons une PME dont les fichiers et les dossiers de gestion sont sur un serveur au bureau. La première copie est l'original, sur le serveur. La deuxième est une sauvegarde automatique, chaque jour, sur un autre support : un stockage réseau dédié, par exemple. La troisième est la copie hors ligne : un support qui n'est branché que le temps de la sauvegarde puis rangé ailleurs, ou une bande. L'ANSSI note que la bande magnétique reste le moyen le plus efficace pour la sauvegarde hors ligne.
+
+Une copie dans le nuage peut tenir le rôle de la copie hors site, sous conditions. L'ANSSI considère toutefois qu'une sauvegarde hors ligne reste plus robuste qu'une sauvegarde en ligne, même protégée contre l'effacement.
+
+#### Combien de fois sauvegarder, et combien de temps garder
+
+Il n'y a pas de fréquence imposée. L'ANSSI demande de partir de deux questions : combien de données l'entreprise peut-elle perdre au plus, et combien de temps peut-elle rester arrêtée ? Un fichier sur lequel on travaille toute la journée peut, selon Cybermalveillance, demander plusieurs sauvegardes par jour. Dans une entreprise, mieux vaut écrire la procédure : qui sauvegarde, quoi, et à quelle fréquence.
+
+Pour la durée de conservation, l'ANSSI donne un exemple de répartition : quinze jours de sauvegardes journalières, un an de sauvegardes mensuelles et cinq ans de sauvegardes annuelles. Les anciennes versions servent quand un fichier a été abîmé sans que personne le voie tout de suite.
+
+#### Une sauvegarde qui n'a jamais été restaurée n'est pas une sauvegarde
+
+Les deux sources insistent : il faut tester. L'ANSSI demande de tester les sauvegardes régulièrement et de rédiger une procédure de restauration, mise en œuvre elle aussi régulièrement. Restaurer de temps en temps un dossier sur un autre poste et vérifier qu'il s'ouvre suffit déjà à éviter les mauvaises surprises.
+
+Pensez aussi à ce qui permet de se servir des données : l'ANSSI recommande de sauvegarder les médias d'installation et la configuration des applications métier, et Cybermalveillance les logiciels indispensables à l'exploitation des données. Une base de comptabilité sans le logiciel qui la lit ne sert pas à grand-chose.
+
+#### Protéger les sauvegardes elles-mêmes
+
+- Chiffrer les sauvegardes, surtout celles qui quittent le bureau, et protéger l'accès à l'outil de sauvegarde par un mot de passe unique et robuste.
+- Ne pas mettre les serveurs de sauvegarde dans le même domaine Windows que la production : un compte volé ne doit pas ouvrir les deux.
+- En cas d'attaque, isoler d'abord la sauvegarde du reste du réseau, puis vérifier qu'elle ne contient pas déjà le code de l'attaquant avant de restaurer.
+- Surveiller l'âge des supports et des logiciels de sauvegarde : un outil qui n'est plus mis à jour ne garantit plus la sécurité des copies.
+
+#### La liste à vérifier
+
+- Trois copies des données, sur deux supports différents.
+- Au moins une copie hors ligne, débranchée hors des sauvegardes.
+- Une copie hors du bureau.
+- Une fréquence choisie selon la perte de données acceptable, et écrite.
+- Un test de restauration régulier.
+- Des sauvegardes chiffrées et un accès protégé.
+
+Nous mettons en place et suivons les sauvegardes de nos clients dans le cadre de leur infrastructure informatique, et nous les vérifions lors d'un audit de cybersécurité. Pour aller plus loin sur la protection du poste et du réseau, lisez aussi notre article sur les mesures de cybersécurité de base.
+
+#### Sources
+
+- Sauvegarde des systèmes d'information : les fondamentaux (ANSSI-BP-100, v1.1), ANSSI, page mise à jour le 27 novembre 2025, consultée le 29 octobre 2026.
+- Pourquoi et comment bien gérer ses sauvegardes ?, Cybermalveillance.gouv.fr, page mise à jour le 14 septembre 2026, consultée le 29 octobre 2026.
+- Photos, fichiers, messages : comment protéger ses données numériques grâce aux sauvegardes ?, Cybermalveillance.gouv.fr, page mise à jour le 25 février 2026, consultée le 29 octobre 2026.
+- Sécurité : sauvegarder, CNIL, page mise à jour le 14 mars 2024, consultée le 29 octobre 2026.
+
+#### Parlons de votre projet
+
+Un diagnostic gratuit de votre système informatique, sans engagement. Nous vous dirons ce qui mérite d'être fait, et dans quel ordre.
+
+##### Nos coordonnées
+
+**Téléphone**
+
+04 50 64 02 33
+
+**E-mail**
+
+site@solution-logique.fr
+
+**Adresse**
+
+475 Rte des Vernes, 74370 Annecy
+
+**Horaires**
+
+Lun - Ven : 8h30 - 12h00 / 14h00 - 17h30 Fermé samedi et dimanche
+
+## Cybersécurité d'une PME : les mesures de base
+
+Adresse : https://solution-logique.fr/conseils/cybersecurite-pme-mesures-de-base/
+Mises à jour, mots de passe et double authentification, sauvegardes, pare-feu, droits d'administration : les mesures de base des guides de l'ANSSI pour une PME.
+
+Conseils Publié le 30 octobre 2026 Par Solution Logique
+
+### Cybersécurité d'une PME : les mesures de base
+
+Les petites entreprises sont des cibles de choix quand elles n'ont pas de protection, rappelle l'ANSSI. La bonne nouvelle : les mesures qui arrêtent la plupart des attaques sont connues et à la portée d'une PME. Les voici, d'après les guides officiels.
+
+L'ANSSI a écrit pour les petites structures un guide court, « La cybersécurité pour les TPE/PME en 13 questions » (version de décembre 2024). Il complète son « Guide d'hygiène informatique » de 42 mesures, plus technique, qui s'adresse d'abord aux entreprises dotées d'un service informatique. Sa question d'ouverture résume l'enjeu : si vos données disparaissent et que votre informatique s'arrête, êtes-vous prêts à retourner au papier et au crayon ?
+
+#### 1. Savoir ce que l'on a
+
+C'est la première des treize questions : connaître son parc informatique et ses actifs métier. Quels postes, quels serveurs, quels logiciels, quels comptes, et surtout quelles données font tourner l'entreprise. On ne protège bien que ce que l'on connaît. Le guide d'hygiène demande aussi de tenir à jour la liste des comptes qui ont des droits d'administration et d'organiser l'arrivée et le départ des salariés : un compte resté ouvert après un départ est une porte ouverte.
+
+#### 2. Appliquer les mises à jour
+
+Pour l'ANSSI, il est indispensable d'installer dès que possible les mises à jour des systèmes et des logiciels quand l'éditeur publie un correctif de sécurité, et d'activer les mises à jour automatiques proposées. Tout matériel ou logiciel qui ne peut plus être mis à jour doit être désinstallé et remplacé : un vieux poste sous un système abandonné ou un logiciel plus suivi reste vulnérable pour toujours.
+
+#### 3. Des mots de passe solides et la double authentification
+
+De nombreuses attaques sont facilitées par des mots de passe trop simples ou réutilisés d'un service à l'autre, rappelle l'ANSSI. Un mot de passe différent par service, long, et rangé dans un gestionnaire de mots de passe règle une bonne partie du problème. Il faut aussi changer les mots de passe par défaut des équipements (box, imprimantes, caméras, routeurs).
+
+Surtout, activez l'authentification à plusieurs facteurs partout où elle est proposée, à commencer par la messagerie et la banque. Le guide va plus loin pour les PME : idéalement, un facteur physique comme une clé ou une carte. Un mot de passe volé ne suffit plus alors à entrer.
+
+#### 4. Des sauvegardes, dont une hors ligne
+
+Les sauvegardes font l'objet de la deuxième question du guide. Une sauvegarde déconnectée du réseau et testée est ce qui permet de repartir après un rançongiciel sans négocier. Nous y consacrons un article : appliquer la règle 3-2-1.
+
+#### 5. Antivirus et pare-feu
+
+Le guide demande un antivirus à jour sur chaque poste, de préférence avec une protection contre l'hameçonnage, et un pare-feu dont on connaît les règles de filtrage. Le guide d'hygiène ajoute d'activer le pare-feu de chaque poste de travail, et de sécuriser le Wi-Fi en séparant celui des invités de celui de l'entreprise.
+
+#### 6. Séparer les usages et limiter les droits
+
+Un salarié n'a pas besoin des droits d'administrateur pour travailler : le guide d'hygiène demande de les limiter au strict besoin. Un logiciel malveillant ouvert par erreur a alors bien moins de prise. Le guide des 13 questions recommande aussi de séparer les usages personnels et professionnels, et de prévoir les déplacements : poste chiffré, connexion protégée hors du bureau.
+
+#### 7. Protéger la messagerie et former les équipes
+
+La messagerie est la porte d'entrée la plus fréquente : faux livreur, fausse facture, faux dirigeant qui demande un virement urgent. Les deux guides de l'ANSSI consacrent une mesure à la sécurité de la messagerie et une autre à la sensibilisation des utilisateurs. Quelques minutes pour apprendre à reconnaître un message piégé, et une règle simple (toute demande de virement ou de changement de RIB se vérifie par téléphone, au numéro habituel) évitent beaucoup de dégâts.
+
+#### 8. Préparer la suite : assurance, réaction, prestataires
+
+Les dernières questions du guide portent sur ce qui se passe le jour où l'attaque réussit : votre assurance couvre-t-elle le risque cyber ? Savez-vous comment réagir ? Qui appeler, quels postes débrancher, où sont les sauvegardes, qui prévient les clients : mieux vaut l'avoir écrit avant. Si vous utilisez des services en ligne, vérifiez qu'ils proposent la double authentification, des sauvegardes et des alertes en cas d'accès inhabituel. Enfin, le guide d'hygiène rappelle de maîtriser les risques de l'infogérance : votre prestataire informatique doit appliquer les mêmes règles que vous.
+
+#### Par où commencer cette semaine
+
+- Activer la double authentification sur la messagerie et la banque.
+- Vérifier que les mises à jour automatiques sont actives sur tous les postes et serveurs.
+- Vérifier qu'une sauvegarde hors ligne existe et la restaurer une fois.
+- Retirer les droits d'administrateur des comptes de travail courants.
+- Fermer les comptes des personnes parties.
+- Écrire sur une page qui appeler et quoi faire en cas d'attaque.
+
+Nous pouvons vous aider à mettre ces mesures en place : sécurité de l'infrastructure (pare-feu, protection des données, antivirus), maintenance des postes et serveurs, et audit de cybersécurité pour savoir où vous en êtes.
+
+#### Sources
+
+- La cybersécurité pour les TPE/PME en 13 questions, ANSSI, page mise à jour le 12 décembre 2024, consultée le 29 octobre 2026.
+- Guide d'hygiène informatique : renforcer la sécurité de son système d'information en 42 mesures, ANSSI, page mise à jour le 23 janvier 2017, consultée le 29 octobre 2026.
+- Sauvegarde des systèmes d'information : les fondamentaux (ANSSI-BP-100, v1.1), ANSSI, page mise à jour le 27 novembre 2025, consultée le 29 octobre 2026.
+
+#### Parlons de votre projet
+
+Un diagnostic gratuit de votre système informatique, sans engagement. Nous vous dirons ce qui mérite d'être fait, et dans quel ordre.
+
+##### Nos coordonnées
+
+**Téléphone**
+
+04 50 64 02 33
+
+**E-mail**
+
+site@solution-logique.fr
+
+**Adresse**
+
+475 Rte des Vernes, 74370 Annecy
+
+**Horaires**
+
+Lun - Ven : 8h30 - 12h00 / 14h00 - 17h30 Fermé samedi et dimanche
+
+## Facture électronique : ce qui change pour les PME en 2026 et 2027
+
+Adresse : https://solution-logique.fr/conseils/facture-electronique-pme-2026-2027/
+Calendrier, plateforme agréée, nouvelles mentions, e-reporting, sanctions, et comment préparer vos logiciels.
+
+Conseils Publié le 30 octobre 2026 Par Solution Logique
+
+### Facture électronique : ce qui change pour les PME en 2026 et 2027
+
+Depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques. Les PME et les micro-entreprises devront aussi les émettre au 1er septembre 2027. Le calendrier, les obligations, et comment préparer ses logiciels et ses équipes.
+
+#### Le calendrier en vigueur
+
+La réforme est entrée en application le 1er septembre 2026. Depuis cette date, toutes les entreprises assujetties à la TVA en France, quelle que soit leur taille, doivent être en mesure de recevoir des factures électroniques. Les grandes entreprises et les entreprises de taille intermédiaire doivent, elles, déjà émettre leurs factures sous forme électronique et transmettre à l'administration leurs données de transaction et de paiement.
+
+Pour les PME et les micro-entreprises, l'obligation d'émettre arrive au 1er septembre 2027, en même temps que la transmission des données (l'e-reporting). L'administration fiscale parle d'un « maintien du calendrier légal » : aucune page officielle ne fait état d'un report. Une entreprise peut aussi passer à l'émission électronique avant son échéance si elle le souhaite.
+
+Qui est une PME ? Une entreprise de moins de 250 personnes dont le chiffre d'affaires ne dépasse pas 50 millions d'euros, ou dont le total de bilan ne dépasse pas 43 millions. Une micro-entreprise compte moins de 10 personnes, avec un chiffre d'affaires ou un total de bilan d'au plus 2 millions d'euros.
+
+#### Une facture électronique n'est pas un PDF envoyé par mail
+
+C'est le point qui surprend le plus. Une facture électronique contient des données structurées, lisibles par un logiciel, dans un format reconnu : UBL, CII, ou un format mixte qui associe un fichier de données et une image de la facture. Le Factur-X est de ce type. Un PDF ordinaire joint à un mail ne compte pas.
+
+Les factures ne circulent plus directement d'une entreprise à l'autre : elles passent par des plateformes agréées, autrefois appelées PDP, immatriculées par la DGFiP pour trois ans renouvelables. Chaque entreprise en choisit une pour recevoir ses factures. L'État n'a pas créé de portail unique d'échange, mais il tient un annuaire national qui indique à quelle adresse chaque entreprise reçoit ses factures. Une facture reçue par mail ou sur papier pendant la mise en route ne doit pas être rejetée pour ce seul motif.
+
+#### Quatre nouvelles mentions sur vos factures
+
+- le numéro SIREN du client ;
+- la catégorie de l'opération : vente, prestation de services, ou les deux ;
+- l'option pour le paiement de la TVA sur les débits, le cas échéant ;
+- l'adresse de livraison du bien, si elle diffère de l'adresse de facturation.
+
+Dans un logiciel de gestion, cela veut dire des fiches clients complètes (le SIREN surtout) et des articles bien rangés entre biens et services.
+
+#### L'e-reporting, pour ce qui n'est pas facturé entre entreprises françaises
+
+Les ventes aux particuliers et les opérations avec l'étranger (exportations, échanges intracommunautaires) ne donnent pas lieu à une facture électronique, mais leurs données doivent être transmises à l'administration. S'y ajoutent les données de paiement des prestations de services quand la TVA est due à l'encaissement. Cette transmission ne se fait ni au fil de l'eau ni chaque jour : sa fréquence dépend du régime de TVA de l'entreprise.
+
+#### Préparer ses logiciels
+
+Toute la chaîne est concernée : le logiciel de gestion commerciale ou l'ERP qui émet les factures, le logiciel métier ou la boutique en ligne s'ils en produisent aussi, et la comptabilité, qui reçoit les factures des fournisseurs. Chaque logiciel doit savoir produire ou lire une facture structurée et échanger avec une plateforme agréée.
+
+- Recensez les logiciels qui émettent des factures et ceux qui doivent en recevoir.
+- Pour chacun, demandez à l'éditeur quelle plateforme agréée il raccorde, à partir de quelle version, et si une offre ou un abonnement particulier est nécessaire.
+- Vérifiez que les outils qui se passent des données aujourd'hui par export ou ressaisie (facturation, comptabilité, banque, boutique en ligne) le feront encore une fois la réforme en place.
+
+Un exemple parmi les logiciels que nous installons : EBP s'appuie sur la plateforme agréée Shine (numéro délivré le 21 mai 2026) ; seules ses versions Plus émettent les factures électroniques et automatisent l'e-reporting, l'émission arrive avec les versions de novembre, déployées progressivement depuis le 27 octobre 2026, et l'éditeur annonce encore des cas d'e-reporting des paiements à traiter d'ici la fin de 2026. Pour un autre logiciel, c'est la page de son éditeur qui fait foi.
+
+#### Les sanctions
+
+La loi de finances pour 2026 a relevé les amendes : 50 € par facture non émise sous forme électronique et 500 € par transmission d'e-reporting manquante, avec un plafond de 15 000 € par année civile dans les deux cas. Une entreprise qui ne s'est pas dotée d'une plateforme de réception est mise en demeure, puis, trois mois plus tard, s'expose à 500 €, et à 1 000 € de plus tous les trois mois. Une première infraction réparée à temps n'est pas sanctionnée. Le ministère a annoncé qu'aucune sanction ne serait prononcée avant la fin de 2026, sans que ce soit un report de l'obligation.
+
+#### Par où commencer
+
+- Vérifiez que votre entreprise a bien désigné sa plateforme de réception : c'est obligatoire depuis le 1er septembre 2026.
+- Demandez à l'éditeur de chaque logiciel qui facture la version et la plateforme prévues.
+- Complétez les fiches clients (SIREN, adresses de livraison) et rangez les articles entre biens et services.
+- Si vous êtes une PME, prévoyez le passage à l'émission avant le 1er septembre 2027, sans attendre l'été.
+
+Nous accompagnons les PME de Haute-Savoie sur l'ensemble : liaisons entre facturation, comptabilité, banque et boutique en ligne, mises à jour et paramétrage des logiciels de gestion, formation des équipes. Voir nos pages Développement sur mesure et Logiciels EBP. L'administration répond aussi aux questions au 0806 807 807.
+
+Article à jour au 29 octobre 2026. Les versions et les conditions des éditeurs évoluent : les notes de version de votre logiciel font foi.
+
+#### Sources
+
+- À partir de quand suis-je concerné par la réforme de la facturation électronique ?, impots.gouv.fr, page mise à jour le 16 janvier 2026, consultée le 29 octobre 2026.
+- Facturation électronique : guide pratique de démarrage au 1er septembre 2026, DGFiP, page mise à jour le 9 juillet 2026, consultée le 29 octobre 2026.
+- Je découvre la facturation électronique, impots.gouv.fr, page mise à jour le 26 mai 2026, consultée le 29 octobre 2026.
+- J'approfondis mes connaissances sur la réforme, impots.gouv.fr, page mise à jour le 6 janvier 2026, consultée le 29 octobre 2026.
+- Foire aux questions : j'approfondis la facturation électronique, DGFiP, page mise à jour le 1er septembre 2026, consultée le 29 octobre 2026.
+- Je consulte la liste des plateformes agréées, impots.gouv.fr, page mise à jour le 13 octobre 2026, consultée le 29 octobre 2026.
+- Facturation électronique : les sanctions évoluent, Service Public Entreprendre, page mise à jour le 20 février 2026, consultée le 29 octobre 2026.
+- Facturation électronique : le premier comité dresse le bilan du déploiement et engage la préparation de 2027, ministère de l'Économie (communiqué), page mise à jour le 9 octobre 2026, consultée le 29 octobre 2026.
+- FAQ : réforme de la facturation électronique, EBP, page mise à jour le 2 octobre 2026, consultée le 29 octobre 2026.
+- Nouveautés et corrections des versions EBP Gestion Commerciale, EBP, page mise à jour le 27 octobre 2026, consultée le 29 octobre 2026.
+- Nouveautés et corrections des versions Bâtiment, EBP, page mise à jour le 27 octobre 2026, consultée le 29 octobre 2026.
+- Nouveautés et corrections des versions EBP Comptabilité, EBP, page mise à jour le 29 octobre 2026, consultée le 29 octobre 2026.
+- Désigner la Plateforme Agréée Shine : solution EBP Plus, EBP, page mise à jour le 8 septembre 2026, consultée le 29 octobre 2026.
+
+#### Parlons de votre projet
+
+Un diagnostic gratuit de votre système informatique, sans engagement. Nous vous dirons ce qui mérite d'être fait, et dans quel ordre.
+
+##### Nos coordonnées
+
+**Téléphone**
+
+04 50 64 02 33
+
+**E-mail**
+
+site@solution-logique.fr
+
+**Adresse**
+
+475 Rte des Vernes, 74370 Annecy
+
+**Horaires**
+
+Lun - Ven : 8h30 - 12h00 / 14h00 - 17h30 Fermé samedi et dimanche
+
+## Votre prestataire informatique dans le Chablais
+
+Adresse : https://solution-logique.fr/secteurs/chablais/
+Entreprises du Chablais, de Thonon-les-Bains à Publier : maintenance informatique, télémaintenance, applications sur mesure et logiciels EBP.
+
+Chablais
+
+### Votre prestataire informatique dans le Chablais
+
+Des entreprises de Thonon-les-Bains et de ses environs nous confient leur informatique et leurs logiciels de gestion, à plus d'une heure de route de nos bureaux.
+
+Le Chablais est l'un des secteurs les plus éloignés de nos bureaux de Pringy : un peu plus de 70 km et environ une heure de route jusqu'à Thonon-les-Bains. Nous y suivons pourtant des entreprises depuis des années, pour la maintenance de leur informatique et pour leurs logiciels EBP.
+
+La distance change notre façon de travailler, pas le service. Un poste bloqué, un logiciel qui refuse de démarrer ou une question sur une écriture se règlent d'abord à distance, par télémaintenance, sans attendre un déplacement. Nous venons sur place quand il le faut : installation d'un serveur ou de postes, mise en route d'un logiciel, formation des équipes dans vos locaux.
+
+Une application sur mesure ou un accompagnement à l'IA se mènent de la même façon : les ateliers de cadrage et la formation dans vos locaux, le développement et le suivi à distance.
+
+Pour une installation ou une formation, nous convenons de la date avec vous ; pour le reste, le support répond du lundi au vendredi, de 8 h 30 à 12 h et de 14 h à 17 h 30, au 04 50 64 02 33.
+
+#### Où nous intervenons
+
+Nous suivons des entreprises dans ces communes et dans les communes voisines :
+
+- Thonon-les-Bains
+- Allinges
+- Publier
+
+Depuis nos bureaux de Pringy : environ 74 km et 1 h 05 de route jusqu'à Thonon-les-Bains, sans trafic.
+
+#### Ce que nous faisons pour vous
+
+- Maintenance des postes et des serveurs
+- Assistance à distance
+- Applications métier sur mesure
+- Accompagnement IA
+- Logiciels EBP, installation et formation
+
+#### Parlons de votre projet
+
+Un diagnostic gratuit de votre système informatique, sans engagement. Nous vous dirons ce qui mérite d'être fait, et dans quel ordre.
+
+##### Nos coordonnées
+
+**Téléphone**
+
+04 50 64 02 33
+
+**E-mail**
+
+site@solution-logique.fr
+
+**Adresse**
+
+475 Rte des Vernes, 74370 Annecy
+
+**Horaires**
+
+Lun - Ven : 8h30 - 12h00 / 14h00 - 17h30 Fermé samedi et dimanche
+
+## Votre prestataire informatique dans la vallée de l'Arve
+
+Adresse : https://solution-logique.fr/secteurs/vallee-de-l-arve/
+Maintenance informatique, téléphonie, applications sur mesure et logiciels EBP pour les entreprises de la vallée de l'Arve, de La Roche-sur-Foron à Sallanches.
+
+Vallée de l'Arve et Faucigny
+
+### Votre prestataire informatique dans la vallée de l'Arve
+
+De La Roche-sur-Foron à Sallanches, en passant par Bonneville et Cluses, nous suivons des entreprises de la vallée pour leur informatique, leur téléphonie et leurs logiciels de gestion.
+
+La vallée de l'Arve et le Faucigny sont, après le bassin annécien, l'un des secteurs où nous suivons le plus d'entreprises : leur informatique, leur téléphonie et, pour la plupart, leurs logiciels EBP en comptabilité, en gestion commerciale ou dans le bâtiment.
+
+La Roche-sur-Foron et Bonneville sont à une demi-heure de nos bureaux de Pringy, Cluses à quarante minutes. Nous venons sur place pour installer une nouvelle version, former une équipe ou reprendre un dossier, et nous réglons à distance, par télémaintenance, les questions du quotidien.
+
+Plusieurs entreprises de la vallée nous confient aussi leur téléphonie et la maintenance de leur informatique : un seul interlocuteur pour les postes, le téléphone et le logiciel. Quand le logiciel standard ne suffit plus, nous développons l'application qui manque, et nous accompagnons les équipes qui veulent se servir de l'IA.
+
+#### Où nous intervenons
+
+Nous suivons des entreprises dans ces communes et dans les communes voisines :
+
+- La Roche-sur-Foron
+- Saint-Pierre-en-Faucigny
+- Amancy
+- Bonneville
+- Fillinges
+- Viuz-en-Sallaz
+- La Tour
+- Taninges
+- Marnaz
+- Thyez
+- Cluses
+- Sallanches
+
+Depuis nos bureaux de Pringy : environ 33 km et 30 min de route jusqu'à La Roche-sur-Foron, 51 km et 40 min jusqu'à Cluses, sans trafic.
+
+#### Ce que nous faisons pour vous
+
+- Maintenance informatique
+- Téléphonie d'entreprise
+- Applications mobile et web pour les équipes de terrain
+- Accompagnement IA
+- Logiciels EBP (comptabilité, gestion commerciale, bâtiment)
+
+#### Parlons de votre projet
+
+Un diagnostic gratuit de votre système informatique, sans engagement. Nous vous dirons ce qui mérite d'être fait, et dans quel ordre.
+
+##### Nos coordonnées
+
+**Téléphone**
+
+04 50 64 02 33
+
+**E-mail**
+
+site@solution-logique.fr
+
+**Adresse**
+
+475 Rte des Vernes, 74370 Annecy
+
+**Horaires**
+
+Lun - Ven : 8h30 - 12h00 / 14h00 - 17h30 Fermé samedi et dimanche
+
+## Votre prestataire informatique en Savoie
+
+Adresse : https://solution-logique.fr/secteurs/savoie/
+Entreprises de Savoie, d'Aix-les-Bains et Chambéry à Ugine et Moûtiers : maintenance informatique, télémaintenance, applications sur mesure, logiciels EBP.
+
+Savoie
+
+### Votre prestataire informatique en Savoie
+
+Aix-les-Bains est à une demi-heure de nos bureaux, Chambéry à peine plus : nous suivons aussi des entreprises de l'autre côté de la limite du département.
+
+Nos clients de Savoie se trouvent surtout autour du lac du Bourget et de Chambéry, et jusqu'à Ugine et en Tarentaise. Pour la plupart, nous assurons la maintenance de leur informatique, et beaucoup utilisent aussi les logiciels EBP.
+
+Nos bureaux de Pringy sont au nord d'Annecy, près de l'autoroute qui mène à Aix-les-Bains et Chambéry : une demi-heure de route environ, sans trafic. Les demandes courantes se traitent à distance par télémaintenance ; nous venons dans vos locaux pour ce qui demande d'être sur place.
+
+Pour les entreprises plus éloignées, vers Ugine ou en Tarentaise, l'assistance passe d'abord par la télémaintenance, et les déplacements se prévoient avec vous. Il en va de même pour une application sur mesure ou un accompagnement à l'IA : le cadrage et la formation sur place, le reste à distance.
+
+#### Où nous intervenons
+
+Nous suivons des entreprises dans ces communes et dans les communes voisines :
+
+- Aix-les-Bains
+- Viviers-du-Lac
+- Chambéry
+- Ugine
+- Moûtiers
+
+Depuis nos bureaux de Pringy : environ 38 km et 30 min de route jusqu'à Aix-les-Bains, 51 km et 35 min jusqu'à Chambéry, sans trafic.
+
+#### Ce que nous faisons pour vous
+
+- Maintenance informatique
+- Sécurité du réseau et des données
+- Assistance à distance
+- Applications métier sur mesure
+- Accompagnement IA
+- Logiciels EBP
+
+#### Parlons de votre projet
+
+Un diagnostic gratuit de votre système informatique, sans engagement. Nous vous dirons ce qui mérite d'être fait, et dans quel ordre.
+
+##### Nos coordonnées
+
+**Téléphone**
+
+04 50 64 02 33
+
+**E-mail**
+
+site@solution-logique.fr
+
+**Adresse**
+
+475 Rte des Vernes, 74370 Annecy
+
+**Horaires**
+
+Lun - Ven : 8h30 - 12h00 / 14h00 - 17h30 Fermé samedi et dimanche
+
+## Conditions générales de vente
+
+Adresse : https://solution-logique.fr/conditionsGeneralesVente/
+
+### Conditions Générales de Vente
+
+Découvrez nos conditions générales de vente et de prestations de services
+
+#### CONDITIONS GÉNÉRALES DE VENTES ET DE PRESTATIONS DE SERVICES
+
+##### ENTRE LES PARTIES :
+
+###### Société Solution Logique
+
+SAS au capital social de 15 000 Euros RCS Annecy : 379 868 540 475 route des Vernes 74370 Pringy Prestataire Solution Logique
+
+##### ÉTANT PRÉALABLEMENT EXPOSÉ QUE :
+
+La société Solution logique est une société de prestations de services informatiques divers tels que, notamment, dépannage, installation de logiciels et de matériels, assistance, formation, maintenance… et ce auprès des entreprises, professions libérales, administrations.
+
+La société Solution logique réalise de la vente de produits informatiques (ordinateur, imprimante, logiciels…) sur commande.
+
+L'offre de prestations de service de la société Solution logique se décline comme suit :
+
+##### 1 Article 1 – Définitions
+
+Conditions générales de Vente et de Services : le présent acte.
+
+Parties : le Client et Solution logique.
+
+Matériels : les marchandises commandées et livrées par Solution logique au Client.
+
+Prestation : toute intervention de Solution logique au domicile du Client ou en ses locaux professionnels.
+
+Installation ou Intervention : une intervention de Solution logique au domicile ou dans les locaux professionnels du Client afin de dépanner un ordinateur, une imprimante, un périphérique, Internet, un réseau…, installer un nouveau matériel ou logiciel, éradiquer un virus… et ce de façon ponctuelle (« service à la carte ») ou dans le cadre de l'achat d'un « Contrat en temps partagé » CTP.
+
+Contrat en temps partagé : un nombre d'heures de services de Solution logique acheté par le Client pour les besoins informatiques de ce dernier. Ce crédit d'intervention est géré par le Client à sa convenance et peut être utilisé pour toute opération logicielle ou matérielle, pour toute formation informatique, pour tout autre type d'assistance informatique.
+
+Vente de matériels : la commande et la livraison de matériels tels que logiciel, serveur, ordinateur, imprimante, firewall … par Solution logique au Client.
+
+##### 2 Article 2 – Objet
+
+Les Conditions générales de Vente et de Services ont pour objet d'organiser le cadre dans lequel le Client sollicite Solution logique afin d'obtenir une intervention, une installation, un Contrat en temps partagé ou une vente de matériels…
+
+##### 3 Article 3 – Conditions générales d'exécution
+
+Les Prestations sont destinées à assister, conseiller, informer, former le Client, toutes autres personnes du même foyer ou tout subordonné du Client ; à aider à l'installation, la configuration des équipements appartenant au Client ou lui étant vendu par Solution logique ; à aider à résoudre les pannes de ces mêmes équipements.
+
+Les Prestations sont réalisées sur le lieu de résidence du Client s'il est particulier ou en ses locaux professionnels s'il s'agit d'une personne morale.
+
+Le Client se doit d'être à jour des licences d'exploitation des logiciels installés sur ses différents équipements et doit être à même de fournir tous les documents des fabricants et/ou distributeurs et/ou fournisseurs nécessaires à la réalisation des Prestations. Il n'est en aucun cas du rôle de Solution logique de vérifier cet élément.
+
+###### Mise en garde
+
+Solution logique ne pourra assurer ses Prestations, si l'environnement physique des équipements est non-conforme aux prescriptions du constructeur et/ou distributeur et/ou fournisseur aux règles de sécurité ; si les équipements ont fait état d'une manipulation anormale (volontaire ou non) ayant modifié leurs environnements physiques ; en cas d'évènement accidentel, de force majeure ou d'une cause exonératoire limitant partiellement ou totalement l'accès aux équipements pour lesquels le Client a expressément demandé une intervention de Solution logique notamment que les équipements soient inaccessibles pour quelles que raisons que ce soit, que les conditions d'alimentation électrique, téléphonique ou autres soient défectueuses ou qu'il soit impossible d'accéder au domicile ou dans les bureaux professionnels du Client.
+
+Solution logique peut immédiatement cesser d'assurer la ou les Prestations en cours, si de l'avis raisonnable de l'intervenant, les conditions de travail au domicile ou dans les locaux professionnels du Client risquent de mettre sa sécurité en danger ou s'il suspecte le Client d'avoir modifié ses équipements sans l'avoir préalablement averti, ou si le Client ne possède pas l'ensemble des licences d'utilisation pour les équipements ou logiciels en sa possession. Le cas échéant, la Prestation sera entièrement due quel que soit le type de Prestation sollicitée par le Client.
+
+###### Responsabilité des données
+
+Le client est seul responsable des données présentes sur ses équipements. Par conséquent, il prendra toutes les précautions nécessaires pour assurer la sauvegarde de ses données personnelles. Cela signifie que les opérations de sauvegarde, quelles qu'elles soient, sont à la charge du client et non de Solution Logique. Ainsi, la responsabilité de Solution Logique ne peut être engagée en cas de perte totale ou partielle de données de quelque nature que ce soit.
+
+La clause précédente ne s'applique pas en cas d'opération de sauvegarde demandée par le client à Solution Logique. Dans cette hypothèse, Solution Logique pourrait être responsable de la perte de données qu'il occasionne directement. Cependant, en cas de défaillance quelconque du matériel ou du logiciel avant ou au cours de l'opération, la responsabilité de Solution Logique ne saurait être engagée.
+
+##### 4 Article 4 – Obligations du Prestataire
+
+Solution logique s'engage à fournir les moyens humains nécessaires à l'accomplissement des Prestations définies à l'Article 1 de Conditions Générales de Vente et de Services.
+
+###### Exonération de responsabilité
+
+Le Client est informé que la réalisation des Prestations entraîne une rupture de la garantie du constructeur et/ou du distributeur auprès duquel le Client a acquis ses équipements et à laquelle ne se substitue en aucun cas une garantie de Solution logique.
+
+De convention expresse entre les parties, Solution logique n'est soumis, au titre des présentes qu'à une obligation de moyen et en aucun cas à une obligation de résultats. Solution logique intervient uniquement sur demande expresse du Client, aussi en aucun cas Solution logique ne peut être tenu responsable des dommages directs et/ou indirects, matériels ou immatériels.
+
+##### 5 Article 5 – Obligations du Client
+
+Le Client s'engage à établir et entretenir un environnement physique des équipements conforme aux spécifications des fabricants et/ou distributeurs et aux normes de sécurité ; à respecter les procédures d'utilisation des équipements (logiciels, accessoires, périphériques, consommables…) et en particulier à ne pas procéder à des modifications techniques. Le Client s'engage à tenir à disposition l'ensemble de la documentation technique remis par les fabricants et/ou distributeurs notamment les supports numériques d'installation (CDRom, Disquette, DVDRom…) ainsi que les numéros de licences.
+
+Le Client est informé que l'ensemble des frais, quels qu'ils soient, afférents à l'exécution des Prestations et notamment les frais d'électricité, de connexions à internet ou d'usure des consommables informatiques ou bureautiques engendrées par les manipulations effectuées par Solution logique sont et restent à sa charge, aussi le Client s'engage-t-il à les régler. Le Client s'engage donc à ne pas en demander le remboursement total ou partiel sous quelque forme que ce soit.
+
+Le Client s'engage à déplacer ou à nettoyer tout élément considéré d'un avis raisonnable par l'intervenant comme gênant pour assurer les Prestations.
+
+Le Client s'engage à informer au mieux Solution logique en cas de panne afin que l'intervention de dépannage puisse avoir lieu le plus rapidement possible et le plus efficacement possible.
+
+##### 6 Article 6 – Prix et conditions de paiement
+
+Tous les prix communiqués par Solution logique sont facturés selon les tarifs en vigueur au jour de la commande et en considération de la connexion d'un ou plusieurs postes. Toute commande livrée en carton sera expédiée par un transporteur choisi par Solution logique ou par Solution logique elle-même. Un forfait minimum sera facturé au Client. Ce forfait est d'un montant établi selon la distance entre l'adresse de Solution logique 475 route des Vernes 74370 ANNECY et l'adresse de livraison donnée par le Client.
+
+###### Délai de paiement
+
+Sauf dispositions contraires figurant sur la facture ou sur la fiche d'ouverture de compte remplie et signée par le Client, le délai de paiement des sommes dues est fixé au maximum le trentième jour suivant la date de réception des marchandises ou d'exécution de la prestation demandée (c. com. Art. L.441-6).
+
+Les versements effectués avant la livraison ou la facturation du matériel sont considérés comme acompte à valoir sur le prix définitif.
+
+###### Règlements échelonnés
+
+Dans le cas de règlements échelonnés, concrétisés ou non par des traites, le non-paiement d'une seule échéance rendra immédiatement exigible la totalité du solde restant dû, sans qu'il soit besoin d'une mise en demeure et sans préjudice de tous autres droits.
+
+Solution logique se réserve le droit de prendre, pour toute commande, les garanties financières qui leur sembleront appropriées.
+
+###### Particularités afférentes aux Contrats de Maintenance matériel ou logiciel
+
+Tant le prix du forfait hors taxes que le coût/copie hors taxes pourront être réajustés une fois par an proportionnellement : soit à l'issue de la première période, le vendeur se réserve le droit d'augmenter ses tarifs librement dans les conditions suivantes : si les modifications tarifaires entraînent, pour chaque période future, une hausse inférieure ou égale à 10 % du tarif en vigueur, l'augmentation s'appliquera de plein droit ; dans le cas où le prix du contrat de maintenance est compris dans le montant de la vente, seules les augmentations sont payables périodiquement. Si le prix de maintenance est inclus dans le financement avec le matériel, la part annuelle revenant à la maintenance le montant sera imputée au montant total HT des loyers. Soit par la variation de l'indice du coût horaire du travail tous salariés des Industries Mécaniques et Electriques publié mensuellement au BOCC, les indices de référence étant les derniers indices publiés à la date de variation (cas de disparition de cet indice, tout indice analogue lui sera substitué).
+
+##### 7 Article 7 – Contrat de maintenance : Matériel ou logiciel
+
+###### Objet
+
+Le bon fonctionnement du matériel et des programmes sont garanties pour la durée mentionnée sur le(s) dit(s) contrat(s) signé(s) par le client. Cette garantie couvre les vices cachés de construction pendant un an et les défauts de matière, mais ne couvre pas les « bugs » des éditeurs de logiciels. Toute pièce défectueuse sera remplacée si elle est couverte par une garantie constructeur et validé par un contrat de maintenance matériel en cours de validité indiquant clairement son changement, ce dit contrat de maintenance doit être obligatoirement contracté par le client auprès de Solution Logique étant précisé sous réserve que l'ensemble des factures émises aient été réglées à la date de(s) échéance(s) indiquée(s).
+
+###### Résiliation anticipée
+
+En cas de résiliation par anticipation d'un ou des contrats de maintenance matériel, logiciel ou prestation souscrit par le client ce dernier s'engage à indemniser Solution Logique en partie à titre de dédommagement du préjudice sur les prévisions d'embauche du personnel technique, ou administratif que Solution Logique engage afin d'assurer ces contrats ou prestation de maintenance matériel ou logiciel. Dans tous les cas de résiliation survenant avant l'expiration du ou des contrats matériel ou logiciel, le client procédera au paiement à Solution Logique d'une indemnité égale à la totalité des montants dus ou à devoir jusqu'à la date d'expiration de la période contracté jusqu'à un maximum de cinq ans.
+
+###### Contrats spécifiques (CTP, pack cartouche)
+
+Pour les contrats spécifiques de temps partagé (CTP) ou de contrats de maintenance ''pack cartouche'' ou contrat ne prenant en compte que la prestation de maintenance hors pièces détachées, devront être payé en totalité en cas de résiliation par anticipation et ce jusqu'à l'expiration des dits contrats pour un maximum de cinq ans. Le calcul prise en compte que le client accepte se fera sur la base des heures déjà effectuées et ou des consommables utilisés des périodes précédentes, la moyenne sera prise en compte et multiplié par la durée restante à échoir jusqu'à un maximum de cinq ans. Cependant un montant minimum de 895 € HT par an sera facturé.
+
+Les fournitures consommables (encre, ruban, papier, disque dur externe et autres) ne font pas l'objet du présent contrat. Le technicien interviendra pendant les heures ouvrables des jours ouvrés du service de maintenance désigné. Le bénéficiaire de la garantie ne pourra prétendre à aucune indemnité pour privation de jouissance qu'elle qu'en soit la cause. Les conditions générales sont établies pour des appareils dont l'utilisation journalière ne dépasse pas l'horaire légal d'un utilisateur.
+
+Ne font pas l'objet de la garantie, les pannes dues aux négligences, aux défauts d'utilisation ou de surveillance, d'entretien ainsi que les dépannages de programmes dus aux coupures de courant si le matériel n'est pas équipé d'un onduleur, si les sauvegardes ne sont pas faîtes, et de façon générale, toute utilisation non conforme aux prescriptions ou spécifications précisées dans le manuel des constructeurs.
+
+Pour les réparations importantes, hors garantie et hors contrat, un devis sera préalablement validé sur demande expresse du client et signé par le client. Le vendeur est déchargé de toute responsabilité en cas de suspension ou d'inexécution de son obligation de service imputable à un évènement indépendant de sa volonté (grève, incendie, etc…) l'empêchant de s'exécuter.
+
+L'appréciation de la périodicité des visites et la nécessité du remplacement des pièces sont laissées à l'initiative du vendeur. Le déplacement d'un appareil sera subordonné à son accord, le non-respect de cette clause pourra entraîner la résiliation de plein droit du contrat par ce dernier, tous les frais consécutifs à ce déplacement resteront à la charge du client.
+
+Tout déplacement non-pré facturé (ou non couvert par le contrat) sera facturé, en sus, au tarif en vigueur. Ledit contrat de maintenance ne peut être cédé avec la vente du matériel à un tiers ; dans ce cas, les obligations du vendeur cesseront de plein droit sans qu'il lui soit fait obligation de rembourser tout ou partie des sommes versées.
+
+En cas d'absence de document dûment signé par le client depuis un an, la présente facture tient lieu de contrat et prend en compte les conditions inscrites dans l'article 7, que le client accepte dans son intégralité et sans réserve.
+
+##### 7.1 Article 7-1 – Durée des contrats de maintenance ou abonnement
+
+La durée de base du contrat est mentionnée pour une durée irrévocable maximum de CINQ ANS sauf accord expresse des deux parties notifiées par écrit à compter de la date de signature de devis, commande, offre de service ou de date du procès verbale de livraison en cas de livraison différée ou de contrat de location et ou crédit-bail, à l'expiration de cette durée initiale, il sera renouvelé automatiquement pour la même durée initiale par tacite reconduction.
+
+###### Dénonciation
+
+Toute dénonciation par l'un ou l'autres des parties se fera par lettre recommandée A.R reçue effectivement par l'autre partie au moins 90 jours avant l'expiration de la durée initiale où, après celle-ci, de la période de renouvellement en cours.
+
+En cas de contrat de maintenance prenant en compte un volume d'impression ou de scan, ces copies ou scans supplémentaires seront facturés au terme de chaque période, avec possibilité selon le contrat d'intégrer les consommables (hors fourniture du papier).
+
+##### 7.2 Article 7-2 – Révision des prix
+
+À l'issue de la première période, le vendeur se réserve le droit d'augmenter ses tarifs dans les conditions suivantes : si les modifications tarifaires entraînent, pour chaque période future, une hausse inférieure ou égale à 10 % du tarif en vigueur, l'augmentation s'appliquera de plein droit ; dans le cas où le prix du contrat de maintenance est compris dans le montant de la vente, seules les augmentations sont payables périodiquement. Si le prix de maintenance est inclus dans le financement du matériel, la part annuelle revenant à la maintenance est le montant défini au départ et imputé au montant total HT des loyers.
+
+###### Conditions de paiement
+
+Les factures sont payables au comptant, à réception et sans escompte. Elles sont payables d'avance pour chaque période. En cas de non-paiement des échéances et huit jours après mise en demeure par lettre recommandée avec accusé de réception restée sans effet, ledit contrat pourra être résilié à l'encontre du client, moyennant toutes conséquences de droit.
+
+###### Attribution de compétence
+
+Toute contestation relative au présent contrat sera soumise au Tribunal de Commerce du siège social de notre société.
+
+##### 7.3 Article 7-3 – Exclusions des contrats de maintenance
+
+###### Exclusions
+
+Les virus et tous les problèmes qui en découlent, ainsi que tout piratage informatique ou risque cyber, ne sont pas couverts par le(s) contrat(s) de maintenance matérielle ou logiciels. Cette exclusion s'applique même si le client est équipé de pare-feu, d'antispam ou de tout autre matériel et logiciel disponible sur le marché.
+
+Solution Logique ne prend également pas en charge toutes erreurs ou mauvaises manipulations de l'utilisateur.
+
+###### Prestations possibles
+
+Cependant ces prestations pourront être effectuées par Solution Logique, un bon de commande devra être validé et accepté par le client.
+
+##### 8 Article 8 – Logiciel
+
+Si le logiciel fait l'objet d'un cahier des charges soumis à l'accord écrit et signé du client, cet accord conditionne les opérations ultérieures nécessaires à l'aboutissement du dossier.
+
+En cas de vente de progiciel, l'acheteur doit vérifier ou faire vérifier que le produit est bien propre à satisfaire ses besoins et qu'il est compatible avec le matériel ou les logiciels existant déjà.
+
+###### Logiciels standards
+
+En cas de vente de logiciels standards, pour lesquels nous ne sommes que distributeurs, nous n'avons aucune possibilité de modifier les programmes : en aucun cas nous ne serons responsables des performances et du suivi de ces programmes qui ne pourront être que sous la responsabilité du client qui en accepte les risques éventuels.
+
+###### Propriété intellectuelle
+
+Les logiciels bénéficient de la protection attachée aux droits de la propriété littéraire et industrielle appartenant au concepteur. En conséquence, le client ne peut jamais céder les droits d'utilisation des logiciels à un tiers.
+
+La formation devra permettre au personnel de connaître et d'exécuter de manière satisfaisante la mise en œuvre des applications. Pour chaque application, la durée de formation est indiquée sur le bon de commande ou sur le devis. Le fournisseur mettra à la disposition du client un formateur compétent, toute demande de formation supplémentaire sera facturée en sus.
+
+En tout état de cause, la possible responsabilité du vendeur, éventuellement admise, est limitée au maximum, au montant du prix de vente HT du logiciel.
+
+##### 8.1 Article 8-1 – Contrat de maintenance EBP
+
+Solution Logique s'engage à fournir au client, qui accepte, le service de maintenance des logiciels EBP dans les conditions prévues à la signature de son contrat.
+
+###### Engagements de Solution Logique
+
+Dans le cadre de ces contrats de maintenance et sous réserve que l'ensemble des factures émises aient été réglées à la date de(s) échéance(s) indiquée(s), Solution Logique s'engage :
+
+- À assister le client dans l'utilisation des logiciels EBP. À cet effet, une ligne téléphonique est mise à la disposition du client (de 9H à 12H et de 14H à 17H30 du lundi au vendredi).
+- Des coordinateurs sont désignés au sein de l'entreprise afin que le client puisse rentrer rapidement en contact avec un de nos spécialistes et trouver ainsi une réponse aux préoccupations du client sur le(s) logiciel(s) EBP concerné(s).
+- La durée d'un appel téléphonique ne saurait excéder 15 minutes. Au-delà, il conviendra de prévoir une intervention à un tarif privilégié.
+
+Après acceptation du client, nous interviendrons à l'aide de notre outil de support sécurisé pour gérer ce supplément d'intervention à distance via le web. Dans tous les cas de figure, l'assistance téléphonique ne se substitue pas à une formation initiale sur le(s)-dit(s) logiciel(s).
+
+###### Note Logiciel de Paie
+
+Le client peut souscrire par le biais de Solution Logique à un contrat Paie ''Privilège'' dans ce cas l'assistance téléphonique sera effectuée par EBP France directement.
+
+##### 8.2 Article 8-2 – Exclusion
+
+###### Ne peuvent en aucun cas être inclus dans la maintenance de(s) Logiciel(s) EBP :
+
+- La reconstitution des fichiers en cas de destruction accidentelle
+- Le développement de nouveaux programmes, ces interventions complémentaires ne s'exécutant que sur demande expresse du client pour la réalisation de travaux ponctuels (Réinstallation de(s) logiciel(s), paramétrages de toutes natures, clôture de compte, DADS, réalisations de documents et d'états…)
+- Le travail d'exploitation
+- Les sauvegardes des fichiers et saisies d'exploitation
+- Les logiciels autres que ceux spécifiés qui fonctionneraient en enchaînement avec eux
+- L'utilisation de logiciels pirates
+- L'entretien ou les modifications techniques effectuées directement par le client ou tout autres intervenants autres que les représentants de Solution Logique
+- Le matériel, les accessoires et fournitures non conforme aux prérequis de bon fonctionnement
+- Les modifications à apporter au(x) logiciel(s) pour leur utilisation sur un autre matériel que celui prévu à l'origine
+
+###### Antivirus
+
+Solution Logique n'est pas en mesure d'assurer la lutte anti-virus du parc informatique, le client devra avoir un antivirus à jour sur le(s) ordinateur(s) ou serveur(s).
+
+###### Limitation de responsabilité
+
+Concernant le(s) logiciel(s) de gestion, les services distribués par Solution Logique n'ont aucune prétention de remplacer les compétences d'un comptable ou d'un cabinet d'expertise comptable, seules habilités à organiser, vérifier, apprécier et redresser les comptabilités et comptes de toute nature. De même, et concernant les logiciels de paye, les services distribués ne pourraient être assimilés à des compétences dont disposent les professionnels en droit du travail ou des personnes dûment formées à cette discipline. Solution Logique ne pourra pas être tenu responsable des calculs ou formules qui doivent être fournis par le client ou son conseil habituel, ces données doivent être validées et certifiées par un Expert-comptable habilité.
+
+##### 8.3 Article 8-3 – Accès au(x) logiciel(s)
+
+Le client s'engage à laisser au personnel de Solution Logique, le libre accès au matériel, il devra lui laisser un espace suffisant et lui assurer l'assistance nécessaire, il devra notamment mettre à sa disposition les différents opérateurs et le matériel à l'exécution des services de maintenance de Solution Logique.
+
+###### Heures d'intervention
+
+Les interventions en clientèle seront effectuées par les techniciens de Solution Logique, pendant les heures normales de travail correspondant à 7 heures par jour du lundi au vendredi.
+
+###### Heures supplémentaires
+
+Si les interventions sont effectuées en dehors des heures normales de travail, ou les samedis, dimanches ou jours fériés, les déplacements et interventions seront facturés en sus, suivant les tarifs en vigueur.
+
+Au cas où le(s) technicien(s) envoyé par Solution Logique ne pourrait pas avoir l'accès au(x) matériel(s) du fait du client, le temps passé par le(s) technicien(s) serait alors facturé en supplément.
+
+##### 8.4 Article 8-4 – Obligation du client
+
+Le client s'engage à respecter les conditions normales d'utilisation des logiciels EBP, à appliquer strictement toutes les instructions données par Solution Logique.
+
+Le client informera Solution Logique de tous changements qui pourraient survenir dans l'organisation.
+
+###### Interlocuteur unique
+
+Le client devra désigner au sein de son personnel une personne qualifiée qui sera le seul interlocuteur de Solution Logique.
+
+###### Non-respect du contrat
+
+En cas de non-respect de l'une des dispositions du contrat ou des obligations prévues, Solution Logique pourra mettre fin au présent contrat en respectant un préavis de 90 jours.
+
+Il appartient au client de prendre toutes les mesures utiles et notamment de contracter une assurance pour se protéger contre tout dommage immatériel tels que manque à gagner, pertes d'exploration, préjudice commercial.
+
+##### 8.5 Article 8-5 – Limitations de Responsabilité Logiciels d'entreprise EBP
+
+Solution Logique sera dégagé de toute responsabilité en cas d'inobservation par le Client d'une des clauses de(s) contrat(s) signé(s) et dans les cas prévus dans Article 8-2 « Exclusions ».
+
+Solution Logique pourra mettre tout en œuvre et particulièrement en se rapprochant de l'éditeur de logiciel EBP, pour la résolution de problème ou amélioration du produit, cependant Solution Logique ne peut donner aucune garantie n'étant pas l'éditeur des programmes EBP.
+
+###### Exclusions de responsabilité
+
+- Solution Logique ne pourra en aucun cas être considéré comme responsable des dommages directs ou indirects, y compris en cas de pertes de données ou d'informations.
+- Solution Logique ne pourra être rendu responsable des anomalies de fonctionnement des Logiciels EBP, quelles que puissent être les conséquences ou la durée d'immobilisation du système.
+- Solution Logique ne pourra apporter les ajouts ou modifications sur les programmes EBP existants imposés ou non par un changement de la réglementation en vigueur.
+- La responsabilité de Solution Logique ne pourra être recherchée en cas de cessation d'activité de la société éditrice EBP, ou d'arrêt du suivi, temporaire ou définitif desdits logiciels par la société éditrice EBP.
+- La responsabilité de Solution Logique ne pourra être recherchée en cas de force majeure ou pour d'autres motifs indépendants de sa volonté tels que grèves, conflits sociaux, sinistres ou accidents.
+
+##### 8.6 Article 8-6 – Remise des identifiants et mots de passe
+
+###### 1. Objet
+
+La présente clause définit les conditions dans lesquelles Solution Logique (ci-après « le Prestataire ») remet au Client les identifiants et mots de passe permettant l'accès aux services, outils ou plateformes mis à disposition dans le cadre de la prestation convenue.
+
+###### 2. Conditions préalables à la remise
+
+La remise des identifiants et mots de passe est subordonnée au respect cumulatif des conditions suivantes :
+
+- 1 Demande expresse et écrite : Le Client doit formuler une demande écrite (courrier, email signé ou formulaire dédié) adressée au Prestataire, précisant explicitement la nature des accès sollicités.
+- 2 Lettre de décharge : Le Client s'engage à signer et retourner une lettre de décharge, attestant qu'il reconnaît avoir reçu les identifiants et mots de passe, s'engage à en assurer la confidentialité et à ne les communiquer à aucun tiers, et assume l'entière responsabilité de leur utilisation, y compris en cas de perte, de vol ou d'utilisation frauduleuse.
+- 3 Règlement intégral des factures : Tous les montants dus au titre des prestations réalisées par le Prestataire doivent être intégralement réglés. À défaut, le Prestataire se réserve le droit soit de suspendre la remise des identifiants jusqu'à régularisation de la situation, soit de les conserver jusqu'au règlement intégral.
+
+###### 3. Modalités de remise
+
+Une fois que la totalité des factures ont été réglées en totalité, Solution Logique procédera à la remise des identifiants et mots de passe, qui seront transmis par voie sécurisée (en présentiel, email chiffré, plateforme dédiée ou courrier recommandé), dans un délai raisonnable suivant la réception de la demande écrite, de la lettre de décharge et du règlement intégral des factures.
+
+###### 4. Obligations du Client
+
+Le Client s'engage à :
+
+- Protéger les identifiants : Mettre en œuvre toutes les mesures nécessaires pour garantir leur confidentialité et leur sécurité (ex. : stockage sécurisé, non-partage).
+- Informer le Prestataire : Signaler sans délai toute suspicion de compromission ou d'utilisation non autorisée des identifiants.
+- Respecter les usages autorisés : Utiliser les identifiants uniquement pour les finalités prévues dans le contrat, sous peine de suspension immédiate des accès.
+
+###### 5. Responsabilité
+
+Le Prestataire décline toute responsabilité en cas de préjudice résultant :
+
+- D'une utilisation non conforme des identifiants par le Client ou ses préposés ;
+- D'un manquement du Client à ses obligations de confidentialité ou de sécurité.
+
+###### 6. Suspension ou retrait des accès
+
+Le Prestataire se réserve le droit de suspendre ou retirer les identifiants, sans préavis, en cas de :
+
+- Non-respect des présentes CGV ;
+- Utilisation frauduleuse ou abusive ;
+- Non-paiement des factures après demande formulée par écrit ou mise en demeure infructueuse.
+
+###### 7. Données personnelles
+
+Si les identifiants permettent d'accéder à des données à caractère personnel, le Client s'engage à respecter les dispositions du Règlement Général sur la Protection des Données (RGPD) et à ne pas utiliser ces données à des fins autres que celles prévues contractuellement.
+
+##### 9 Article 9 – Conditions particulières
+
+###### Clause de réserve de propriété (Article 65 de la loi No 67-503 du 13.07.1967 modifiée par la loi 80-335 J.O du 12.05.1980)
+
+Le vendeur conserve la propriété des biens vendus jusqu'au paiement effectif de l'intégralité du prix en principal et accessoire. Le défaut de paiement de l'une quelconque des échéances peut entraîner la revendication des biens. Ces dispositions ne font pas obstacle au transfert à l'acheteur, dès la livraison, des risques de perte et de détérioration des biens vendus ainsi que des dommages qu'ils pourraient occasionner.
+
+A défaut de paiement, notre société se réserve le droit de reprendre possession de sa livraison sans formalité préalable, indépendamment de toute poursuite judiciaire et le client s'engage à ne pas s'opposer à une telle reprise. Tous les frais resteront à la charge du client. En ce qui concerne les logiciels, nous nous réservons le droit de procéder à leur désinstallation en cas de non-paiement des factures correspondantes.
+
+Ces précédentes conditions de reprise s'appliquent aussi à tout produit mis à disposition du client que notre société souhaiterait légitimement reprendre (dépôt, prêt, remplacement, location).
+
+###### Location ou crédit-bail
+
+En cas de demande de location ou de crédit-bail, l'exécution du bon de commande du Client est conditionnée par l'accord donné par l'organisme de financement. A défaut d'obtention par le Client du financement sollicité auprès du ou des organismes, la commande objet du contrat devient caduque de plein droit ; le Client ne pourra prétendre à la livraison totale ou partielle du matériel et s'engage, à notification, même verbale du refus de financement, à restituer le matériel déjà livré ou mis à l'essai ainsi qu'à restituer toute somme versée par Solution logique notamment en application d'une reprise ou participation à un solde de contrat.
+
+Dans le cas où un contrat de financement remplace un précédent contrat, le Client reconnaît et accepte que le montant des sommes versées au titre de cette résiliation par Solution logique soit intégré dans le nouveau contrat de financement. Le versement par Solution logique dudit montant à l'occasion du présent contrat constitue un tout indissociable avec celui-ci.
+
+##### 10 Article 10 – Pénalités
+
+###### Pénalités de retard
+
+En cas de retard de paiement, le Client est tenu de régler en sus du montant de la facture une pénalité de retard d'un montant égal à 3 (trois) fois le taux d'intérêt légal, calculée sur montant de la totalité des sommes dues, conformément aux dispositions de l'article L.441-6 du code du commerce et du décret suivant (Décret 2009-138 du 9 février 2009).
+
+###### Frais de recouvrement
+
+En plus de cette indemnité un forfait pour frais de recouvrement d'un montant de 40 euros (quarante euros) pour les professionnels (décret 2012-1115 du 9 octobre 2012) sera exigible.
+
+##### 11 Article 11 – Conditions d'exécution propres à la commande et à la vente de matériels
+
+###### Article 11-1 – Enregistrement de la commande
+
+A défaut de confirmation du devis par télécopie ou par mail, aucune commande ne sera prise en compte. De convention expresse les Parties reconnaissent les suscitées télécopie ou mail comme mode de preuve de la commande et ce quel que soit le montant du devis.
+
+De même, aucune commande n'est prise en compte antérieurement au versement d'un acompte de 40% sur le montant hors taxe du devis.
+
+Par l'envoi du devis signé, le Client reconnaît accepter les Conditions Générales de Ventes et de Prestations de Services.
+
+La date de prise de la commande est réputée être celle de la réception de la confirmation par Solution logique.
+
+###### Article 11-2 – Clause de réserve de propriété du Matériel
+
+Solution logique se réserve la propriété des marchandises désignées sur le devis accepté par le Client, jusqu'au paiement intégral de leur prix en principal et intérêts. A défaut de paiement du prix à l'échéance convenue, Solution logique pourra reprendre les marchandises, la vente sera résolue de plein droit si bon semble à Solution logique et les acomptes déjà versés lui resteront acquis en contrepartie de la jouissance des marchandises dont aura bénéficié le Client.
+
+Les marchandises resteront la propriété de Solution logique jusqu'au paiement intégral de leur prix mais le Client en deviendra responsable dès leur remise matérielle, le transfert de possession entraînant celui des risques. Le Client s'engage, en conséquence, à souscrire, dès à présent, un contrat d'assurance garantissant les risques de perte, vol ou destruction des marchandises désignées.
+
+Les marchandises restant la propriété de Solution logique, jusqu'au paiement intégral de leur prix, il est interdit au Client d'en disposer pour les revendre ou les transformer. Toutefois, à titre de simple tolérance et pour les seuls besoins de son activité, Solution logique autorise le Client à revendre les marchandises désignées sous réserve que le Client s'acquitte, dès la revente, de l'intégralité du prix restant dû, les sommes correspondantes étant, dès à présent, nanties au profit de Solution logique conformément à l'article 2071 du code civil, le Client devenant simple dépositaire du prix.
+
+###### Article 11-3 – Propriété et utilisation des licences et logiciels
+
+Le Client reconnaît sur le logiciel concédé l'entière propriété de l'éditeur, et se doit de respecter la législation en vigueur.
+
+Le Client s'engage formellement à l'utiliser pour son seul usage et sur un seul système. Il est rigoureusement interdit au Client de faire au profit de qui que ce soient des travaux à façon sur le logiciel concédé. De même, il lui est formellement interdit d'en faire une quelconque copie, sauf à titre exclusif de sauvegarde.
+
+Le Client respecte et s'engage à faire respecter par ses subordonnés notamment les droits d'auteur reconnus par le Code de la Propriété Intellectuelle.
+
+###### Article 11-4 – Délais de livraison
+
+Les délais de livraison peuvent varier d'une commande à l'autre et ce même dans l'hypothèse de la commande de matériel identique, aussi en aucun cas Solution logique ne s'engage à proposer le même délai de livraison pour des commandes identiques.
+
+Si le délai de livraison par Solution logique au Client devait dépasser de plus de six mois sans raison de force majeure les délais indiqués, le Client pourrait dénoncer le contrat par lettre recommandée avec accusé de réception.
+
+Si un article se révèle indisponible et ce à postérieurement à la commande, Solution logique en informe dans les meilleurs délais le Client et lui adresse en échange un produit objectivement équivalent en termes de prix et de qualité. Le Client n'est alors pas en mesure de refuser et ne peut réclamer un dédommagement différent à ce titre.
+
+En tout état de cause, les délais de livraison indiqués ne sont qu'indicatifs. Les retards ne peuvent en aucun cas justifier l'annulation de la commande ou donner lieu à pénalités ou dommages et intérêts.
+
+L'incendie, la panne, la grève, les difficultés d'approvisionnement sont assimilées par les Parties à la force majeure.
+
+L'adduction et la fourniture du courant électrique, l'aménagement des locaux, l'acquisition et l'installation d'un dispositif de sécurité sont à la charge du Client. Les travaux sont réalisés par ce dernier. La responsabilité des dommages, qui ont pour origine l'installation ou l'équipement du domicile du client ou toute autre cause extérieure aux machines, est à la charge du Client.
+
+###### Article 11-5 – Réception
+
+Les réclamations sur le vice apparent ou sur la non-conformité du Matériel livré doivent être formulées par écrit dans les sept jours de la réception des produits.
+
+Il appartient au Client de fournir toutes justifications quant à la réalité des vices ou anomalies constatés. Le Client doit laisser à Solution logique toute facilité pour procéder à la constatation de ce vice et pour y porter remède. Le Client s'abstient d'intervenir lui-même ou de faire intervenir un tiers à cette fin.
+
+###### Article 11-6 – Garanties
+
+Le matériel vendu est garanti par le constructeur ou l'éditeur suivant des modalités qui leur sont propres.
+
+De plus, le Matériel bénéficie de la garantie légale pour vices cachés à la condition que le Client agisse dans un bref délai. Cette garantie porte sur les pièces et la main d'œuvre pour les articles retournés au constructeur et/ou au distributeur. Les frais de transport étant à la charge du Client, les envois en port dû ou contre remboursement sont refusés.
+
+L'utilisation du Matériel fourni se fait sous la responsabilité exclusive du Client à qui il appartient d'assumer la direction et la surveillance dudit Matériel. Sont exclus de la garantie tous dommages résultant notamment d'une mauvaise utilisation, d'une utilisation abusive des articles ou négligence du Client, de la foudre, du non-respect des instructions d'installation ou d'exploitation, d'une intervention effectuée sur les articles par un tiers non agréé expressément par le constructeur ou/et le fournisseur ainsi que tous dommages résultant de l'emploi de fournitures non agrées, de la force majeure ou du fait de tiers.
+
+Toute réclamation selon laquelle le Matériel serait défectueux quant à leur matière ou à leur fabrication devra être faite par écrit sans délai auprès de Solution logique par le Client et inclure toutes explications nécessaires.
+
+Le Client dégage Solution logique de toute responsabilité en cas de perte ou dommage résultant de l'emploi de données, résultats, programmes ou documents mis à sa disposition. A l'égard des tiers, le Client fera son affaire personnelle de toute réclamation.
+
+Les accessoires, batteries et consommables ne sont pas couverts par une garantie.
+
+###### Article 11-7 – Risques
+
+Le Matériel, même expédié franco, voyage aux risques et périls du Client auquel il appartient de vérifier l'état des colis et de la marchandise à la livraison et d'exercer, s'il y a lieu, tous recours contre le transporteur. Les marchandises ne sont assurées que sur demande expresse du Client.
+
+La signature du bon de mise à disposition par le Client est une reconnaissance par ce dernier de la machine livrée et les risques passent à sa charge, tant en ce qui concerne les sinistres subis par le Matériel qu'en ce qui concerne les dommages causés à des personnes ou d'autres biens. Le Client contracte, s'il le désire, les polices d'assurances nécessaires sans recours possible contre le fournisseur, pour quelque cause et risque que ce soit.
+
+Solution logique ne pourra être recherché si l'exécution du présent contrat est retardée ou empêchée en raison de conflits sociaux, cas fortuit ou de force majeure. Au cas où sa responsabilité serait retenue par suite de l'inexécution ou de la mauvaise exécution du présent contrat ou pour toute autre cause, le total des indemnisations ne pourra, de convention expresse, dépasser un montant cumulé égal à 10% du prix de la machine ou du programme, qui est à l'origine du dommage.
+
+L'utilisation du Matériel et des logiciels livrés par Solution logique est faite sous la seule responsabilité du Client qui déclare ici renoncer expressément à tout recours contre Solution logique pour quelque cause, motif ou risque que ce soit, et les garantit contre tout action éventuelle intentée par des tiers, Solution logique n'étant tenu qu'à la fourniture des moyens.
+
+Solution logique ne saurait être poursuivie pour tout vice provenant du système d'exploitation ou de logiciels de base non développés par Solution logique, pouvant entraîner un mauvais fonctionnement des logiciels ou du matériel fourni.
+
+##### 12 Article 12 – Loi informatique et libertés
+
+Conformément à la loi informatique et liberté du 6 janvier 1978, le Client dispose d'un droit d'accès et de rectification aux données le concernant. Ces données ont pu être communiquées à des entreprises tierces et le Client peut donc être amené à recevoir de ces sociétés des propositions commerciales.
+
+###### Droit d'opposition
+
+S'il ne le souhaite pas, il lui suffit d'écrire à Solution logique en indiquant ses noms, prénoms, adresse, adresse email afin que Solution logique puisse faire le nécessaire dans les meilleurs délais.
+
+##### 13 Article 13 – Territoire
+
+L'ensemble des Prestations sont uniquement proposés dans la région Rhône-Alpes.
+
+###### En cas de changement de localisation géographique du Client
+
+Solution logique peut choisir :
+
+- De ne pas fournir la Prestation payée par le Client et de le rembourser de toutes les prestations non réalisées,
+- De réaliser les Prestations souscrites par le Client malgré le changement de localisation et ce au même tarif,
+- De proposer un nouveau tarif au Client compte tenu de son nouvel emplacement géographique et des déplacements que cela occasionne, le Client est alors libre d'accepter ou de refuser.
+
+##### 14 Article 14 – Nullité
+
+Si l'une des clauses des Conditions Générales de Vente et de Prestations de Services s'avère nulle, la validité des autres clauses ne serait pas remise en cause.
+
+Solution logique s'engage alors à remplacer la clause ainsi annulée dans les meilleurs délais et ce en respectant l'économie du contrat.
+
+##### 15 Article 15 – Loi applicable
+
+De convention expresse, les Conditions Générales de Vente et de Prestations de Services sont gouvernés par le droit français.
+
+Ces Conditions Générales de Vente et de Prestations de Services ne doivent pas être interprétées comme limitant les droits statutaires du Client et rien ne limite les droits statutaires du Client en tant que consommateur.
+
+##### 16 Article 16 – Tribunaux compétents et règlements des différends
+
+###### Juridiction compétente
+
+En cas d'échec d'une procédure amiable, tout litige découlant des présentes conditions est de la compétence exclusive du Tribunal de Commerce d'Annecy.
+
+##### 17 Article 17 – Règlement des litiges
+
+En cas de contestation sur ou à l'occasion d'une livraison ou de son règlement, les tribunaux d'inscription au Registre du Commerce sont seuls compétents, quelles que soient les conditions de vente et le mode de paiement acceptés ; toute clause contraire figurant éventuellement dans les conditions générales de nos clients reste sans effet.
+
+L'acceptation d'un règlement par chèque, mandat, virement, traite ou autre effet sur une autre ville que le siège ne peut constituer dérogation de cette clause essentielle d'attribution de juridiction.
+
+Toute convention particulière ou toute dérogation à l'une des présentes conditions générales doit faire de notre part l'objet de stipulations spéciales écrites ; toutes les conditions générales définies qui ne seraient pas expressément modifiées ou abrogées par ces stipulations spéciales, conservent leur plein et entier effet.
+
+###### Accès aux CGV
+
+Les conditions générales complètes sont accessibles et consultables sur le site internet de Solution Logique : http://solution-logique.fr modifiables sans préavis.
+
+##### Des questions sur nos CGV ?
+
+Notre équipe est à votre disposition pour toute clarification concernant nos conditions générales de vente.
+
+## Politique de confidentialité
+
+Adresse : https://solution-logique.fr/confidentialite/
+
+### Politique de confidentialité
+
+Ce que ce site collecte sur vous, pourquoi, qui le reçoit, et comment exercer vos droits.
+
+#### Responsable du traitement
+
+Solution Logique, SAS, 475 route des Vernes, Pringy, 74370 Annecy (RCS Annecy 379 868 540). Pour toute question sur vos données : site@solution-logique.fr ou 04 50 64 02 33.
+
+#### Ce que le site collecte
+
+Le formulaire de contact (page Contact) : votre nom, votre adresse e-mail, votre message et, si vous le donnez, votre numéro de téléphone.
+
+La demande de rappel : votre numéro de téléphone.
+
+Dans les deux cas, votre adresse IP est utilisée au moment de l'envoi pour limiter le nombre de messages et bloquer les robots qui envoient du spam ; elle peut figurer dans les journaux de sécurité du service d'envoi.
+
+La consultation du site : comme tout serveur web, celui de notre hébergeur enregistre dans ses journaux techniques l'adresse IP, la date, la page demandée, la page de provenance et le type de navigateur. Ces journaux servent au fonctionnement et à la sécurité du site.
+
+Le site n'utilise aucun outil de mesure d'audience ni de publicité, et ne dépose lui-même aucun cookie. Ses polices de caractères sont hébergées sur le site, sans appel à un service extérieur.
+
+#### Pourquoi
+
+Uniquement pour répondre à votre demande (information, devis, rappel, inscription à une formation) et pour suivre la relation qui peut en découler. Base légale : les mesures précontractuelles prises à votre demande (article 6.1.b du RGPD).
+
+#### Qui les reçoit
+
+Votre message arrive par e-mail dans la boîte site@solution-logique.fr et n'est lu que par l'équipe de Solution Logique. Pour l'acheminer, nous faisons appel à des prestataires techniques :
+
+- Vercel, qui exécute le service d'envoi des formulaires ;
+- Resend, qui transmet l'e-mail jusqu'à notre boîte ;
+- OVH, qui héberge le site et ses journaux techniques.
+
+Vercel et Resend sont des sociétés établies aux États-Unis : les données d'un formulaire peuvent donc être traitées hors de l'Union européenne.
+
+#### Combien de temps
+
+Les messages reçus sont conservés dans notre messagerie le temps de traiter votre demande et de suivre la relation commerciale qui peut en découler. Vous pouvez à tout moment demander leur suppression. Les journaux techniques sont conservés par l'hébergeur pour la durée qu'il fixe.
+
+#### La carte de la page Contact
+
+La page Contact propose une carte Google Maps. Elle ne se charge que si vous cliquez sur « Afficher la carte » : votre navigateur contacte alors les serveurs de Google, qui reçoivent votre adresse IP et peuvent déposer leurs propres cookies, selon leur politique de confidentialité.
+
+#### Les liens de télémaintenance
+
+Sur la page Télémaintenance, le code de session que vous saisissez vous conduit vers le service NinjaOne de Solution Logique (solution-logique.rmmservice.eu), et le bouton RustDesk télécharge le logiciel depuis ce site. Rien n'est envoyé tant que vous n'avez pas cliqué.
+
+#### Vos droits
+
+Vous pouvez accéder à vos données, les faire rectifier ou effacer, vous opposer à leur traitement, en demander la limitation ou les recevoir dans un format courant (portabilité), en écrivant à site@solution-logique.fr ou à l'adresse postale ci-dessus. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL (www.cnil.fr).
+
+Voir aussi les mentions légales.

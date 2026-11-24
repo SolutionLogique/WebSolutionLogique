@@ -144,7 +144,7 @@ export default function Logiciels() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Logiciels
+              Logiciels{" "}
               <span className="block bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent mt-2">
                 EBP & Formations
               </span>
