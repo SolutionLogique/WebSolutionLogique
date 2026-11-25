@@ -407,7 +407,12 @@ export function EBPTemplate({
 
           <LiensVoisins
             fond="sombre"
-            chemins={[...PAGES_EBP.filter((c) => c !== PAGE_PAR_CATEGORIE[category]), "/logiciels"]}
+            chemins={[
+              ...PAGES_EBP.filter((c) => c !== PAGE_PAR_CATEGORIE[category]),
+              "/logiciels",
+              "/conseils/ebp-mise-a-jour-sauvegarde-sans-blocage",
+              "/conseils/facture-electronique-pme-2026-2027",
+            ]}
           />
         </div>
       </ModernSection>

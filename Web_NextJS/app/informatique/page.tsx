@@ -259,7 +259,7 @@ export default function Informatique() {
               04 50 64 02 33
             </ModernButton>
           </div>
-          <LiensVoisins fond="sombre" chemins={["/telecom", "/securite", "/telemaintenance", "/nosServices"]} />
+          <LiensVoisins fond="sombre" chemins={["/telecom", "/securite", "/telemaintenance", "/nosServices", "/conseils/ordinateur-lent-se-fige-ne-demarre-plus", "/conseils/outlook-ne-recoit-plus-boite-pleine", "/conseils/imprimante-scanner-copieur-ne-marche-plus"]} />
         </div>
       </ModernSection>
     </div>

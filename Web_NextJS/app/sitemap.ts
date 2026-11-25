@@ -30,7 +30,7 @@ function derniereModification(sources: string[]): string | undefined {
 export default function sitemap(): MetadataRoute.Sitemap {
   return PAGES.map((page) => ({
     url: urlPage(page.chemin),
-    lastModified: derniereModification(page.sources),
+    lastModified: page.dateModification ?? derniereModification(page.sources),
     priority: page.prioritePlan,
   }));
 }

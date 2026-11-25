@@ -291,7 +291,7 @@ export default function Telecom() {
               04 50 64 02 33
             </ModernButton>
           </div>
-          <LiensVoisins fond="sombre" chemins={["/informatique", "/securite", "/telemaintenance", "/nosServices"]} />
+          <LiensVoisins fond="sombre" chemins={["/informatique", "/securite", "/telemaintenance", "/nosServices", "/conseils/plus-internet-wifi-dossiers-partages"]} />
         </div>
       </ModernSection>
     </div>
