@@ -42,6 +42,9 @@ export interface PageSite {
   service?: { nom: string; type: string };
   /* Fichiers dont la date de dernier commit donne le lastmod du plan du site */
   sources: string[];
+  /* Date de mise a jour ecrite (articles) : prime sur la date de commit, sinon
+     tout ajout dans lib/articles.ts rajeunirait les autres articles */
+  dateModification?: string;
   prioritePlan: number;
 }
 
@@ -256,7 +259,7 @@ export const PAGES: PageSite[] = [
     chemin: "/conseils",
     titre: "Conseils informatiques pour les PME",
     description:
-      "Conseils de Solution Logique pour les PME : sauvegardes, cybersécurité, facture électronique. Des articles sourcés, écrits par notre équipe d'Annecy.",
+      "Conseils de Solution Logique pour les PME : Outlook, imprimante, poste lent, réseau, sauvegardes, cybersécurité, EBP. Des articles sourcés, écrits à Annecy.",
     libelle: "Conseils",
     sources: ["app/conseils/page.tsx", "lib/articles.ts"],
     prioritePlan: 0.6,
@@ -269,6 +272,7 @@ export const PAGES: PageSite[] = [
     libelle: a.libelle,
     parent: "/conseils",
     sources: ["app/conseils", "lib/articles.ts"],
+    dateModification: a.dateModification,
     prioritePlan: 0.5,
   })),
   /* Pages locales : un secteur de lib/secteurs.ts par page */

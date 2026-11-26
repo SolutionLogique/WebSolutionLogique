@@ -370,7 +370,7 @@ export default function Securite() {
               04 50 64 02 33
             </ModernButton>
           </div>
-          <LiensVoisins fond="sombre" chemins={["/informatique", "/telecom", "/telemaintenance", "/nosServices"]} />
+          <LiensVoisins fond="sombre" chemins={["/informatique", "/telecom", "/telemaintenance", "/nosServices", "/conseils/cybersecurite-pme-mesures-de-base", "/conseils/sauvegardes-pme-regle-3-2-1"]} />
         </div>
       </ModernSection>
     </div>

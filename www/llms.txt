@@ -43,8 +43,13 @@ Zone d'intervention : Annecy et son agglomération, le reste de la Haute-Savoie 
 
 ## Conseils pour les PME
 
+- [Ordinateur lent, qui se fige ou ne démarre plus : que faire ?](https://solution-logique.fr/conseils/ordinateur-lent-se-fige-ne-demarre-plus/) : PC Windows 11 lent, figé, écran noir ou écran bleu : les causes fréquentes, les étapes à essayer avec les bons menus, les erreurs à éviter, et quand appeler
+- [Outlook ne reçoit plus, redemande le mot de passe ou la boîte est pleine](https://solution-logique.fr/conseils/outlook-ne-recoit-plus-boite-pleine/) : Outlook ne reçoit plus, redemande le mot de passe ou annonce une boîte pleine : les causes et les étapes à essayer, dans Outlook classique et le nouvel Outlook
+- [Impossible d'imprimer, scans du copieur qui n'arrivent plus : que vérifier ?](https://solution-logique.fr/conseils/imprimante-scanner-copieur-ne-marche-plus/) : impression bloquée, imprimante hors connexion, scans du copieur qui n'arrivent plus par mail ou dans un dossier : causes et étapes à essayer sous Windows 11
+- [Plus d'internet, Wi-Fi qui coupe, dossiers partagés inaccessibles : que faire ?](https://solution-logique.fr/conseils/plus-internet-wifi-dossiers-partages/) : plus d'internet au bureau, Wi-Fi qui coupe, lecteur réseau à croix rouge, VPN qui ne se connecte plus : les vérifications à faire sous Windows 11, dans l'ordre
 - [Sauvegardes d'une PME : appliquer la règle 3-2-1](https://solution-logique.fr/conseils/sauvegardes-pme-regle-3-2-1/) : trois copies, deux supports, une hors ligne : la règle 3-2-1 de l'ANSSI expliquée pour une PME, avec la fréquence, les tests de restauration et le chiffrement
 - [Cybersécurité d'une PME : les mesures de base](https://solution-logique.fr/conseils/cybersecurite-pme-mesures-de-base/) : mises à jour, mots de passe et double authentification, sauvegardes, pare-feu, droits d'administration : les mesures de base des guides de l'ANSSI pour une PME
+- [Mettre à jour EBP sans bloquer le travail : sauvegarde, versions et dossier verrouillé](https://solution-logique.fr/conseils/ebp-mise-a-jour-sauvegarde-sans-blocage/) : mettre à jour EBP Gestion Commerciale, Comptabilité ou Bâtiment sans bloquer l'équipe : sauvegarde, même version partout, dossier verrouillé, restauration
 - [Facture électronique : ce qui change pour les PME en 2026 et 2027](https://solution-logique.fr/conseils/facture-electronique-pme-2026-2027/) : calendrier, plateforme agréée, nouvelles mentions, e-reporting, sanctions, et comment préparer vos logiciels
 
 ## Zones d'intervention
